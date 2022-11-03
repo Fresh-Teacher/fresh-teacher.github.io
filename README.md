@@ -1,2 +1,1 @@
-# nursery
- This repo is a website for primary school content
+# THis site is live at https://freshteacher.software/nursery/
