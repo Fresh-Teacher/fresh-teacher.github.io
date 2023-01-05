@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
-
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     display: none;
 }
 
@@ -45,27 +44,71 @@ img {
 }
 
 /* Start Here */
-
+/* Hide the navigation drawer by default */
+#nav-drawer {
+    z-index: 2; /* higher than the z-index of the header element */
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 250px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: none;
+  }
+  
+  /* Style the navigation drawer */
+  #nav-drawer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 250px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Style the navigation links */
+  #nav-drawer a {
+    display: block;
+    padding: 15px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  
+  /* Style the navigation drawer trigger button */
+  #nav-drawer-trigger {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+    display: inline-block;
+    padding: 10px;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  
+  
 header {
     background-color: var(--grey);
-    padding: 1rem;
+    /* padding: 1rem; */
 }
 
 header h1 {
     font-size: 2.5rem;
     line-height: 2;
+    text-align: center;
     color: var(--color-primary);
 }
 
 form input {
-    width: 20rem;
+    width: 15rem;
     padding: 0.7rem;
     border: none;
     border-radius: 5px;
     outline: none;
     font-size: 1rem;
     border-bottom: 2px solid var(--color-sec);
-    margin-bottom: 1rem;
 }
 
 .btn {
@@ -158,3 +201,231 @@ form input {
         padding: 1rem;
     }
 }
+
+  /*centre header*/
+h1 {
+    text-align: center;
+  }
+
+    /*centre search box*/
+  .search-box {
+    margin-bottom: 10px; /* add some margin at the bottom */
+    display: flex;
+    justify-content: center;
+  }
+
+  /*centre filter buttons*/
+  .filter-box {
+    margin-top: 10px; /* add some margin at the top */
+    display: flex;
+    justify-content: center;
+  }
+  
+  .filter-box {
+        display: flex; /* use the flex layout */
+    justify-content: space-around; /* evenly distribute the buttons within the filter box */
+  }
+  
+  .filter-box a {
+    margin: 0 2px;
+    /* add padding as needed */
+  }
+ 
+ header {
+    /* Original styles for the header element */
+ }
+ 
+ header.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%; /* Add this line to make the header take up the full width when it is fixed */
+ }
+ /* Style the WhatsApp message icon */
+ #whatsapp-icon {
+    position: fixed; /* Set the icon to fixed position */
+    bottom: 50; /* Align the icon to the bottom of the page */
+    right: 20px; /* Add some padding to the right side */
+    z-index: 1; /* Make sure the icon is displayed on top of other elements */
+    padding-bottom: 20px;
+  }
+
+  #whatsapp-icon i {
+    font-size: 50px; /* Set the size of the icon */
+    color: #25D366; /* Set the color of the icon */
+  }
+
+  #whatsapp-icon {
+position: fixed; /* Set the icon to fixed position */
+bottom: 50px; /* Align the icon 50 pixels above the bottom of the page */
+right: 20px; /* Add some padding to the right side */
+z-index: 1; /* Make sure the icon is displayed on top of other elements */
+}
+
+#refresh-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #000; /* set the color of the icon */
+    position: fixed;
+    margin-right: 1rem;
+    padding-left: 60px; /* Add padding on the bottom of the refresh button */
+
+  }
+  
+  #refresh-button i {
+    transform: rotate(0deg); /* set the initial rotation of the icon */
+    transition: transform 0.9s ease; /* add a transition to the rotation */
+  }
+
+  #refresh-button.rotating i {
+    transform: rotate(360deg);
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  #refresh-button:hover i {
+    transform: rotate(360deg); /* rotate the icon when hovering */
+  }
+  
+
+/* Style for selected buttons */
+#navbar a.selected {
+    background-color: #333;
+    color: #02569B;
+  }
+  
+ /* Style the selected navbar item */
+#navbar a.selected {
+  background-color: #ddd; /* Add a background color */
+  border-radius: 20px; /* Add rounded corners */
+  padding: 10px 20px; /* Add padding */
+}
+
+   /* Style the navigation bar */
+   #navbar {
+        background-color: #02569B; /* Set the background color to red */
+        color: #fff;
+        /* Set the navbar to fixed position at the bottom of the page */
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        /* Add some padding and styling for the links */
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 10px 20px;
+      }
+
+      #navbar a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
+      }
+
+      #navbar a:hover {
+        color: blue;
+      }
+
+      header {
+        background-color: #02569B; /* same color as the bottom nav bar */
+        position: fixed;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5rem 1rem;
+    }
+      
+      header h1 {
+        text-align: center;
+        font-size: 2.5rem;
+        line-height: 2;
+        color: var(--color-primary);
+      }
+
+      #nav-drawer {
+        background-color: #02569B; /* same color as the header element */
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 250px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      }
+      
+
+      #nav-drawer-trigger {
+        z-index: 2; /* same as the z-index of the nav-drawer element */
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 1;
+        display: inline-block;
+        padding: 10px;
+        color: #ffffff;
+        cursor: pointer;
+        border: none; /* remove the rectangular border */
+        transform: scale(1.5); /* Increase the size of the hamburger menu icon */
+
+      }
+
+      #nav-drawer-trigger {
+        background-color: transparent;
+      }
+      
+
+/*hide items*/
+      .hidden {
+        display: none;
+      }
+
+      .welcome-message p {
+    right: 10px; /* Add some padding to the right side */
+    left: 10px; /* Add some padding to the right side */
+      }
+
+      .main-container p {
+        padding: 10px;
+      }      
+
+      /* #main-container {
+        height: 400px;
+        overflow-y: scroll;
+        overflow-x: scroll;
+
+      } */
+      
+      /*add share button*/
+      .share-btn {
+        display: inline-block;
+        background-color: #9d0191; /* or any other color you want */
+        color: #fff;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
+      .share-btn i {
+        margin-right: 0.5rem;
+      }
+
+      .share-btn-container {
+        padding-top:210px;
+      }
+      
+      
+      
+
+
+
+
+    
+      
+      
+      
+
+ 
