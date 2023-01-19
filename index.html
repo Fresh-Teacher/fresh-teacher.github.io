@@ -74,28 +74,56 @@
 </head>
 
 <body>
- <header>
-        <div class="container">
-            <h1>Search Files</h1>
-            <!-- Search Box -->
-            <div class="search-box">
-                <form action="" onsubmit="return false">
-                    <input type="text" id="search" placeholder="Type a keyword here to search..." />
-                </form>
-            </div>
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KGD6TVT"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
-            <div class="filter-box">
-                <a href="https://freshteacher.software/nursery/" class="btn active" data-filter="notes">Nursery</a>
-                <a href="https://freshteacher.software/primary/" class="btn" data-filter="schemes">Primary</a>
-                <a href="https://freshteacher.software/secondary/" class="btn" data-filter="exams">Secondary</a>
-            </div>
+    <!-- Add a WhatsApp message icon -->
+   <a href="https://api.whatsapp.com/send?phone=+256750687790&text=Hi%20Fresh%20Teacher" id="whatsapp-icon">
+
+    <!-- Use the font awesome WhatsApp icon -->
+    <i class="fab fa-whatsapp fa-phone"></i> </a>
+
+     <!-- Navigation drawer trigger button -->
+   <button id="nav-drawer-trigger"><i class="fas fa-bars"></i></button>
+
+   <!-- Navigation drawer -->
+   <nav id="nav-drawer">
+      <!-- Navigation links -->
+      <a href="https://fresh-teacher.github.io/"><br><br><br>Nursery</a>
+      <a href="https://fresh-teacher.github.io/primary">Primary</a>
+      <a href="https://fresh-teacher.github.io/secondary">Secondary</a>
+   </nav>
+
+  <!-- ======= Header ======= -->
+ 
+  <header>
+    <div class="container">
+        <!-- <h1>Fresh App</h1> -->
+        <!-- Search Box -->
+        <div class="search-box">
+            <form action="" onsubmit="return false">
+                <input type="text" id="search" placeholder="Type a keyword to search..." />
+            </form>
         </div>
-    </header>
-    <main>
-        <div class="main-container">
-            <section class="container" id="store-products">
-                 <!-- Single product - exams -->
-               <div class="store-product exams">
+        <!-- Buttons -->
+       <div class="filter-box">
+            <a href="#" class="btn active" data-filter="all">All</a>
+            <a href="#" class="btn" data-filter="schemes">Schemes</a>
+            <a href="#" class="btn" data-filter="notes">Notes</a>
+            <a href="#" class="btn" data-filter="papers">Papers</a>
+        </div>
+    </div>
+</header>
+
+<main>
+    <br><br><br><br>
+    <div class="main-container">
+        <section class="container" id="store-products">
+         
+              <!-- Single product - exams -->
+              <div class="store-product exams">
                 <img src="./images/fresh teacher software.png" alt="" />
                 <a href="Numbers Middle Term II.pdf" ><p style="text-align:center"><strong> View File</strong></p></a>
                 <div class="product-details">
@@ -1157,14 +1185,21 @@
                           <a href="SCHEME READING FOR TOP CLASS TERM 3.pdf">Download</a>
                       </div>
                   </div>
-            </section>
-            <div class="container no-result">
-                <p>No more files to display! Try searching using a different keyword...</p>
+               </section>
+               <div class="container no-result">
+                  <p>No more files to display! Try searching using a different keyword...</p><br><br><br><br><br><br><br>
+               </div>
             </div>
-        </div>
-    </main>
-
-    <script src="script.js"></script>
-</body>
-
-</html>
+         </main>
+      
+         <!-- Sticky bottom navigation bar -->
+         <nav id="navbar">
+            <a href="https://fresh-teacher.github.io" class="selected">Nursery</a>
+            <a href="https://fresh-teacher.github.io/primary">Primary</a>
+            <a href="https://fresh-teacher.github.io/secondary">Secondary</a>
+         </nav>
+      
+         <script src="script.js"></script>
+      </body>
+      
+      </html>
