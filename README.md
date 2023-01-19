@@ -1,1 +1,1 @@
-# THis site is live at https://freshteacher.software/nurseries
+# This site is live at https://freshteacher.software/
