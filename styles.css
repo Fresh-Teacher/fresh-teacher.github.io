@@ -408,6 +408,11 @@ z-index: 1; /* Make sure the icon is displayed on top of other elements */
         border-radius: 5px;
         cursor: pointer;
       }
+
+      /*capitalise h2 tags*/
+      h2 {
+        text-transform: uppercase;
+      }
       
       .share-btn i {
         margin-right: 0.5rem;
