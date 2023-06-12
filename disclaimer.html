@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Disclaimer - Fresh Teacher's e-Library</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+      margin: 20px;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: black;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    strong {
+      font-weight: bold;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      margin-bottom: 10px;
+    }
+
+    li {
+      margin-bottom: 5px;
+    }
+
+    .navbar-brand {
+  text-decoration: none;
+}
+
+    .navbar-brand-content {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar-brand-text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-left: 10px;
+    }
+
+    .navbar-brand-title {
+      font-weight: bold;
+      text-decoration: none;
+      animation: blink 3s infinite;
+    }
+
+    .navbar-brand-motto {
+      font-size: 12px;
+      color: #888;
+      margin-top: 5px;
+    }
+
+    .navbar {
+      position: sticky;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background-color: #fff;
+      padding: 10px 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Adjust the height and padding of the navbar */
+    .navbar {
+      height: 80px;
+      padding: 10px 20px;
+    }
+
+    footer {
+      background-color: #f6f6f6;
+      padding: 20px;
+      text-align: center;
+      /* Adjust the height of the footer */
+      height: 100px;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @keyframes blink {
+      0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+    <a class="navbar-brand" href="index.html">
+      <div class="navbar-brand-content">
+        <img src="images/logo.png" alt="Fresh Teacher's Logo" width="50" height="50">
+        <div class="navbar-brand-text">
+          <span class="navbar-brand-title"><strong>FRESH TEACHER'S E-LIBRARY</strong></span>
+          <span class="navbar-brand-motto"><em>Learn. Unlearn. Relearn</em></span>
+        </div>
+      </div>
+    </a>
+  </nav>
+
+    <h1>Disclaimer</h1>
+
+    <p>This disclaimer governs your use of Fresh Teacher's e-Library website and services; by using our website and services, you accept this disclaimer in full. If you disagree with any part of this disclaimer, you must not use our website and services.</p>
+
+    <h2>Content Accuracy</h2>
+
+    <p>The information provided on Fresh Teacher's e-Library website is for general informational purposes only. We strive to ensure that the information we provide is accurate and up to date; however, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability with respect to the website or the information, products, services, or related graphics contained on the website for any purpose.</p>
+
+    <h2>No Legal or Professional Advice</h2>
+
+    <p>The content on Fresh Teacher's e-Library website is not intended to be a substitute for professional, educational or legal advice. Always seek the advice of your educational institution, legal counsel, or other qualified professionals regarding any educational or legal matters. Reliance on any information provided by Fresh Teacher's e-Library, or other contributors to the website is solely at your own risk.</p>
+
+    <h2>No Endorsement</h2>
+
+    <p>Fresh Teacher's e-Library may provide links to external websites or resources for informational purposes. However, we do not endorse the views expressed within those external websites or resources. The inclusion of any links does not necessarily imply a recommendation or endorsement of the content or views expressed within them.</p>
+
+    <h2>Limitation of Liability</h2>
+
+    <p>In no event shall Fresh Teacher's e-Library or its affiliates be liable for any direct, indirect, special, incidental, consequential, or punitive damages arising out of or in connection with the use or inability to use our website and services, including but not limited to any loss of profits, business interruption, loss of programs or data, or otherwise, even if expressly advised of the possibility of such damages.</p>
+
+    <h2>Updates and Revisions</h2>
+
+    <p>Fresh Teacher's e-Library reserves the right to revise or update this disclaimer at any time without prior notice. By using our website and services, you agree to be bound by the current version of this disclaimer.</p>
+
+    <!-- Footer -->
+    <footer class="footer" style="background-color: #ffffff; height: 100px; display: flex; justify-content: center; align-items: center;">
+        <div class="container">
+          <p style="text-align: center;">
+            Coded with <span style="color: red;">❦</span> by Fresh Teacher<br>
+            &copy; Fresh Teacher's Software <span id="currentYear"></span><br>
+            <a href="tel:+256750687790">0750687790</a> / <a href="tel:+256786812837">0786812837</a> <br>     
+            <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a> | <a href="disclaimer.html">Disclaimer</a>
+          </p>
+        </div>
+      </footer>
+      <!-- End of Footer -->
+
+    <script>
+      // Get current year for the copyright
+      document.getElementById("currentYear").textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
