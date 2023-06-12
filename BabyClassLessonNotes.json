@@ -1,0 +1,49 @@
+[
+  {
+    "title": "",
+    "description": "Baby Middle",
+    "price":" 5000",
+    "pdfUrl": "https://freshteacher.software/nurseriez/Baby Number Notes Term 2 (1).pdf"
+  },
+  {
+    "title": "Baby Class Aptitude Term 2 Lesson Notes",
+    "description": "Aptitude",
+    "price":" 10000",
+    "pdfUrl": "https://freshteacher.software/Baby Class Aptitude Term 2 Lesson Notes.pdf"
+  },
+      {
+        "title": "Baby Class English Term 2 Lesson Notes",
+        "description": "English",
+        "price":" 15000",
+        "pdfUrl": "https://freshteacher.software/Baby Class English Term 2 Lesson Notes.pdf"
+      },
+      {
+        "title": "Baby Class Numbers Term 2 Lesson Notes",
+        "description": "Numbers",
+        "price":" 25000",
+        "pdfUrl": "https://freshteacher.software/Baby Class Numbers Term 2 Lesson Notes.pdf"
+      },
+      {
+        "title": "Baby Class Reading Term 2 Lesson Notes",
+        "description": "Reading",
+        "price":" 55000",
+        "pdfUrl": "https://freshteacher.software/Baby Class Reading Term 2 Lesson Notes.pdf"
+      },
+      {
+        "title": "Baby Class Reading Term III Lesson Notes",
+        "description": "Reading",
+        "price":" 2000",
+        "pdfUrl": "https://freshteacher.software/Baby Class Reading Term III Lesson Notes.pdf"
+      },{
+        "title": "Baby Class Writing Term 2 Lesson Notes",
+        "description": "Writing",
+        "price":"10000",
+        "pdfUrl": "https://freshteacher.software/Baby Class Writing Term 2 Lesson Notes.pdf"
+      },
+      {
+        "title": "Baby Numbers Term II Lesson Notes",
+        "description": "Numbers",
+        "price":"15000",
+        "pdfUrl": "https://freshteacher.software/Baby Numbers Term II Lesson Notes.pdf"
+      }
+    ]

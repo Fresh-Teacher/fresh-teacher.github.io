@@ -1,0 +1,68 @@
+[
+  {
+    "title": "BABY APTITUDE SCHEMES",
+    "description": "Aptitude",
+    "price": 5000,
+    "pdfUrl": "https://freshteacher.software/nurseriez/BABY SCHEMES OLDMODEL 2019.pdf"
+  },
+  {
+    "title": "Baby class English term iii scheme of work",
+    "description": "English",
+    "price": 10000,
+    "pdfUrl": "https://freshteacher.software/Baby class English term iii scheme of work.pdf"
+  },
+      {
+        "title": "Baby class Literacy iii scheme of work",
+        "description": "Literacy",
+        "price": 15000,
+        "pdfUrl": "https://freshteacher.software/Baby class Literacy iii scheme of work.pdf"
+      },
+      {
+        "title": "Baby class Numbers term iii scheme of work",
+        "description": "Numbers",
+        "price": 25000,
+        "pdfUrl": "https://freshteacher.software/Baby class Numbers term iii scheme of work.pdf"
+      },
+      {
+        "title": "Baby class RE term iii scheme of work",
+        "description": "Religious Education",
+        "price": 55000,
+        "pdfUrl": "https://freshteacher.software/Baby class RE term iii scheme of work.pdf"
+      },
+      {
+        "title": "Baby class Reading term iii scheme of work",
+        "description": "Reading",
+        "price": 2000,
+        "pdfUrl": "https://freshteacher.software/Baby class Reading term iii scheme of work.pdf"
+      },{
+        "title": "Baby class term iii English scheme of work",
+        "description": "English",
+        "price": 10000,
+        "pdfUrl": "https://freshteacher.software/Baby class term iii English scheme of work.pdf"
+      },
+      {
+        "title": "Baby class writing term iii scheme of work",
+        "description": "Writing",
+        "price": 15000,
+        "pdfUrl": "https://freshteacher.software/Baby class writing term iii scheme of work.pdf"
+      },
+      {
+        "title": "Baby Eng Language dev I Scheme Term 2",
+        "description": "English Language Development I",
+        "price": 25000,
+        "pdfUrl": "https://freshteacher.software/Baby Eng Language dev I Scheme Term 2.pdf"
+      },
+      {
+        "title": "Baby Eng Language Devt 2 Scheme Term 2",
+        "description": "English Language Development II",
+        "price": 55000,
+        "pdfUrl": "https://freshteacher.software/Baby Eng Language Devt 2 Scheme Term 2.pdf"
+      },
+      {
+        "title": "Baby Writing Scheme Term 2",
+        "description": "Writing",
+        "price": 10000,
+        "pdfUrl": "https://freshteacher.software/Baby Writing Scheme Term 2.pdf"
+      }
+      
+    ]
