@@ -94,6 +94,15 @@
       margin-top: -12px;
     }
 
+    .page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+
+
     .bookshelf .covers {
       width: 100%;
       height: auto;
@@ -106,12 +115,6 @@
       text-align: center;
       padding: 0px;
     }
-
-    .page-wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
 
     /* Pagination */
     .pagination>li>a,
@@ -134,15 +137,6 @@
       flex: 1 0 auto;
     }
 
-    .footer {
-  flex-shrink: 0;
-  background-color: #ffffff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
     .fade-animation {
       animation: blink 3s infinite;
     }
@@ -162,7 +156,7 @@
     }
   </style>
   <link rel="shortcut icon" href="images/logo.png">
-  <title>FRESH TEACHER'S E-LIBRARY 📚</title>
+  <title>Fresh Teacher's e-Library</title>
 </head>
 
 <body>
@@ -179,109 +173,48 @@
     </a>
   </nav>
   <!-- End Of Navbar -->
-
   <div class="container">
     <marquee class="marq" bgcolor="tomato" behavior=slide direction="left" loop="">
       <strong><em>WELCOME TO FRESH TEACHER'S E-LIBRARY 📚</em></strong>
     </marquee> <!-- PDF HERE -->
     <div class="page-wrapper">
-      <h4 style="text-align: center;">Choose One Class From the Shelf to Continue:</h4>
+      <h4 style="text-align: center;">Choose One Subject From the Shelf to Continue:</h4>
       <div class="bookshelf">
         <div class="covers">
           <div class="thumb book-1">
             <a href="menu baby.html">
-              <img src="images/book2/BABY CLASS.jpg">
+              <img src="images/book2/ENGLISH.jpg">
             </a>
           </div>
           <div class="thumb book-1">
             <a href="menu middle.html">
-              <img src="images/book2/MIDDLE CLASS.jpg">
+              <img src="images/book2/SCIENCE.jpg">
             </a>
           </div>
           <div class="thumb book-1">
             <a href="menu top.html">
-              <img src="images/book2/TOP CLASS.jpg">
+              <img src="images/book2/MTC.jpg">
             </a>
           </div>
           <div class="thumb book-1">
             <a href="menu p1.html">
-              <img src="images/book2/PRIMARY ONE.jpg">
+              <img src="images/book2/SST.jpg">
             </a>
           </div>
           <div class="thumb book-1">
             <a href="menu p2.html">
-              <img src="images/book2/PRIMARY TWO.jpg">
+              <img src="images/book2/R.E.jpg">
             </a>
           </div>
         </div>
-        <img class="shelf-img" src="images/shelf_wood.png">
+        <img class="shelf-img" src="images/shelf_glass.png">
       </div>
-      <br>
-      <div class="bookshelf">
-        <div class="covers">
-          <div class="thumb book-1">
-            <a href="menu p3.html">
-              <img src="images/book2/PRIMARY THREE.jpg">
-            </a>
-          </div>
-          <div class="thumb book-1">
-            <a href="menu p4.html">
-              <img src="images/book2/PRIMARY FOUR.jpg">
-            </a>
-          </div>
-          <div class="thumb book-1">
-            <a href="menu p5.html">
-              <img src="images/book2/PRIMARY FIVE.jpg">
-            </a>
-          </div>
-          <div class="thumb book-1">
-            <a href="menu p6.html">
-              <img src="images/book2/PRIMARY SIX.jpg">
-            </a>
-          </div>
-          <div class="thumb book-1">
-            <a href="menu p7.html">
-              <img src="images/book2/PRIMARY SEVEN.jpg">
-            </a>
-          </div>
-        </div>
-        <img class="shelf-img" src="images/shelf_wood.png">
-      </div><br>
-      <div class="bookshelf">
-        <div class="covers">
-          <div class="thumb book-1">
-            <a href="menu s1.html">
-              <img src="images/book2/SENIOR ONE.jpg">
-            </a>
-          </div>
-          <div class="thumb book-1">
-            <a href="menu s2.html">
-              <img src="images/book2/SENIOR TWO.jpg">
-            </a>
-          </div>
-          <div class="thumb book-1">
-            <a href="menu s3.html">
-              <img src="images/book2/SENIOR THREE.jpg">
-            </a>
-          </div>
-          <div class="thumb book-1">
-            <a href="menu s4.html">
-              <img src="images/book2/SENIOR FOUR.jpg">
-            </a>
-          </div>
-          <div class="thumb book-1">
-            <a href="menu s5.html">
-              <img src="images/book2/SENIOR FIVE.jpg">
-            </a>
-          </div>
-        </div>
-        <img class="shelf-img" src="images/shelf_wood.png">
-      </div><br>
+<br>
       <div class="bookshelf">
         <div class="covers">
           <div class="thumb book-1">
             <a href="menu s6.html">
-              <img src="images/book2/SENIOR SIX.jpg">
+              <img src="images/book2/ALL.jpg">
             </a>
           </div>
           <div class="thumb book-1">
@@ -305,7 +238,7 @@
             </a>
           </div>
         </div>
-        <img class="shelf-img" src="images/shelf_wood.png">
+        <img class="shelf-img" src="images/shelf_glass.png">
       </div>
     </div><br>
     <!-- End Of PDF -->
