@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", event => {
     });
 
     document.querySelector("#btnShare").addEventListener("click", event => {
-        let notesString = "Hello, use the following link to install Fresh Teacher's App so that you can access free educational resources: https://freshteacher.software/Pdflip/index2.html";
+        let notesString = "Hello, use the following link to install Fresh Teacher's App so that you can access free educational resources: https://fresh-teacher.github.io/Pdflip/index2.html";
         navigator.share({
             title: "Fresh Teacher's App",
             text: notesString
