@@ -27,12 +27,12 @@ $(document).ready(function() {
   var searchTimer; // Move the declaration outside the showPage function
 
   $.getJSON("PrimarySixLessonNotes.json", function(data) {
-    var totalPages = Math.ceil(data.length / 21);
+    var totalPages = Math.ceil(data.length / 42);
     var currentPage = 1;
 
     function showPage(page, filteredData) { // Add filteredData as a parameter
-      var start = (page - 1) * 21;
-      var end = start + 21;
+      var start = (page - 1) * 42;
+      var end = start + 42;
       var pdfSections;
 
       if (filteredData) {
@@ -64,7 +64,7 @@ $(document).ready(function() {
         });
 
         // Update the total number of pages based on the filtered data
-        totalPages = Math.ceil(filteredData.length / 21);
+        totalPages = Math.ceil(filteredData.length / 42);
         currentPage = 1;
 
         showPage(currentPage, filteredData); // Pass filteredData to showPage
