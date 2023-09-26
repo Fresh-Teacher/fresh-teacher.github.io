@@ -2,6 +2,31 @@
   {
     "title": "",
     "description": "Primary Four",
+    "price": 5000,
+    "pdfUrl": "https://freshteachers.vercel.app/P.4 ENG BOT III.pdf"
+  },
+  {
+    "title": "",
+    "description": "Primary Four",
+    "price": 5000,
+    "pdfUrl": "https://freshteachers.vercel.app/P.4 SST BOT III.pdf"
+  },
+  {
+    "title": "",
+    "description": "Primary Four",
+    "price": 5000,
+    "pdfUrl": "https://freshteachers.vercel.app/P. 4 MTC BOT III.pdf"
+  },
+  {
+    "title": "",
+    "description": "Primary Four",
+    "price": 5000,
+    "pdfUrl": "https://freshteachers.vercel.app/P. 4 SCIE BOT III.pdf"
+  },
+  
+  {
+    "title": "",
+    "description": "Primary Four",
     "price": 10000,
     "pdfUrl": "https://fresh-teacher.github.io/primary/B.O.T III P.4 SCIENCE, 2019.pdf"
   },
