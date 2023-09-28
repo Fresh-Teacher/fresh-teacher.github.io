@@ -1,4 +1,5 @@
 [
+  
   {
     "title": "",
     "description": "Primary Six",
@@ -22,6 +23,12 @@
     "description": "Primary Six",
     "price": 5000,
     "pdfUrl": "https://freshteachers.vercel.app/P.6 SCIENCE BOT III.pdf"
+  },
+        {
+    "title": "",
+    "description": "Primary Six",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/FreshTube/P.6 Prime BOT.pdf"
   },
   {
     "title": "",
