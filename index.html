@@ -413,12 +413,12 @@
             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 // Display the result in the element with id="demo"
-document.getElementById("demo").innerHTML = "A MERRY CHRISTMAS!<br> Time remaining:<br> " + days + "<font color='red'> Days,</font> " + hours + "<font color='red'>  Hrs,</font> " +
-    minutes + "<font color='red'> Min,<br></font> " + seconds + "<font color='red'> Secs. </font> ";
+document.getElementById("demo").innerHTML = "A MERRY CHRISTMAS!<br> Time remaining:<br> " + days + "<font color='red'> Days,</font> " + hours + "<font color='red'>  Hours,</font> " +
+    minutes + "<font color='red'> Minutes,<br></font> " + seconds + "<font color='red'> Seconds. </font> ";
 
     
 // Add a Bootstrap button to go to the homepage
-document.getElementById("demo").innerHTML += "<br><button class='btn btn-primary' onclick='goToHomepage()'><strong>Go to the Fresh Teacher's Library 📖 📚📒</strong></button>";
+document.getElementById("demo").innerHTML += "<br><button class='btn btn-primary' onclick='goToHomepage()'><strong>Go to Fresh Teacher's Library 📚</strong></button>";
 
 
             // If the count down is finished, write some text 
