@@ -1,109 +1,338 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width,viewport-fit=cover">
-    <title>Fresh App</title>
-    <link rel="manifest" href="app.webmanifest?1">
-    <link rel="stylesheet" href="styles.css">
-    <script src="app.js"></script> 
-    <script src="sw-register.js"></script>
-    <meta name="theme-color" content="#ffc252">
-    <link rel="apple-touch-icon" href="icons/icon-512.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.5.0/css/bootstrap.min.css">
-    <style>
-      body {
-          padding: 0;
-          margin: 0;
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ajax -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+  <!-- Costume CSS -->
+  <link rel="stylesheet" type="text/css" href="css/flipbook.style.css">
+  <link rel="stylesheet" type="text/css" href="css/footer.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+  <!-- Bootstrap Css -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="js/flipbook.min.js"></script>
+  <style type="text/css">
+    body {
+      background-color: #f6f6f6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .container {
+    flex-grow: 1;
+  }
+
+    .navbar-brand {
+      text-decoration: none;
+    }
+
+    .navbar-brand-content {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar-brand-text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-left: 10px;
+    }
+
+    .navbar-brand-title {
+      font-weight: bold;
+      text-decoration: none;
+      animation: blink 3s infinite;
+    }
+
+    .navbar-brand-motto {
+      font-size: 12px;
+      color: #888;
+      margin-top: 5px;
+    }
+
+    .navbar {
+      position: sticky;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background-color: #fff;
+      padding: 10px 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Adjust the height and padding of the navbar */
+    .navbar {
+      height: 80px;
+      padding: 10px 20px;
+    }
+
+    .bookshelf .thumb {
+      display: inline-block;
+      cursor: pointer;
+      margin: 0px 0.5%;
+      width: 15% !important;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, .3);
+      max-width: 120px;
+    }
+
+    .bookshelf .thumb img {
+      width: 100%;
+      display: block;
+      vertical-align: top;
+    }
+
+    .bookshelf .shelf-img {
+      z-index: 0;
+      height: auto;
+      max-width: 100%;
+      vertical-align: top;
+      margin-top: -12px;
+    }
+
+    .bookshelf .covers {
+      width: 100%;
+      height: auto;
+      z-index: 99;
+      position: relative;
+      text-align: center;
+    }
+
+    .bookshelf {
+      text-align: center;
+      padding: 0px;
+    }
+
+    .page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+    /* Pagination */
+    .pagination>li>a,
+    .pagination>li>span {
+      color: #c0392b;
+    }
+
+    .pagination>li>a:hover,
+    .pagination>li>span:hover {
+      color: #c0392b !important;
+    }
+
+    .pagination>li.active>a {
+      background-color: #c0392b !important;
+      border: 0;
+      color: #fff;
+    }
+
+    .flex-grow-1 {
+      flex: 1 0 auto;
+    }
+
+    .footer {
+  flex-shrink: 0;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+    .fade-animation {
+      animation: blink 3s infinite;
+    }
+
+    @keyframes blink {
+      0% {
+        opacity: 1;
       }
-      
-      header {
-          background-color: #ffc252;
-          padding: 10px 0;
-          text-align: center;
-          color: #fff;
+
+      50% {
+        opacity: 0;
       }
-      section {
-          padding: 20px;
+
+      100% {
+        opacity: 1;
       }
-      .container {
-          padding: 20px;
-      }
-      .centered-button {
-          display: flex;
-          justify-content: center;
-      }
-      
-      .custom-button {
-          background-color: blue;
-          color: white;
-          border: none;
-          padding: 10px 20px;
-          border-radius: 5px;
-          position: relative;
-          overflow: hidden;
-      }
-      .custom-button .icon {
-          margin-right: 5px;
-      }
-      .custom-button::before {
-          content: "";
-          position: absolute;
-          top: -100%;
-          left: 0;
-          right: 0;
-          background-color: rgba(255, 255, 255, 0.5);
-          height: 100%;
-          transform: translateY(-100%);
-          transition: transform 0.3s ease;
-      }
-      .custom-button:hover::before {
-          transform: translateY(0%);
-      }
+    }
   </style>
+  <link rel="shortcut icon" href="images/logo.png">
+  <title>FRESH TEACHER'S E-LIBRARY 📚</title>
 </head>
 
 <body>
-    <h1>Fresh Teacher's App</h1><br>
-    <div class="centered-button">
-      <button id="btnInstall" class="custom-button">
-           Install the Fresh App <span class="icon">download</span>                
-                      
-      </button>
-  </div>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+    <a class="navbar-brand" href="index.html">
+      <div class="navbar-brand-content">
+        <img src="images/logo.png" alt="Fresh Teacher's Logo" width="50" height="50">
+        <div class="navbar-brand-text">
+          <span class="navbar-brand-title"><strong>FRESH TEACHER'S E-LIBRARY 📚</strong></span>
+          <span class="navbar-brand-motto"><em>Learn. Unlearn. Relearn</em></span>
+        </div>
+      </div>
+    </a>
+  </nav>
+  <!-- End Of Navbar -->
+
   <div class="container">
-  <h2>The Fresh App</h2>
-  <p>The Fresh App is a comprehensive educational tool designed to enhance the teaching-learning process. It provides a range of resources and features to support both teachers and learners in their educational journey. With Fresh Teacher's App, educators can access various materials and tools to facilitate effective lesson planning and delivery, while learners can benefit from interactive and engaging resources for better understanding and retention of the subjects.</p>
+    <marquee class="marq" bgcolor="tomato" behavior=slide direction="left" loop="">
+      <strong><em>WELCOME TO FRESH TEACHER'S E-LIBRARY 📚</em></strong>
+    </marquee> <!-- PDF HERE -->
+    <div class="page-wrapper">
+      <h4 style="text-align: center;">Choose One Class From the Shelf to Continue:</h4>
+      <div class="bookshelf">
+        <div class="covers">
+          <div class="thumb book-1">
+            <a href="menu baby.html">
+              <img src="images/book2/BABY CLASS.jpg">
+            </a>
+          </div>
+          <div class="thumb book-1">
+            <a href="menu middle.html">
+              <img src="images/book2/MIDDLE CLASS.jpg">
+            </a>
+          </div>
+          <div class="thumb book-1">
+            <a href="menu top.html">
+              <img src="images/book2/TOP CLASS.jpg">
+            </a>
+          </div>
+          <div class="thumb book-1">
+            <a href="menu p1.html">
+              <img src="images/book2/PRIMARY ONE.jpg">
+            </a>
+          </div>
+          <div class="thumb book-1">
+            <a href="menu p2.html">
+              <img src="images/book2/PRIMARY TWO.jpg">
+            </a>
+          </div>
+        </div>
+        <img class="shelf-img" src="images/shelf_wood.png">
+      </div>
+      <br>
+      <div class="bookshelf">
+        <div class="covers">
+          <div class="thumb book-1">
+            <a href="menu p3.html">
+              <img src="images/book2/PRIMARY THREE.jpg">
+            </a>
+          </div>
+          <div class="thumb book-1">
+            <a href="menu p4.html">
+              <img src="images/book2/PRIMARY FOUR.jpg">
+            </a>
+          </div>
+          <div class="thumb book-1">
+            <a href="menu p5.html">
+              <img src="images/book2/PRIMARY FIVE.jpg">
+            </a>
+          </div>
+          <div class="thumb book-1">
+            <a href="menu p6.html">
+              <img src="images/book2/PRIMARY SIX.jpg">
+            </a>
+          </div>
+          <div class="thumb book-1">
+            <a href="menu p7.html">
+              <img src="images/book2/PRIMARY SEVEN.jpg">
+            </a>
+          </div>
+        </div>
+        <img class="shelf-img" src="images/shelf_wood.png">
+      </div><br>
+      <div class="bookshelf">
+        <div class="covers">
+          <div class="thumb book-1">
+            <a href="menu s1.html">
+              <img src="images/book2/SENIOR ONE.jpg">
+            </a>
+          </div>
+          <div class="thumb book-1">
+            <a href="menu s2.html">
+              <img src="images/book2/SENIOR TWO.jpg">
+            </a>
+          </div>
+          <div class="thumb book-1">
+            <a href="menu s3.html">
+              <img src="images/book2/SENIOR THREE.jpg">
+            </a>
+          </div>
+          <div class="thumb book-1">
+            <a href="menu s4.html">
+              <img src="images/book2/SENIOR FOUR.jpg">
+            </a>
+          </div>
+          <div class="thumb book-1">
+            <a href="menu s5.html">
+              <img src="images/book2/SENIOR FIVE.jpg">
+            </a>
+          </div>
+        </div>
+        <img class="shelf-img" src="images/shelf_wood.png">
+      </div><br>
+      <div class="bookshelf">
+        <div class="covers">
+          <div class="thumb book-1">
+            <a href="menu s6.html">
+              <img src="images/book2/SENIOR SIX.jpg">
+            </a>
+          </div>
+          <div class="thumb book-1">
+            <a href="">
+              <!-- <img src="images/book2/2222222222222222.jpg"> -->
+            </a>
+          </div>
+          <div class="thumb book-1">
+            <a href="">
+              <!-- <img src="images/book2/222222222222.jpg"> -->
+            </a>
+          </div>
+          <div class="thumb book-1">
+            <a href="">
+              <!-- <img src="images/book2/2222222222222.jpg"> -->
+            </a>
+          </div>
+          <div class="thumb book-1">
+            <a href="">
+              <!-- <img src="images/book2/22222222222222.jpg"> -->
+            </a>
+          </div>
+        </div>
+        <img class="shelf-img" src="images/shelf_wood.png">
+      </div>
+    </div><br>
+    <!-- End Of PDF -->
 
-  <h2>Schemes of Work</h2>
-  <p>Schemes of Work are comprehensive plans that outline the topics, activities, and assessments to be covered in a particular subject or course. The Fresh App provides a collection of well-structured and organized schemes of work that teachers can use during the preparation of their lessons. These schemes of work serve as a roadmap for teachers, helping them ensure that all necessary content is covered and delivered effectively.</p>
+    <!-- Footer -->
+    <footer class="footer"
+      style="background-color: #ffffff; height: 100px; display: flex; justify-content: center; align-items: center;">
+      <div class="container">
+        <p style="text-align: center;">
+          Made with <span style="color: red;">❦</span> by Mutumba Jesse Paul aka Fresh Teacher<br>
+          &copy; Fresh Teacher's Software <span id="currentYear"></span><br>
+          <a href="tel:+256750687790">0750687790</a> / <a href="tel:+256786812837">0786812837</a> <br>
+          <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a> | <a
+            href="disclaimer.html">Disclaimer</a>
+        </p><br>
+      </div>
+    </footer>
+    <!-- End of Footer -->
 
-  <h2>Lesson Notes</h2>
-  <p>Lesson Notes are detailed summaries of the topics and concepts covered in a specific lesson. The Fresh App offers a wide range of lesson notes that teachers and learners can use as a reference during research and review. These notes provide clear explanations, examples, and key points related to each topic, facilitating better understanding and retention of the subject matter.</p>
-
-  <h2>Past Papers</h2>
-  <p>Past Papers are previous years' examination papers that serve as valuable resources for revision and practice. The Fresh App provides access to a vast collection of past papers from various educational boards and institutions. Teachers can utilize these past papers to create revision exercises, while learners can benefit from solving them to assess their knowledge, identify areas of improvement, and become familiar with the examination format.</p>
-
-  <h2>Educational Games</h2>
-  <p>Educational Games are interactive and engaging activities designed to enhance learning through play. The Fresh App offers a selection of educative games that learners can enjoy while gaining knowledge and skills in various subjects. These games promote incidental learning, where learners acquire knowledge and develop critical thinking, problem-solving, and decision-making abilities in a fun and interactive manner.</p>
-
-  <h2>Educational Videos</h2>
-  <p>Educational Videos are multimedia resources that provide visual explanations and demonstrations of educational concepts. The Fresh App includes a library of educative videos that complement the topics taught in class. Learners can watch these videos to reinforce their understanding, clarify doubts, and explore additional perspectives on the subject matter. Educational videos offer an engaging and dynamic learning experience that caters to different learning styles.</p>
-</div>
-   <br><br>
-    <ul id="toolbar">
-        <li>
-            <button id="btnLearn">
-                <span class="icon">school</span>                
-                Get Started                
-            </button>
-        </li>
-        <li>
-            <button id="btnShare">
-                <span class="icon">share</span>                
-                Share Fresh Teacher's App                
-            </button>
-        </li>
-    </ul>
-    
+    <!-- Bootstrap Js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+    <script>
+      document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+    </script>
 </body>
 </html>
