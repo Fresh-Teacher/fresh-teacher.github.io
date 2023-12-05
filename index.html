@@ -1,338 +1,455 @@
-<!DOCTYPE html>
 <html>
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- ajax -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
-  <!-- Costume CSS -->
-  <link rel="stylesheet" type="text/css" href="css/flipbook.style.css">
-  <link rel="stylesheet" type="text/css" href="css/footer.css">
-  <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
-  <!-- Bootstrap Css -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <script src="js/flipbook.min.js"></script>
-  <style type="text/css">
-    body {
-      background-color: #f6f6f6;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
+        <!-- Define the goToHomepage function -->
+        <script>
+            function goToHomepage() {
+                // Change the URL to your homepage URL
+                window.location.href = "index2.html";
+            }
+        </script>
+<!-- Add these lines to include Bootstrap CSS and JavaScript -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-    .container {
-    flex-grow: 1;
-  }
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="robots" content="noindex" />
+    <meta name="google" content="notranslate" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta property="og:site_name" content="Create Wish" />
+    <meta property="og:image" content="img/ogr.jpg" />
+    <title>The Ssebulibas Christmas Wishes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <style>
+        body {
+            background: #fff;
+        }
 
-    .navbar-brand {
-      text-decoration: none;
-    }
+        .mainContainer {
+            background: url(images/.gif);
+            max-width: 450px;
+            min-height: 200px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 15px;
+            color: #999;
+            padding-bottom: 60px;
+            box-shadow: 0 0 10px 1px rgba(0, 0, 0, .14), 0 1px 14px 2px rgba(0, 0, 0, .12), 0 0 5px -3px rgba(0, 0, 0, .3);
+            background-size: 100%;
+        }
 
-    .navbar-brand-content {
-      display: flex;
-      align-items: center;
-    }
+        #username {
+            color: black;
+            /* Fallback: assume this color ON TOP of image */
+            background: url(img/sname.gif);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: swing 4s infinite;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+            font-size: 35px;
+            padding: 0 10px;
+            font-family: 'SF Espresso Shack', cursive;
+        }
 
-    .navbar-brand-text {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      margin-left: 10px;
-    }
+        #usernameb {
+            color: black;
+            /* Fallback: assume this color ON TOP of image */
+            background: url(img/sname.gif);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: swing 4s infinite;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+            font-size: 25px;
+            padding: 0 10px;
+            font-family: 'SF Espresso Shack', cursive;
+        }
 
-    .navbar-brand-title {
-      font-weight: bold;
-      text-decoration: none;
-      animation: blink 3s infinite;
-    }
+        .wishMessage {
+            color: #fff;
+            width: 90%;
+            font-size: 22px;
+            font-weight: bold;
+            margin-top: 20px;
+            text-shadow: 0px 0px 10px #afafaf;
+        }
 
-    .navbar-brand-motto {
-      font-size: 12px;
-      color: #888;
-      margin-top: 5px;
-    }
+        .wishMessage p {
+            margin: 0.3em 0;
+        }
 
-    .navbar {
-      position: sticky;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 100;
-      background-color: #fff;
-      padding: 10px 20px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
+        @keyframes bounceIn {
+            0%,
+            20%,
+            40%,
+            60%,
+            80%,
+            to {
+                -webkit-animation-timing-function: cubic-bezier(.215, .61, .355, 1);
+                animation-timing-function: cubic-bezier(.215, .61, .355, 1)
+            }
+            0% {
+                opacity: 0;
+                -webkit-transform: scale3d(.3, .3, .3);
+                transform: scale3d(.3, .3, .3)
+            }
+            20% {
+                -webkit-transform: scale3d(1.1, 1.1, 1.1);
+                transform: scale3d(1.1, 1.1, 1.1);
+                color: #FF9933;
+            }
+            40% {
+                -webkit-transform: scale3d(.9, .9, .9);
+                transform: scale3d(.9, .9, .9)
+            }
+            60% {
+                opacity: 1;
+                -webkit-transform: scale3d(1.03, 1.03, 1.03);
+                transform: scale3d(1.03, 1.03, 1.03);
+                color: #fff;
+            }
+            80% {
+                -webkit-transform: scale3d(.97, .97, .97);
+                transform: scale3d(.97, .97, .97);
+            }
+            to {
+                opacity: 1;
+                -webkit-transform: scaleX(1);
+                transform: scaleX(1)
+            }
+        }
 
-    /* Adjust the height and padding of the navbar */
-    .navbar {
-      height: 80px;
-      padding: 10px 20px;
-    }
+        .demo {
+            font-size: 11;
+            font-weight: none;
+            color: #98201f;
+            animation: flash 0s infinite;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="slide.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $curtainopen = false;
+            $(".rope").click(function() {
+                $(this).blur();
+                if ($curtainopen == false) {
+                    $(this).stop().animate({
+                        top: '-171%'
+                    }, {
+                        queue: false,
+                        duration: 350,
+                        easing: 'easeOutBounce'
+                    });
+                    $(".leftcurtain").stop().animate({
+                        width: '1px'
+                    }, 2000);
+                    $(".rightcurtain").stop().animate({
+                        width: '1px'
+                    }, 2000);
+                    $curtainopen = true;
+                } else {
+                    $(this).stop().animate({
+                        top: '-40px'
+                    }, {
+                        queue: false,
+                        duration: 350,
+                        easing: 'easeOutBounce'
+                    });
+                    document.write('');
+                    $(".leftcurtain").stop().animate({
+                        width: '50%'
+                    }, 2000);
+                    $(".rightcurtain").stop().animate({
+                        width: '51%'
+                    }, 2000);
+                    $curtainopen = false;
+                }
+                return false;
+            });
+        });
+    </script>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
 
-    .bookshelf .thumb {
-      display: inline-block;
-      cursor: pointer;
-      margin: 0px 0.5%;
-      width: 15% !important;
-      box-shadow: 0px 1px 3px rgba(0, 0, 0, .3);
-      max-width: 120px;
-    }
+        body {
+            text-align: center;
+        }
 
-    .bookshelf .thumb img {
-      width: 100%;
-      display: block;
-      vertical-align: top;
-    }
+        img {
+            border: none;
+        }
 
-    .bookshelf .shelf-img {
-      z-index: 0;
-      height: auto;
-      max-width: 100%;
-      vertical-align: top;
-      margin-top: -12px;
-    }
+        .leftcurtain {
+            width: 50%;
+            height: 120%;
+            top: 0px;
+            left: 0px;
+            position: absolute;
+            z-index: 2;
+        }
 
-    .bookshelf .covers {
-      width: 100%;
-      height: auto;
-      z-index: 99;
-      position: relative;
-      text-align: center;
-    }
+        .rightcurtain {
+            width: 50%;
+            height: 120%;
+            right: 0px;
+            top: 0px;
+            position: absolute;
+            z-index: 3;
+        }
 
-    .bookshelf {
-      text-align: center;
-      padding: 0px;
-    }
+        .rightcurtain img,
+        .leftcurtain img {
+            width: 100%;
+            height: 100%;
+        }
 
-    .page-wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
+        .logo {
+            margin: 0px auto;
+            margin-top: 150px;
+        }
 
-    /* Pagination */
-    .pagination>li>a,
-    .pagination>li>span {
-      color: #c0392b;
-    }
+        .rope {
+            position: absolute;
+            top: 15px;
+            left: 23%;
+            z-index: 4;
+        }
 
-    .pagination>li>a:hover,
-    .pagination>li>span:hover {
-      color: #c0392b !important;
-    }
+        .centered {
+            position: absolute;
+            top: 75%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
 
-    .pagination>li.active>a {
-      background-color: #c0392b !important;
-      border: 0;
-      color: #fff;
-    }
+        a.rope {
+            text-decoration: none;
+        }
 
-    .flex-grow-1 {
-      flex: 1 0 auto;
-    }
+        .enter-name input[type=name] {
+            background-color: #F2F919;
+            color: black;
+            border-radius: 10px;
+            box-sizing: border-box;
+            border-color: blue;
+            padding: 15px;
+            position: fixed;
+            left: 10px;
+            bottom: 5px;
+            height: 50px;
+            width: 70%;
+            text-align: center;
+            font-size: 22px;
+            display: inline-block;
+        }
 
-    .footer {
-  flex-shrink: 0;
-  background-color: #ffffff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+        .enter-name .btn {
+            border-radius: 10px;
+            font-size: 21px;
+            padding: 4px;
+            position: fixed;
+            right: 2px;
+            bottom: 5px;
+            height: 50px;
+            width: 23%;
+            display: inline-block;
+            color: black;
+            background-color: #10E43A;
+            border-color: black;
+            letter-spacing: .5px;
+            transition: .2s ease-out;
+            cursor: pointer;
+            line-height: 36px;
+            outline: 0;
+            text-transform: uppercase;
+            vertical-align: middle;
+            text-decoration: none;
+            animation-duration: 4s !important;
+        }
 
-    .fade-animation {
-      animation: blink 3s infinite;
-    }
+        .enter-name input[type=name]::-webkit-input-placeholder {
+            color: black;
+            font-size: 18px;
+        }
 
-    @keyframes blink {
-      0% {
-        opacity: 1;
-      }
+        .enter-name input[type=name]::-moz-placeholder {
+            color: #eee;
+            font-size: 18px;
+        }
 
-      50% {
-        opacity: 0;
-      }
+        .enter-name input[type=name]:focus::-webkit-input-placeholder {
+            color: #c0392b;
+        }
 
-      100% {
-        opacity: 1;
-      }
-    }
-  </style>
-  <link rel="shortcut icon" href="images/logo.png">
-  <title>FRESH TEACHER'S E-LIBRARY 📚</title>
+        .enter-name input[type=name]:focus::-moz-placeholder {
+            color: #c0392b;
+            font-size: 18px;
+        }
+
+        .m1 {
+            position: fixed;
+            left: 1%;
+            width: auto;
+            height: 100%;
+            top: 1%;
+            color: #000;
+        }
+
+        .m2 {
+            position: fixed;
+            right: 1%;
+            width: auto;
+            height: 100%;
+            top: 1%;
+            color: #000;
+        }
+    </style>
 </head>
 
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
-    <a class="navbar-brand" href="index.html">
-      <div class="navbar-brand-content">
-        <img src="images/logo.png" alt="Fresh Teacher's Logo" width="50" height="50">
-        <div class="navbar-brand-text">
-          <span class="navbar-brand-title"><strong>FRESH TEACHER'S E-LIBRARY 📚</strong></span>
-          <span class="navbar-brand-motto"><em>Learn. Unlearn. Relearn</em></span>
+    <div class="leftcurtain"><img src="gate1.jpg" /></div>
+    <div class="rightcurtain"><img src="gate2.jpg" /></div>
+    <a class="rope" href="" onclick="PlaySound()">
+        <div style="font-size: 25px;text-shadow: 1px 1px 3px black, 1px 1px 3px black, -1px -1px 3px black, -1px -1px 3px black;color:#ff0000; font-weight: bold;"><br><b>Touch the Door<br></b></div> <img src="img/arrow1.gif" height="auto" width="70px" style="animation: tada 0s infinite"><br>
+        <img src="img/guda.png" width="70%" height="70" style="animation: tada 7s infinite;" />
         </div>
-      </div>
     </a>
-  </nav>
-  <!-- End Of Navbar -->
+    <marquee class="m1" behavior="scroll" direction="up" scrolldelay="0"> <br>
+        <img src="img/mt1.png" height="30px" width="30px" /><br><br>
+        <img src="img/mt2.png" height="30px" width="30px" /><br><br>
+        <img src="img/mt3.png" height="30px" width="30px" /><br><br>
+        <img src="img/mt4.png" height="30px" width="30px" /><br><br>
+        <img src="img/mt5.png" height="30px" width="30px" /><br><br>
+        <img src="img/mt6.png" height="30px" width="30px" /><br><br>
+        <img src="img/mt7.png" height="30px" width="30px" /><br><br>
+        <img src="img/mt8.png" height="30px" width="30px" /><br><br>
+        <img src="img/mt1.png" height="30px" width="30px" /><br><br>
+        <img src="img/mt2.png" height="30px" width="30px" /><br><br>
+        <img src="img/mt3.png" height="30px" width="30px" /><br><br>
+        <img src="img/mt4.png" height="30px" width="30px" /><br><br>
+        <img src="img/mt5.png" height="30px" width="30px" /><br><br>
+        <img src="img/mt6.png" height="30px" width="30px" /><br><br>
+        <img src="img/mt7.png" height="30px" width="30px" /><br><br>
+        <img src="img/mt8.png" height="30px" width="30px" /><br><br>
+        <img src="img/mt1.png" height="30px" width="30px" /><br><br>
+        <img src="img/mt2.png" height="30px" width="30px" /><br><br>
+        <img src="img/mt3.png" height="30px" width="30px" /><br><br>
+        <img src="img/mt4.png" height="30px" width="30px" /><br><br>
+        <img src="img/mt5.png" height="30px" width="30px" /><br><br>
+        <img src="img/mt6.png" height="30px" width="30px" /><br><br>
+        <img src="img/mt7.png" height="30px" width="30px" /><br><br>
+        <img src="img/mt8.png" height="30px" width="30px" /><br><br>
+    </marquee>
+    <marquee class="m2" behavior="scroll" direction="down" scrolldelay="0"> <br>
+        <img src="img/mt1.png" height="30px" width="30px" /><br><br>
+        <img src="img/mt2.png" height="30px" width="30px" /><br><br>
+        <img src="img/mt3.png" height="30px" width="30px" /><br><br>
+        <img src="img/mt4.png" height="30px" width="30px" /><br><br>
+        <img src="img/mt5.png" height="30px" width="30px" /><br><br>
+        <img src="img/mt6.png" height="30px" width="30px" /><br><br>
+        <img src="img/mt7.png" height="30px" width="30px" /><br><br>
+        <img src="img/mt8.png" height="30px" width="30px" /><br><br>
+        <img src="img/mt1.png" height="30px" width="30px" /><br><br>
+        <img src="img/mt2.png" height="30px" width="30px" /><br><br>
+        <img src="img/mt3.png" height="30px" width="30px" /><br><br>
+        <img src="img/mt4.png" height="30px" width="30px" /><br><br>
+        <img src="img/mt5.png" height="30px" width="30px" /><br><br>
+        <img src="img/mt6.png" height="30px" width="30px" /><br><br>
+        <img src="img/mt7.png" height="30px" width="30px" /><br><br>
+        <img src="img/mt8.png" height="30px" width="30px" /><br><br>
+        <img src="img/mt1.png" height="30px" width="30px" /><br><br>
+        <img src="img/mt2.png" height="30px" width="30px" /><br><br>
+        <img src="img/mt3.png" height="30px" width="30px" /><br><br>
+        <img src="img/mt4.png" height="30px" width="30px" /><br><br>
+        <img src="img/mt5.png" height="30px" width="30px" /><br><br>
+        <img src="img/mt6.png" height="30px" width="30px" /><br><br>
+        <img src="img/mt7.png" height="30px" width="30px" /><br><br>
+        <img src="img/mt8.png" height="30px" width="30px" /><br><br>
+    </marquee>
+    <div class="mainContainer" id="mainContainer">
+       
+        <br>
+        <h1 id="username" style="font-family:SF Espresso Shack;">Fresh Teacher</h1>
+        <h3 class="fromMessage" id="fromMessage"></h3><br>
 
-  <div class="container">
-    <marquee class="marq" bgcolor="tomato" behavior=slide direction="left" loop="">
-      <strong><em>WELCOME TO FRESH TEACHER'S E-LIBRARY 📚</em></strong>
-    </marquee> <!-- PDF HERE -->
-    <div class="page-wrapper">
-      <h4 style="text-align: center;">Choose One Class From the Shelf to Continue:</h4>
-      <div class="bookshelf">
-        <div class="covers">
-          <div class="thumb book-1">
-            <a href="menu baby.html">
-              <img src="images/book2/BABY CLASS.jpg">
-            </a>
-          </div>
-          <div class="thumb book-1">
-            <a href="menu middle.html">
-              <img src="images/book2/MIDDLE CLASS.jpg">
-            </a>
-          </div>
-          <div class="thumb book-1">
-            <a href="menu top.html">
-              <img src="images/book2/TOP CLASS.jpg">
-            </a>
-          </div>
-          <div class="thumb book-1">
-            <a href="menu p1.html">
-              <img src="images/book2/PRIMARY ONE.jpg">
-            </a>
-          </div>
-          <div class="thumb book-1">
-            <a href="menu p2.html">
-              <img src="images/book2/PRIMARY TWO.jpg">
-            </a>
-          </div>
+        <img src="img/wishkn.gif" width="50%" height="auto" style="animation: tada 4s infinite;" /><br><br>
+        <div style="font-size: 18px; font-weight: 800; color:green;">
+            <p id="demo"></p>
         </div>
-        <img class="shelf-img" src="images/shelf_wood.png">
-      </div>
-      <br>
-      <div class="bookshelf">
-        <div class="covers">
-          <div class="thumb book-1">
-            <a href="menu p3.html">
-              <img src="images/book2/PRIMARY THREE.jpg">
-            </a>
-          </div>
-          <div class="thumb book-1">
-            <a href="menu p4.html">
-              <img src="images/book2/PRIMARY FOUR.jpg">
-            </a>
-          </div>
-          <div class="thumb book-1">
-            <a href="menu p5.html">
-              <img src="images/book2/PRIMARY FIVE.jpg">
-            </a>
-          </div>
-          <div class="thumb book-1">
-            <a href="menu p6.html">
-              <img src="images/book2/PRIMARY SIX.jpg">
-            </a>
-          </div>
-          <div class="thumb book-1">
-            <a href="menu p7.html">
-              <img src="images/book2/PRIMARY SEVEN.jpg">
-            </a>
-          </div>
-        </div>
-        <img class="shelf-img" src="images/shelf_wood.png">
-      </div><br>
-      <div class="bookshelf">
-        <div class="covers">
-          <div class="thumb book-1">
-            <a href="menu s1.html">
-              <img src="images/book2/SENIOR ONE.jpg">
-            </a>
-          </div>
-          <div class="thumb book-1">
-            <a href="menu s2.html">
-              <img src="images/book2/SENIOR TWO.jpg">
-            </a>
-          </div>
-          <div class="thumb book-1">
-            <a href="menu s3.html">
-              <img src="images/book2/SENIOR THREE.jpg">
-            </a>
-          </div>
-          <div class="thumb book-1">
-            <a href="menu s4.html">
-              <img src="images/book2/SENIOR FOUR.jpg">
-            </a>
-          </div>
-          <div class="thumb book-1">
-            <a href="menu s5.html">
-              <img src="images/book2/SENIOR FIVE.jpg">
-            </a>
-          </div>
-        </div>
-        <img class="shelf-img" src="images/shelf_wood.png">
-      </div><br>
-      <div class="bookshelf">
-        <div class="covers">
-          <div class="thumb book-1">
-            <a href="menu s6.html">
-              <img src="images/book2/SENIOR SIX.jpg">
-            </a>
-          </div>
-          <div class="thumb book-1">
-            <a href="">
-              <!-- <img src="images/book2/2222222222222222.jpg"> -->
-            </a>
-          </div>
-          <div class="thumb book-1">
-            <a href="">
-              <!-- <img src="images/book2/222222222222.jpg"> -->
-            </a>
-          </div>
-          <div class="thumb book-1">
-            <a href="">
-              <!-- <img src="images/book2/2222222222222.jpg"> -->
-            </a>
-          </div>
-          <div class="thumb book-1">
-            <a href="">
-              <!-- <img src="images/book2/22222222222222.jpg"> -->
-            </a>
-          </div>
-        </div>
-        <img class="shelf-img" src="images/shelf_wood.png">
-      </div>
-    </div><br>
-    <!-- End Of PDF -->
+        <br>
+        <img src="img/fastp1.gif" width="100%" height="100%" style="animation: tada 0s infinite;" />
+        <br><br>
+        <center>
+            <div class="wishMessage" style="text-shadow: 1px 1px 3px white, 1px 1px 3px white, -1px -1px 3px white, -1px -1px 3px white;">
+               
+<p style="text-shadow: 1px 1px 3px black, 1px 1px 3px black, -1px -1px 3px black, -1px -1px 3px black;color:red"><marquee><b><i>“ Fresh Teacher Wishes You a Merry Christmas and a Prosperous New Year!”</b></i></marquee> 
+</p>
+</div>
+</center>
 
-    <!-- Footer -->
-    <footer class="footer"
-      style="background-color: #ffffff; height: 100px; display: flex; justify-content: center; align-items: center;">
-      <div class="container">
-        <p style="text-align: center;">
-          Made with <span style="color: red;">❦</span> by Mutumba Jesse Paul aka Fresh Teacher<br>
-          &copy; Fresh Teacher's Software <span id="currentYear"></span><br>
-          <a href="tel:+256750687790">0750687790</a> / <a href="tel:+256786812837">0786812837</a> <br>
-          <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a> | <a
-            href="disclaimer.html">Disclaimer</a>
-        </p><br>
-      </div>
-    </footer>
-    <!-- End of Footer -->
+                <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Dec 25, 2023 00:00:00").getTime();
 
-    <!-- Bootstrap Js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"></script>
-    <script>
-      document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+        // Update the count down every 1000 milliseconds (1 second)
+        var x = setInterval(function() {
+
+            // Get todays date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now an the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+// Display the result in the element with id="demo"
+document.getElementById("demo").innerHTML = "A MERRY CHRISTMAS!<br> Time remaining:<br> " + days + "<font color='red'> Days,</font> " + hours + "<font color='red'>  Hrs,</font> " +
+    minutes + "<font color='red'> Min,<br></font> " + seconds + "<font color='red'> Secs. </font> ";
+
+    
+// Add a Bootstrap button to go to the homepage
+document.getElementById("demo").innerHTML += "<br><button class='btn btn-primary' onclick='goToHomepage()'><strong>Continue to the Library 📚</strong></button>";
+
+
+            // If the count down is finished, write some text 
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "Merry Christmas!";
+            }
+        }, 1000);
     </script>
+<audio id="audiocracker" src="img/song1.mp3" loop></audio>
+<script>
+                function PlaySound() {
+                    var sound = document.getElementById("audiocracker");
+                    sound.play()
+                }
+            </script>
+
+            <!-- Google tag (gtag.js) -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-256451268-1"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+
+                function gtag() {
+                    dataLayer.push(arguments);
+                }
+                gtag('js', new Date());
+
+                gtag('config', 'UA-256451268-1');
+            </script>
+
 </body>
+
 </html>
