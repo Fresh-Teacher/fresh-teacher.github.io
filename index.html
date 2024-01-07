@@ -1,13 +1,28 @@
+<!DOCTYPE html>
 <html>
 
 <head>
-        <!-- Define the goToHomepage function -->
-        <script>
-            function goToHomepage() {
-                // Change the URL to your homepage URL
-                window.location.href = "index2.html";
-            }
-        </script>
+      <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SS26CRENX2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-SS26CRENX2');
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KGD6TVT');</script>
+    <!-- End Google Tag Manager -->
+
 <!-- Add these lines to include Bootstrap CSS and JavaScript -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
@@ -152,7 +167,7 @@
                 }
             }
     </style>
-      <div id="snowflakeContainer"></div>
+      <!-- <div id="snowflakeContainer"></div>
         <script>
             const snowflakeContainer = document.getElementById("snowflakeContainer");
             let snowflakes = [];
@@ -171,7 +186,7 @@
             }
             for (let i = 0; i < 30; i++) createSnowflake(), snowflakes.push(snowflakeContainer.lastChild);
             updateSnowflakes();
-        </script>
+        </script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="slide.js" type="text/javascript"></script>
     <script type="text/javascript">
@@ -894,6 +909,11 @@ body {
 </head>
 
 <body>
+          <!-- Google Tag Manager (noscript) -->
+          <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KGD6TVT" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <div class="leftcurtain"><img src="img/gate2.png" /></div>
     <div class="rightcurtain"><img src="img/gate1.png" /></div>
     <a class="rope" href="" onclick="PlaySound()"><br><br>
