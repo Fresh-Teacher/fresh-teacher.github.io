@@ -1,150 +1,626 @@
 [
-  {
-    "title": "",
-    "description": "English",
-    "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/nurseriez/MIDDLE CLAS WHOLE YEAR LESON PLAN 2019.pdf"
+{
+  "title": "",
+  "description": "Baby Class",
+  "price": 5000,
+  "pdfUrl": "https://fresh-teacher.github.io/baby/RADIO SCHEME OF WORK FOR NURSERY.pdf"
   },
   {
     "title": "",
-    "description": "English",
+    "description": "Middle Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/nurseriez/MIDDLE CLASS NOTES.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/middle/Reading Middle Term III Lesson Notes.pdf"
   },
   {
     "title": "",
-    "description": "English",
+    "description": "Middle Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/nurseriez/MIDDLE CLASS ROUTINE THIRD TERM 2018.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/middle/Reading Middle Term III.pdf"
   },
-  
   {
-    "title": "English Middle Term II Lesson Notes",
-    "description": "English",
-    "price": 10000,
-    "pdfUrl": "https://fresh-teacher.github.io/English Middle Term II Lesson Notes.pdf"
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/Sight_word_poetry_pages_grades_prek_2.pdf"
   },
-  
-      {
-        "title": "LESSON NOTES FOR NUMBERS FOR MIDDLE CLASS TERM II",
-        "description": "NUMBERS",
-        "price": 15000,
-        "pdfUrl": "https://fresh-teacher.github.io/LESSON NOTES FOR NUMBERS FOR MIDDLE CLASS TERM II.pdf"
-      },
-      {
-        "title": "literacy scheme baby term 1",
-        "description": "Literacy",
-        "price": 25000,
-        "pdfUrl": "https://fresh-teacher.github.io/literacy scheme baby term 1.pdf"
-      },
-      {
-        "title": "Middle Class English Term 2 Lesson Notes",
-        "description": "English",
-        "price": 55000,
-        "pdfUrl": "https://fresh-teacher.github.io/Middle Class English Term 2 Lesson Notes.pdf"
-      },
-      {
-        "title": "Middle Class Numbers Term 3 Lesson Notes",
-        "description": "Numbers",
-        "price": 2000,
-        "pdfUrl": "https://fresh-teacher.github.io/Middle Class Numbers Term 3 Lesson Notes.pdf"
-      },{
-        "title": "Middle Class Reading Term 2 Lesson Notes",
-        "description": "Reading",
-        "price": 10000,
-        "pdfUrl": "https://fresh-teacher.github.io/Middle Class Reading Term 2 Lesson Notes.pdf"
-      },
-      {
-        "title": "Middle Class Reading Term 3 Lesson Notes",
-        "description": "Reading",
-        "price": 15000,
-        "pdfUrl": "https://fresh-teacher.github.io/Middle Class Reading Term 3 Lesson Notes.pdf"
-      },
-      {
-        "title": "Middle Numbers Term II Lesson Notes",
-        "description": "Numbers",
-        "price": 25000,
-        "pdfUrl": "https://fresh-teacher.github.io/Middle Numbers Term II Lesson Notes.pdf"
-      },
-      {
-        "title": "Middle Numbers Term III Lesson Notes",
-        "description": "Numbers",
-        "price": 55000,
-        "pdfUrl": "https://fresh-teacher.github.io/Middle Numbers Term III Lesson Notes.pdf"
-      },
-      {
-        "title": "Middle Reading Term 3 Lesson Notes",
-        "description": "Reading",
-        "price": 2000,
-        "pdfUrl": "https://fresh-teacher.github.io/Middle Reading Term 3 Lesson Notes.pdf"
-      },{
-        "title": "Middle Reading Term II Lesson Notes",
-        "description": "Reading",
-        "price": 10000,
-        "pdfUrl": "https://fresh-teacher.github.io/Middle Reading Term II Lesson Notes.pdf"
-      },
-      {
-        "title": "Numbers Middle Term II Lesson Notes",
-        "description": "Numbers",
-        "price": 15000,
-        "pdfUrl": "https://fresh-teacher.github.io/Numbers Middle Term II Lesson Notes.pdf"
-      },
-      {
-        "title": "NURSERY ART AND CRAFT TERM 2 scheme of work",
-        "description": "ART AND CRAFT",
-        "price": 25000,
-        "pdfUrl": "https://fresh-teacher.github.io/NURSERY ART AND CRAFT TERM 2 scheme of work.pdf"
-      },
-      {
-        "title": "NURSERY GENERAL KNOWLEDGE 2 scheme of work",
-        "description": "GENERAL KNOWLEDGE",
-        "price": 55000,
-        "pdfUrl": "https://fresh-teacher.github.io/NURSERY GENERAL KNOWLEDGE 2 scheme of work.pdf"
-      },
-      {
-        "title": "NURSERY general knowledge scheme of work",
-        "description": "General Knowledge",
-        "price": 2500,
-        "pdfUrl": "https://fresh-teacher.github.io/NURSERY general knowledge scheme of work.pdf"
-      },{
-        "title": "NURSERY LANGUAGE TERM 2 scheme of work",
-        "description": "LANGUAGE",
-        "price": 37000,
-        "pdfUrl": "https://fresh-teacher.github.io/NURSERY LANGUAGE TERM 2 scheme of work.pdf"
-      },
-      {
-        "title": "NURSERY NUMBERS TERM 2 scheme of work",
-        "description": "Numbers",
-        "price": 13000,
-        "pdfUrl": "https://fresh-teacher.github.io/NURSERY NUMBERS TERM 2 scheme of work.pdf"
-      },
-      {
-        "title": "NURSERY PE TERM 2 scheme of work",
-        "description": "Physical Education",
-        "price": 45000,
-        "pdfUrl": "https://fresh-teacher.github.io/NURSERY PE TERM 2 scheme of work.pdf"
-      },
-      {
-        "title": "Nursery rhymes term two scheme of work",
-        "description": "Rhymes",
-        "price": 57500,
-        "pdfUrl": "https://fresh-teacher.github.io/Nursery rhymes term two scheme of work.pdf"
-      },
-      {
-        "title": "RADIO SCHEME OF WORK FOR NURSERY scheme of work",
-        "description": "Radio",
-        "price": 24800,
-        "pdfUrl": "https://fresh-teacher.github.io/RADIO SCHEME OF WORK FOR NURSERY scheme of work.pdf"
-      },{
-        "title": "Reading Middle Term III Lesson Notes",
-        "description": "Reading",
-        "price": 86000,
-        "pdfUrl": "https://fresh-teacher.github.io/Reading Middle Term III Lesson Notes.pdf"
-      },
-      {
-        "title": "VIDEO SCHEME OF WORK FOR NURSERY scheme of work",
-        "description": "Video",
-        "price": 11000,
-        "pdfUrl": "https://fresh-teacher.github.io/VIDEO SCHEME OF WORK FOR NURSERY scheme of work.pdf"
-      }
-    ]
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/Single_Letter-Sounds_Flash_Cards.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/the-44-phonemes-of-english.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/UK-RE-Sight-Words-Sentences.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/VIDEO SCHEME OF WORK FOR NURSERY.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/word_families_and_sight_words طبعاةةةة.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/1st-Grade-Literacy-Packet.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/02. Practice Stories For Beginning Readers author Kathryn J. Davis.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/03. Basic Short Vowels author Kathryn J. Davis.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/04. Rhyming Short Vowel Workbook  author Kathryn J. Davis.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/05. Rhyming Short Vowel Words And Sentences  author Kathryn J. Davis.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/06. Learning The Alphabet ABC - Workbook 1 author Kathryn J. Davis.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/11. Letters and Sounds author Various authors .pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/12. World of Letters Kindergarten author Oxford University.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/14. A Child Becomes a Reader author Bonnie B. Armbruster, Fran Lehr, Jean Osborn.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/15. How young children learn to read author B. A. Essay.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/18. Alphabet (Article) author Various authors .pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/19. Fun with Phonics! (Presentation) author Melisa Evans, Stacy Anthony.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/21. Tips for Helping Children Learn to Read (Article) authoe University of Cyprus.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/22. Teach Your Child to Read in 100 Easy Lessons (Presentation) author Cary Andrews.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/A_Game_of_Shapes_.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/Alphabet Charts - TMMP Sample.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/alphabet_letter_family_a-d_posters.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/A-z.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/BOOST Guide 3-5 years.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/BOOST GUIDE 6-8 YEARS.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/Connect PHONICS CARDS.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/Connect+English+T1+KG2+Flash+Car.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/CVC-Booklets-Set-Three-Copyright-2023-English-Created-Resources.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/CVC-Fluency-Sentences-Spelling-List-2022-English-Created-Resources.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/Debbies_caregivers_guide_FINAL_4_1.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/ECD_FRamework.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/English Middle Term II Lesson Notes.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/English Middle Term II.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/ENGLISH_-_BOOK_2_MIDDLE_CLASS.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/EYFS%20Phonics%20and%20Provision.161698873-1.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/How To Teach Your Child in Reading and Writing.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/intelligent End of Term 2 Examination 2023 5-6 years.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/Jolly Phonics I.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/Jolly Phonics II.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/Jolly Phonics III.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/Jolly Phonics Parent TEachers Guide.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/Jolly%20Phonics%20Actions%20Sheet%20.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/jolly-phonics-pupil-book-1.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/LEARNING-FRAMEWORK-ED-28-Feb-2006.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/LESSON NOTES FOR NUMBERS FOR MIDDLE CLASS TERM II.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/LESSON-NOTES-FOR-ENGLISH-FOR-MIDDLE-CLASS-TERM-III-SIR-APOLLO-KAGGWA-SCHOOLS.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/LESSON-NOTES-FOR-NUMBERS-FOR-MIDDLE-CLASS-TERM-III.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/LESSON-NOTES-FOR-NUMBERS-FOR-MIDDLE-CLASS-TERM-ONE.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/LESSON-NOTES-FOR-READING-FOR-MIDDLE-CLASS-TERM-I.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/LITERACY I.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/Mastering Kindergarten Skills ( PDFDrive ).pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/MIDDLE CLAS WHOLE YEAR LESON PLAN 2019.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/Middle Class English Term 2 Lesson Notes.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/Middle Class English Term 2.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/MIDDLE CLASS LESSON NOTES TERM III,2023  OSEB..pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/MIDDLE CLASS NOTES 2020.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/MIDDLE CLASS NOTES.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/Middle Class Numbers Term 3 Lesson Notes.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/Middle Class Numbers Term 3 Lesson Notes-1.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/Middle Class Numbers Term 3.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/Middle Class Reading Term 2 Lesson Notes.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/Middle Class Reading Term 2.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/Middle Class Reading Term 3 Lesson Notes.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/Middle Class Reading Term 3.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/MIDDLE CLASS ROUTINE THIRD TERM 2018.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/Middle English Notes Term 2 2019.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/Middle Numbers Term II Lesson Notes.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/Middle Numbers Term II.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/Middle Numbers Term III Lesson Notes.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/Middle Numbers Term III.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/Middle Reading Term 3 Lesson Notes.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/Middle Reading Term 3.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/Middle Reading Term II Lesson Notes.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/Middle Reading Term II.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/Middle-Class-English-Term-2.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/Middle-Class-Reading-Term-2.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/Middle-Class-Reading-Term-3.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/My Reading Log.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/NEW TEACHER COURSES - Copy.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/Numbers Middle Term II Lesson Notes.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/Numbers Middle Term II.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/nursery  SCHEME OF WORK LANGUAGE.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/NURSERY ART AND CRAFT TERM 2.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/NURSERY CLASS LANGUAGE.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/NURSERY GENERAL KNOWLEDGE 2.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/NURSERY general knowledge.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/NURSERY LANGUAGE TERM 2.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/NURSERY NUMBERS TERM 2.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/NURSERY PE TERM 2 (1).pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/NURSERY PE TERM 2.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/Nursery rhymes term two.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/Nursery School Scheme of Work for Aged 0 - 5 Years PDF Download.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/PARENT-TEACHER GUIDE JOLLY PHONICS.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/PHONICS AW FLASH CARDS.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/Phonics Book.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/PHONICS EA FLASH CARDS.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/Phonics Handbook (1992, Jolly Learning Ltd) - libgen.li.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/PHONICS LETTERS.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/PHONICS U FLASH CARDS.pdf"
+  },
+  {
+    "title": "",
+    "description": "Middle Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/middle/Phonics_Sentences_Short_Vowel_Word_Families_from_A_Teachable_Teacher.pdf"
+  }
+]
