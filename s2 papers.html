@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Senior Two Sorted Past Papers</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 60px; /* Adjust according to footer height */
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    padding: 10px 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  a:hover {
+    background-color: #0174f9;
+  }
+
+  /* Navbar styles */
+  .navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 80px; /* Adjust the height of the navbar */
+  }
+
+  .navbar-brand {
+    text-decoration: none;
+  }
+
+  .navbar-brand-content {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-brand-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10px;
+  }
+
+  .navbar-brand-title {
+    font-weight: bold;
+    text-decoration: none;
+    animation: blink 3s infinite;
+  }
+
+  .navbar-brand-motto {
+    font-size: 12px;
+    color: #888;
+    margin-top: 5px;
+  }
+
+  /* Footer styles */
+  .footer {
+    background-color: #ffffff;
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .footer p {
+    text-align: center;
+    font-size: 12px;
+    color: #888;
+  }
+
+  /* Animation */
+  @keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+</style>
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+  <a class="navbar-brand" href="index.html">
+    <div class="navbar-brand-content">
+      <img src="images/logo.png" alt="Fresh Teacher's Logo" width="50" height="50">
+      <div class="navbar-brand-text">
+        <span class="navbar-brand-title"><strong>FRESH TEACHER'S E-LIBRARY 📚</strong></span>
+        <span class="navbar-brand-motto"><em>Learn. Unlearn. Relearn</em></span>
+      </div>
+    </div>
+  </a>
+</nav>
+<!-- End Of Navbar -->
+
+<div class="container">
+  <h1>Senior Two Sorted Past Papers</h1>
+  <ul>
+    <li><a href="SeniorTwoGeographyPastPapers.html">Geography Past Papers</a></li>
+    <li><a href="SeniorTwoHistoryPastPapers.html">History Past Papers</a></li>
+    <li><a href="SeniorTwoHolidayPackages.html">Holiday Packages</a></li>
+    <li><a href="SeniorTwoICTPastPapers.html">ICT Past Papers</a></li>
+    <li><a href="SeniorTwoIREPastPapers.html">IRE Past Papers</a></li>
+    <li><a href="SeniorTwoKiswahiliPastPapers.html">Kiswahili Past Papers</a></li>
+    <li><a href="SeniorTwoLiteraturePastPapers.html">Literature Past Papers</a></li>
+    <li><a href="SeniorTwoLugandaPastPapers.html">Luganda Past Papers</a></li>
+    <li><a href="SeniorTwoMathematicsPastPapers.html">Mathematics Past Papers</a></li>
+    <li><a href="SeniorTwoMusicPastPapers.html">Music Past Papers</a></li>
+    <li><a href="SeniorTwoPhysicalEducationPastPapers.html">Physical Education Past Papers</a></li>
+    <li><a href="SeniorTwoPhysicsPastPapers.html">Physics Past Papers</a></li>
+    <li><a href="SeniorTwoTDPastPapers.html">Technical Drawing Past Papers</a></li>
+    <li><a href="SeniorTwoAgriculturePastPapers.html">Agriculture Past Papers</a></li>
+    <li><a href="SeniorTwoAllPastPapers.html">All Past Papers</a></li>
+    <li><a href="SeniorTwoArtPastPapers.html">Art Past Papers</a></li>
+    <li><a href="SeniorTwoBiologyPastPapers.html">Biology Past Papers</a></li>
+    <li><a href="SeniorTwoChemistryPastPapers.html">Chemistry Past Papers</a></li>
+    <li><a href="SeniorTwoCommercePastPapers.html">Commerce Past Papers</a></li>
+    <li><a href="SeniorTwoCREPastPapers.html">CRE Past Papers</a></li>
+    <li><a href="SeniorTwoEnglishPastPapers.html">English Past Papers</a></li>
+    <li><a href="SeniorTwoEntrepreneurshipPastPapers.html">Entrepreneurship Past Papers</a></li>
+    <li><a href="SeniorTwoFrenchPastPapers.html">French Past Papers</a></li>
+  </ul>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <p>
+      &copy; Fresh Teacher's Technologies <span id="currentYear"></span><br>
+    </p>
+  </div>
+</footer>
+<!-- End of Footer -->
+
+<!-- Script to update the current year -->
+<script>
+  document.getElementById('currentYear').innerText = new Date().getFullYear();
+</script>
+
+</body>
+</html>

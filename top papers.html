@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Top Class Past Papers</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 100px; /* Adjust according to footer height */
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    padding: 10px 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  a:hover {
+    background-color: #0174f9;
+  }
+
+  /* Navbar styles */
+  .navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 80px; /* Adjust the height of the navbar */
+  }
+
+  .navbar-brand {
+    text-decoration: none;
+  }
+
+  .navbar-brand-content {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-brand-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10px;
+  }
+
+  .navbar-brand-title {
+    font-weight: bold;
+    text-decoration: none;
+    animation: blink 3s infinite;
+  }
+
+  .navbar-brand-motto {
+    font-size: 12px;
+    color: #888;
+    margin-top: 5px;
+  }
+
+  /* Footer styles */
+  .footer {
+    background-color: #ffffff;
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .footer p {
+    text-align: center;
+    font-size: 12px;
+    color: #888;
+  }
+
+  /* Animation */
+  @keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+</style>
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+  <a class="navbar-brand" href="index.html">
+    <div class="navbar-brand-content">
+      <img src="images/logo.png" alt="Fresh Teacher's Logo" width="50" height="50">
+      <div class="navbar-brand-text">
+        <span class="navbar-brand-title"><strong>FRESH TEACHER'S E-LIBRARY 📚</strong></span>
+        <span class="navbar-brand-motto"><em>Learn. Unlearn. Relearn</em></span>
+      </div>
+    </div>
+  </a>
+</nav>
+<!-- End Of Navbar -->
+
+<div class="container">
+  <h1>Top Class Past Papers</h1>
+  <ul>
+    <li><a href="TopClassLiteracyPastPapers.html">Literacy Past Papers</a></li>
+    <li><a href="TopClassMathemeticalConceptsPastPapers.html">Mathematical Concepts Past Papers</a></li>
+    <li><a href="TopClassReadingPastPapers.html">Reading Past Papers</a></li>
+    <li><a href="TopClassSocialDevelopmentPastPapers.html">Social Development Past Papers</a></li>
+    <li><a href="TopClassWritingTheologyPastPapers.html">Writing Theology Past Papers</a></li>
+    <li><a href="TopClassEnglishPastPapers.html">English Past Papers</a></li>
+    <li><a href="TopClassHealthHabitsPastPapers.html">Health Habits Past Papers</a></li>
+    <li><a href="TopClassHolidayPackages.html">Holiday Packages</a></li>
+    <li><a href="TopClassLanguageDevelopmentPastPapers.html">Language Development Past Papers</a></li>
+  </ul>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <p>
+      &copy; Fresh Teacher's Technologies <span id="currentYear"></span><br>
+    </p>
+  </div>
+</footer>
+<!-- End of Footer -->
+
+<!-- Script to update the current year -->
+<script>
+  document.getElementById('currentYear').innerText = new Date().getFullYear();
+</script>
+
+</body>
+</html>
