@@ -1,471 +1,525 @@
 [
-{
+    {
+  "title": "",
+  "description": "Baby Class",
+  "price": 5000,
+  "pdfUrl": "https://fresh-teacher.github.io/03. Basic Short Vowels author Kathryn J. Davis.pdf"
+  },
+  {
+    "title": "",
+    "description": "Baby Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/baby/04. Rhyming Short Vowel Workbook  author Kathryn J. Davis.pdf"
+  },
+  {
+    "title": "",
+    "description": "Baby Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/baby/05. Rhyming Short Vowel Words And Sentences  author Kathryn J. Davis.pdf"
+  },
+  {
+    "title": "",
+    "description": "Baby Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/baby/06. Learning The Alphabet ABC - Workbook 1 author Kathryn J. Davis.pdf"
+  },
+  {
+    "title": "",
+    "description": "Baby Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/baby/10. First Steps in Reading and Writing author Gouvernement du Québec.pdf"
+  },
+  {
+    "title": "",
+    "description": "Baby Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/baby/11. Letters and Sounds author Various authors .pdf"
+  },
+  {
+    "title": "",
+    "description": "Baby Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/baby/12. World of Letters Kindergarten author Oxford University.pdf"
+  },
+  {
+    "title": "",
+    "description": "Baby Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/baby/13. Learning To Read, Reading To Learn author Various authors .pdf"
+  },
+  {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/05. Rhyming Short Vowel Words And Sentences  author Kathryn J. Davis.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/14. A Child Becomes a Reader author Bonnie B. Armbruster, Fran Lehr, Jean Osborn.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/06. Learning The Alphabet ABC - Workbook 1 author Kathryn J. Davis.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/15. How young children learn to read author B. A. Essay.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/04. Rhyming Short Vowel Workbook  author Kathryn J. Davis.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/16. How to help your child learn to read and love reading author Government of Prince Edward Island.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/CVC-Booklets-Set-Three-Copyright-2023-English-Created-Resources.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/18. Alphabet (Article) author Various authors .pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/Debbies_caregivers_guide_FINAL_4_1.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/19. Fun with Phonics! (Presentation) author Melisa Evans, Stacy Anthony.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/Alphabet Charts - TMMP Sample.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/20. Balanced Reader Learning to Read, Reading to Learn (Presentation) author Alison Davis.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/11. Letters and Sounds author Various authors .pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/21. Tips for Helping Children Learn to Read (Article) authoe University of Cyprus.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/Connect PHONICS CARDS.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/22. Teach Your Child to Read in 100 Easy Lessons (Presentation) author Cary Andrews.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/Connect+English+T1+KG2+Flash+Car.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/A_Game_of_Shapes_.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/Mastering Kindergarten Skills ( PDFDrive ).pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/Alphabet Charts - TMMP Sample.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/BOOST Guide 3-5 years.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/alphabet_letter_family_a-d_posters.pdf"
   },
   {
+    "title": "",
+    "description": "Baby Class",
+    "price": 5000,
+    "pdfUrl": "https://fresh-teacher.github.io/baby/A-z.pdf"
+  },
+    {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/BOOST GUIDE 6-8 YEARS.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/Book One baby class 3-4 year.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/PHONICS LETTERS.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/BOOST Guide 3-5 years.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/word_families_and_sight_words طبعاةةةة.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/BOOST GUIDE 6-8 YEARS.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/Sight_word_poetry_pages_grades_prek_2.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/Connect PHONICS CARDS.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/UK-RE-Sight-Words-Sentences.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/Connect+English+T1+KG2+Flash+Car.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/Phonics Book.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/Critical thinking, reading and writing.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/Phonics Handbook (1992, Jolly Learning Ltd) - libgen.li.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/CVC-Booklets-Set-Three-Copyright-2023-English-Created-Resources.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/jolly-phonics-pupil-book-1.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/CVC-Fluency-Sentences-Spelling-List-2022-English-Created-Resources.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/12. World of Letters Kindergarten author Oxford University.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/Debbies_caregivers_guide_FINAL_4_1.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/CVC-Fluency-Sentences-Spelling-List-2022-English-Created-Resources.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/ECD_FRamework.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/A-z.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/EYFS%20Phonics%20and%20Provision.161698873-1.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/Handwriting Top.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/How To Teach Your Child in Reading and Writing.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/Jolly Phonics III.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/intelligent End of Term 2 Examination 2023 5-6 years.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/Jolly Phonics Parent TEachers Guide.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/Jolly Phonics I.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/PARENT-TEACHER GUIDE JOLLY PHONICS.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/Jolly Phonics II.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/A_Game_of_Shapes_.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/Jolly Phonics III.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/PHONICS U FLASH CARDS.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/Jolly Phonics Parent TEachers Guide.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/My Reading Log.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/JOLLY PHONICS READING AND WRITING.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/PHONICS EA FLASH CARDS.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/Jolly%20Phonics%20Actions%20Sheet%20.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/NURSERY CLASS LANGUAGE.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/jolly-phonics-pupil-book-1.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/How To Teach Your Child in Reading and Writing.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/LEARNING-FRAMEWORK-ED-28-Feb-2006.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/NEW TEACHER COURSES - Copy.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/Lesson notes  for  Baby class for Reading  2015.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/LEARNING-FRAMEWORK-ED-28-Feb-2006.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/LESSON-NOTES-FOR-ENGLISH-FOR-MIDDLE-CLASS-TERM-III-SIR-APOLLO-KAGGWA-SCHOOLS.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/ENGLISH LESSON NOTES TOP CLASS 2023.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/LESSON-NOTES-FOR-NUMBERS-FOR-MIDDLE-CLASS-TERM-III.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/Single_Letter-Sounds_Flash_Cards.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/LESSON-NOTES-FOR-NUMBERS-FOR-MIDDLE-CLASS-TERM-ONE.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/EYFS%20Phonics%20and%20Provision.161698873-1.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/LESSON-NOTES-FOR-READING-FOR-BABY-CLASS-TERM-I-II-AND-III (1).pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/Jolly Phonics II.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/LESSON-NOTES-FOR-READING-FOR-MIDDLE-CLASS-TERM-I.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/PHONICS AW FLASH CARDS.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/Mastering Kindergarten Skills ( PDFDrive ).pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/the-44-phonemes-of-english.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/My Reading Log.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/1st-Grade-Literacy-Packet.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/NEW TEACHER COURSES - Copy.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/19. Fun with Phonics! (Presentation) author Melisa Evans, Stacy Anthony.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/nursery  SCHEME OF WORK LANGUAGE.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/alphabet_letter_family_a-d_posters.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/NURSERY ART AND CRAFT TERM 2.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/TOP CLASS LESSON NOTES NUMBERS  FULL YEAR 2022.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/NURSERY CLASS LANGUAGE.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/Jolly Phonics I.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/NURSERY GENERAL KNOWLEDGE 2.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/Jolly Phonics Actions Sheet .pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/NURSERY general knowledge.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/NURSERY THINGS AROUND ME A Picture Dictionary A.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/NURSERY LANGUAGE TERM 2.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/18. Alphabet (Article) author Various authors .pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/NURSERY NUMBERS TERM 2.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/22. Teach Your Child to Read in 100 Easy Lessons (Presentation) author Cary Andrews.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/NURSERY PE TERM 2 (1).pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/ECD_FRamework.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/NURSERY PE TERM 2.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/14. A Child Becomes a Reader author Bonnie B. Armbruster, Fran Lehr, Jean Osborn.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/Nursery rhymes term two.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/15. How young children learn to read author B. A. Essay.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/Nursery School Scheme of Work for Aged 0 - 5 Years PDF Download.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/LESSON-NOTES-FOR-ENGLISH-FOR-MIDDLE-CLASS-TERM-III-SIR-APOLLO-KAGGWA-SCHOOLS.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/PARENT-TEACHER GUIDE JOLLY PHONICS.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/Nursery School Scheme of Work for Aged 0 - 5 Years PDF Download.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/PHONICS AW FLASH CARDS.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/LESSON-NOTES-FOR-READING-FOR-MIDDLE-CLASS-TERM-I.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/Phonics Book.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/LESSON-NOTES-FOR-READING-FOR-MIDDLE-CLASS-TERM-I.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/PHONICS EA FLASH CARDS.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/05. Rhyming Short Vowel Words And Sentences  author Kathryn J. Davis.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/Phonics Handbook (1992, Jolly Learning Ltd) - libgen.li.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/06. Learning The Alphabet ABC - Workbook 1 author Kathryn J. Davis.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/PHONICS LETTERS.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/04. Rhyming Short Vowel Workbook  author Kathryn J. Davis.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/PHONICS TEACHER'S RESOURCE BOOK.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/CVC-Booklets-Set-Three-Copyright-2023-English-Created-Resources.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/PHONICS U FLASH CARDS.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/Debbies_caregivers_guide_FINAL_4_1.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/Phonics_Sentences_Short_Vowel_Word_Families_from_A_Teachable_Teacher.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/Alphabet Charts - TMMP Sample.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/RADIO SCHEME OF WORK FOR NURSERY.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/11. Letters and Sounds author Various authors .pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/Reading comprehension 3.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/Connect PHONICS CARDS.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/Reading comprehension 5.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/Connect+English+T1+KG2+Flash+Car.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/Reading comprehension 6.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/Mastering Kindergarten Skills ( PDFDrive ).pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/Reading comprehension2.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/BOOST Guide 3-5 years.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/Reading for Every Child 1.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/BOOST GUIDE 6-8 YEARS.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/Reading for Every Child 2.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/PHONICS LETTERS.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/Reading for Every Child Phonics.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/word_families_and_sight_words طبعاةةةة.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/short notes for baby class (1).pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/Sight_word_poetry_pages_grades_prek_2.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/Sight_word_poetry_pages_grades_prek_2.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/UK-RE-Sight-Words-Sentences.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/Single_Letter-Sounds_Flash_Cards.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/Phonics Book.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/the-44-phonemes-of-english.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/Phonics Handbook (1992, Jolly Learning Ltd) - libgen.li.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/UK-RE-Sight-Words-Sentences.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/jolly-phonics-pupil-book-1.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/VIDEO SCHEME OF WORK FOR NURSERY.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/12. World of Letters Kindergarten author Oxford University.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/word_families_and_sight_words طبعاةةةة.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/CVC-Fluency-Sentences-Spelling-List-2022-English-Created-Resources.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/1st-Grade-Literacy-Packet.pdf"
   },
   {
     "title": "",
-    "description": "Top Class",
+    "description": "Baby Class",
     "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/top/A-z.pdf"
+    "pdfUrl": "https://fresh-teacher.github.io/baby/02. Practice Stories For Beginning Readers author Kathryn J. Davis.pdf"
   },
   {
     "title": "",
