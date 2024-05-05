@@ -2,7 +2,7 @@
 <html>
 
 <head>
-      <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-SS26CRENX2"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -23,21 +23,65 @@
         })(window, document, 'script', 'dataLayer', 'GTM-KGD6TVT');</script>
     <!-- End Google Tag Manager -->
 
-<!-- Add these lines to include Bootstrap CSS and JavaScript -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KGD6TVT" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
+
+    <!-- Add these lines to include Bootstrap CSS and JavaScript -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Welcome To Fresh Teacher's Library, one stop center for academic needs of Ugandan schools. Our core mandate is to apply creativity and come up with innovative solutions in Ugandas' education sector.">
+    <meta name="keyword" content="Fresh Teacher's Library, www.freshteacheruganda.com, Schemes Of Work, Lesson Plans, Lesson Notes, Topical Questions, Luganda Translated Movies, Past Papers">
+    <meta name="author" content="Fresh Teacher">
+    <link rel="icon" type="image/png" sizes="16x16" href="logo.jpg">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
-    <meta property="og:site_name" content="Create Wish" />
-    <meta property="og:image" content="img/ogr.jpg" />
-    <title>Fresh Teacher's Library </title>
+    <meta property="og:site_name" content="Fresh Teacher's Library" />
+    <meta property="og:image" content="https://2.bp.blogspot.com/-IEabwvLwNVY/XnccoVSvUgI/AAAAAAAAFro/mQPkBepUZpcNo1WG8trICTTg7unzwwXSgCK4BGAYYCw/s1600/SquareFit_20200322_064134.jpg" />
+    <title>Fresh Teacher's Library 📚 </title>
+    <!-- Bootstrap Core CSS -->
+    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Menu CSS -->
+    <link href="plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css" rel="stylesheet">
+    <!-- animation CSS -->
+    <link href="css/animate.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- color CSS -->
+    <link href="css/colors/default.css" id="theme" rel="stylesheet">
+    <link href="css/learning_hub.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <style>
         body {
             background: #fff;
+        }
+
+        @keyframes heartbeat {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.1);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .heartbeat {
+            animation: heartbeat 1.5s infinite;
         }
 
         .mainContainer {
@@ -95,6 +139,7 @@
         }
 
         @keyframes bounceIn {
+
             0%,
             20%,
             40%,
@@ -104,30 +149,36 @@
                 -webkit-animation-timing-function: cubic-bezier(.215, .61, .355, 1);
                 animation-timing-function: cubic-bezier(.215, .61, .355, 1)
             }
+
             0% {
                 opacity: 0;
                 -webkit-transform: scale3d(.3, .3, .3);
                 transform: scale3d(.3, .3, .3)
             }
+
             20% {
                 -webkit-transform: scale3d(1.1, 1.1, 1.1);
                 transform: scale3d(1.1, 1.1, 1.1);
                 color: #FF9933;
             }
+
             40% {
                 -webkit-transform: scale3d(.9, .9, .9);
                 transform: scale3d(.9, .9, .9)
             }
+
             60% {
                 opacity: 1;
                 -webkit-transform: scale3d(1.03, 1.03, 1.03);
                 transform: scale3d(1.03, 1.03, 1.03);
                 color: #fff;
             }
+
             80% {
                 -webkit-transform: scale3d(.97, .97, .97);
                 transform: scale3d(.97, .97, .97);
             }
+
             to {
                 opacity: 1;
                 -webkit-transform: scaleX(1);
@@ -141,32 +192,34 @@
             color: #98201f;
             animation: flash 0s infinite;
         }
-         #snowflakeContainer {
-                position: absolute;
-                left: 0;
-                top: 0;
-                pointer-events: none
+
+        #snowflakeContainer {
+            position: absolute;
+            left: 0;
+            top: 0;
+            pointer-events: none
+        }
+
+        .snowflake {
+            position: fixed;
+            user-select: none;
+            z-index: 1000;
+            color: #ffffff;
+            opacity: .8;
+            pointer-events: none
+        }
+
+        @keyframes fall {
+            0% {
+                top: -10%
             }
 
-            .snowflake {
-                position: fixed;
-                user-select: none;
-                z-index: 1000;
-                color: #ffffff;
-                opacity: .8;
-                pointer-events: none
+            100% {
+                top: 100%
             }
-
-            @keyframes fall {
-                0% {
-                    top: -10%
-                }
-                100% {
-                    top: 100%
-                }
-            }
+        }
     </style>
-      <!-- <div id="snowflakeContainer"></div>
+    <!--       <div id="snowflakeContainer"></div>
         <script>
             const snowflakeContainer = document.getElementById("snowflakeContainer");
             let snowflakes = [];
@@ -189,9 +242,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="slide.js" type="text/javascript"></script>
     <script type="text/javascript">
-        $(document).ready(function() {
+        $(document).ready(function () {
             $curtainopen = false;
-            $(".rope").click(function() {
+            $(".rope").click(function () {
                 $(this).blur();
                 if ($curtainopen == false) {
                     $(this).stop().animate({
@@ -267,10 +320,7 @@
             height: 100%;
         }
 
-        .logo {
-            margin: 0px auto;
-            margin-top: 150px;
-        }
+
 
         .rope {
             position: absolute;
@@ -367,7 +417,8 @@
             top: 1%;
             color: #000;
         }
-                .africavotes-name {
+
+        .africavotes-name {
             font-size: 16px;
             font-weight: 600;
             padding-bottom: 0;
@@ -413,12 +464,13 @@
         }
 
         .header-chat {
-    background: #009688;
-    background: #095e54;
-    color: #fff;
-    padding: 20px;
-    text-align: left; /* Set text-align to left to avoid centering */
-}
+            background: #009688;
+            background: #095e54;
+            color: #fff;
+            padding: 20px;
+            text-align: left;
+            /* Set text-align to left to avoid centering */
+        }
 
 
         .header-chat h3 {
@@ -550,9 +602,11 @@
             0% {
                 background-color: #b6b5ba
             }
+
             15% {
                 background-color: #111
             }
+
             25% {
                 background-color: #b6b5ba
             }
@@ -562,9 +616,11 @@
             15% {
                 background-color: #b6b5ba
             }
+
             25% {
                 background-color: #111
             }
+
             35% {
                 background-color: #b6b5ba
             }
@@ -574,9 +630,11 @@
             25% {
                 background-color: #b6b5ba
             }
+
             35% {
                 background-color: #111
             }
+
             45% {
                 background-color: #b6b5ba
             }
@@ -754,529 +812,2171 @@
         }
 
         .iSpIQi {
-    font-size: 14px;
-    line-height: 19px;
-    margin-top: 4px;
-    color: #111;
-    text-align: left; /* Set text-align to left to avoid centering */
-}
-body {
-      background-color: #f6f6f6;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
+            font-size: 14px;
+            line-height: 19px;
+            margin-top: 4px;
+            color: #111;
+            text-align: left;
+            /* Set text-align to left to avoid centering */
+        }
 
-    .container {
-    flex-grow: 1;
-  }
+        body {
+            background-color: #f6f6f6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
 
-    .navbar-brand {
-      text-decoration: none;
-    }
+        .container {
+            flex-grow: 1;
+        }
 
-    .navbar-brand-content {
-      display: flex;
-      align-items: center;
-    }
+        .navbar-brand {
+            text-decoration: none;
+        }
 
-    .navbar-brand-text {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      margin-left: 10px;
-    }
+        .navbar-brand-content {
+            display: flex;
+            align-items: center;
+        }
 
-    .navbar-brand-title {
-      font-weight: bold;
-      text-decoration: none;
-      animation: blink 3s infinite;
-    }
+        .navbar-brand-text {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-left: 10px;
+        }
 
-    .navbar-brand-motto {
-      font-size: 12px;
-      color: #888;
-      margin-top: 5px;
-    }
+        .navbar-brand-title {
+            font-weight: bold;
+            text-decoration: none;
+            animation: blink 3s infinite;
+        }
 
-    .navbar {
-      position: sticky;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 100;
-      background-color: #fff;
-      padding: 10px 20px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
+        .navbar-brand-motto {
+            font-size: 12px;
+            color: #888;
+            margin-top: 5px;
+        }
 
-    /* Adjust the height and padding of the navbar */
-    .navbar {
-      height: 80px;
-      padding: 10px 20px;
-    }
+        .navbar {
+            position: sticky;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            background-color: #fff;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
 
-    .bookshelf .thumb {
-      display: inline-block;
-      cursor: pointer;
-      margin: 0px 0.5%;
-      width: 15% !important;
-      box-shadow: 0px 1px 3px rgba(0, 0, 0, .3);
-      max-width: 120px;
-    }
+        /* Adjust the height and padding of the navbar */
+        .navbar {
+            height: 80px;
+            padding: 10px 20px;
+        }
 
-    .bookshelf .thumb img {
-      width: 100%;
-      display: block;
-      vertical-align: top;
-    }
+        .bookshelf .thumb {
+            display: inline-block;
+            cursor: pointer;
+            margin: 0px 0.5%;
+            width: 15% !important;
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, .3);
+            max-width: 120px;
+        }
 
-    .bookshelf .shelf-img {
-      z-index: 0;
-      height: auto;
-      max-width: 100%;
-      vertical-align: top;
-      margin-top: -12px;
-    }
+        .bookshelf .thumb img {
+            width: 100%;
+            display: block;
+            vertical-align: top;
+        }
 
-    .bookshelf .covers {
-      width: 100%;
-      height: auto;
-      z-index: 99;
-      text-align: center;
-    }
+        .bookshelf .shelf-img {
+            z-index: 0;
+            height: auto;
+            max-width: 100%;
+            vertical-align: top;
+            margin-top: -12px;
+        }
 
-    .bookshelf {
-      text-align: center;
-      padding: 0px;
-    }
+        .bookshelf .covers {
+            width: 100%;
+            height: auto;
+            z-index: 99;
+            text-align: center;
+        }
 
-    .page-wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
+        .bookshelf {
+            text-align: center;
+            padding: 0px;
+        }
 
-    /* Pagination */
-    .pagination>li>a,
-    .pagination>li>span {
-      color: #c0392b;
-    }
+        .page-wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
 
-    .pagination>li>a:hover,
-    .pagination>li>span:hover {
-      color: #c0392b !important;
-    }
+        /* Pagination */
+        .pagination>li>a,
+        .pagination>li>span {
+            color: #c0392b;
+        }
 
-    .pagination>li.active>a {
-      background-color: #c0392b !important;
-      border: 0;
-      color: #fff;
-    }
+        .pagination>li>a:hover,
+        .pagination>li>span:hover {
+            color: #c0392b !important;
+        }
 
-    .flex-grow-1 {
-      flex: 1 0 auto;
-    }
+        .pagination>li.active>a {
+            background-color: #c0392b !important;
+            border: 0;
+            color: #fff;
+        }
 
-    .footer {
-  flex-shrink: 0;
-  background-color: #ffffff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+        .flex-grow-1 {
+            flex: 1 0 auto;
+        }
 
-    .fade-animation {
-      animation: blink 3s infinite;
-    }
+        .footer {
+            flex-shrink: 0;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-    @keyframes blink {
-      0% {
-        opacity: 1;
-      }
+        .fade-animation {
+            animation: blink 3s infinite;
+        }
 
-      50% {
-        opacity: 0;
-      }
+        @keyframes blink {
+            0% {
+                opacity: 1;
+            }
 
-      100% {
-        opacity: 1;
-      }
-    }
+            50% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
     </style>
-    
+
 </head>
 
 <body>
-          <!-- Google Tag Manager (noscript) -->
-          <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KGD6TVT" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
-    <div class="leftcurtain"><img src="img/gate2.png" /></div>
-    <div class="rightcurtain"><img src="img/gate1.png" /></div>
+    <div class="leftcurtain"><img src="gate2.png" /></div>
+    <div class="rightcurtain"><img src="gate1.png" /></div>
     <a class="rope" href="" onclick="PlaySound()"><br><br>
-        <div style="font-size: 25px;text-shadow: 1px 1px 3px black, 1px 1px 3px black, -1px -1px 3px black, -1px -1px 3px black;color:#ff0000; font-weight: bold;"><br><b>Push this Door<br></b></div> <img src="img/arrow1.gif" height="auto" width="70px" style="animation: tada 0s infinite"><br>
-        <img src="img/guda.png" width="70%" height="70" style="animation: tada 7s infinite;" />
+        <div
+            style="font-size: 25px;text-shadow: 1px 1px 3px black, 1px 1px 3px black, -1px -1px 3px black, -1px -1px 3px black;color:#ff0000; font-weight: bold;">
+            <br><b><br><br>Push this Door<br></b></div> <img src="arrow1.gif" height="auto" width="70px"
+            style="animation: tada 0s infinite"><br>
+        <img src="guda.png.gif" width="70%" height="70" style="animation: tada 7s infinite;" />
         </div>
     </a>
- <!-- Navbar -->
- <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
-  <a class="navbar-brand" href="index.html">
-    <div class="navbar-brand-content">
-      <img src="images/logo.png" alt="Fresh Teacher's Logo" width="50" height="50">
-      <div class="navbar-brand-text">
-        <span class="navbar-brand-title"><strong>FRESH TEACHER'S E-LIBRARY 📚</strong></span>
-        <span class="navbar-brand-motto"><em>Learn. Unlearn. Relearn</em></span>
-      </div>
-    </div>
-  </a>
-</nav>
-<!-- End Of Navbar -->
+    <nav class="navbar navbar-default navbar-static-top m-b-0">
+        <div class="navbar-header">
 
-<div class="container">
-  <marquee class="marq" bgcolor="tomato" behavior=slide direction="left" loop="">
-    <strong><em>WELCOME TO FRESH TEACHER'S E-LIBRARY 📚</em></strong>
-  </marquee> <!-- PDF HERE -->
-  <div class="page-wrapper">
-    <h4 style="text-align: center;">Choose One Class From the Shelf to Continue:</h4>
-    <div class="bookshelf">
-      <div class="covers">
-        <div class="thumb book-1">
-          <a href="menu baby.html">
-            <img src="images/book2/BABY CLASS.jpg">
-          </a>
-        </div>
-        <div class="thumb book-1">
-          <a href="menu middle.html">
-            <img src="images/book2/MIDDLE CLASS.jpg">
-          </a>
-        </div>
-        <div class="thumb book-1">
-          <a href="menu top.html">
-            <img src="images/book2/TOP CLASS.jpg">
-          </a>
-        </div>
-        <div class="thumb book-1">
-          <a href="menu p1.html">
-            <img src="images/book2/PRIMARY ONE.jpg">
-          </a>
-        </div>
-        <div class="thumb book-1">
-          <a href="menu p2.html">
-            <img src="images/book2/PRIMARY TWO.jpg">
-          </a>
-        </div>
-      </div>
-      <img class="shelf-img" src="images/shelf_wood.png">
-    </div>
-    <br>
-    <div class="bookshelf">
-      <div class="covers">
-        <div class="thumb book-1">
-          <a href="menu p3.html">
-            <img src="images/book2/PRIMARY THREE.jpg">
-          </a>
-        </div>
-        <div class="thumb book-1">
-          <a href="menu p4.html">
-            <img src="images/book2/PRIMARY FOUR.jpg">
-          </a>
-        </div>
-        <div class="thumb book-1">
-          <a href="menu p5.html">
-            <img src="images/book2/PRIMARY FIVE.jpg">
-          </a>
-        </div>
-        <div class="thumb book-1">
-          <a href="menu p6.html">
-            <img src="images/book2/PRIMARY SIX.jpg">
-          </a>
-        </div>
-        <div class="thumb book-1">
-          <a href="menu p7.html">
-            <img src="images/book2/PRIMARY SEVEN.jpg">
-          </a>
-        </div>
-      </div>
-      <img class="shelf-img" src="images/shelf_wood.png">
-    </div><br>
-    <div class="bookshelf">
-      <div class="covers">
-        <div class="thumb book-1">
-          <a href="menu s1.html">
-            <img src="images/book2/SENIOR ONE.jpg">
-          </a>
-        </div>
-        <div class="thumb book-1">
-          <a href="menu s2.html">
-            <img src="images/book2/SENIOR TWO.jpg">
-          </a>
-        </div>
-        <div class="thumb book-1">
-          <a href="menu s3.html">
-            <img src="images/book2/SENIOR THREE.jpg">
-          </a>
-        </div>
-        <div class="thumb book-1">
-          <a href="menu s4.html">
-            <img src="images/book2/SENIOR FOUR.jpg">
-          </a>
-        </div>
-        <div class="thumb book-1">
-          <a href="menu s5.html">
-            <img src="images/book2/SENIOR FIVE.jpg">
-          </a>
-        </div>
-      </div>
-      <img class="shelf-img" src="images/shelf_wood.png">
-    </div><br>
-    <div class="bookshelf">
-      <div class="covers">
-        <div class="thumb book-1">
-          <a href="menu s6.html">
-            <img src="images/book2/SENIOR SIX.jpg">
-          </a>
-        </div>
-        <div class="thumb book-1">
-          <a href="">
-            <!-- <img src="images/book2/2222222222222222.jpg"> -->
-          </a>
-        </div>
-        <div class="thumb book-1">
-          <a href="">
-            <!-- <img src="images/book2/222222222222.jpg"> -->
-          </a>
-        </div>
-        <div class="thumb book-1">
-          <a href="">
-            <!-- <img src="images/book2/2222222222222.jpg"> -->
-          </a>
-        </div>
-        <div class="thumb book-1">
-          <a href="">
-            <!-- <img src="images/book2/22222222222222.jpg"> -->
-          </a>
-        </div>
-      </div>
-      <img class="shelf-img" src="images/shelf_wood.png">
-    </div>
-  </div><br>
-  <!-- End Of PDF -->
+            <!-- /Logo -->
+            <!-- Search input and Toggle icon -->
+            <ul class="nav navbar-top-links navbar-left">
+                <li><a href="javascript:void(0)" class="open-close waves-effect waves-light"><i class="ti-menu"></i></a>
+                </li>
+                <li class="dropdown">
+                    <a data-toggle="dropdown" href="#"> <i class="mdi mdi-video"></i>
 
-<audio id="audiocracker" src="door.mp3"></audio>
-<script>
-                function PlaySound() {
-                    var sound = document.getElementById("audiocracker");
-                    sound.play()
-                }
+                        <div class="notify"> <span class="heartbit"></span> <span class="point"></span> </div>
+                    </a>
 
-                jQuery.easing['jswing'] = jQuery.easing['swing'];
-jQuery.extend(jQuery.easing, {
-    def: 'easeOutQuad',
-    swing: function(x, t, b, c, d) {
-        return jQuery.easing[jQuery.easing.def](x, t, b, c, d);
-    },
-    easeInQuad: function(x, t, b, c, d) {
-        return c * (t /= d) * t + b;
-    },
-    easeOutQuad: function(x, t, b, c, d) {
-        return -c * (t /= d) * (t - 2) + b;
-    },
-    easeInOutQuad: function(x, t, b, c, d) {
-        if ((t /= d / 2) < 1) return c / 2 * t * t + b;
-        return -c / 2 * ((--t) * (t - 2) - 1) + b;
-    },
-    easeInCubic: function(x, t, b, c, d) {
-        return c * (t /= d) * t * t + b;
-    },
-    easeOutCubic: function(x, t, b, c, d) {
-        return c * ((t = t / d - 1) * t * t + 1) + b;
-    },
-    easeInOutCubic: function(x, t, b, c, d) {
-        if ((t /= d / 2) < 1) return c / 2 * t * t * t + b;
-        return c / 2 * ((t -= 2) * t * t + 2) + b;
-    },
-    easeInQuart: function(x, t, b, c, d) {
-        return c * (t /= d) * t * t * t + b;
-    },
-    easeOutQuart: function(x, t, b, c, d) {
-        return -c * ((t = t / d - 1) * t * t * t - 1) + b;
-    },
-    easeInOutQuart: function(x, t, b, c, d) {
-        if ((t /= d / 2) < 1) return c / 2 * t * t * t * t + b;
-        return -c / 2 * ((t -= 2) * t * t * t - 2) + b;
-    },
-    easeInQuint: function(x, t, b, c, d) {
-        return c * (t /= d) * t * t * t * t + b;
-    },
-    easeOutQuint: function(x, t, b, c, d) {
-        return c * ((t = t / d - 1) * t * t * t * t + 1) + b;
-    },
-    easeInOutQuint: function(x, t, b, c, d) {
-        if ((t /= d / 2) < 1) return c / 2 * t * t * t * t * t + b;
-        return c / 2 * ((t -= 2) * t * t * t * t + 2) + b;
-    },
-    easeInSine: function(x, t, b, c, d) {
-        return -c * Math.cos(t / d * (Math.PI / 2)) + c + b;
-    },
-    easeOutSine: function(x, t, b, c, d) {
-        return c * Math.sin(t / d * (Math.PI / 2)) + b;
-    },
-    easeInOutSine: function(x, t, b, c, d) {
-        return -c / 2 * (Math.cos(Math.PI * t / d) - 1) + b;
-    },
-    easeInExpo: function(x, t, b, c, d) {
-        return (t == 0) ? b : c * Math.pow(2, 10 * (t / d - 1)) + b;
-    },
-    easeOutExpo: function(x, t, b, c, d) {
-        return (t == d) ? b + c : c * (-Math.pow(2, -10 * t / d) + 1) + b;
-    },
-    easeInOutExpo: function(x, t, b, c, d) {
-        if (t == 0) return b;
-        if (t == d) return b + c;
-        if ((t /= d / 2) < 1) return c / 2 * Math.pow(2, 10 * (t - 1)) + b;
-        return c / 2 * (-Math.pow(2, -10 * --t) + 2) + b;
-    },
-    easeInCirc: function(x, t, b, c, d) {
-        return -c * (Math.sqrt(1 - (t /= d) * t) - 1) + b;
-    },
-    easeOutCirc: function(x, t, b, c, d) {
-        return c * Math.sqrt(1 - (t = t / d - 1) * t) + b;
-    },
-    easeInOutCirc: function(x, t, b, c, d) {
-        if ((t /= d / 2) < 1) return -c / 2 * (Math.sqrt(1 - t * t) - 1) + b;
-        return c / 2 * (Math.sqrt(1 - (t -= 2) * t) + 1) + b;
-    },
-    easeInElastic: function(x, t, b, c, d) {
-        var s = 1.70158;
-        var p = 0;
-        var a = c;
-        if (t == 0) return b;
-        if ((t /= d) == 1) return b + c;
-        if (!p) p = d * .3;
-        if (a < Math.abs(c)) {
-            a = c;
-            var s = p / 4;
-        } else var s = p / (2 * Math.PI) * Math.asin(c / a);
-        return -(a * Math.pow(2, 10 * (t -= 1)) * Math.sin((t * d - s) * (2 * Math.PI) / p)) + b;
-    },
-    easeOutElastic: function(x, t, b, c, d) {
-        var s = 1.70158;
-        var p = 0;
-        var a = c;
-        if (t == 0) return b;
-        if ((t /= d) == 1) return b + c;
-        if (!p) p = d * .3;
-        if (a < Math.abs(c)) {
-            a = c;
-            var s = p / 4;
-        } else var s = p / (2 * Math.PI) * Math.asin(c / a);
-        return a * Math.pow(2, -10 * t) * Math.sin((t * d - s) * (2 * Math.PI) / p) + c + b;
-    },
-    easeInOutElastic: function(x, t, b, c, d) {
-        var s = 1.70158;
-        var p = 0;
-        var a = c;
-        if (t == 0) return b;
-        if ((t /= d / 2) == 2) return b + c;
-        if (!p) p = d * (.3 * 1.5);
-        if (a < Math.abs(c)) {
-            a = c;
-            var s = p / 4;
-        } else var s = p / (2 * Math.PI) * Math.asin(c / a);
-        if (t < 1) return -.5 * (a * Math.pow(2, 10 * (t -= 1)) * Math.sin((t * d - s) * (2 * Math.PI) / p)) + b;
-        return a * Math.pow(2, -10 * (t -= 1)) * Math.sin((t * d - s) * (2 * Math.PI) / p) * .5 + c + b;
-    },
-    easeInBack: function(x, t, b, c, d, s) {
-        if (s == undefined) s = 1.70158;
-        return c * (t /= d) * t * ((s + 1) * t - s) + b;
-    },
-    easeOutBack: function(x, t, b, c, d, s) {
-        if (s == undefined) s = 1.70158;
-        return c * ((t = t / d - 1) * t * ((s + 1) * t + s) + 1) + b;
-    },
-    easeInOutBack: function(x, t, b, c, d, s) {
-        if (s == undefined) s = 1.70158;
-        if ((t /= d / 2) < 1) return c / 2 * (t * t * (((s *= (1.525)) + 1) * t - s)) + b;
-        return c / 2 * ((t -= 2) * t * (((s *= (1.525)) + 1) * t + s) + 2) + b;
-    },
-    easeInBounce: function(x, t, b, c, d) {
-        return c - jQuery.easing.easeOutBounce(x, d - t, 0, c, d) + b;
-    },
-    easeOutBounce: function(x, t, b, c, d) {
-        if ((t /= d) < (1 / 2.75)) {
-            return c * (7.5625 * t * t) + b;
-        } else if (t < (2 / 2.75)) {
-            return c * (7.5625 * (t -= (1.5 / 2.75)) * t + .75) + b;
-        } else if (t < (2.5 / 2.75)) {
-            return c * (7.5625 * (t -= (2.25 / 2.75)) * t + .9375) + b;
-        } else {
-            return c * (7.5625 * (t -= (2.625 / 2.75)) * t + .984375) + b;
-        }
-    },
-    easeInOutBounce: function(x, t, b, c, d) {
-        if (t < d / 2) return jQuery.easing.easeInBounce(x, t * 2, 0, c, d) * .5 + b;
-        return jQuery.easing.easeOutBounce(x, t * 2 - d, 0, c, d) * .5 + c * .5 + b;
-    }
-});
-            </script>
-   <div class='hide' id='africavotes-chat'>
-    <div class='header-chat'>
-        <div class='head-home'>
-            <div class='info-avatar'><img src='https://fresh-teacher.github.io/sure-key/assets/img/team/team-11.jpeg'></div>
-            <p><span class="africavotes-name">Fresh Teacher</span><br> <small>online </small></p>
+                    <ul class="dropdown-menu mailbox animated bounceInDown">
+                        <li>
+                            <a href="https://fresh-teacher.github.io/movie.html">
+                                <div>
+                                    <p> <strong>Fresh TV 📺<p></p></strong> <span class="pull-right text-muted"><a
+                                                href="https://fresh-teacher.github.io/movie.html"><b>Start
+                                                    Watching</b><i class="mdi mdi-play"></i></span> </p>
+                            </a>
+                            <div class="progress progress-striped active">
+                                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="100"
+                                    aria-valuemin="0" aria-valuemax="100" style="width: 100%"> <span
+                                        class="sr-only"></span> </div>
+                            </div>
         </div>
-        <div class='get-new hide'>
-            <div id='get-label'></div>
-            <div id='get-nama'></div>
+        </a>
+        </li>
+
+        </ul>
+        <!-- /.dropdown-messages -->
+
+        </li>
+        <!-- .Task dropdown -->
+        <li class="dropdown">
+            <a data-toggle="dropdown" href="#"> <i class="mdi mdi-microphone"></i>
+
+                <div class="notify"><span class="heartbit"></span><span class="point"></span></div>
+            </a>
+            <ul class="dropdown-menu dropdown-tasks animated slideInDown">
+                <li>
+                    <a href="https://freshradio.vercel.app">
+                        <div>
+                            <p> <strong>Fresh Radio 📻</strong> <span class="pull-right text-muted">
+                                    <p></p><a href="https://freshradio.vercel.app"><b>Start Listening</b><i
+                                            class="mdi mdi-play"></i></a>
+                                </span> </p>
+                            <div class="progress progress-striped active">
+                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="100"
+                                    aria-valuemin="0" aria-valuemax="100" style="width: 100%"> <span
+                                        class="sr-only">100% Complete (success)</span> </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+
+            </ul>
+        </li>
+        <!-- .Megamenu -->
+        <li class="mega-dropdown">
+            <a data-toggle="dropdown" href="#"><span class="hidden-xs"></span> <i class="mdi mdi-trophy"></i>
+                <div class="notify"><span class="heartbit"></span><span class="point"></span></div>
+
+                <ul class="dropdown-menu mega-dropdown-menu animated bounceInLeft">
+                    <li class="col-sm-3">
+                        <ul>
+                            <li class="dropdown-header"><b>FRESH GAMES 🎮</b></li>
+                            <center><br><button class="btn btn-danger heartbeat"><a
+                                        href="https://fresh-teacher.github.io/games">PLAY NOW</button>
+            </a></br></center><br>
+        <li>
+
+            <a href=""> Hey teachers! Ever heard the saying <b><i>'Work without play makes Jack a dull boy'</i></b>?
+                Well, we've got you covered! Rest assured, most of our games are designed basing on the curriculum to
+                stimulate young minds, ensuring that every moment spent playing is a moment of intellectual growth and
+                discovery. 💡</a><br>
+            <a href="">And hey, kids! Remember, <b><i>'Play without work makes Jack a mere toy'</i></b>. So, try to
+                balance the boat. The games are not just fun, they're packed with valuable learning too. Let's play,
+                learn, and grow together! 🚀</a>
+
+        </li>
+        <center><br><button class="btn btn-danger heartbeat"><a href="https://fresh-teacher.github.io/games">PLAY
+                    NOW</button></a></br></center>
+        </ul>
+        </li>
+        </ul>
+
+        </li>
+        <!-- /.Megamenu -->
+        </ul>
+        <ul class="nav navbar-top-links navbar-right pull-right">
+
+            <li class="dropdown">
+                <a data-toggle="dropdown" href="#"> <img src="dp.jpeg" alt="user-img" width="36" class="img-circle"><b
+                        class="hidden-xs"></b></a>
+                <ul class="dropdown-menu dropdown-user animated flipInY">
+                    <li>
+                        <div class="dw-user-box">
+                            <div class="u-img"><img src="dp.jpeg" alt="user" /></div>
+                            <div className="u-text">
+                                <h4>Admin's Contact:</h4>
+                                <b>
+                                    <p class="text-muted">Mutumba Jesse Paul</p>
+                                    <p className="text-muted">
+                                        <a href="tel:+256750687790">+256750687790</a> / <a
+                                            href="tel:+256786812837">+256786812837</a>
+                                    </p>
+                                    <p className="text-muted">
+                                        <a
+                                            href="mailto:freshteacheruganda256@gmail.com">freshteacheruganda256@gmail.com</a>
+                                    </p>
+                            </div></b>
+
+                        </div>
+                    </li>
+
+            </li>
+            <!-- /.dropdown -->
+        </ul>
+        </div>
+    </nav><br><br><br><br>
+
+    <div class="navbar-default sidebar" role="navigation">
+        <div class="sidebar-nav slimscrollsidebar">
+            <div class="sidebar-head">
+                <h3><span class="fa-fw open-close"><i class="ti-close ti-menu"></i></span> <span
+                        class="hide-menu"></span></h3>
+            </div>
+            <div class="user-profile">
+
+            </div>
+            <ul class="nav" id="side-menu">
+                <hr class="style1">
+                <li> <a href="Fresh App.apk" class="waves-effect"
+                        style="padding-top: 10px !important; padding-bottom: 10px !important;" download>
+                        <span class="hide-menu">
+                            <font color="green">
+                                <font color="#006bb3"><img src="new.GIF" /><b>
+                                        <font color="green"> Download </font>
+                                        <font color="#000;"> Our</font><b style="color: #33cccc;"> App </b> <i
+                                            class="fa fa-android fa-lg" aria-hidden="true"></i>
+                                    </b>
+                        </span></a>
+
+                </li>
+                <hr class="style1">
+                <li>
+                    <a href="#" class="waves-effect"
+                        style="padding-top: 10px !important; padding-bottom: 10px !important;">
+                        <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+                        <span class="hide-menu"><b> Nursery Section</b> <span class="fa arrow"></span> </span>
+                    </a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="#"><i class="mdi mdi-clipboard-text fa-fw"></i><span class="hide-menu"><b>Baby
+                                        Class</b> <span class="fa arrow"></span> </span></a>
+                            <ul class="nav nav-third-level">
+                                <li>
+                                    <a href="#"><b>Lesson Notes</b> <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li><a href="https://fresh-teacher.github.io/BabyAllLessonNotes.html">All Lesson
+                                                Notes</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#"><b>Past Papers</b> <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li><a href="https://fresh-teacher.github.io/BabyClassLiteracyPastPapers.html">Literacy
+                                                Past Papers</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/BabyClassMathemeticalConceptsPastPapers.html">Mathematical
+                                                Concepts Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/BabyClassReadingPastPapers.html">Reading
+                                                Past Papers</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/BabyClassSocialDevelopmentPastPapers.html">Social
+                                                Development Past Papers</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/BabyClassWritingTheologyPastPapers.html">Writing
+                                                Theology Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/BabyClassEnglishPastPapers.html">English
+                                                Past Papers</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/BabyClassGeneralKnowledgePastPapers.html">General
+                                                Knowledge Past Papers</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/BabyClassHealthHabitsPastPapers.html">Health
+                                                Habits Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/BabyClassHolidayPackages.html">Holiday
+                                                Packages</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/BabyClassLanguageDevelopmentPastPapers.html">Language
+                                                Development Past Papers</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#"><b>Schemes of Work</b> <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li><a href="https://fresh-teacher.github.io/BabyClassAllSchemesofWork.html">All
+                                                Schemes of Work</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#"><i class="mdi mdi-clipboard-text fa-fw"></i><span class="hide-menu"><b>Middle
+                                        Class</b> <span class="fa arrow"></span> </span></a>
+                            <ul class="nav nav-third-level">
+                                <li>
+                                    <a href="#"><b>Lesson Notes</b> <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li><a href="https://fresh-teacher.github.io/MiddleClassLessonNotes.html">All
+                                                Lesson Notes</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#"><b>Past Papers</b> <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/MiddleClassMathemeticalConceptsPastPapers.html">Mathematical
+                                                Concepts Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/MiddleClassReadingPastPapers.html">Reading
+                                                Past Papers</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/MiddleClassSocialDevelopmentPastPapers.html">Social
+                                                Development Past Papers</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/MiddleClassWritingTheologyPastPapers.html">Writing
+                                                Theology Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/MiddleClassAllPastPapers.html">All
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/MiddleClassEnglishPastPapers.html">English
+                                                Past Papers</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/MiddleClassHealthHabitsPastPapers.html">Health
+                                                Habits Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/MiddleClassHolidayPackages.html">Holiday
+                                                Packages</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/MiddleClassLanguageDevelopmentPastPapers.html">Language
+                                                Development Past Papers</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#"><b>Schemes of Work</b> <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li><a href="https://fresh-teacher.github.io/MiddleClassAllSchemesofWork.html">All
+                                                Schemes of Work</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#"><i class="mdi mdi-clipboard-text fa-fw"></i><span class="hide-menu"><b>Top
+                                        Class</b> <span class="fa arrow"></span> </span></a>
+                            <ul class="nav nav-third-level">
+                                <li>
+                                    <a href="#"><b>Lesson Notes</b> <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li><a href="https://fresh-teacher.github.io/TopAllLessonNotes.html">All Lesson
+                                                Notes</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#"><b>Past Papers</b> <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li><a href="https://fresh-teacher.github.io/TopClassLiteracyPastPapers.html">Literacy
+                                                Past Papers</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/TopClassMathemeticalConceptsPastPapers.html">Mathematical
+                                                Concepts Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/TopClassReadingPastPapers.html">Reading
+                                                Past Papers</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/TopClassSocialDevelopmentPastPapers.html">Social
+                                                Development Past Papers</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/TopClassWritingTheologyPastPapers.html">Writing
+                                                Theology Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/TopClassEnglishPastPapers.html">English
+                                                Past Papers</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/TopClassHealthHabitsPastPapers.html">Health
+                                                Habits Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/TopClassHolidayPackages.html">Holiday
+                                                Packages</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/TopClassLanguageDevelopmentPastPapers.html">Language
+                                                Development Past Papers</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#"><b>Schemes of Work</b> <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li><a href="https://fresh-teacher.github.io/TopClassAllSchemesofWork.html">All
+                                                Schemes of Work</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+
+
+
+
+                    </ul>
+                </li>
+                <hr class="style1">
+                <li>
+                    <a href="#" class="waves-effect"
+                        style="padding-top: 10px !important; padding-bottom: 10px !important;">
+                        <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+                        <span class="hide-menu"><b> Primary Section</b> <span class="fa arrow"></span> </span>
+                    </a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="#"><i class="mdi mdi-clipboard-text fa-fw"></i><span class="hide-menu"><b>Primary
+                                        One</b> <span class="fa arrow"></span> </span></a>
+                            <ul class="nav nav-third-level">
+                                <li>
+                                    <a href="#"><b>Lesson Notes</b> <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryOneNewsLessonNotes.html">News
+                                                Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/PrimaryOneOralLiteratureLessonNotes.html">Oral
+                                                Literature Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryOneReadingLessonNotes.html">Reading
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryOneRELessonNotes.html">Religious
+                                                Education Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/PrimaryOneRunyankoreRukigaLessonNotes.html">Runyankore/Rukiga
+                                                Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/PrimaryOneThematicLessonNotes.html">Thematic
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryOneEnglishLessonNotes.html">English
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryOneICTLessonNotes.html">ICT
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryOneLit1LessonNotes.html">Literacy
+                                                1 Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryOneLit2LessonNotes.html">Literacy
+                                                2 Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryOneLugandaLessonNotes.html">Luganda
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryOneMTCLessonNotes.html">MTC
+                                                Lesson Notes</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#"><b>Schemes Of Work</b> <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryOneMTCSchemesofWork.html">MTC
+                                                Schemes of Work</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryOneMusicSchemesofWork.html">Music
+                                                Schemes of Work</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/PrimaryOneOralLiteratureLessonNotes.html">Oral
+                                                Literature Schemes of Work</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryOnePESchemesofWork.html">PE
+                                                Schemes of Work</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/PrimaryOneReadingSchemesofWork.html">Reading
+                                                Schemes of Work</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryOneRESchemesofWork.html">RE
+                                                Schemes of Work</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/PrimaryOneThematicSchemesofWork.html">Thematic
+                                                Schemes of Work</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryOneAllSchemesofWork.html">All
+                                                Schemes of Work</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/PrimaryOneEnglishSchemesofWork.html">English
+                                                Schemes of Work</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryOneLit1SchemesofWork.html">Literature
+                                                1 Schemes of Work</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryOneLit2LSchemesofWork.html">Literature
+                                                2 Schemes of Work</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/PrimaryOneLugandaSchemesofWork.html">Luganda
+                                                Schemes of Work</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#"><b>Past Papers</b> <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryOnePackagesPastPapers.html">Packages
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryOneReadingPastPapers.html">Reading
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryOneREPastPapers.html">Religious
+                                                Education Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryOneTheologyPastPapers.html">Theology
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryOneEnglishPastPapers.html">English
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryOneICTPastPapers.html">ICT
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryOneLit1PastPapers.html">Literacy
+                                                1 Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryOneLit2PastPapers.html">Literacy
+                                                2 Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryOneLugandaPastPapers.html">Luganda
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryOneMTCPastPapers.html">MTC
+                                                Past Papers</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#"><i class="mdi mdi-clipboard-text fa-fw"></i><span class="hide-menu"><b>Primary
+                                        Two</b> <span class="fa arrow"></span> </span></a>
+                            <ul class="nav nav-third-level">
+                                <li>
+                                    <a href="#"><b>Lesson Notes</b> <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryTwoICTLessonNotes.html">ICT
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryTwoLit1LessonNotes.html">Literacy
+                                                1 Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryTwoLit2LessonNotes.html">Literacy
+                                                2 Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryTwoLugandaLessonNotes.html">Luganda
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryTwoMTCLessonNotes.html">MTC
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryTwoNewsLessonNotes.html">News
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryTwoPELessonNotes.html">PE
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryTwoReadingLessonNotes.html">Reading
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryTwoRELessonNotes.html">RE
+                                                Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/PrimaryTwoRunyankoreRukigaLessonNotes.html">Runyankore/Rukiga
+                                                Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/PrimaryTwoThematicLessonNotes.html">Thematic
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryTwoWritingLessonNotes.html">Writing
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryTwoAllLessonNotes.html">All
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryTwoEnglishLessonNotes.html">English
+                                                Lesson Notes</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#"><b>Schemes Of Work</b> <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryTwoLit1SchemesofWork.html">Literacy
+                                                1 Schemes of Work</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryTwoLit2SchemesofWork.html">Literacy
+                                                2 Schemes of Work</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/PrimaryTwoLugandaSchemesofWork.html">Luganda
+                                                Schemes of Work</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryTwoMTCSchemesofWork.html">MTC
+                                                Schemes of Work</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryTwoPESchemesofWork.html">PE
+                                                Schemes of Work</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/PrimaryTwoReadingSchemesofWork.html">Reading
+                                                Schemes of Work</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryTwoRESchemesofWork.html">RE
+                                                Schemes of Work</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/PrimaryTwoThematicSchemesofWork.html">Thematic
+                                                Schemes of Work</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryTwoAllSchemesofWork.html">All
+                                                Schemes of Work</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/PrimaryTwoEnglishSchemesofWork.html">English
+                                                Schemes of Work</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#"><b>Past Papers</b> <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryTwoHolidayPackages.html">Holiday
+                                                Packages Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryTwoICTPastPapers.html">ICT
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryTwoLit1PastPapers.html">Literacy
+                                                1 Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryTwoLit2PastPapers.html">Literacy
+                                                2 Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryTwoLugandaPastPapers.html">Luganda
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryTwoMTCPastPapers.html">MTC
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryTwoReadingPastPapers.html">Reading
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryTwoREPastPapers.html">RE
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryTwoTheologyPastPapers.html">Theology
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryTwoWritingPastPapers.html">Writing
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryTwoEnglishPastPapers.html">English
+                                                Past Papers</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><i class="mdi mdi-clipboard-text fa-fw"></i><span class="hide-menu"><b>Primary
+                                        Three</b> <span class="fa arrow"></span> </span></a>
+                            <ul class="nav nav-third-level">
+                                <li>
+                                    <a href="#"><b>Lesson Notes</b> <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryThreeLit1LessonNotes.html">Literacy
+                                                1 Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryThreeLit2LessonNotes.html">Literacy
+                                                2 Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/PrimaryThreeLugandaLessonNotes.html">Luganda
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryThreeMTCLessonNotes.html">MTC
+                                                Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/PrimaryThreeReadingLessonNotes.html">Reading
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryThreeRELessonNotes.html">RE
+                                                Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/PrimaryThreeRunyankoreRukigaLessonNotes.html">Runyankore/Rukiga
+                                                Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/PrimaryThreeWritingLessonNotes.html">Writing
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryThreeArtLessonNotes.html">Art
+                                                Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/PrimaryThreeEnglishLessonNotes.html">English
+                                                Lesson Notes</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#"><b>Past Papers</b> <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryThreeICTPastPapers.html">ICT
+                                                Past Papers</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/PrimaryThreeKiswahiliPastPapers.html">Kiswahili
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryThreeLit1PastPapers.html">Literacy
+                                                1 Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryThreeLit2PastPapers.html">Literacy
+                                                2 Past Papers</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/PrimaryThreeLugandaPastPapers.html">Luganda
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryThreeMTCPastPapers.html">MTC
+                                                Past Papers</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/PrimaryThreePackagesPastPapers.html">Packages
+                                                Past Papers</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/PrimaryThreeReadingPastPapers.html">Reading
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryThreeREPastPapers.html">RE
+                                                Past Papers</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/PrimaryThreeWritingPastPapers.html">Writing
+                                                Past Papers</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/PrimaryThreeEnglishPastPapers.html">English
+                                                Past Papers</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#"><b>Schemes Of Work</b> <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryThreeICTSchemesofWork.html">ICT
+                                                Schemes of Work</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/PrimaryThreeLugandaSchemesofWork.html">Luganda
+                                                Schemes of Work</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryThreeMTCSchemesofWork.html">MTC
+                                                Schemes of Work</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryThreePESchemesofWork.html">PE
+                                                Schemes of Work</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/PrimaryThreeReadingSchemesofWork.html">Reading
+                                                Schemes of Work</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryThreeRESchemesofWork.html">RE
+                                                Schemes of Work</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/PrimaryThreeScienceSchemesofWork.html">Science
+                                                Schemes of Work</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryThreeSSTSchemesofWork.html">Social
+                                                Studies Schemes of Work</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/PrimaryThreeThematicSchemesofWork.html">Thematic
+                                                Schemes of Work</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/PrimaryThreeAgricSchemesofWork.html">Agriculture
+                                                Schemes of Work</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryThreeAllSchemesofWork.html">All
+                                                Schemes of Work</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryThreeArtSchemesofWork.html">Art
+                                                Schemes of Work</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/PrimaryThreeEnglishSchemesofWork.html">English
+                                                Schemes of Work</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#"><i class="mdi mdi-clipboard-text fa-fw"></i><span class="hide-menu"><b>Primary
+                                        Four</b> <span class="fa arrow"></span> </span></a>
+                            <ul class="nav nav-third-level">
+                                <li>
+                                    <a href="#"><b>Lesson Notes</b> <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryFourAllLessonNotes.html">All
+                                                Lesson Notes</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#"><b>Past Papers</b> <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/PrimaryFourPackagesPastPapers.html">Packages
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryFourREPastPapers.html">RE
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryFourSciencePastPapers.html">Science
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryFourSSTPastPapers.html">SST
+                                                Past Papers</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/PrimaryFourTheologyPastPapers.html">Theology
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryFourEnglishPastPapers.html">English
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryFourICTPastPapers.html">ICT
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryFourIREPastPapers.html">IRE
+                                                Past Papers</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/PrimaryFourKiswahiliPastPapers.html">Kiswahili
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryFourMTCPastPapers.html">MTC
+                                                Past Papers</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#"><b>Schemes Of Work</b> <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryFourAllSchemesofWork.html">All
+                                                Schemes of Work</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><i class="mdi mdi-clipboard-text fa-fw"></i><span class="hide-menu"><b>Primary
+                                        Five</b> <span class="fa arrow"></span> </span></a>
+                            <ul class="nav nav-third-level">
+                                <li>
+                                    <a href="#"><b>Lesson Notes</b> <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryFiveMTCLessonNotes.html">MTC
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryFiveRELessonNotes.html">RE
+                                                Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/PrimaryFiveScienceLessonNotes.html">Science
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryFiveSSTLessonNotes.html">SST
+                                                Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/PrimaryFiveEnglishLessonNotes.html">English
+                                                Lesson Notes</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#"><b>Past Papers</b> <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/PrimaryFivePackagesPastPapers.html">Packages
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryFiveREPastPapers.html">RE
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryFiveSciencePastPapers.html">Science
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryFiveSSTPastPapers.html">SST
+                                                Past Papers</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/PrimaryFiveTheologyPastPapers.html">Theology
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryFiveEnglishPastPapers.html">English
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryFiveICTPastPapers.html">ICT
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryFiveMTCPastPapers.html">MTC
+                                                Past Papers</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#"><b>Schemes Of Work</b> <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryFiveMTCSchemesofWork.html">MTC
+                                                Schemes of Work</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryFivePESchemesofWork.html">PE
+                                                Schemes of Work</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryFiveRESchemesofWork.html">RE
+                                                Schemes of Work</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/PrimaryFiveScienceSchemesofWork.html">Science
+                                                Schemes of Work</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryFiveSSTSchemesofWork.html">SST
+                                                Schemes of Work</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimaryFiveArtSchemesofWork.html">Art
+                                                Schemes of Work</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/PrimaryFiveEnglishSchemesofWork.html">English
+                                                Schemes of Work</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#"><i class="mdi mdi-clipboard-text fa-fw"></i><span class="hide-menu"><b>Primary
+                                        Six</b> <span class="fa arrow"></span> </span></a>
+                            <ul class="nav nav-third-level">
+                                <li>
+                                    <a href="#"><b>Lesson Notes</b> <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li><a href="https://fresh-teacher.github.io/PrimarySixICTLessonNotes.html">ICT
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimarySixMTCLessonNotes.html">MTC
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimarySixRELessonNotes.html">RE
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimarySixScienceLessonNotes.html">Science
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimarySixSSTLessonNotes.html">SST
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimarySixEnglishLessonNotes.html">English
+                                                Lesson Notes</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#"><b>Past Papers</b> <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li><a href="https://fresh-teacher.github.io/PrimarySixICTPastPapers.html">ICT
+                                                Past Papers</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/PrimarySixKiswahiliPastPapers.html">Kiswahili
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimarySixMTCPastPapers.html">MTC
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimarySixPackagesPastPapers.html">Packages
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimarySixREPastPapers.html">RE
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimarySixSciencePastPapers.html">Science
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimarySixSSTPastPapers.html">SST
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimarySixEnglishPastPapers.html">English
+                                                Past Papers</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#"><b>Schemes Of Work</b> <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/PrimarySixScienceSchemesofWork.html">Science
+                                                Schemes of Work</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimarySixSSTSchemesofWork.html">SST
+                                                Schemes of Work</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/PrimarySixEnglishSchemesofWork.html">English
+                                                Schemes of Work</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimarySixMTCSchemesofWork.html">MTC
+                                                Schemes of Work</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimarySixRESchemesofWork.html">RE
+                                                Schemes of Work</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimarySixArtSchemesofWork.html">Art
+                                                Schemes of Work</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><i class="mdi mdi-clipboard-text fa-fw"></i><span class="hide-menu"><b>Primary
+                                        Seven</b> <span class="fa arrow"></span> </span></a>
+                            <ul class="nav nav-third-level">
+                                <li>
+                                    <a href="#"><b>Lesson Notes</b> <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li><a href="https://fresh-teacher.github.io/PrimarySevenICTLessonNotes.html">ICT
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimarySevenMTCLessonNotes.html">MTC
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimarySevenRELessonNotes.html">RE
+                                                Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/PrimarySevenScienceLessonNotes.html">Science
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimarySevenSSTLessonNotes.html">SST
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimarySevenArtLessonNotes.html">Art
+                                                Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/PrimarySevenEnglishLessonNotes.html">English
+                                                Lesson Notes</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#"><b>Past Papers</b> <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/PrimarySevenSciencePastPapers.html">Science
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimarySevenSSTPastPapers.html">SST
+                                                Past Papers</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/PrimarySevenEnglishPastPapers.html">English
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimarySevenMTCPastPapers.html">MTC
+                                                Past Papers</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#"><b>Schemes Of Work</b> <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/PrimarySevenScienceSchemesofWork.html">Science
+                                                Schemes of Work</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimarySevenSSTSchemesofWork.html">SST
+                                                Schemes of Work</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/PrimarySevenEnglishSchemesofWork.html">English
+                                                Schemes of Work</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimarySevenMTCSchemesofWork.html">MTC
+                                                Schemes of Work</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimarySevenRESchemesofWork.html">RE
+                                                Schemes of Work</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/PrimarySevenArtSchemesofWork.html">Art
+                                                Schemes of Work</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </li>
+
+                <hr class="style1">
+                <li>
+                    <a href="#" class="waves-effect"
+                        style="padding-top: 10px !important; padding-bottom: 10px !important;">
+                        <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+                        <span class="hide-menu"><b> Secondary Section</b> <span class="fa arrow"></span> </span>
+                    </a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="#"><i class="mdi mdi-clipboard-text fa-fw"></i><span class="hide-menu"><b>Senior
+                                        One</b> <span class="fa arrow"></span> </span></a>
+                            <ul class="nav nav-third-level">
+                                <li>
+                                    <a href="#"><b>Lesson Notes</b> <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorOneKiswahiliLessonNotes.html">Kiswahili
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorOneLatinLessonNotes.html">Latin
+                                                Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorOneLiteratureLessonNotes.html">Literature
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorOneLugandaLessonNotes.html">Luganda
+                                                Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorOneMathematicsLessonNotes.html">Mathematics
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorOnePhysicsLessonNotes.html">Physics
+                                                Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorOneSignLanguageLessonNotes.html">Sign
+                                                Language Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorOneTDLessonNotes.html">TD
+                                                Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorOneAgricultureLessonNotes.html">Agriculture
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorOneArabicLessonNotes.html">Arabic
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorOneArtLessonNotes.html">Art
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorOneBiologyLessonNotes.html">Biology
+                                                Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorOneChemistryLessonNotes.html">Chemistry
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorOneCommerceLessonNotes.html">Commerce
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorOneCRELessonNotes.html">CRE
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorOneEnglishLessonNotes.html">English
+                                                Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorOneEntrepreneurshipLessonNotes.html">Entrepreneurship
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorOneFNLessonNotes.html">FN
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorOneFrenchLessonNotes.html">French
+                                                Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorOneGeographyLessonNotes.html">Geography
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorOneGermanLessonNotes.html">German
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorOneHistoryLessonNotes.html">History
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorOneICTLessonNotes.html">ICT
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorOneIRELessonNotes.html">IRE
+                                                Lesson Notes</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#"><b>Past Papers</b> <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li><a href="https://fresh-teacher.github.io/SeniorOneCommercePastPapers.html">Commerce
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorOneCREPastPapers.html">CRE
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorOneEnglishPastPapers.html">English
+                                                Past Papers</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorOneEntrepreneurshipPastPapers.html">Entrepreneurship
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorOneFNPastPapers.html">FN Past
+                                                Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorOneFrenchLessonNotes.html">French
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorOneGeographyPastPapers.html">Geography
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorOneHistoryPastPapers.html">History
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorOneHolidayPackages.html">Holiday
+                                                Packages</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorOneICTPastPapers.html">ICT
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorOneIREPastPapers.html">IRE
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorOneKiswahiliPastPapers.html">Kiswahili
+                                                Past Papers</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorOneLiteraturePastPapers.html">Literature
+                                                Past Papers</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorOneMathematicsPastPapers.html">Mathematics
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorOneMusicPastPapers.html">Music
+                                                Past Papers</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorOnePhysicalEducationPastPapers.html">Physical
+                                                Education Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorOnePhysicsPastPapers.html">Physics
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorOneTDPastPapers.html">TD Past
+                                                Papers</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorOneAgriculturePastPapers.html">Agriculture
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorOneAllPastPapers.html">All
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorOneArtPastPapers.html">Art
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorOneBiologyPastPapers.html">Biology
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorOneChemistryPastPapers.html">Chemistry
+                                                Past Papers</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                        <li>
+                            <a href="#"><i class="mdi mdi-clipboard-text fa-fw"></i><span class="hide-menu"><b>Senior
+                                        Two</b> <span class="fa arrow"></span> </span></a>
+                            <ul class="nav nav-third-level">
+                                <li>
+                                    <a href="#"><b>Lesson Notes</b> <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li><a href="https://fresh-teacher.github.io/SeniorTwoLatinLessonNotes.html">Latin
+                                                Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorTwoLiteratureLessonNotes.html">Literature
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorTwoLugandaLessonNotes.html">Luganda
+                                                Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorTwoMathematicsLessonNotes.html">Mathematics
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorTwoPhysicsLessonNotes.html">Physics
+                                                Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorTwoSignLanguageLessonNotes.html">Sign
+                                                Language Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorTwoTechnicalDrawingLessonNotes.html">Technical
+                                                Drawing Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorTwoTechnologyandDesignLessonNotes.html">Technology
+                                                and Design Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorTwoAgricultureLessonNotes.html">Agriculture
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorTwoArtLessonNotes.html">Art
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorTwoBiologyLessonNotes.html">Biology
+                                                Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorTwoChemistryLessonNotes.html">Chemistry
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorTwoChineseLessonNotes.html">Chinese
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorTwoCommerceLessonNotes.html">Commerce
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorTwoCRELessonNotes.html">CRE
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorTwoEnglishLessonNotes.html">English
+                                                Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorTwoEntrepreneurshipLessonNotes.html">Entrepreneurship
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorTwoFNLessonNotes.html">FN
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorTwoFrenchLessonNotes.html">French
+                                                Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorTwoGeographyLessonNotes.html">Geography
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorTwoGermanLessonNotes.html">German
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorTwoHistoryLessonNotes.html">History
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorTwoICTLessonNotes.html">ICT
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorTwoIRELessonNotes.html">IRE
+                                                Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorTwoKiswahiliLessonNotes.html">Kiswahili
+                                                Lesson Notes</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#"><b>Past Papers</b> <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li><a href="https://fresh-teacher.github.io/SeniorTwoGeographyPastPapers.html">Geography
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorTwoHistoryPastPapers.html">History
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorTwoHolidayPackages.html">Holiday
+                                                Packages</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorTwoICTPastPapers.html">ICT
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorTwoIREPastPapers.html">IRE
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorTwoKiswahiliPastPapers.html">Kiswahili
+                                                Past Papers</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorTwoLiteraturePastPapers.html">Literature
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorTwoLugandaPastPapers.html">Luganda
+                                                Past Papers</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorTwoMathematicsPastPapers.html">Mathematics
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorTwoMusicPastPapers.html">Music
+                                                Past Papers</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorTwoPhysicalEducationPastPapers.html">Physical
+                                                Education Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorTwoPhysicsPastPapers.html">Physics
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorTwoTDPastPapers.html">Technical
+                                                Drawing Past Papers</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorTwoAgriculturePastPapers.html">Agriculture
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorTwoAllPastPapers.html">All
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorTwoArtPastPapers.html">Art
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorTwoBiologyPastPapers.html">Biology
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorTwoChemistryPastPapers.html">Chemistry
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorTwoChinesePastPapers.html">Chinese
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorTwoCommercePastPapers.html">Commerce
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorTwoCREPastPapers.html">CRE
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorTwoEnglishPastPapers.html">English
+                                                Past Papers</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorTwoEntrepreneurshipPastPapers.html">Entrepreneurship
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorTwoFNPastPapers.html">FN Past
+                                                Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorTwoFrenchPastPapers.html">French
+                                                Past Papers</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#"><i class="mdi mdi-clipboard-text fa-fw"></i><span class="hide-menu"><b>Senior
+                                        Three</b> <span class="fa arrow"></span> </span></a>
+                            <ul class="nav nav-third-level">
+                                <li>
+                                    <a href="#"><b>Lesson Notes</b> <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li><a href="https://fresh-teacher.github.io/SeniorThreeFNLessonNotes.html">FN
+                                                Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorThreeGeographyLessonNotes.html">Geography
+                                                Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorThreeHistoryLessonNotes.html">History
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorThreeICTLessonNotes.html">ICT
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorThreeIRELessonNotes.html">IRE
+                                                Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorThreeKiswahiliLessonNotes.html">Kiswahili
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorThreeLatinLessonNotes.html">Latin
+                                                Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorThreeLiteratureLessonNotes.html">Literature
+                                                Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorThreeLugandaLessonNotes.html">Luganda
+                                                Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorThreeMathematicsLessonNotes.html">Mathematics
+                                                Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorThreePhysicsLessonNotes.html">Physics
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorThreeTDLessonNotes.html">TD
+                                                Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorThreeAgricultureLessonNotes.html">Agriculture
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorThreeArtLessonNotes.html">Art
+                                                Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorThreeBiologyLessonNotes.html">Biology
+                                                Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorThreeChemistryLessonNotes.html">Chemistry
+                                                Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorThreeCommerceLessonNotes.html">Commerce
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorThreeCRELessonNotes.html">CRE
+                                                Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorThreeEnglishLessonNotes.html">English
+                                                Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorThreeEntrepreneurshipLessonNotes.html">Entrepreneurship
+                                                Lesson Notes</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#"><b>Past Papers</b> <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorThreeAccountsPastPapers.html">Accounts
+                                                Past Papers</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorThreeAgriculturePastPapers.html">Agriculture
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorThreeAllPastPapers.html">All
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorThreeArtPastPapers.html">Art
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorThreeBiologyPastPapers.html">Biology
+                                                Past Papers</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorThreeChemistryPastPapers.html">Chemistry
+                                                Past Papers</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorThreeCommercePastPapers.html">Commerce
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorThreeCREPastPapers.html">CRE
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorThreeEnglishPastPapers.html">English
+                                                Past Papers</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorThreeEntrepreneurshipPastPapers.html">Entrepreneurship
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorThreeFNPastPapers.html">FN
+                                                Past Papers</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorThreeGeographyPastPapers.html">Geography
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorThreeHistoryPastPapers.html">History
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorThreeHolidayPackages.html">Holiday
+                                                Packages</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorThreeICTPastPapers.html">ICT
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorThreeIREPastPapers.html">IRE
+                                                Past Papers</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorThreeKiswahiliPastPapers.html">Kiswahili
+                                                Past Papers</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorThreeLiteraturePastPapers.html">Literature
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorThreeLugandaPastPapers.html">Luganda
+                                                Past Papers</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorThreeMathematicsPastPapers.html">Mathematics
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorThreePhysicsPastPapers.html">Physics
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorThreeTDPastPapers.html">TD
+                                                Past Papers</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                        <li>
+                            <a href="#"><i class="mdi mdi-clipboard-text fa-fw"></i><span class="hide-menu"><b>Senior
+                                        Four</b> <span class="fa arrow"></span> </span></a>
+                            <ul class="nav nav-third-level">
+                                <li>
+                                    <a href="#"><b>Lesson Notes</b> <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li><a href="https://fresh-teacher.github.io/SeniorFourFrenchLessonNotes.html">French
+                                                Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorFourGeographyLessonNotes.html">Geography
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorFourGermanLessonNotes.html">German
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorFourHistoryLessonNotes.html">History
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorFourICTLessonNotes.html">ICT
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorFourIRELessonNotes.html">IRE
+                                                Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorFourKiswahiliLessonNotes.html">Kiswahili
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorFourLatinLessonNotes.html">Latin
+                                                Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorFourLiteratureLessonNotes.html">Literature
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorFourLugandaLessonNotes.html">Luganda
+                                                Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorFourMathematicsLessonNotes.html">Mathematics
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorFourPhysicsLessonNotes.html">Physics
+                                                Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorFourTechnologyandDesignLessonNotes.html">Technology
+                                                and Design Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorFourAgricultureLessonNotes.html">Agriculture
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorFourArabicLessonNotes.html">Arabic
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorFourArtLessonNotes.html">Art
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorFourBiologyLessonNotes.html">Biology
+                                                Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorFourChemistryLessonNotes.html">Chemistry
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorFourChineseLessonNotes.html">Chinese
+                                                Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorFourCommerceLessonNotes.html">Commerce
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorFourCRELessonNotes.html">CRE
+                                                Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorFourEconomicsLessonNotes.html">Economics
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorFourEnglishLessonNotes.html">English
+                                                Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorFourEntrepreneurshipLessonNotes.html">Entrepreneurship
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorFourFNLessonNotes.html">FN
+                                                Lesson Notes</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#"><b>Past Papers</b> <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li><a href="https://fresh-teacher.github.io/SeniorFourHistoryPastPapers.html">History
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorFourHolidayPackages.html">Holiday
+                                                Packages</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorFourICTPastPapers.html">ICT
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorFourIPSPastPapers.html">IPS
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorFourIREPastPapers.html">IRE
+                                                Past Papers</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorFourKiswahiliPastPapers.html">Kiswahili
+                                                Past Papers</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorFourLiteraturePastPapers.html">Literature
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorFourLugandaPastPapers.html">Luganda
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorFourLumasabaPastPapers.html">Lumasaba
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorFourLusogaPastPapers.html">Lusoga
+                                                Past Papers</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorFourMathematicsPastPapers.html">Mathematics
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorFourPhysicsPastPapers.html">Physics
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorFourRunyoroPastPapers.html">Runyoro
+                                                Past Papers</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorFourStudioTechnologyPastPapers.html">Studio
+                                                Technology Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorFourTDPastPapers.html">TD
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorFourAccountsPastPapers.html">Accounts
+                                                Past Papers</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorFourAgriculturePastPapers.html">Agriculture
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorFourArabicPastPapers.html">Arabic
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorFourArtPastPapers.html">Art
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorFourBiologyPastPapers.html">Biology
+                                                Past Papers</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorFourChemistryPastPapers.html">Chemistry
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorFourCommercePastPapers.html">Commerce
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorFourCREPastPapers.html">CRE
+                                                Past Papers</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorFourEconomicsPastPapers.html">Economics
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorFourEnglishPastPapers.html">English
+                                                Past Papers</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorFourEntreprenuershipPastPapers.html">Entreprenuership
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorFourFNPastPapers.html">FN
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorFourFrenchPastPapers.html">French
+                                                Past Papers</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#"><i class="mdi mdi-clipboard-text fa-fw"></i><span class="hide-menu"><b>Senior
+                                        Five</b> <span class="fa arrow"></span> </span></a>
+                            <ul class="nav nav-third-level">
+                                <li>
+                                    <a href="#"><b>Lesson Notes</b> <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li><a href="https://fresh-teacher.github.io/SeniorFiveBiologyLessonNotes.html">Biology
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorFiveGPLessonNotes.html">GP
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorFiveHistoryLessonNotes.html">History
+                                                Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorFiveLiteratureLessonNotes.html">Literature
+                                                Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorFiveMathematicsLessonNotes.html">Mathematics
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorFivePhysicsLessonNotes.html">Physics
+                                                Lesson Notes</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#"><b>Past Papers</b> <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li><a href="https://fresh-teacher.github.io/SeniorFiveBiologyPastPapers.html">Biology
+                                                Past Papers</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorFiveChemistryPastPapers.html">Chemistry
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorFiveDivinityPastPapers.html">Divinity
+                                                Past Papers</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorFiveEconomicsPastPapers.html">Economics
+                                                Past Papers</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorFiveEntrepreneurshipPastPapers.html">Entrepreneurship
+                                                Past Papers</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorFiveGeneralPaperPastPapers.html">General
+                                                Paper Past Papers</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorFiveGeographyPastPapers.html">Geography
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorFiveGermanPastPapers.html">German
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorFiveHistoryPastPapers.html">History
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorFiveICTPastPapers.html">ICT
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorFiveIREPastPapers.html">IRE
+                                                Past Papers</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorFiveKiswahiliPastPapers.html">Kiswahili
+                                                Past Papers</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorFiveLiteraturePastPapers.html">Literature
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorFiveLugandaPastPapers.html">Luganda
+                                                Past Papers</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorFiveMathematicsPastPapers.html">Mathematics
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorFivePhysicsPastPapers.html">Physics
+                                                Past Papers</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorFiveAgriculturePastPapers.html">Agriculture
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorFiveAllPastPapers.html">All
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorFiveArtPastPapers.html">Art
+                                                Past Papers</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                        <li>
+                            <a href="#"><i class="mdi mdi-clipboard-text fa-fw"></i><span class="hide-menu"><b>Senior
+                                        Six</b> <span class="fa arrow"></span> </span></a>
+                            <ul class="nav nav-third-level">
+                                <li>
+                                    <a href="#"><b>Lesson Notes</b> <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li><a href="https://fresh-teacher.github.io/SeniorSixPhysicsLessonNotes.html">Physics
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorSixTDLessonNotes.html">TD
+                                                Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorSixTechnicalDrawingLessonNotes.html">Technical
+                                                Drawing Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorSixAgricultureLessonNotes.html">Agriculture
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorSixArtLessonNotes.html">Art
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorSixBiologyLessonNotes.html">Biology
+                                                Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorSixChemistryLessonNotes.html">Chemistry
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorSixDivinityLessonNotes.html">Divinity
+                                                Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorSixEconomicsLessonNotes.html">Economics
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorSixEnglishLessonNotes.html">English
+                                                Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorSixEntrepreneurshipLessonNotes.html">Entrepreneurship
+                                                Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorSixGeographyLessonNotes.html">Geography
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorSixGPLessonNotes.html">GP
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorSixHistoryLessonNotes.html">History
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorSixICTLessonNotes.html">ICT
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorSixIPSLessonNotes.html">IPS
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorSixIRELessonNotes.html">IRE
+                                                Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorSixKiswahiliLessonNotes.html">Kiswahili
+                                                Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorSixLiteratureLessonNotes.html">Literature
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorSixLugandaLessonNotes.html">Luganda
+                                                Lesson Notes</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorSixMathematicsLessonNotes.html">Mathematics
+                                                Lesson Notes</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorSixMixedLessonNotes.html">Mixed
+                                                Lesson Notes</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#"><b>Past Papers</b> <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li><a href="https://fresh-teacher.github.io/SeniorSixICTPastPapers.html">ICT
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorSixIREPastPapers.html">IRE
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorSixKiswahiliPastPapers.html">Kiswahili
+                                                Past Papers</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorSixLiteraturePastPapers.html">Literature
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorSixLugandaPastPapers.html">Luganda
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorSixLumasabaPastPapers.html">Lumasaba
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorSixLusogaPastPapers.html">Lusoga
+                                                Past Papers</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorSixMathematicsPastPapers.html">Mathematics
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorSixMusicPastPapers.html">Music
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorSixPhysicsPastPapers.html">Physics
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorSixTDPastPapers.html">TD Past
+                                                Papers</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorSixAgriculturePastPapers.html">Agriculture
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorSixAllPastPapers.html">All
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorSixArabicPastPapers.html">Arabic
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorSixArtPastPapers.html">Art
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorSixBiologyPastPapers.html">Biology
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorSixChemistryPastPapers.html">Chemistry
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorSixCommercePastPapers.html">Commerce
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorSixDivityPastPapers.html">Divity
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorSixEnglishPastPapers.html">English
+                                                Past Papers</a></li>
+                                        <li><a
+                                                href="https://fresh-teacher.github.io/SeniorSixEntrepreneurshipPastPapers.html">Entrepreneurship
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorSixFNPastPapers.html">FN Past
+                                                Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorSixFrenchPastPapers.html">French
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorSixGeographyPastPapers.html">Geography
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorSixGermanPastPapers.html">German
+                                                Past Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorSixGPPastPapers.html">GP Past
+                                                Papers</a></li>
+                                        <li><a href="https://fresh-teacher.github.io/SeniorSixHistoryPastPapers.html">History
+                                                Past Papers</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+
+            </ul>
         </div>
     </div>
-    <div class='home-chat'></div>
-    <div class='start-chat'>
-        <div class="africavotes-chat-body">
-            <div class="dAbFpq">
-                <div class="eJJEeC" style="opacity: 0;">
-                    <div class="hFENyl">
-                        <div class="ixsrax"></div>
-                        <div class="dRvxoz"></div>
-                        <div class="kXBtNt"></div>
+
+    <div class="container">
+        <marquee class="marq" bgcolor="tomato" behavior=slide direction="left" loop="">
+            <strong><em>WELCOME TO FRESH TEACHER'S E-LIBRARY 📚</em></strong>
+        </marquee> <!-- PDF HERE -->
+        <div class="page-wrapper">
+            <h4 style="text-align: center;">Choose One Class From the Shelf to Continue:</h4>
+            <div class="bookshelf">
+                <div class="covers">
+                    <div class="thumb book-1">
+                        <a href="baby.html">
+                            <img src="https://fresh-teacher.github.io/images/book2/BABY CLASS.jpg">
+                        </a>
+                    </div>
+                    <div class="thumb book-1">
+                        <a href="middle.html">
+                            <img src="https://fresh-teacher.github.io/images/book2/MIDDLE CLASS.jpg">
+                        </a>
+                    </div>
+                    <div class="thumb book-1">
+                        <a href="top.html">
+                            <img src="https://fresh-teacher.github.io/images/book2/TOP CLASS.jpg">
+                        </a>
+                    </div>
+                    <div class="thumb book-1">
+                        <a href="p1.html">
+                            <img src="https://fresh-teacher.github.io/images/book2/PRIMARY ONE.jpg">
+                        </a>
+                    </div>
+                    <div class="thumb book-1">
+                        <a href="p2.html">
+                            <img src="https://fresh-teacher.github.io/images/book2/PRIMARY TWO.jpg">
+                        </a>
                     </div>
                 </div>
-                <div class="kAZgZq" style="opacity: 1;">
-                    <div class="iSpIQi"> Hello, how may I help you today? 🙂 </div>
+                <img class="shelf-img" src="https://fresh-teacher.github.io/images/shelf_wood.png">
+            </div>
+            <br>
+            <div class="bookshelf">
+                <div class="covers">
+                    <div class="thumb book-1">
+                        <a href="p3.html">
+                            <img src="https://fresh-teacher.github.io/images/book2/PRIMARY THREE.jpg">
+                        </a>
+                    </div>
+                    <div class="thumb book-1">
+                        <a href="p4.html">
+                            <img src="https://fresh-teacher.github.io/images/book2/PRIMARY FOUR.jpg">
+                        </a>
+                    </div>
+                    <div class="thumb book-1">
+                        <a href="p5.html">
+                            <img src="https://fresh-teacher.github.io/images/book2/PRIMARY FIVE.jpg">
+                        </a>
+                    </div>
+                    <div class="thumb book-1">
+                        <a href="p6.html">
+                            <img src="https://fresh-teacher.github.io/images/book2/PRIMARY SIX.jpg">
+                        </a>
+                    </div>
+                    <div class="thumb book-1">
+                        <a href="p7.html">
+                            <img src="https://fresh-teacher.github.io/images/book2/PRIMARY SEVEN.jpg">
+                        </a>
+                    </div>
+                </div>
+                <img class="shelf-img" src="https://fresh-teacher.github.io/images/shelf_wood.png">
+            </div><br>
+            <div class="bookshelf">
+                <div class="covers">
+                    <div class="thumb book-1">
+                        <a href="s1.html">
+                            <img src="https://fresh-teacher.github.io/images/book2/SENIOR ONE.jpg">
+                        </a>
+                    </div>
+                    <div class="thumb book-1">
+                        <a href="s2.html">
+                            <img src="https://fresh-teacher.github.io/images/book2/SENIOR TWO.jpg">
+                        </a>
+                    </div>
+                    <div class="thumb book-1">
+                        <a href="s3.html">
+                            <img src="https://fresh-teacher.github.io/images/book2/SENIOR THREE.jpg">
+                        </a>
+                    </div>
+                    <div class="thumb book-1">
+                        <a href="s4.html">
+                            <img src="https://fresh-teacher.github.io/images/book2/SENIOR FOUR.jpg">
+                        </a>
+                    </div>
+                    <div class="thumb book-1">
+                        <a href="s5.html">
+                            <img src="https://fresh-teacher.github.io/images/book2/SENIOR FIVE.jpg">
+                        </a>
+                    </div>
+                </div>
+                <img class="shelf-img" src="https://fresh-teacher.github.io/images/shelf_wood.png">
+            </div><br>
+            <div class="bookshelf">
+                <div class="covers">
+                    <div class="thumb book-1">
+                        <a href="s6.html">
+                            <img src="https://fresh-teacher.github.io/images/book2/SENIOR SIX.jpg">
+                        </a>
+                    </div>
+                    <div class="thumb book-1">
+                        <a href="">
+                            <!-- <img src="https://fresh-teacher.github.io/images/book2/2222222222222222.jpg"> -->
+                        </a>
+                    </div>
+                    <div class="thumb book-1">
+                        <a href="">
+                            <!-- <img src="https://fresh-teacher.github.io/images/book2/222222222222.jpg"> -->
+                        </a>
+                    </div>
+                    <div class="thumb book-1">
+                        <a href="">
+                            <!-- <img src="https://fresh-teacher.github.io/images/book2/2222222222222.jpg"> -->
+                        </a>
+                    </div>
+                    <div class="thumb book-1">
+                        <a href="">
+                            <!-- <img src="https://fresh-teacher.github.io/images/book2/22222222222222.jpg"> -->
+                        </a>
+                    </div>
+                </div>
+                <img class="shelf-img" src="https://fresh-teacher.github.io/images/shelf_wood.png">
+            </div>
+        </div><br>
+        <!-- End Of PDF -->
+
+        <audio id="audiocracker" src="door.mp3"></audio>
+        <script>
+            function PlaySound() {
+                var sound = document.getElementById("audiocracker");
+                sound.play()
+            }
+
+            jQuery.easing['jswing'] = jQuery.easing['swing'];
+            jQuery.extend(jQuery.easing, {
+                def: 'easeOutQuad',
+                swing: function (x, t, b, c, d) {
+                    return jQuery.easing[jQuery.easing.def](x, t, b, c, d);
+                },
+                easeInQuad: function (x, t, b, c, d) {
+                    return c * (t /= d) * t + b;
+                },
+                easeOutQuad: function (x, t, b, c, d) {
+                    return -c * (t /= d) * (t - 2) + b;
+                },
+                easeInOutQuad: function (x, t, b, c, d) {
+                    if ((t /= d / 2) < 1) return c / 2 * t * t + b;
+                    return -c / 2 * ((--t) * (t - 2) - 1) + b;
+                },
+                easeInCubic: function (x, t, b, c, d) {
+                    return c * (t /= d) * t * t + b;
+                },
+                easeOutCubic: function (x, t, b, c, d) {
+                    return c * ((t = t / d - 1) * t * t + 1) + b;
+                },
+                easeInOutCubic: function (x, t, b, c, d) {
+                    if ((t /= d / 2) < 1) return c / 2 * t * t * t + b;
+                    return c / 2 * ((t -= 2) * t * t + 2) + b;
+                },
+                easeInQuart: function (x, t, b, c, d) {
+                    return c * (t /= d) * t * t * t + b;
+                },
+                easeOutQuart: function (x, t, b, c, d) {
+                    return -c * ((t = t / d - 1) * t * t * t - 1) + b;
+                },
+                easeInOutQuart: function (x, t, b, c, d) {
+                    if ((t /= d / 2) < 1) return c / 2 * t * t * t * t + b;
+                    return -c / 2 * ((t -= 2) * t * t * t - 2) + b;
+                },
+                easeInQuint: function (x, t, b, c, d) {
+                    return c * (t /= d) * t * t * t * t + b;
+                },
+                easeOutQuint: function (x, t, b, c, d) {
+                    return c * ((t = t / d - 1) * t * t * t * t + 1) + b;
+                },
+                easeInOutQuint: function (x, t, b, c, d) {
+                    if ((t /= d / 2) < 1) return c / 2 * t * t * t * t * t + b;
+                    return c / 2 * ((t -= 2) * t * t * t * t + 2) + b;
+                },
+                easeInSine: function (x, t, b, c, d) {
+                    return -c * Math.cos(t / d * (Math.PI / 2)) + c + b;
+                },
+                easeOutSine: function (x, t, b, c, d) {
+                    return c * Math.sin(t / d * (Math.PI / 2)) + b;
+                },
+                easeInOutSine: function (x, t, b, c, d) {
+                    return -c / 2 * (Math.cos(Math.PI * t / d) - 1) + b;
+                },
+                easeInExpo: function (x, t, b, c, d) {
+                    return (t == 0) ? b : c * Math.pow(2, 10 * (t / d - 1)) + b;
+                },
+                easeOutExpo: function (x, t, b, c, d) {
+                    return (t == d) ? b + c : c * (-Math.pow(2, -10 * t / d) + 1) + b;
+                },
+                easeInOutExpo: function (x, t, b, c, d) {
+                    if (t == 0) return b;
+                    if (t == d) return b + c;
+                    if ((t /= d / 2) < 1) return c / 2 * Math.pow(2, 10 * (t - 1)) + b;
+                    return c / 2 * (-Math.pow(2, -10 * --t) + 2) + b;
+                },
+                easeInCirc: function (x, t, b, c, d) {
+                    return -c * (Math.sqrt(1 - (t /= d) * t) - 1) + b;
+                },
+                easeOutCirc: function (x, t, b, c, d) {
+                    return c * Math.sqrt(1 - (t = t / d - 1) * t) + b;
+                },
+                easeInOutCirc: function (x, t, b, c, d) {
+                    if ((t /= d / 2) < 1) return -c / 2 * (Math.sqrt(1 - t * t) - 1) + b;
+                    return c / 2 * (Math.sqrt(1 - (t -= 2) * t) + 1) + b;
+                },
+                easeInElastic: function (x, t, b, c, d) {
+                    var s = 1.70158;
+                    var p = 0;
+                    var a = c;
+                    if (t == 0) return b;
+                    if ((t /= d) == 1) return b + c;
+                    if (!p) p = d * .3;
+                    if (a < Math.abs(c)) {
+                        a = c;
+                        var s = p / 4;
+                    } else var s = p / (2 * Math.PI) * Math.asin(c / a);
+                    return -(a * Math.pow(2, 10 * (t -= 1)) * Math.sin((t * d - s) * (2 * Math.PI) / p)) + b;
+                },
+                easeOutElastic: function (x, t, b, c, d) {
+                    var s = 1.70158;
+                    var p = 0;
+                    var a = c;
+                    if (t == 0) return b;
+                    if ((t /= d) == 1) return b + c;
+                    if (!p) p = d * .3;
+                    if (a < Math.abs(c)) {
+                        a = c;
+                        var s = p / 4;
+                    } else var s = p / (2 * Math.PI) * Math.asin(c / a);
+                    return a * Math.pow(2, -10 * t) * Math.sin((t * d - s) * (2 * Math.PI) / p) + c + b;
+                },
+                easeInOutElastic: function (x, t, b, c, d) {
+                    var s = 1.70158;
+                    var p = 0;
+                    var a = c;
+                    if (t == 0) return b;
+                    if ((t /= d / 2) == 2) return b + c;
+                    if (!p) p = d * (.3 * 1.5);
+                    if (a < Math.abs(c)) {
+                        a = c;
+                        var s = p / 4;
+                    } else var s = p / (2 * Math.PI) * Math.asin(c / a);
+                    if (t < 1) return -.5 * (a * Math.pow(2, 10 * (t -= 1)) * Math.sin((t * d - s) * (2 * Math.PI) / p)) + b;
+                    return a * Math.pow(2, -10 * (t -= 1)) * Math.sin((t * d - s) * (2 * Math.PI) / p) * .5 + c + b;
+                },
+                easeInBack: function (x, t, b, c, d, s) {
+                    if (s == undefined) s = 1.70158;
+                    return c * (t /= d) * t * ((s + 1) * t - s) + b;
+                },
+                easeOutBack: function (x, t, b, c, d, s) {
+                    if (s == undefined) s = 1.70158;
+                    return c * ((t = t / d - 1) * t * ((s + 1) * t + s) + 1) + b;
+                },
+                easeInOutBack: function (x, t, b, c, d, s) {
+                    if (s == undefined) s = 1.70158;
+                    if ((t /= d / 2) < 1) return c / 2 * (t * t * (((s *= (1.525)) + 1) * t - s)) + b;
+                    return c / 2 * ((t -= 2) * t * (((s *= (1.525)) + 1) * t + s) + 2) + b;
+                },
+                easeInBounce: function (x, t, b, c, d) {
+                    return c - jQuery.easing.easeOutBounce(x, d - t, 0, c, d) + b;
+                },
+                easeOutBounce: function (x, t, b, c, d) {
+                    if ((t /= d) < (1 / 2.75)) {
+                        return c * (7.5625 * t * t) + b;
+                    } else if (t < (2 / 2.75)) {
+                        return c * (7.5625 * (t -= (1.5 / 2.75)) * t + .75) + b;
+                    } else if (t < (2.5 / 2.75)) {
+                        return c * (7.5625 * (t -= (2.25 / 2.75)) * t + .9375) + b;
+                    } else {
+                        return c * (7.5625 * (t -= (2.625 / 2.75)) * t + .984375) + b;
+                    }
+                },
+                easeInOutBounce: function (x, t, b, c, d) {
+                    if (t < d / 2) return jQuery.easing.easeInBounce(x, t * 2, 0, c, d) * .5 + b;
+                    return jQuery.easing.easeOutBounce(x, t * 2 - d, 0, c, d) * .5 + c * .5 + b;
+                }
+            });
+        </script>
+        <div class='hide' id='africavotes-chat'>
+            <div class='header-chat'>
+                <div class='head-home'>
+                    <div class='info-avatar'><img src='dp.jpeg'></div>
+                    <p><span class="africavotes-name">Fresh Teacher</span><br> <small>online </small></p>
+                </div>
+                <div class='get-new hide'>
+                    <div id='get-label'></div>
+                    <div id='get-nama'></div>
                 </div>
             </div>
-        </div>
-        <div class='blanter-msg'> <textarea id='chat-input' maxlength='120' placeholder='Message'></textarea> <a href='javascript:void(0)' id='send-it'><svg viewbox="0 0 448 448"> <path d="M.213 32L0 181.333 320 224 0 266.667.213 416 448 224z"></path></svg></a>                </div>
-    </div>
-    <div id='get-number'></div><a class='close-chat' href='javascript:void(0)'>×</a> </div> <a class='africaVotesChat' href='javascript:void(0)' title='Show Chat'><svg width="20" viewBox="0 0 24 24"><defs/><path fill="#eceff1" d="M20.5 3.4A12.1 12.1 0 0012 0 12 12 0 001.7 17.8L0 24l6.3-1.7c2.8 1.5 5 1.4 5.8 1.5a12 12 0 008.4-20.3z"/><path fill="#4caf50" d="M12 21.8c-3.1 0-5.2-1.6-5.4-1.6l-3.7 1 1-3.7-.3-.4A9.9 9.9 0 012.1 12a10 10 0 0117-7 9.9 9.9 0 01-7 16.9z"/><path fill="#fafafa" d="M17.5 14.3c-.3 0-1.8-.8-2-.9-.7-.2-.5 0-1.7 1.3-.1.2-.3.2-.6.1s-1.3-.5-2.4-1.5a9 9 0 01-1.7-2c-.3-.6.4-.6 1-1.7l-.1-.5-1-2.2c-.2-.6-.4-.5-.6-.5-.6 0-1 0-1.4.3-1.6 1.8-1.2 3.6.2 5.6 2.7 3.5 4.2 4.2 6.8 5 .7.3 1.4.3 1.9.2.6 0 1.7-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.3-.6-.4z"/></svg> Let's Chat</a>
-<script>
-    $(document).on("click", "#send-it", function() {
-        var a = document.getElementById("chat-input");
-        if ("" != a.value) {
-            var b = $("#get-number").text(),
-                c = document.getElementById("chat-input").value,
-                d = "https://web.whatsapp.com/send",
-                e = b,
-                f = "&text=" + c;
-            /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && (d = "whatsapp://send");
-            var g = d + "?phone=+256750687790" + e + f;
-            window.open(g, "_blank")
-        }
-    }), $(document).on("click", ".informasi", function() {
-        document.getElementById("get-number").innerHTML = $(this).children(".my-number").text(), $(".start-chat,.get-new").addClass("show").removeClass("hide"), $(".home-chat,.head-home").addClass("hide").removeClass("show"), document.getElementById("get-nama").innerHTML = $(this).children(".info-chat").children(".chat-nama").text(), document.getElementById("get-label").innerHTML = $(this).children(".info-chat").children(".chat-label").text()
-    }), $(document).on("click", ".close-chat", function() {
-        $("#africavotes-chat").addClass("hide").removeClass("show")
-    }), $(document).on("click", ".africaVotesChat,.contactWhatsapp", function() {
-        if ($("#africavotes-chat").hasClass("show")) {
-            $("#africavotes-chat").addClass("hide").removeClass("show")
-        } else {
-            $("#africavotes-chat").addClass("show").removeClass("hide");
-            $("#ContactModal").modal('hide');
-        }
-    })
-</script>
+            <div class='home-chat'></div>
+            <div class='start-chat'>
+                <div class="africavotes-chat-body">
+                    <div class="dAbFpq">
+                        <div class="eJJEeC" style="opacity: 0;">
+                            <div class="hFENyl">
+                                <div class="ixsrax"></div>
+                                <div class="dRvxoz"></div>
+                                <div class="kXBtNt"></div>
+                            </div>
+                        </div>
+                        <div class="kAZgZq" style="opacity: 1;">
+                            <div class="iSpIQi" id="greeting"> </div>
+                        </div>
+
+                        <script>
+                            // Get the current hour of the user's device
+                            var currentHour = new Date().getHours();
+
+                            // Define the greeting messages based on the current time
+                            var greetingMessage;
+                            if (currentHour >= 5 && currentHour < 12) {
+                                greetingMessage = "Hello, good morning! ☀️";
+                            } else if (currentHour >= 12 && currentHour < 18) {
+                                greetingMessage = "Hello, good afternoon! 🌤️";
+                            } else {
+                                greetingMessage = "Hello, good evening! 🌙";
+                            }
+
+                            // Set the greeting message in the div
+                            document.getElementById("greeting").innerText = greetingMessage;
+                        </script>
+
+                    </div>
+                </div>
+                <div class='blanter-msg'> <textarea id='chat-input' maxlength='120' placeholder='Message'></textarea> <a
+                        href='javascript:void(0)' id='send-it'><svg viewbox="0 0 448 448">
+                            <path d="M.213 32L0 181.333 320 224 0 266.667.213 416 448 224z"></path>
+                        </svg></a> </div>
+            </div>
+            <div id='get-number'></div><a class='close-chat' href='javascript:void(0)'>×</a>
+        </div> <a class='africaVotesChat' href='javascript:void(0)' title='Show Chat'><svg width="20"
+                viewBox="0 0 24 24">
+                <defs />
+                <path fill="#eceff1"
+                    d="M20.5 3.4A12.1 12.1 0 0012 0 12 12 0 001.7 17.8L0 24l6.3-1.7c2.8 1.5 5 1.4 5.8 1.5a12 12 0 008.4-20.3z" />
+                <path fill="#4caf50"
+                    d="M12 21.8c-3.1 0-5.2-1.6-5.4-1.6l-3.7 1 1-3.7-.3-.4A9.9 9.9 0 012.1 12a10 10 0 0117-7 9.9 9.9 0 01-7 16.9z" />
+                <path fill="#fafafa"
+                    d="M17.5 14.3c-.3 0-1.8-.8-2-.9-.7-.2-.5 0-1.7 1.3-.1.2-.3.2-.6.1s-1.3-.5-2.4-1.5a9 9 0 01-1.7-2c-.3-.6.4-.6 1-1.7l-.1-.5-1-2.2c-.2-.6-.4-.5-.6-.5-.6 0-1 0-1.4.3-1.6 1.8-1.2 3.6.2 5.6 2.7 3.5 4.2 4.2 6.8 5 .7.3 1.4.3 1.9.2.6 0 1.7-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.3-.6-.4z" />
+            </svg> Chat</a>
+        <script>
+            $(document).on("click", "#send-it", function () {
+                var a = document.getElementById("chat-input");
+                if ("" != a.value) {
+                    var b = $("#get-number").text(),
+                        c = document.getElementById("chat-input").value,
+                        d = "https://web.whatsapp.com/send",
+                        e = b,
+                        f = "&text=" + c;
+                    /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && (d = "whatsapp://send");
+                    var g = d + "?phone=+256750687790" + e + f;
+                    window.open(g, "_blank")
+                }
+            }), $(document).on("click", ".informasi", function () {
+                document.getElementById("get-number").innerHTML = $(this).children(".my-number").text(), $(".start-chat,.get-new").addClass("show").removeClass("hide"), $(".home-chat,.head-home").addClass("hide").removeClass("show"), document.getElementById("get-nama").innerHTML = $(this).children(".info-chat").children(".chat-nama").text(), document.getElementById("get-label").innerHTML = $(this).children(".info-chat").children(".chat-label").text()
+            }), $(document).on("click", ".close-chat", function () {
+                $("#africavotes-chat").addClass("hide").removeClass("show")
+            }), $(document).on("click", ".africaVotesChat,.contactWhatsapp", function () {
+                if ($("#africavotes-chat").hasClass("show")) {
+                    $("#africavotes-chat").addClass("hide").removeClass("show")
+                } else {
+                    $("#africavotes-chat").addClass("show").removeClass("hide");
+                    $("#ContactModal").modal('hide');
+                }
+            })
+        </script>
+        <!--Wave Effects -->
+        <script src="js/waves.js"></script>
+        <!--slimscroll JavaScript -->
+        <script src="js/jquery.slimscroll.js"></script>
+        <!-- Custom Theme JavaScript -->
+        <script src="js/custom.min.js"></script>
+        <!--Style Switcher -->
+        <script src="plugins/bower_components/styleswitcher/jQuery.style.switcher.js"></script>
+        <!-- Menu Plugin JavaScript -->
+        <script src="plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>
