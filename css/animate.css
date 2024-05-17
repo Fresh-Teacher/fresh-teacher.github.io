@@ -6,6 +6,28 @@
  *
  * Copyright (c) 2016 Daniel Eden
  */
+ @keyframes slideIn {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    50% { transform: translateX(10px); }
+    75% { transform: translateX(-10px); }
+}
+
+.animated-btn {
+    animation: slideIn 1s ease-out, shake 3s 1s infinite;
+}
+
  @keyframes heartbeat {
     0% {
         transform: scale(1);

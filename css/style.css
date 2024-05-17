@@ -1118,24 +1118,6 @@ pre {
     color: #ffffff
 }
 
-.top-left-part {
-    width: 240px;
-    float: left;
-    border-right: 1px solid rgba(0, 0, 0, 0.08)
-}
-
-.top-left-part a {
-    color: #ffffff;
-    line-height: 59px;
-    font-size: 18px;
-    padding-left: 10px;
-    text-transform: uppercase
-}
-
-.top-left-part .light-logo {
-    display: none
-}
-
 .navbar-header {
     width: 100%;
     background: #7ace4c;
@@ -10019,29 +10001,14 @@ ul.pro-amenities li span i {
     }
 }
 
-@media (min-width:1170px) {
-    .app-search .form-control:focus {
-        width: 300px
-    }
-    .hide-sidebar .top-left-part {
-        width: auto
-    }
-    .hide-sidebar .top-left-part .logo span {
-        display: none
-    }
-    .hide-sidebar .sidebar {
-        left: -240px;
-        -webkit-transition: 0.5s ease-out;
-        -o-transition: 0.5s ease-out;
-        transition: 0.5s ease-out
-    }
+
     .hide-sidebar #page-wrapper {
         margin-left: 0px
     }
     .hide-sidebar .footer {
         left: 0px
     }
-}
+
 
 @media (min-width:768px) {
     #page-wrapper {
@@ -10143,9 +10110,7 @@ ul.pro-amenities li span i {
     .navbar-top-links .profile-pic img {
         margin-right: 0px
     }
-    .top-left-part {
-        width: 60px
-    }
+
     .navbar-top-links>li:last-child {
         margin-right: 0px
     }
