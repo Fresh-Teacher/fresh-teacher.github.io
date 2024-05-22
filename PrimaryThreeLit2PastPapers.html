@@ -1,61 +1,11 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-SS26CRENX2"></script>
-<script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-SS26CRENX2');
-    </script>
-<!-- Google Tag Manager -->
-<script>(function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-KGD6TVT');</script>
-<!-- End Google Tag Manager -->
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-KGD6TVT" style="display:none;visibility:hidden" width="0"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-<!-- Add these lines to include Bootstrap CSS and JavaScript -->
-<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"/>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<meta content="Welcome To Fresh Teacher's Library, one stop center for academic needs of Ugandan schools. Our core mandate is to apply creativity and come up with innovative solutions in Ugandas' education sector." name="description"/>
-<meta content="Fresh Teacher's Library, www.freshteacheruganda.com, Schemes Of Work, Lesson Plans, Lesson Notes, Topical Questions, Luganda Translated Movies, Past Papers" name="keyword"/>
-<meta content="Fresh Teacher" name="author"/>
-<link href="logo.jpg" rel="icon" sizes="16x16" type="image/png"/>
-<link href="/manifest.json" rel="manifest">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
-<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
-<meta content="Fresh Teacher's Library" property="og:site_name">
-<meta content="https://2.bp.blogspot.com/-IEabwvLwNVY/XnccoVSvUgI/AAAAAAAAFro/mQPkBepUZpcNo1WG8trICTTg7unzwwXSgCK4BGAYYCw/s1600/SquareFit_20200322_064134.jpg" property="og:image">
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Primary Three Lit2 Past Papers</title>
-<!-- Required meta tags -->
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
-<!-- AJAX -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
-<!-- Costume CSS -->
-<link href="css/flipbook.style.css" rel="stylesheet" type="text/css"/>
-<link href="css/font-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="css/footer.css" rel="stylesheet" type="text/css"/>
-<!-- Bootstrap CSS -->
-<link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet"/>
-<link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" rel="stylesheet"/>
-<!-- Include JS -->
-<script src="js/flipbook.min.js"></script>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
 <style>
 
     .card {
@@ -510,7 +460,7 @@
 
 
   </style>
-</meta></meta></meta></link></head>
+</head>
 <body>
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
@@ -519,206 +469,175 @@
 <a href="index.html">
 <button class="btn btn-danger animated-btn"><strong>↩ RETURN TO LIBRARY 📚</strong></button>
 </a> </div>
-
 </a>
 </nav><br/>
-<div class="container mt-5">
-<input class="form-control mb-4" id="search" placeholder="Search items..." type="text"/>
-<div class="row" id="items-container">
-<!-- Cards will be appended here -->
-</div>
+
+<body>
+<div class="container"><br/><br/>
+<input class="form-control mb-4" id="searchInput" placeholder="🔍 Search for content here..." type="text"/>
+<div class="row" id="cardsContainer"></div>
 <div class="spinner">
 <div class="spinner-border text-primary" role="status">
 <span class="sr-only">Loading...</span>
 </div>
 </div>
-<div class="text-center text-danger" id="no-results">
-    No results found.
-  </div>
-<div class="end-message" id="end-of-content">
-    You have reached the bottom of the page. No more items to display.
-  </div>
+<p class="text-center" id="noMoreResults"></p>
 </div>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- AJAX -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+<!-- Costume CSS -->
+<link href="css/flipbook.style.css" rel="stylesheet" type="text/css"/>
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="css/footer.css" rel="stylesheet" type="text/css"/>
+<!-- Bootstrap CSS -->
+<link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet"/>
+<link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" rel="stylesheet"/>
+<!-- Include JS -->
 <script src="js/flipbook.min.js"></script>
 <script>
-$(document).ready(function() {
-  let items = [];
-  let filteredItems = [];
-  let currentIndex = 0;
-  const itemsPerPage = 12;
-
-  // Fetch the data
-  $.getJSON('PrimaryThreeLit2PastPapers.json', function(data) {
-    items = data;
-    filteredItems = items;
-    loadItems();
-  });
-
-  // Load items
-  function loadItems() {
-    const container = $('#items-container');
-    const spinner = $('.spinner');
-    const endMessage = $('#end-of-content');
-    const noResultsMessage = $('#no-results');
-
-    if (filteredItems.length === 0) {
-      noResultsMessage.show();
-      spinner.hide();
-      endMessage.hide();
-      return;
-    } else {
-      noResultsMessage.hide();
+    const itemsPerPage = 12;
+    let currentPage = 1;
+    let allData = [];
+    let filteredData = [];
+    let isLoading = false;
+  
+    $(document).ready(function() {
+      fetchData();
+  
+      const debouncedFilter = debounce(function() {
+        const query = $('#searchInput').val().toLowerCase();
+        filterData(query);
+      }, 300);
+  
+      $('#searchInput').on('input', debouncedFilter);
+  
+      $(window).scroll(function() {
+        if ($(window).scrollTop() + $(window).height() >= $(document).height() - 100) {
+          if (!isLoading && (currentPage - 1) * itemsPerPage < filteredData.length) {
+            loadMoreData();
+          } else if ((currentPage - 1) * itemsPerPage >= filteredData.length) {
+            $('#noMoreResults').text('NO MORE RESULTS FOUND');
+          }
+        }
+      });
+    });
+  
+    function fetchData() {
+      $.getJSON('PrimaryThreeLit2PastPapers.json', function(data) {
+        allData = data;
+        filteredData = data;
+        renderData();
+      });
     }
-
-    // Show spinner while loading
-    spinner.show();
-
-    setTimeout(() => {
-      const endIndex = currentIndex + itemsPerPage;
-
-      filteredItems.slice(currentIndex, endIndex).forEach((item, index) => {
-        const pdfId = "read" + (currentIndex + index + 1);
-        const pdfUrl = item.pdfUrl;
-        const fileName = pdfUrl.substring(pdfUrl.lastIndexOf("/") + 1).replace(".pdf", "");
-        const title = fileName.toUpperCase(); // Capitalize the extracted file name
-        const description = item.description;
-
-        const pdfSection = `
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <div class="card-body">
-                <h3 id="title${currentIndex + index + 1}">${title}</h3>
-                <p class="description">${description}</p>
-                <p>Price: <span class="price"><del>${item.price}</del></span> <span class="free-text">FREE</span></p>
-                <div class="button">
-                  <a id="${pdfId}" class="btn btn-primary mt-2 mr-2 text-white">View File <i class="fas fa-book-reader fa-lg"></i></a>
-                  <a href="${pdfUrl}" class="btn btn-info mt-2 text-white" download>Download File <i class="fas fa-download fa-lg"></i></a>
+  
+    function renderData() {
+      const startIndex = (currentPage - 1) * itemsPerPage;
+      const endIndex = currentPage * itemsPerPage;
+      const currentData = filteredData.slice(startIndex, endIndex);
+  
+      if (currentData.length === 0 && currentPage === 1) {
+        $('#cardsContainer').html('<p class="col-12 text-center">NO RESULTS FOUND</p>');
+      } else {
+        currentData.forEach((item, index) => {
+          const pdfId = "read" + (startIndex + index + 1);
+          const pdfUrl = item.pdfUrl;
+          const fileName = pdfUrl.substring(pdfUrl.lastIndexOf("/") + 1).replace(".pdf", "");
+          const title = fileName.toUpperCase();
+          const description = item.description;
+  
+          $('#cardsContainer').append(`
+            <div class="col-md-4 mb-3">
+              <div class="card">
+                <div class="card-body">
+                  <h3>${title}</h3>
+                  <p class="description">${description}</p>
+                  <p>Price: <span class="price"><del>${item.price}</del></span> <span class="free-text">FREE</span></p>
+                  <div class="button">
+                    <a id="${pdfId}" class="btn btn-primary mt-2 mr-2 text-white">View File <i class="fas fa-book-reader fa-lg"></i></a>
+                    <a href="${pdfUrl}" class="btn btn-info mt-2 text-white" download>Download File <i class="fas fa-download fa-lg"></i></a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>`;
-
-            $(".row").append(pdfSection);
-
-            $("#" + pdfId).flipBook({
-              // Layout Setting
-              pdfUrl: item.pdfUrl,
-              lightBox: true,
-              layout: 3,
-              currentPage: {
-                vAlign: "bottom",
-                hAlign: "left"
-              },
-              // BTN SETTING
-              btnShare: {
-                enabled: false
-              },
-              btnPrint: {
-                enabled: true // Enable the print button
-              },
-              btnDownloadPages: {
-                enabled: true // Enable the download pages button
-              },
-              btnColor: 'rgb(255,120,60)',
-              sideBtnColor: 'rgb(255,120,60)',
-              sideBtnSize: 60,
-              sideBtnBackground: "rgba(0,0,0,.7)",
-              sideBtnRadius: 60,
-              btnSound: {
-                vAlign: "top",
-                hAlign: "left"
-              },
-              btnAutoplay: {
-                vAlign: "top",
-                hAlign: "left"
-              },
-            });
-
+          `);
+  
+          $("#" + pdfId).flipBook({
+            pdfUrl: item.pdfUrl,
+            lightBox: true,
+            layout: 3,
+            currentPage: {
+              vAlign: "bottom",
+              hAlign: "left"
+            },
+            btnShare: {
+              enabled: false
+            },
+            btnPrint: {
+              enabled: true
+            },
+            btnDownloadPages: {
+              enabled: true
+            },
+            btnColor: 'rgb(255,120,60)',
+            sideBtnColor: 'rgb(255,120,60)',
+            sideBtnSize: 60,
+            sideBtnBackground: "rgba(0,0,0,.7)",
+            sideBtnRadius: 60,
+            btnSound: {
+              vAlign: "top",
+              hAlign: "left"
+            },
+            btnAutoplay: {
+              vAlign: "top",
+              hAlign: "left"
+            },
           });
-
-           function updatePaginationButtons() {
-          $("#pageNumbers").text("Page " + currentPage + " of " + totalPages);
-          if (currentPage === 1) {
-            $("#previousPageBtn").hide();
-          } else {
-            $("#previousPageBtn").show();
-          }
-          if (currentPage === totalPages) {
-            $("#nextPageBtn").hide();
-          } else {
-            $("#nextPageBtn").show();
-          }
+        });
+  
+        if (currentData.length < itemsPerPage && currentPage === 1) {
+          $('#noMoreResults').text('NO MORE RESULTS FOUND');
         }
-
-        $("#previousPageBtn").click(function() {
-          if (currentPage > 1) {
-            currentPage--;
-            showPage(currentPage);
-            updatePaginationButtons();
-          }
-        });
-
-        $("#nextPageBtn").click(function() {
-          if (currentPage < totalPages) {
-            currentPage++;
-            showPage(currentPage);
-            updatePaginationButtons();
-          }
-        });
-$("#jumpButton").click(function() {
-  var pageInput = parseInt($("#jumpToPage").val());
-  if (!isNaN(pageInput) && pageInput > 0 && pageInput <= totalPages) {
-    currentPage = pageInput;
-    showPage(currentPage);
-    updatePaginationButtons();
-  }
-});
-
-      currentIndex = endIndex;
-      spinner.hide();
-
-      if (currentIndex >= filteredItems.length) {
-        endMessage.show();
-      } else {
-        endMessage.hide();
       }
-    }, 500); // Simulate loading time
-  }
-
-  // Infinite scroll
-  $(window).scroll(function() {
-    if ($(window).scrollTop() + $(window).height() >= $(document).height() - 10) {
-      loadItems();
     }
-  });
-
-  // Search functionality
-  $('#search').on('input', function() {
-    const searchTerm = $(this).val().toLowerCase();
-    filteredItems = items.filter(item => {
-      const title = item.pdfUrl.substring(item.pdfUrl.lastIndexOf("/") + 1).replace(".pdf", "").toLowerCase();
-      const description = item.description.toLowerCase();
-      return title.includes(searchTerm) || description.includes(searchTerm);
-    });
-    currentIndex = 0;
-    $('#items-container').empty();
-
-    if (filteredItems.length === 0) {
-      $('#no-results').show();
-      $('#end-of-content').hide();
-    } else {
-      $('#no-results').hide();
-      loadItems();
+  
+    function loadMoreData() {
+      if (isLoading) return;
+      isLoading = true;
+      $('.spinner').show();
+      setTimeout(() => {
+        currentPage++;
+        renderData();
+        isLoading = false;
+        $('.spinner').hide();
+      }, 1000);
     }
-  });
-});
-</script>
+  
+    function filterData(query) {
+      filteredData = allData.filter(item => 
+        item.title.toLowerCase().includes(query) || 
+        item.description.toLowerCase().includes(query)
+      );
+      currentPage = 1;
+      $('#cardsContainer').empty();
+      $('#noMoreResults').text('');
+      renderData();
+    }
+  
+    function debounce(func, wait) {
+      let timeout;
+      return function() {
+        const context = this, args = arguments;
+        clearTimeout(timeout);
+        timeout = setTimeout(() => func.apply(context, args), wait);
+      };
+    }
+  </script>
 <div class="hide" id="africavotes-chat">
 <div class="header-chat">
 <div class="head-home">
 <div class="info-avatar"><img src="dp.jpeg"/></div>
-<p><span class="africavotes-name">Fresh Teacher</span><br/> <small>online </small></p>
+<p><span class="africavotes-name">Fresh Teacher</span><br> <small>online </small></br></p>
 </div>
 <div class="get-new hide">
 <div id="get-label"></div>
@@ -740,52 +659,52 @@ $("#jumpButton").click(function() {
 <div class="iSpIQi" id="greeting"> </div>
 </div>
 <script>
-                    // Get the current hour of the user's device
-                    var currentHour = new Date().getHours();
-                
-                    // Define the greeting messages based on the current time
-                    var greetingMessage;
-                    if (currentHour >= 5 && currentHour < 12) {
-                        greetingMessage = "Hello, good morning! ☀️";
-                    } else if (currentHour >= 12 && currentHour < 18) {
-                        greetingMessage = "Hello, good afternoon! 🌤️";
-                    } else {
-                        greetingMessage = "Hello, good evening! 🌙";
-                    }
-                
-                    // Set the greeting message in the div
-                    document.getElementById("greeting").innerText = greetingMessage;
-                </script>
+                        // Get the current hour of the user's device
+                        var currentHour = new Date().getHours();
+                    
+                        // Define the greeting messages based on the current time
+                        var greetingMessage;
+                        if (currentHour >= 5 && currentHour < 12) {
+                            greetingMessage = "Hello, good morning! ☀️";
+                        } else if (currentHour >= 12 && currentHour < 18) {
+                            greetingMessage = "Hello, good afternoon! 🌤️";
+                        } else {
+                            greetingMessage = "Hello, good evening! 🌙";
+                        }
+                    
+                        // Set the greeting message in the div
+                        document.getElementById("greeting").innerText = greetingMessage;
+                    </script>
 </div>
 </div>
 <div class="blanter-msg"> <textarea id="chat-input" maxlength="120" placeholder="Message"></textarea> <a href="javascript:void(0)" id="send-it"><svg viewbox="0 0 448 448"> <path d="M.213 32L0 181.333 320 224 0 266.667.213 416 448 224z"></path></svg></a> </div>
 </div>
 <div id="get-number"></div><a class="close-chat" href="javascript:void(0)">×</a> </div> <a class="africaVotesChat" href="javascript:void(0)" title="Show Chat"><svg viewbox="0 0 24 24" width="20"><defs></defs><path d="M20.5 3.4A12.1 12.1 0 0012 0 12 12 0 001.7 17.8L0 24l6.3-1.7c2.8 1.5 5 1.4 5.8 1.5a12 12 0 008.4-20.3z" fill="#eceff1"></path><path d="M12 21.8c-3.1 0-5.2-1.6-5.4-1.6l-3.7 1 1-3.7-.3-.4A9.9 9.9 0 012.1 12a10 10 0 0117-7 9.9 9.9 0 01-7 16.9z" fill="#4caf50"></path><path d="M17.5 14.3c-.3 0-1.8-.8-2-.9-.7-.2-.5 0-1.7 1.3-.1.2-.3.2-.6.1s-1.3-.5-2.4-1.5a9 9 0 01-1.7-2c-.3-.6.4-.6 1-1.7l-.1-.5-1-2.2c-.2-.6-.4-.5-.6-.5-.6 0-1 0-1.4.3-1.6 1.8-1.2 3.6.2 5.6 2.7 3.5 4.2 4.2 6.8 5 .7.3 1.4.3 1.9.2.6 0 1.7-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.3-.6-.4z" fill="#fafafa"></path></svg> Chat</a>
 <script>
-    $(document).on("click", "#send-it", function() {
-        var a = document.getElementById("chat-input");
-        if ("" != a.value) {
-            var b = $("#get-number").text(),
-                c = document.getElementById("chat-input").value,
-                d = "https://web.whatsapp.com/send",
-                e = b,
-                f = "&text=" + c;
-            /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && (d = "whatsapp://send");
-            var g = d + "?phone=+256750687790" + e + f;
-            window.open(g, "_blank")
-        }
-    }), $(document).on("click", ".informasi", function() {
-        document.getElementById("get-number").innerHTML = $(this).children(".my-number").text(), $(".start-chat,.get-new").addClass("show").removeClass("hide"), $(".home-chat,.head-home").addClass("hide").removeClass("show"), document.getElementById("get-nama").innerHTML = $(this).children(".info-chat").children(".chat-nama").text(), document.getElementById("get-label").innerHTML = $(this).children(".info-chat").children(".chat-label").text()
-    }), $(document).on("click", ".close-chat", function() {
-        $("#africavotes-chat").addClass("hide").removeClass("show")
-    }), $(document).on("click", ".africaVotesChat,.contactWhatsapp", function() {
-        if ($("#africavotes-chat").hasClass("show")) {
+        $(document).on("click", "#send-it", function() {
+            var a = document.getElementById("chat-input");
+            if ("" != a.value) {
+                var b = $("#get-number").text(),
+                    c = document.getElementById("chat-input").value,
+                    d = "https://web.whatsapp.com/send",
+                    e = b,
+                    f = "&text=" + c;
+                /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && (d = "whatsapp://send");
+                var g = d + "?phone=+256750687790" + e + f;
+                window.open(g, "_blank")
+            }
+        }), $(document).on("click", ".informasi", function() {
+            document.getElementById("get-number").innerHTML = $(this).children(".my-number").text(), $(".start-chat,.get-new").addClass("show").removeClass("hide"), $(".home-chat,.head-home").addClass("hide").removeClass("show"), document.getElementById("get-nama").innerHTML = $(this).children(".info-chat").children(".chat-nama").text(), document.getElementById("get-label").innerHTML = $(this).children(".info-chat").children(".chat-label").text()
+        }), $(document).on("click", ".close-chat", function() {
             $("#africavotes-chat").addClass("hide").removeClass("show")
-        } else {
-            $("#africavotes-chat").addClass("show").removeClass("hide");
-            $("#ContactModal").modal('hide');
-        }
-    })
-</script>
+        }), $(document).on("click", ".africaVotesChat,.contactWhatsapp", function() {
+            if ($("#africavotes-chat").hasClass("show")) {
+                $("#africavotes-chat").addClass("hide").removeClass("show")
+            } else {
+                $("#africavotes-chat").addClass("show").removeClass("hide");
+                $("#ContactModal").modal('hide');
+            }
+        })
+    </script>
 </body>
-</html>
+</body></html>
