@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 
 <html>
@@ -36,8 +37,8 @@
 <link href="logo.jpg" rel="icon" sizes="16x16" type="image/png"/>
 <link href="/manifest.json" rel="manifest"/>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-<meta content="IE=edge" http-equiv="X-UA-Compatible">
-<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
 <meta content="Fresh Teacher's Library" property="og:site_name"/>
 <meta content="https://2.bp.blogspot.com/-IEabwvLwNVY/XnccoVSvUgI/AAAAAAAAFro/mQPkBepUZpcNo1WG8trICTTg7unzwwXSgCK4BGAYYCw/s1600/SquareFit_20200322_064134.jpg" property="og:image"/>
 <title>Senior Two Luganda Lesson Notes</title>
@@ -507,8 +508,13 @@
 </a>
 </nav><br/>
 <body>
-<div class="container"><br/><br/>
-<input class="form-control mb-4" id="searchInput" placeholder="🔍 Search for content here..." type="text"/>
+<div class="container">
+<br/><br/>
+<div class="row">
+<div class="col-md-12 mb-3">
+<input class="form-control" id="searchInput" placeholder="🔍 Type a keyword here to search..." type="text"/>
+</div>
+</div>
 <div class="row" id="cardsContainer"></div>
 <div class="spinner">
 <div class="spinner-border text-primary" role="status">
@@ -521,8 +527,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
 <!-- Costume CSS -->
-<link href="css/flipbook.style.css" rel="stylesheet" type="text/css">
-<link href="css/font-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="css/flipbook.style.css" rel="stylesheet" type="text/css"/>
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
 <link href="css/footer.css" rel="stylesheet" type="text/css"/>
 <!-- Bootstrap CSS -->
 <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet"/>
@@ -535,138 +541,134 @@
     let allData = [];
     let filteredData = [];
     let isLoading = false;
-  
+
     $(document).ready(function() {
-      fetchData();
-  
-      const debouncedFilter = debounce(function() {
-        const query = $('#searchInput').val().toLowerCase();
-        filterData(query);
-      }, 300);
-  
-      $('#searchInput').on('input', debouncedFilter);
-  
-      $(window).scroll(function() {
-        if ($(window).scrollTop() + $(window).height() >= $(document).height() - 100) {
-          if (!isLoading && (currentPage - 1) * itemsPerPage < filteredData.length) {
-            loadMoreData();
-          } else if ((currentPage - 1) * itemsPerPage >= filteredData.length) {
-            $('#noMoreResults').text('NO MORE RESULTS FOUND');
-          }
-        }
-      });
-    });
-  
-    function fetchData() {
-      $.getJSON('SeniorTwoLugandaLessonNotes.json', function(data) {
-        allData = data;
-        filteredData = data;
-        renderData();
-      });
-    }
-  
-    function renderData() {
-      const startIndex = (currentPage - 1) * itemsPerPage;
-      const endIndex = currentPage * itemsPerPage;
-      const currentData = filteredData.slice(startIndex, endIndex);
-  
-      if (currentData.length === 0 && currentPage === 1) {
-        $('#cardsContainer').html('<p class="col-12 text-center">NO RESULTS FOUND</p>');
-      } else {
-        currentData.forEach((item, index) => {
-          const pdfId = "read" + (startIndex + index + 1);
-          const pdfUrl = item.pdfUrl;
-          const fileName = pdfUrl.substring(pdfUrl.lastIndexOf("/") + 1).replace(".pdf", "");
-          const title = fileName.toUpperCase();
-          const description = item.description;
-  
-          $('#cardsContainer').append(`
-            <div class="col-md-4 mb-3">
-              <div class="card">
-                <div class="card-body">
-                  <h3>${title}</h3>
-                  <p class="description">${description}</p>
-                  <p>Price: <span class="price"><del>${item.price}</del></span> <span class="free-text">FREE</span></p>
-                  <div class="button">
-                    <a id="${pdfId}" class="btn btn-primary mt-2 mr-2 text-white">View File <i class="fas fa-book-reader fa-lg"></i></a>
-                    <a href="${pdfUrl}" class="btn btn-info mt-2 text-white" download>Download File <i class="fas fa-download fa-lg"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          `);
-  
-          $("#" + pdfId).flipBook({
-            pdfUrl: item.pdfUrl,
-            lightBox: true,
-            layout: 3,
-            currentPage: {
-              vAlign: "bottom",
-              hAlign: "left"
-            },
-            btnShare: {
-              enabled: false
-            },
-            btnPrint: {
-              enabled: true
-            },
-            btnDownloadPages: {
-              enabled: true
-            },
-            btnColor: 'rgb(255,120,60)',
-            sideBtnColor: 'rgb(255,120,60)',
-            sideBtnSize: 60,
-            sideBtnBackground: "rgba(0,0,0,.7)",
-            sideBtnRadius: 60,
-            btnSound: {
-              vAlign: "top",
-              hAlign: "left"
-            },
-            btnAutoplay: {
-              vAlign: "top",
-              hAlign: "left"
-            },
-          });
+        fetchData();
+
+        $('#searchInput').on('keyup', function() {
+            const query = $(this).val().toLowerCase();
+            filterData(query);
         });
-  
-        if (currentData.length < itemsPerPage && currentPage === 1) {
-          $('#noMoreResults').text('NO MORE RESULTS FOUND');
-        }
-      }
+
+        $(window).scroll(function() {
+            if ($(window).scrollTop() + $(window).height() >= $(document).height() - 100) {
+                if (!isLoading && (currentPage - 1) * itemsPerPage < filteredData.length) {
+                    loadMoreData();
+                } else if ((currentPage - 1) * itemsPerPage >= filteredData.length) {
+                    $('#noMoreResults').text('NO MORE ITEMS TO DISPLAY!');
+                }
+            }
+        });
+    });
+
+    function fetchData() {
+        $.getJSON('SeniorTwoLugandaLessonNotes.json', function(data) {
+            allData = data;
+            filteredData = data; // Initially, filtered data is the same as all data
+            renderData();
+        });
     }
-  
-    function loadMoreData() {
-      if (isLoading) return;
-      isLoading = true;
-      $('.spinner').show();
-      setTimeout(() => {
-        currentPage++;
-        renderData();
-        isLoading = false;
-        $('.spinner').hide();
-      }, 1000);
-    }
-  
+
     function filterData(query) {
-      filteredData = allData.filter(item => 
-        item.title.toLowerCase().includes(query) || 
-        item.description.toLowerCase().includes(query)
-      );
-      currentPage = 1;
-      $('#cardsContainer').empty();
-      $('#noMoreResults').text('');
-      renderData();
+        filteredData = allData.filter(item => {
+            const title = item.pdfUrl.substring(item.pdfUrl.lastIndexOf("/") + 1).replace(".pdf", "").toLowerCase();
+            return title.includes(query);
+        });
+        currentPage = 1; // Reset to first page
+        $('#cardsContainer').empty(); // Clear previous results
+        renderData();
     }
-  
-    function debounce(func, wait) {
-      let timeout;
-      return function() {
-        const context = this, args = arguments;
-        clearTimeout(timeout);
-        timeout = setTimeout(() => func.apply(context, args), wait);
-      };
+
+    function renderData() {
+        const startIndex = (currentPage - 1) * itemsPerPage;
+        const endIndex = currentPage * itemsPerPage;
+        const currentData = filteredData.slice(startIndex, endIndex);
+
+        if (currentData.length === 0 && currentPage === 1) {
+            if (!$('#cardsContainer').html().includes('No matching results found!')) {
+                $('#cardsContainer').html(`
+                    <div class="col-12 text-center">
+                        <p>No matching results found! Try again using another keyword...</p>
+                        <img src="results.gif" alt="No results found" style="max-width: 200px; margin-bottom: 20px;">
+
+                    </div>
+                `);
+            }
+        } else {
+            currentData.forEach((item, index) => {
+                const pdfId = "read" + (startIndex + index + 1);
+                const pdfUrl = item.pdfUrl;
+                const fileName = pdfUrl.substring(pdfUrl.lastIndexOf("/") + 1).replace(".pdf", "");
+                const title = fileName.toUpperCase();
+                const description = item.description;
+
+                $('#cardsContainer').append(`
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3>${title}</h3>
+                                <p class="description">${description}</p>
+                                <p>Price: <span class="price"><del>${item.price}</del></span> <span class="free-text">FREE</span></p>
+                                <div class="button">
+                                    <a id="${pdfId}" class="btn btn-primary mt-2 mr-2 text-white">View File <i class="fas fa-book-reader fa-lg"></i></a>
+                                    <a href="${pdfUrl}" class="btn btn-info mt-2 text-white" download>Download File <i class="fas fa-download fa-lg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `);
+
+                $("#" + pdfId).flipBook({
+                    pdfUrl: item.pdfUrl,
+                    lightBox: true,
+                    layout: 3,
+                    currentPage: {
+                        vAlign: "bottom",
+                        hAlign: "left"
+                    },
+                    btnShare: {
+                        enabled: false
+                    },
+                    btnPrint: {
+                        enabled: true
+                    },
+                    btnDownloadPages: {
+                        enabled: true
+                    },
+                    btnColor: 'rgb(255,120,60)',
+                    sideBtnColor: 'rgb(255,120,60)',
+                    sideBtnSize: 60,
+                    sideBtnBackground: "rgba(0,0,0,.7)",
+                    sideBtnRadius: 60,
+                    btnSound: {
+                        vAlign: "top",
+                        hAlign: "left"
+                    },
+                    btnAutoplay: {
+                        vAlign: "top",
+                        hAlign: "left"
+                    },
+                });
+            });
+
+            if (currentData.length < itemsPerPage && currentPage === 1) {
+                $('#noMoreResults').text('NO MORE RESULTS FOUND!');
+            }
+        }
     }
-  </script>
+
+    function loadMoreData() {
+        if (isLoading) return;
+        isLoading = true;
+        $('.spinner').show();
+        setTimeout(() => {
+            currentPage++;
+            renderData();
+            isLoading = false;
+            $('.spinner').hide();
+        }, 1000);
+    }
+</script>
 <div class="hide" id="africavotes-chat">
 <div class="header-chat">
 <div class="head-home">
