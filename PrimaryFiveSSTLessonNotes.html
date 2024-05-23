@@ -24,10 +24,6 @@
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-KGD6TVT" style="display:none;visibility:hidden" width="0"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-<!-- Add these lines to include Bootstrap CSS and JavaScript -->
-<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"/>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
 <meta content="Welcome To Fresh Teacher's Library, one stop center for academic needs of Ugandan schools. Our core mandate is to apply creativity and come up with innovative solutions in Ugandas' education sector." name="description"/>
@@ -530,142 +526,142 @@
 <!-- Include JS -->
 <script src="js/flipbook.min.js"></script>
 <script>
-    const itemsPerPage = 12;
-    let currentPage = 1;
-    let allData = [];
-    let filteredData = [];
-    let isLoading = false;
-  
-    $(document).ready(function() {
-      fetchData();
-  
-      const debouncedFilter = debounce(function() {
-        const query = $('#searchInput').val().toLowerCase();
-        filterData(query);
-      }, 300);
-  
-      $('#searchInput').on('input', debouncedFilter);
-  
-      $(window).scroll(function() {
-        if ($(window).scrollTop() + $(window).height() >= $(document).height() - 100) {
-          if (!isLoading && (currentPage - 1) * itemsPerPage < filteredData.length) {
-            loadMoreData();
-          } else if ((currentPage - 1) * itemsPerPage >= filteredData.length) {
-            $('#noMoreResults').text('NO MORE RESULTS FOUND');
-          }
-        }
-      });
-    });
-  
-    function fetchData() {
-      $.getJSON('PrimaryFiveSSTLessonNotes.json', function(data) {
-        allData = data;
-        filteredData = data;
-        renderData();
-      });
-    }
-  
-    function renderData() {
-      const startIndex = (currentPage - 1) * itemsPerPage;
-      const endIndex = currentPage * itemsPerPage;
-      const currentData = filteredData.slice(startIndex, endIndex);
-  
-      if (currentData.length === 0 && currentPage === 1) {
-        $('#cardsContainer').html('<p class="col-12 text-center">NO RESULTS FOUND</p>');
-      } else {
-        currentData.forEach((item, index) => {
-          const pdfId = "read" + (startIndex + index + 1);
-          const pdfUrl = item.pdfUrl;
-          const fileName = pdfUrl.substring(pdfUrl.lastIndexOf("/") + 1).replace(".pdf", "");
-          const title = fileName.toUpperCase();
-          const description = item.description;
-  
-          $('#cardsContainer').append(`
-            <div class="col-md-4 mb-3">
-              <div class="card">
-                <div class="card-body">
-                  <h3>${title}</h3>
-                  <p class="description">${description}</p>
-                  <p>Price: <span class="price"><del>${item.price}</del></span> <span class="free-text">FREE</span></p>
-                  <div class="button">
-                    <a id="${pdfId}" class="btn btn-primary mt-2 mr-2 text-white">View File <i class="fas fa-book-reader fa-lg"></i></a>
-                    <a href="${pdfUrl}" class="btn btn-info mt-2 text-white" download>Download File <i class="fas fa-download fa-lg"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          `);
-  
-          $("#" + pdfId).flipBook({
-            pdfUrl: item.pdfUrl,
-            lightBox: true,
-            layout: 3,
-            currentPage: {
-              vAlign: "bottom",
-              hAlign: "left"
-            },
-            btnShare: {
-              enabled: false
-            },
-            btnPrint: {
-              enabled: true
-            },
-            btnDownloadPages: {
-              enabled: true
-            },
-            btnColor: 'rgb(255,120,60)',
-            sideBtnColor: 'rgb(255,120,60)',
-            sideBtnSize: 60,
-            sideBtnBackground: "rgba(0,0,0,.7)",
-            sideBtnRadius: 60,
-            btnSound: {
-              vAlign: "top",
-              hAlign: "left"
-            },
-            btnAutoplay: {
-              vAlign: "top",
-              hAlign: "left"
-            },
-          });
-        });
-  
-        if (currentData.length < itemsPerPage && currentPage === 1) {
-          $('#noMoreResults').text('NO MORE RESULTS FOUND');
-        }
+const itemsPerPage = 12;
+let currentPage = 1;
+let allData = [];
+let filteredData = [];
+let isLoading = false;
+let debounceTimeout = null;
+
+$(document).ready(function() {
+  fetchData();
+
+  $('#searchInput').on('input', function() {
+    const query = $(this).val().toLowerCase();
+    debounceFilterData(query);
+  });
+
+  $(window).scroll(function() {
+    if ($(window).scrollTop() + $(window).height() >= $(document).height() - 100) {
+      if (!isLoading && (currentPage - 1) * itemsPerPage < filteredData.length) {
+        loadMoreData();
+      } else if ((currentPage - 1) * itemsPerPage >= filteredData.length) {
+        $('#noMoreResults').text('NO MORE RESULTS FOUND');
       }
     }
-  
-    function loadMoreData() {
-      if (isLoading) return;
-      isLoading = true;
-      $('.spinner').show();
-      setTimeout(() => {
-        currentPage++;
-        renderData();
-        isLoading = false;
-        $('.spinner').hide();
-      }, 1000);
+  });
+});
+
+function fetchData() {
+  $.getJSON('PrimaryFiveSSTLessonNotes.json', function(data) {
+    allData = data;
+    filteredData = data;
+    renderData();
+  });
+}
+
+function renderData() {
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const endIndex = currentPage * itemsPerPage;
+  const currentData = filteredData.slice(startIndex, endIndex);
+
+  if (currentData.length === 0 && currentPage === 1) {
+    $('#cardsContainer').html('<p class="col-12 text-center">NO RESULTS FOUND</p>');
+  } else {
+    currentData.forEach((item, index) => {
+      const pdfId = "read" + (startIndex + index + 1);
+      const pdfUrl = item.pdfUrl;
+      const fileName = pdfUrl.substring(pdfUrl.lastIndexOf("/") + 1).replace(".pdf", "");
+      const title = fileName.toUpperCase();
+      const description = item.description;
+
+      $('#cardsContainer').append(`
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <h3>${title}</h3>
+              <p class="description">${description}</p>
+              <p>Price: <span class="price"><del>${item.price}</del></span> <span class="free-text">FREE</span></p>
+              <div class="button">
+                <a id="${pdfId}" class="btn btn-primary mt-2 mr-2 text-white">View File <i class="fas fa-book-reader fa-lg"></i></a>
+                <a href="${pdfUrl}" class="btn btn-info mt-2 text-white" download>Download File <i class="fas fa-download fa-lg"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      `);
+
+      $("#" + pdfId).flipBook({
+        pdfUrl: item.pdfUrl,
+        lightBox: true,
+        layout: 3,
+        currentPage: {
+          vAlign: "bottom",
+          hAlign: "left"
+        },
+        btnShare: {
+          enabled: false
+        },
+        btnPrint: {
+          enabled: true
+        },
+        btnDownloadPages: {
+          enabled: true
+        },
+        btnColor: 'rgb(255,120,60)',
+        sideBtnColor: 'rgb(255,120,60)',
+        sideBtnSize: 60,
+        sideBtnBackground: "rgba(0,0,0,.7)",
+        sideBtnRadius: 60,
+        btnSound: {
+          vAlign: "top",
+          hAlign: "left"
+        },
+        btnAutoplay: {
+          vAlign: "top",
+          hAlign: "left"
+        },
+      });
+    });
+
+    if (currentData.length < itemsPerPage && currentPage === 1) {
+      $('#noMoreResults').text('NO MORE RESULTS FOUND');
     }
-  
-    function filterData(query) {
-      filteredData = allData.filter(item => 
-        item.title.toLowerCase().includes(query) || 
-        item.description.toLowerCase().includes(query)
-      );
-      currentPage = 1;
-      $('#cardsContainer').empty();
-      $('#noMoreResults').text('');
-      renderData();
-    }
-  
-    function debounce(func, wait) {
-      let timeout;
-      return function() {
-        const context = this, args = arguments;
-        clearTimeout(timeout);
-        timeout = setTimeout(() => func.apply(context, args), wait);
-      };
-    }
+  }
+}
+
+function loadMoreData() {
+  if (isLoading) return;
+  isLoading = true;
+  $('.spinner').show();
+  setTimeout(() => {
+    currentPage++;
+    renderData();
+    isLoading = false;
+    $('.spinner').hide();
+  }, 1000);
+}
+
+function debounce(func, delay) {
+  return function(...args) {
+    clearTimeout(debounceTimeout);
+    debounceTimeout = setTimeout(() => func.apply(this, args), delay);
+  };
+}
+
+function filterData(query) {
+  filteredData = allData.filter(item => 
+    item.title.toLowerCase().includes(query) || 
+    item.description.toLowerCase().includes(query)
+  );
+  currentPage = 1;
+  $('#cardsContainer').empty();
+  $('#noMoreResults').text('');
+  renderData();
+}
+
+const debounceFilterData = debounce(filterData, 300);
+
   </script>
 <div class="hide" id="africavotes-chat">
 <div class="header-chat">
