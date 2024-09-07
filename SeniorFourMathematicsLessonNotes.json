@@ -1,356 +1,3662 @@
 [
-{
-  "title": "",
-  "description": "Senior Four",
-  "price": 5000,
-  "pdfUrl": "https://fresh-teacher.github.io/s4/Ratios and Proportions (Tr. Modern 0771875048).pdf"
-  },
-  {
-    "title": "",
-    "description": "Senior Four",
-    "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/s4/RATIOS AND PROPORTIONS.pdf"
-  },
-  {
-    "title": "",
-    "description": "Senior Four",
-    "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/s4/REB Mathematics notes; S.4 SB.pdf"
-  },
-  {
-    "title": "",
-    "description": "Senior Four",
-    "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/s4/REB Physics notes; S.4 SB.pdf"
-  },
-  {
-    "title": "",
-    "description": "Senior Four",
-    "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/s4/S.4 MATHEMATICS REVISED NOTES.pdf"
-  },
-  {
-    "title": "",
-    "description": "Senior Four",
-    "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/s4/S.4 Maths Linear Programming.pdf"
-  },
-  {
-    "title": "",
-    "description": "Senior Four",
-    "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/s4/s4 fractions.pdf"
-  },
-  {
-    "title": "",
-    "description": "Senior Four",
-    "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/s4/S4 MATH TOPIC CIRCLE PROPERTIES.pdf"
-  },
-  {
-    "title": "",
-    "description": "Senior Four",
-    "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/s4/S4 Mathematics TextBook by Wendi Kasiim Kawanda Secondary School.pdf"
-  },
-  {
-    "title": "",
-    "description": "Senior Four",
-    "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/s4/S4 Mathematics.pdf"
-  },
-  {
-    "title": "",
-    "description": "Senior Four",
-    "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/s4/S4. Maths - Probability.pdf"
-  },
-  {
-    "title": "",
-    "description": "Senior Four",
-    "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/s4/S4_Mathematics_TextBook_by_Wendi_Kasiim_Kawanda_Secondary_School.pdf"
-  },
-  {
-    "title": "",
-    "description": "Senior Four",
-    "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/s4/Senior-1-maths-Bk1.pdf"
-  },
-  {
-    "title": "",
-    "description": "Senior Four",
-    "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/s4/SHINING UCE MTC Math Simplified bk Revised-20-07-2017.pdf"
-  },
-  {
-    "title": "",
-    "description": "Senior Four",
-    "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/s4/Trigonometry.pdf"
-  },
-  {
-    "title": "",
-    "description": "Senior Four",
-    "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/s4/UCE MATHS TEXT BOOK.pdf"
-  },
-  {
-    "title": "",
-    "description": "Senior Four",
-    "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/s4/UCE MTC BOOK S4.pdf"
-  },
-  {
-    "title": "",
-    "description": "Senior Four",
-    "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/s4/04 -- S.4 MATHS - Matrices and Transformation.pdf"
-  },
-  {
-    "title": "",
-    "description": "Senior Four",
-    "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/s4/6. Series.pdf"
-  },
-  {
-    "title": "",
-    "description": "Senior Four",
-    "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/s4/ABRIDGED CURRICULUM For S1-S4.pdf"
-  },
-  {
-    "title": "",
-    "description": "Senior Four",
-    "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/s4/BEARING & STAT.pdf"
-  },
-  {
-    "title": "",
-    "description": "Senior Four",
-    "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/s4/Chapt 12 - Curve Sketching_221008_122827.pdf"
-  },
-  {
-    "title": "",
-    "description": "Senior Four",
-    "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/s4/ELEMENTARY PHYSICS (Repaired).pdf"
-  },
-  {
-    "title": "",
-    "description": "Senior Four",
-    "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/s4/Excel Mathematics Revision & Exam Workbook.pdf"
-  },
-  {
-    "title": "",
-    "description": "Senior Four",
-    "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/s4/HOOKE'S LAW NOTES PHYSICS O LEVEL .pdf"
-  },
-  {
-    "title": "",
-    "description": "Senior Four",
-    "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/s4/Klb MTC book form 4(S4).pdf"
-  },
-  {
-    "title": "",
-    "description": "Senior Four",
-    "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/s4/MATHEMATICS O LEVEL ALGEBRAIC-EXPRESSIONS-Q-1.pdf"
-  },
-  {
-    "title": "",
-    "description": "Senior Four",
-    "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/s4/Mathematics O'level Syllabus.pdf"
-  },
-  {
-    "title": "",
-    "description": "Senior Four",
-    "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/s4/MATHEMATICS UNDERSTANDING CIRCLE THEOREMS-PART ONE.pdf"
-  },
-  {
-    "title": "",
-    "description": "Senior Four",
-    "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/s4/Mathematics_Syllabus_compressed.pdf"
-  },
-  {
-    "title": "",
-    "description": "Senior Four",
-    "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/s4/MATHEMATICS-1300-FORMULAE.pdf"
-  },
-  {
-    "title": "",
-    "description": "Senior Four",
-    "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/s4/Maths bk2 txtbk.pdf"
-  },
-  {
-    "title": "",
-    "description": "Senior Four",
-    "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/s4/Maths prototype 3 (1).pdf"
-  },
-  {
-    "title": "",
-    "description": "Senior Four",
-    "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/s4/Maths prototype TG 1 (1).pdf"
-  },
-  {
-    "title": "",
-    "description": "Senior Four",
-    "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/s4/MATHS QUICK REVISION.pdf"
-  },
-  {
-    "title": "",
-    "description": "Senior Four",
-    "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/s4/Maths Syllabus.pdf"
-  },
-  {
-    "title": "",
-    "description": "Senior Four",
-    "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/s4/MENSURATION (AREA, SURFACE AREA AND VOLUME AND AREA OF CIRCLES.pdf"
-  },
-  {
-    "title": "",
-    "description": "Senior Four",
-    "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/s4/MODERN PHYSICS-ssekwe.pdf"
-  },
-  {
-    "title": "",
-    "description": "Senior Four",
-    "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/s4/National Teacher Policy - Copy.pdf"
-  },
-  {
-    "title": "",
-    "description": "Senior Four",
-    "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/s4/NEW MATHS SYLLABUS NCDC LOWER SECONDARY CURRICULUM.pdf"
-  },
-  {
-    "title": "",
-    "description": "Senior Four",
-    "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/s4/NLSC Mathematics notes; Mathematics integrated with technology.pdf"
-  },
-  {
-    "title": "",
-    "description": "Senior Four",
-    "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/s4/O LEVEL MATHEMATICS PROBABILITY NOTES.pdf"
-  },
-  {
-    "title": "",
-    "description": "Senior Four",
-    "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/s4/O LEVEL MATHEMATICS PROBABILITY THEORY NOTES.pdf"
-  },
-  {
-    "title": "",
-    "description": "Senior Four",
-    "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/s4/O Level PHYSICS (Revised).pdf"
-  },
-  {
-    "title": "",
-    "description": "Senior Four",
-    "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/s4/O, Level Physics .pdf"
-  },
-  {
-    "title": "",
-    "description": "Senior Four",
-    "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/s4/o-level math topics----- 24-Oct-2022 06-47-46.pdf"
-  },
-  {
-    "title": "",
-    "description": "Senior Four",
-    "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/s4/O'LEVEL MATHEMATICS  NOTES1.pdf"
-  },
-  {
-    "title": "",
-    "description": "Senior Four",
-    "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/s4/O'LEVEL MATHS NOTES1.pdf"
-  },
-  {
-    "title": "",
-    "description": "Senior Four",
-    "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/s4/OLEVEL PHYSICS - REVISED EDITION 2016.pdf"
-  },
-  {
-    "title": "",
-    "description": "Senior Four",
-    "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/s4/PHYSICAL EDUC S.1 henrykits.pdf"
-  },
-  {
-    "title": "",
-    "description": "Senior Four",
-    "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/s4/PHYSICAL_EDUCATION_NOTES_MR_KENNEDY (1).pdf"
-  },
-  {
-    "title": "",
-    "description": "Senior Four",
-    "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/s4/PHYSICAL_EDUCATION_Syllabus_compressed.pdf"
-  },
-  {
-    "title": "",
-    "description": "Senior Four",
-    "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/s4/PHYSICS  Syllabus.pdf"
-  },
-  {
-    "title": "",
-    "description": "Senior Four",
-    "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/s4/PHYSICS EDITED - BOOK 2017 EDITION 33344.pdf"
-  },
-  {
-    "title": "",
-    "description": "Senior Four",
-    "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/s4/Physics O' level.pdf"
-  },
-  {
-    "title": "",
-    "description": "Senior Four",
-    "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/s4/PHYSICS_Syllabus.pdf"
-  },
-  {
-    "title": "",
-    "description": "Senior Four",
-    "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/s4/PHYSICS_Syllabus_compressed.pdf"
-  },
-  {
-    "title": "",
-    "description": "Senior Four",
-    "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/s4/PROBABILITY THEORY MATHEMATICS O LEVEL.pdf"
-  },
-  {
-    "title": "",
-    "description": "Senior Four",
-    "price": 5000,
-    "pdfUrl": "https://fresh-teacher.github.io/s4/RATIO AND PROPORTION.pdf"
-  }
-]
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/535-1 GUIDE 2022.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/545-2 GUIDE 2022.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/553 bio2 aceiteka.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/553 bio2 O lvl wakisha 2019.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/553_2 guide @SCZ Salongo 0705 950374.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/553-2 @SCZ Salongo 2019.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/553-2, Buganda.guide 2019.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/2020 biology paper 2 guide uce.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/ACC 1 F 1.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/ACEITEKA 553-2 2019.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Aceiteka confi 553-2 ....2019.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/ACEITEKA S4. MOCK 2018.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/AGR 1 G-O.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/AGRI 1 F 1.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Agric 2 UCE.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/ARAB 2 F 1.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/ART 1 F 1.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/ART 1 G A.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/ART 1 G-O.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/ART 2 F 1.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/ART 2,3,5 G-O.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/ART 4 F 1.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/ART 4 G A.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/ART 5 F 1.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/ART 6 F 1.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/BASTON S4.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/BHS UCE BIO Prac with Confidential.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/BHS UCE BIO prac.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/BIOLOGY ESSAY QN & ANS.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/BIOLOGY MASTER,.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Biology Paper 1.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/BIOLOGY TEST BANK (OLEVEL (1)-1.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/BIOLOGY PRACTICAL GUIDE-1.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Buganda confidentiality prac S4.docx 2019.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Buganda S4 biio Practical.docx 2019.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/C.R.E 223  F 1.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/C.R.E 224 1 F 1.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/C.R.E 224 1 F 1.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/CHEM 1 F 1.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/CHEM 1 G A.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/CHEM 2 G-O.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/CHEM 2 NACT 2023-1.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/CHEM 2 NACT 2023.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/CHEM ASSESSMENT TEST 2.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/CHEM 3 NACT 2023.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/CHEMISTRY DEPARTMENT. Uganda certificate of Lower secondary education. End of t.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/chemistry facilitation Questions.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/CHEMISTRY paper 1 RESOURCEFUL MOCK 2017.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/CHEMISTRY SEMINAR QUESTIONS-HeLP.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Chemistry-S.4.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/COM 1 F 1.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/COM G-O 1.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/COMP  1 G-O.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/COMP 1 F 1.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/CRE  O LEVEL.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/CRE 223 G-O.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/CRE 224 1 G-O.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/CRE 224 2 G-O.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/CRE GUIDE S.2.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/daneila chem PDF.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/DIV 1 G A.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/DIV 2 G A.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Ecology-film.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/ENG 1 F 1.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/ENG 1 G-O.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/ENG 2 F 1.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/ENG 2 G-O.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/English Question Bank-1.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/ENT 1 F 1.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/ENT 1 G-O.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/ENT 1 GA.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/ENT 1 G-O.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/ENT 1 GA.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/ENT 2  G-O.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/ENT 2 F 1.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/f4 BIOLOGY monthly test EXAMINATION.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/FINAL Combined UCE Physics Paper 1 and 2.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/FN 1 F 1.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/IRE 1 F 1.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/IRE 1 G-O.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/IRE 2 F 1.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/IRE 2 G A.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/IRE 2 G-O.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/IRE 3 GA.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/IRE PAPER 1 O-LEVEL PRE ISLAMIC ARABIA SUMMARISED POINTS (0).pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/KAMSSA LOWER SECONDARY EDUCATION EXAMINATIONS 2022 CHEMISTRY S.1.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/KIS 1 F 1.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/LIT 1 F 1 2.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/LIT 1 F1.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/LIT 1 G -O.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/LIT 1 G A.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/LUG 1 F 1.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/LUG 1 G A.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/LUG 1G-O 1.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/LUG 2 F 1.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/LUG 2 F 1.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/LUG 2 G A.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/LUG 2 G-O.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/LUG 3 G A.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/MARKING GUIDE MATIGO PRE MOCK PHY 1 UCE 2023 (2).pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/math topical questions.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/MATIGO MARKING GUIDE PRE MOCK PHY 2 UCE 2023.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/MATIGO MOCKS 2022 PHY2.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/MATIGO MOCKS ENG 2 2022.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/MATIGO PRE MOCK HIST 1 UCE 2023.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/MATIGO PRE MOCK MATH1 UCE 2023.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/MATIGO PRE MOCK PHY 1 UCE 2023.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/MATIGO PRE MOCK PHY 2UCE 2023.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/MCHS UCE BIO Prac with COnfidential.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/MTC 1 F 1.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/MTC 1 G-O.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/MTC 1 GA.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/MTC 2 F 11.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/O Level PHYSICS  Revision.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/O LEVEL Qn 31 SAMPLE QUESTIONS.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/O level UNEB past papers.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/O levelENT EDUCATION.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/O' Level Math QB.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/O'Level MTC Revision Book.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/OLEVEL-math-pepr-2-set-8.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/PHY 1 F 1.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/PHY 1 G-O.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/PHY 2 F 1.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/PHY 2 G-O.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/PHY 2 GA.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/PHYSICS PAPER 2.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Pre-UNEB  Set 2 2022.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Pre-UNEB  Set 4 2022.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Pre-UNEB set 1 2022.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Pre-UNEB set 3 2022.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Pre-UNEB set 5 2022.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/S. 4 PHYSICS 2 WALK TO UNEB REVISION & PAST PAPERS (ecolebooks.com).pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/S.4  ENG SELF STUDY WORK.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/S.4 BIO 2 ASSHU 2019.Ins(1).pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/S.4 BIO 2 ASSHU 2019(1).pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/S.4 CHEMISTRY TEST .pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/S.4 HIST SA SELF STUDY WORK.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/S.4 HIST SA SELF STUDY WORK.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/S.4 HOLIDAY PACKAGES.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/S.4 Maths seminar 2020 (1).pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/S.4 PHY 2 REVISION & PAST PAPERS (ecolebooks.com).pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/S.4 SEMINA 2019 (Repaired).pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/S4   2019 Chemistry P2 B_O_T II  EXAMS 2019.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/S4 CHEM 2 EOT ONE 2023 GUIDE.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/S4 CHEMISTRY TEST ON MOLE CONCEPT@BK JOSHUA PDF.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/S4 CHEMISTRY 1 INTERNAL MOCK.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/S4 CHEMISTRY TEST ON THERMOCHEMISTRY PDF.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/S4 EOT 0NE 2022.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/S4 MOCK 1 2008 CHEMISTRY P1 B_O_T II  EXAMS 2019.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/S4 Work Book MTH(2023).pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/s4-chemistry-paper-1-set-5.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/s4-chemistry-paper-1-set-9.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/TOMS BIO 3.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/TOPICAL QUESTIONS - COORDINATION BY NKONDO JAMES.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/TOPICAL QUESTIONS - ECOLOGY BY NKONDO JAMES.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/TOPICAL QUESTIONS - GROWTH AND DEVELOPMENT BY NKONDO JAMES.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/TOPICAL QUESTIONS - LOCOMOTION IN ANIMALS BY NKONDO JAMES.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/TOPICAL QUESTIONS - NUTRITION BY NKONDO JAMES.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/TOPICAL QUESTIONS - REPRODUCTION BY NKONDO JAMES.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/TOPICAL QUESTIONS - RESPIRATION AND GASEOUS EXCHANGE.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/TOPICAL QUESTIONS - SOIL BY NKONDO JAMES.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/TOPICAL QUESTIONS - TRANSPORT BY NKONDO JAMES.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/UCE Biology 1.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/UCE Biology 3.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/UCE BIOLOGY PRACTICAL MARKING GUIDE UNEB 2019.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/UCE BIOLOGY.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/UCE Chemistry 1.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/UCE Chemistry 2.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/UCE Chemistry 3.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/UCE CHEMISTRY PAPER 1 FROM 1987-2012.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/UCE CRE1.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/UCE English 2.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/UCE English1.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/UCE Geography 2.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/UCE Geography1.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/UCE History 1.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/UCE History 2.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/UCE History 4.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/UCE MATH PAPER 2-2022.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/UCE MATH PP1-2022.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/UCE Mathematics 2.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/UCE maths 1.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/UCE PHY2 2022 Guide (1).pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/UCE Physics 1.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/UCE Physics 2.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/UCE Physics 3.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/UCE Physics 4.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/uce-hoima-dio-mocks-math-1.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/UCE-MATHEMATICS-PAPER-1-2013-marking-guide-O-level.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/UCE-MATHEMATICS-PAPER-1-2014-marking-guide-O-level-2.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/UCE-MATHEMATICS-PAPER-1-2015-marking-guide-O-level.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/UCE-MATHEMATICS-PAPER-1-2016-marking-guide-O-level-1.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/UCE-MATHEMATICS-PAPER-1-2017-marking-guide-O-level-2.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/UCE-MATHEMATICS-PAPER-1-2018-marking-guide-O-level.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/UCE-MATHEMATICS-PAPER-1-2019-marking-guide-O-level-1.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/UCE-MATHEMATICS-PAPER-2-2013-marking-guide-O-level.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/UCE-MATHEMATICS-PAPER-2-2015-marking-guide-O-level.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/UCE-MATHEMATICS-PAPER-2-2014-marking-guide-O-level-1.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/UCE-MATHEMATICS-PAPER-2-2016-marking-guide-O-level.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/UCE-MATHEMATICS-PAPER-2-2017-marking-guide-O-level.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/UCE-MATHEMATICS-PAPER-2-2018-marking-guide-O-level-1.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/UCE-MATHEMATICS-PAPER-2-2019-marking-guide-O-level-1.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/UNEB BLUE PRINT MCQ SECTION A - Copy.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/UNEB BLUE PRINT SECTION B - Copy.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/uploaded-SMATA EX_MINATION O LEVEL_MATHEMATICS2022.pdf"
+    },
+    {
+      "title": "",
+      "description": "",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Wakissa chem 2_065746.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/_O_Chemistry-1-1.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/- Introduction to Swahili.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/'o' level biology ( PDFDrive ).pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/0 LEVEL BIOLOGY COMPLETE NOTES.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/1_HOW TO USE THE SYLLABUS, LB TG.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/2_Developing interactive teaching-learning activities-1.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/03-FLOWERING PLANTS.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/05-NUTRITION IN LIVING THINGS.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/05-NUTRITION IN LIVING THINGS.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/06 Ecology~O level.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/06-MOVEMENT OF MATERIALS-1.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/07-TRANSPORT IN PLANTS & ANIMALS.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/08-RESPIRATION AND GASEOUS EXCHANGE (1).pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/08-RESPIRATION_AND_GASEOUS_EXCHANGE[1].pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/10_Development of Projects.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/10. CHLORINE AND ITS CPDS PROBLEMS.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/12 growth and development.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/12-GROWTH AND DEVELOPMENT-1 (1).pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/13-REPRODUCTION IN ORGANISMS - Copy.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/15-GENETICS AND EVOLUTION.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/500 Business Ideas.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/1000-english-proverbs-1.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/190704 AGRIC SYLLABUS version 3.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/A Dictionary of Science, Sixth Edition (Oxford Paperback Reference) ( PDFDrive )-1.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/ACIDS BASES AND SALTS PROBLEMS.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/African maps.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/AFRICAN NATIONALISM(1).pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/AFRICAN NATIONALISM(1).pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/AGRICULTURAL MECHANISATIO1(1)-1.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/AGRICULTURE NOTES FORM 1-4 BOOKLET.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/AGRICULTURE NOTES-S2-S4.PDF"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Agriculture Syllabus.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Agriculture Syllabus.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Agriculture-Notes-STAHIZA.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/ALL_MATHEMATICS_1-4_NOTES.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/arabic ثلاثون درسا للصائمين 12 (1).pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Art and Design Syllabus Final (Fine tuned).pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/ATOMIC STRUCTURE, PERIODIC TABLE AND BONDING PROBLEMS.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/best o level GENETICS O .pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/BEST-CO-ORDINATION.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/BIO FOR O'LEVEL NOTES.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/BIOLOGY NOTES O-LEVEL.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/BIOLOGY O LEVEL notes.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/BIOLOGY PRACTICALS FOR ORDINARY LEVEL 2.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/biology SYLLABUS NEW NCDC LOWER SECONDARY CURRICULUM.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Biology_Syllabus_compressed.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/BREATHING RESP SYSTEM LSN 2.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/BURNS.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/CHEMICALS OF LIFE @SCZ Salongo 2016-1.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/CHEMICALS OF LIFE@SSEFF.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Chemistry Syllabus new curriculum.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Circle theorems.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Commerce at your finger tips by Mboowa Stuart.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/COMMERCE NOTES-1.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/COMMERCE NOTES-1.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/COMMON ABBREVIATIONS IN ENGLISH.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Common English Mistakes Explained With Examples  Over 300 Mistakes Almost Students Make and How To Avoid Them In Less Than 5minutes.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/COMPLETE O'LEVEL BIOLOGY NOTES.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/COMPUTER STUDIES NOTES.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/CRE O' level notes summary.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/CRE_syllabus_compressed.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/CV WRITING.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/DIV 2 NOTES. MR ORONO.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/DIV 3 NOTES. MR ORONO.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Effect of electricity@Kidegalize Network.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/electrolysis..pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/English-Syllabus-Final.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/ENT TEXT BOOK.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/ENTREPRENEURSHIP SYLLABUS NEW NCDC LOWER SECONDARY CURRICULUM.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/enzymes, osmosis and diffusion.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/EVOLUTION OF MAN, TECHNOLOGY, AND ENVIRONMENT.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/EXCRETION AND HOMEOSTASIS-1.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/FINE ART STUDIO TECHNOLOGY O LEVEL NOTES.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/FreeEnglishGrammar(0).pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Gaseous exchange, respiration and nutrition.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/GENETICS NOTES A LEVEL BY FERIX.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/GENETICS NOTES A LEVEL BY FERIX.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Genetics, DNA, and Heredity.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Geneticso-level.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/GEOG 1 G-O.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/GEOG 2 1.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/GEOG 2 G A.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/GEOG 2 G-O.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/GEOG OBJECTIVE QN BANK(1).pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Geography_Syllabus_compressed.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/HISTORY AND POLITICAL EDUCATION NEW  CURRICULUM SYLLABUS BY NCDC.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/HISTORY OF EAST AFRICA Complete book.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/History of East Africa O'level.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/HISTORY OF EAST AFRICA.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/History syllabus-2020  -swaibu(2).pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/History-and-Political-Education-Syllabus-Final-1.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/History-and-Political-Education-Syllabus-Final-1.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/HISTORY-DEPTAL-NOTES-O-LEVEL-1.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/ICT BOOK 2019.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/ICT_Syllabus New Curriculum [pdf].pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/ICT-SYLLABUS-compressed.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Important-words-in-essay-questions.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/ISLAM PAPER ONE, S.4 REVISION PACKAGE.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/JJEB Biology 12017.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/kinematics o level mathematics note.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/kiswahili.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Language module 1.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/LIGHT ENERGY.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Literature in English Syllabus.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/LOCOMOTION...pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Longman_English_Grammar_Practice_intermediate_Self_Study_Edition.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Luutu Homeostasis and excretion.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/M Gicheru _ Across the Bridge.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Managing Classroom Behavior and Discipline ( PDFDrive )-1.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Mapwork, Photographic Interpretation, Fieldwork.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Mapwork, Photographic Interpretation, Fieldwork.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Mathematics O'level Syllabus.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Maths  book 4 O level -1.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/MATHS QUICK REVISION.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/MUSCLE CONTRACTION.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/MWANGA_WA_USHAIRI_KWA_SHULE_ZA_UPILI_i_M-1.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/National-Teachers-policy.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/NCDC-Competence based curriculum DR SAUDAH.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/O LEVEL BIO REVISION BOOK S. 3, 4(0).pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/o level biology notes-1.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/O-Level - IRE Notes on Principles and Practices of Islam Paper 2.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/O-Level-Chemistry-notes.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/O-Level - IRE Notes on Principles and Practices of Islam Paper 2.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/O-Level-Chemistry-notes.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/O'LEVEL MATHS NOTES1.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/O'LEVEL PHYSICS NOTES.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/PHYSICAL_EDUCATION_Syllabus_compressed.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/PHYSICS NOTES 2017 (2)-2.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/PHYSICS NOTES. O' LEVEL(S1-S4).PDF"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/PHYSICS Paper 2 Notes by Shakiyonda shadiq.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/PHYSICS_Syllabus.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/RESPIRATORY SYSTEM FULL TOPIC.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/REST OF AFRICA NOTES..pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/RONI - CARBON AND ITS COMPOUNDS PROBLEMS.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/RONI - CHEMICAL EQUILIBRIA PROBS-1.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/RONI - CHEMICAL KINETICS PROBS-1-1.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/RONI - COLLIGATIVE PROPERTIES PROBS-1.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/RONI - ELECTROLYSIS PROBLEMS.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/RONI - ELECTROCHEMISTRY PROBS.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/RONI - EXTRACTION PROBLEMS.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/RONI - IONIC EQUILIBRIA PROBS-1.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/RONI - NITROGEN AND ITS CPDS PROBLEMS.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/RONI - ORGANIC CHEMISTRY PROBLEMS.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/RONI - OXYGEN AND ATMOSPHERE PROBLEMS.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/RONI - PHASE EQUILIBRIA PROBS.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/RONI - SUPPORT AND LOCOMOTION SOLUTIONS.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/RONI - TRANSPORT 1 GUIDE.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/RR 1 F 1.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/RR 2 F 1.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/RR 2 F 1.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/RR 2 G A.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/RR 2 G-O.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/S.4-GEOGRAPHY-2-NOTES-CHINA-1.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/S.4, 5 & 6 ICT-COMPUTER-STUDIES-BOOK-PRACTICAL-GUIDE.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/S3 East Africa Geography O' Level P273-1 Text Book.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/S4 B CHEMISTRY NOTES ON SULPHUR.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/S4 BIO NOTES MerryLand.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/S4 Mathematics TextBook by Wendi Kasiim Kawanda Secondary School.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/SKETCH MAPS CHINA.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/SKETCH MAPS FOR REST OF AFRICA.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Social and Economic history of East Africa P2102 (1).pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/St.julian Gayaza chemistry olevel seminor Question-1.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/transport in plants.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/UNEB MATHS TABLES.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/UNKNOWN AUTHOR ECOLOGY.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Verbs-Forms-Eng.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/waves notes.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/ZASE - ACIDS, BASES & SALTS NOTES.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 5000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/world problems and development  book draft Geog 2 notes.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 10000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/-GENETICS AND EVOLUTION S4.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 15000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/@ 70 Rules of English Grammar English Error Correction.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 25000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/1000-english-proverbs.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 55000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/A Modern Dictionary of Geography_2.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 2000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/A Tale of Two Cities.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 10000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/ACIDS BASES AND INDICATORS.PDF"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 15000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/AGRICULTURE ECONOMICS HAND OUT.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 55000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/AGRICULTURE NOTES O LEVEL (CROPS) - Google Docs.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 2000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Agriculture Revision Form 1 4.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 10000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/ALL_MATHEMATICS_1-4_NOTES.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 15000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Alternate Biology F4.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 25000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/ALTERNATING CURRENT.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 55000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/APPLICATION SOFTWARE COMPUTER NOTES.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 2500,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Art of drawing-the-human-body.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 37000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Art TG.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 13000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/AUTOTROPHIC NUTRITION.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 45000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/BASIC PRINCIPALS OF CHEMISTRY PRACTICLE.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 57500,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/BIO FOR O'LEVEL-1-1.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 24800,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/BIOLOGY A FUNCTIOAL APPROACH.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 86000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/BIOLOGY ESSAY REVISION-1.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 11000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Biology Growth and Development Notes.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 29000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Biology introductory O LEVEL.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 95000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/BIOLOGY NOTES ON NUTRITION O LEVEL .pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 29000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/BIOLOGY NOTES Reception Responce and Coordination.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 12400,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/BIOLOGY O LEVEL NOTES ON Support and Movement.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 15800,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/BIOLOGY O-LEVEL COORDINATION NOTES.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 82000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/BIOLOGY SPECIAL NOTES (QUESTION & ANSWER FORMAT).pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 10000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Brief_Illustrated_Guide.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 15000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/BRITISH OCCUPATION AT THE CAPE S.3 History notes.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 25000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/BUSINESS STUDIES NOTES FORM 1-4 BOOKLET.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 55000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/C Programming.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 2000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/CELLS AND SIMPLE CIRCUITS PHYSICS NOTES .pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 10000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/CHEMICAL OF LIFE.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 15000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/CHEMICALS OF LIFE NOTES.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 25000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/CHEMISTRY EXTRACTION OF METALS NOTES.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 55000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/CHEMISTRY FORM 1-4 NOTES BOOKLET.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 2000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/CHEMISTRY FORM TWO WORK NOTES.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 10000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/CHEMISTRY NOTES O LEVEL.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 15000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/CHEMISTRY PP3 KCSE PAST PAPERS. S.F.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 25000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Chemistry Textbook.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 55000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/CHEMISTRY_RADIOCTIVITY_NOTES.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 2500,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/CHLORINE AND ITS COMPOUNDS MARKING SCHEME.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 37000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/CLIMATE OF EAST AFRICA NOTES.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 13000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/COCKROACH DISSECTION.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 45000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/COLLIGATIVE PROPERTIES S.6 CHEMISTRY NOTES.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 57500,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/commerce summary notes.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 24800,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/COMMUNICATION AND PERSONAL BRANDING S.5 ENTREPRENUERSIP NOTES.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 86000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/COMPARISION BETWEEN MARKS GOSPEL AND JOHN NOTES.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 11000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/COMPLETE ENGLISH NOTES.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 29000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Complex Numbers.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 95000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/COMPUTER COMMUNICATION NETWORKS.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 29000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/COMPUTER HARDWARE NOTES.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 12400,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Computer Networks NOTES.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 15800,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/COMPUTER SCIENCE NOTES NETWORK.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 82000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/COMPUTER-TEACHING-NOTES FOR SECONDARY SCHOOLS.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 53000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/COORDINATION.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 10000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/COTTON GROWING IN THE SOUTH.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 15000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/CRE  O LEVEL-3.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 25000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/CRE NOTES FORM 1-4 BOOKLET.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 55000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/CRE S 5 PRE GOSPEL NOTES.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 2000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/CRE-224-S.4.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 15000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/CROP AND SOIL-1.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 25000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Data And Computer Communications William Stallings.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 55000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/defining-relative-clauses.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 2000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/DIV-ONE-NOTES.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 10000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/DIVINITY Paper 3 Notes CHRISTIANITY IN THE EAST AFRICAN ENVIRONMENT.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 15000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Ecology S.4 UCE.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 25000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Econ 1 guide.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 55000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Econ 2 guide.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 2500,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/ECONOMIC HISTORY AND SOCIAL HISTORY OF EAST AFRICA SINCE 1800 NOTES .pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 37000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/ECONOMICS NOTES ON INTERNATIONAL TRADE s6.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 13000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/ECONOMICS PRICE THEORY NOTES.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 45000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Edex-Mech-ch2.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 57500,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Edex-Mech-ch5.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 24800,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/ELECTRIC FIELD INTENSITY PHYSICS NOTES.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 86000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/ELECTRICAL CELL ARRANGEMENT PHYSICS PRACTICAL.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 11000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Electricity,_Magnetism,_Optics_and modern physics.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 29000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/electromagnetism  notes.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 95000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/ELECTROMAGNETISM AND ELECTROMAGNETIC INDUCTION.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 29000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/electromagnetism.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 12400,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/ELECTROSTATICS.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 15800,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Electrromagnetic Induction.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 82000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Encyclopedia of islam.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 53000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/ENGLISH FORM 4 NOTES.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 10000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/ENGLISH GRAMMAR NOTES.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 15000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/ENGLISH LANGUAGE PAPER ONE FUNCTIONAL WRITING NOTES.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 25000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/ENGLISH O LEVEL Direct_and_Indirect_Speech.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 55000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/ENGLISH PAPER 1 NOTES O LEVEL SUMMARISED FUNCTIONAL WRITING ASPECTS.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 2000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/ENGLISH PAPER ONE FOR S.4 NOTES.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 10000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/ENGLISH REVISION MODULE.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 15000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/ENGLISH POETRY.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 25000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/ENGLISH_GRAMMAR_BOOKLET.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 55000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/english-advanced-vocabulary-and-structure-practice.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 2000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Entrepreneurship FINANCIAL MANAGEMENT SKILLS.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 10000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/ENTREPRENEURSHIP NOTES FINANCIAL MANAGEMENT.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 15000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Entrepreneurship Notes.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 25000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Exam 1 to 30.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 55000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Excel Mathematics Revision & Exam Workbook.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 2500,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/EXCRETION and HOMEOSTASIS IN PLANTS AND ANIMALS NOTES.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 37000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/FACTORS FOR EXPANSION OF THE EARLY CHURCH OR REASONS FOR WIDE SPREAD OF GOOD NEWS IN THE EARLY CHURCH NOTES.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 13000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/FINAL Combined UCE Physics Paper 1 and 2 Revision.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 45000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/FINAL Combined UCE Physics Paper 1 and 2.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 57500,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/FINANCIAL MANAGEMENT ENTREPRENEURSHIP NOTES.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 24800,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Fluid mechanics Schaums's Outlines Book.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 86000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/FORESTRY IN AFRICA NOTES GEOGRAPHY.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 11000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Fundamental Physics for O Level Teaching Guide.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 29000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/GCSE Geography Instant Revision.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 95000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/General O-Level ICT Notes.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 29000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/General paper.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 12400,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/General_129_1591275008.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 15800,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/General_250_1588809062.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 82000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Genetics O'level Biology Notes.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 53000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/GEOGRAPHY OF AFRICA NOTES .pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 10000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/GEOGRAPHY PAPER 1 S.4 FIELD WORK NOTES.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 15000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Geography prototype.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 25000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/GEOGRAPHY Weather  Climate and water cycle.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 55000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Global Arabic Learning Madina Arabic.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 2000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/GLORISO UCE FINE ART Paper 1 2018 MARKING GUIDE.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 10000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Greatest Common Factor MATHEMATICS.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 15000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/GROWTH AND DEVELOPMENT  Olevel BIOLOGY Notes.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 25000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Heat, Energy, Air and Combustion.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 55000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/HISTOLOGY.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 2000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/HISTORY NOTES Nationalism in Uganda s6.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 10000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/HISTORY NOTES ON KINGDOMS .pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 15000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/HISTORY NOTES.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 25000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/HISTORY OF EAST AFRICA  BRIEF NOTES ABOUT BUGANDA KINGDOM .pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 55000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/HISTORY OF EAST AFRICAN COAST NOTES O LEVEL.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 2500,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/HISTORY OF WEST AFRICA NOTES s4.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 37000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/HISTORY of west Africa SUMMARISED.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 13000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/History Paper 2 syllabus summary .pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 24800,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/History-3-notes.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 86000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/HISTORY-NOTES-S.4.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 11000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/HOOKE'S LAW NOTES PHYSICS O LEVEL .pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 29000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/ict s1 to University level more research reading notes.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 95000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/IGCSE Olevel Physics Paper 1 Classified Questions.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 29000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Inflation - Economics Notes.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 12400,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Internet & The WWW Notes.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 15800,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Interview notes.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 82000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/INTRODUCTION TO CHEMISTRY O LEVEL.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 53000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Introduction to Computer programming ICT.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 10000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Introduction to Computer programming Olevel Notes.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 15000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/INTRODUCTION TO COMPUTERS.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 25000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/INTRODUCTION TO ENTREPRENEURSHIP EDUCATION NOTES .pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 55000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Introduction to Entrepreneurship Education S5.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 2000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/INTRODUCTION TO EUROPEAN HISTORY.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 10000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/INTRODUCTION TO GEOGRAPHY FORM 1 TEACHING NOTES.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 15000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/IRE PAPER 1 O-LEVEL PRE ISLAMIC ARABIA SUMMARISED POINTS-1.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 55000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/ISLAM O'LEVEL NOTES PAPER 2.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 2000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/KISWAHILI NOTES.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 10000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Learning to Teach English in the Secondary School.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 15000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/LIST OF IDIOMS IN ENGLISH.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 25000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/MANS RESPONSE TO GOD THROUGH FAITH AND LOVE CRE NOTES.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 55000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/MATHEMATICS O LEVEL ALGEBRAIC-EXPRESSIONS-Q-1.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 2500,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Mathematics O'Level book.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 37000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Mathematics O'level Syllabus.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 13000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/MATHEMATICS UNDERSTANDING CIRCLE THEOREMS-PART ONE.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 45000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/MATHEMATICS-1300-FORMULAE.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 57500,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/MATHS QUICK REVISION.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 24800,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/MENSURATION (AREA, SURFACE AREA AND VOLUME AND AREA OF CIRCLES.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 86000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/METALS.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 11000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/MODERN PHYSICS NOTES.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 29000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/MODERN PHYSICS O LEVEL REVISION WORK.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 95000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/MODERN PHYSICS SENIOR 4 REVISION WORK.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 29000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/NCDC LOWER SECONDARY ENTREPRENUERSHIP NOTES NEW CURRICULUM.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 12400,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/NCDC Mathematics prototype TEACHERS GUIDE.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 15800,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/NCDC O LEVEL SELF STUDY English O level.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 82000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/NCDC SELF STUDY Biology O level 2020.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 53000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/NEW ENGLISH GRAMMAR NOTES O LEVEL.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 10000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/NLSC Physics notes; A complete self study guide.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 15000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Nuclear Reactions NOTES PHYSICS o level.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 25000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Nutrition in Animals Biology.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 55000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/O LEVEL AGRICULTURE PAPER 1 NOTES.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 2000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/O LEVEL BIOLOGY CO-ORDINATION IN ANIMALS NOTES.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 10000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/O LEVEL BIOLOGY NOTES.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 15000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/O level Biology syllabus.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 25000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/O LEVEL CHARPTER 13 ECONOMIC DEVELOPMENT IN EAST AFRICA THE UGANDA RAILWAY HISTORY NOTES..pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 55000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/O LEVEL CHEMISTRY ELECTROLYSIS AND ELECTROCHEMICAL CELLS s4.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 2000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/O level GASEOUS EXCHANGE BIOLOGY s4.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 10000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/O LEVEL GEOGRAPHY NOTES PAPER ONE.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 15000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/o level IMPACT OF IT ICTs ON SOCIETY.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 25000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/O level introduction to computing.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 55000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/O LEVEL MATHEMATICS PROBABILITY NOTES.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 2500,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/O LEVEL MATHEMATICS PROBABILITY THEORY NOTES.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 37000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/O LEVEL PHYSICS ELASTICITY NOTES.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 13000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/O LEVEL PHYSICS Gravity and Circular Motion Revision.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 45000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/O LEVEL PHYSICS LIGHT NOTES CONTINUATION.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 57500,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/O LEVEL PHYSICS NOTES.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 24800,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/O LEVEL PHYSICS PRESSURE NOTES.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 86000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/o level scientific definitions.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 11000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/o level THE INTERNET&WORLD WIDE WEB.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 29000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/o level TRANSPORT IN PLANTS & ANIMALS.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 95000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/O-Level AGRICULTURE PAPER 1 Notes.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 29000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/O-LEVEL BIOLOGY NOTES.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 12400,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/O-LEVEL CHEMISTRY NOTES.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 15800,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/O'LEVEL MATHEMATICS  NOTES1.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 82000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/O'LEVEL MATHS NOTES1-1.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 53000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/O'LEVEL PHYSICS NOTES.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 10000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/OKUBUMBA MU BUGANDA NOTES.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 15000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/OLEVEL HARDWARE NOTES.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 55000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Ordinary Level (O Level) (S4)  Computer Studies Notes.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 2000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Ordinary Level (O Level) (S4) 273 Geography Notes.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 10000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Ordinary Level (O Level) (S4) 840 Computer Studies Notes.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 15000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/PHYSCIS MAGNETISM NOTES.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 25000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Physical chemistry notes.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 55000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/PHYSICS CALORIMETRY BRIEF  NOTES  .pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 2000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Physics Mechanics work 1.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 10000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/PHYSICS P1 SUMMARISED NOTES.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 15000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/PHYSICS PAPER 2 UCE  SUMMARISED NOTES.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 25000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/PHYSICS REFRACTION THROUGH LENSES NOTES.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 55000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Physics S 4 Notes.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 2500,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/PREPARATION_GUIDE_FOR_LABORATORY SOLUTIONS USED IN CHEMISTRY PRACTICALS s4.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 37000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/PROBABILITY THEORY MATHEMATICS O LEVEL.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 13000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/PROGRAMMING LANGUAGES NOTES ICT and COMPUTER.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 45000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/PURE MATHEMATICS PAPER 1 UACE POST MOCK A.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 57500,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/QUR’AAN AND HADIITH NOTES .pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 24800,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/RADIOACTIVITY NOTES O LEVEL PHYSICS.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 86000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/REFRACTION THROUGH PRISMS PHYSICS PAPER 2 NOTES .pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 11000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/REPRODUCTION IN ORGANISMS.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 29000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/RESPIRATION AND GASEOUS EXCHANGE NOTES .pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 95000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/REST OF AFRICA NOTES..pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 29000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/S.4 A,B,C,D and G PHYSICS- Current electricity.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 12400,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/S.4 CHEMISTRY Rates of reaction (chemical kinetics) NOTES.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 15800,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/S.4 History missionary factors in west africa Notes.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 82000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/S.4 history of west  Africa notes.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 53000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/S.4 Summarized Notes HISTORY Paper 4 (SOUTH_AFRICA).pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 10000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/S.4-Geog-notes-RHINELANDS.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 15000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/SECONDARY HUMANITIES OLEVEL.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 55000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Social and Economic history of E.A.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 2000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/SOUTH AFRICAN HISTORY notes.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 10000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/THE MOLE.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 15000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/TRENDS IN COMPUTING NOTES.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 25000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Trigonometry.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 55000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/Vectors.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 2000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/waves.pdf"
+    },
+    {
+      "title": "",
+      "description": "Senior Four",
+      "price": 10000,
+      "pdfUrl": "https://fresh-teacher.github.io/secondariez/WRITING EQUATIONS.pdf"
+    }
+  ]
