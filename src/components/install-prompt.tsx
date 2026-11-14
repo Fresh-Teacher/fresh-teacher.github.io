@@ -2,89 +2,63 @@ import { useEffect, useRef, useState } from "react";
 import { X } from "lucide-react";
 import { Button } from '@/components/ui/button';
 import installMascot from '@/assets/install-mascot.webp.asset.json';
-import { BROWSING_KEY, COOKIE_CLOSED_EVENT, INSTALL_DELAY_MS, INSTALLED_KEY, isInstalled, offerInstall, readPreference, rememberInstalled, requestInstall, supportsManualInstall, type BeforeInstallPromptEvent } from '@/lib/app-installation';
+import { INSTALLED_KEY, isInstalled, offerInstall, readPreference, rememberInstalled, requestInstall, supportsManualInstall, type BeforeInstallPromptEvent } from '@/lib/app-installation';
 
 const BLOCK_KEY = "ft-install-blocked";
 const SNOOZE_KEY = "ft-install-snooze-until";
 const SNOOZE_DAYS = 7;
 const EXIT_MS = 420;
 
-export function InstallPrompt() {
+export function InstallPrompt({ onComplete }: { onComplete: () => void }) {
   const [open, setOpen] = useState(false);
   const [leaving, setLeaving] = useState(false);
   const [showManualHint, setShowManualHint] = useState(false);
   const deferredPrompt = useRef<BeforeInstallPromptEvent | null>(null);
   const dialogRef = useRef<HTMLDivElement>(null);
   const [installing, setInstalling] = useState(false);
+  const completed = useRef(false);
+  const exitTimer = useRef<number | undefined>(undefined);
 
   useEffect(() => {
-    if (isInstalled()) { rememberInstalled(); return; }
-    let elapsed = 0;
-    try { elapsed = Math.max(0, Math.min(INSTALL_DELAY_MS, Number(sessionStorage.getItem(BROWSING_KEY)) || 0)); } catch { /* no storage */ }
-    let visibleSince = document.visibilityState === 'visible' ? Date.now() : null;
-    let timer: number | undefined;
-    let completed = false;
-    let cookieClosed = Boolean(readPreference('ft-cookie-consent'));
-    const saveTime = () => {
-      if (visibleSince !== null) elapsed = Math.min(INSTALL_DELAY_MS, elapsed + Date.now() - visibleSince);
-      visibleSince = document.visibilityState === 'visible' ? Date.now() : null;
-      try { sessionStorage.setItem(BROWSING_KEY, String(elapsed)); } catch { /* no storage */ }
-    };
-    const check = () => {
-      window.clearTimeout(timer);
-      saveTime();
-      if (completed || isInstalled()) return;
-      if (document.visibilityState !== 'visible') return;
-      if (elapsed < INSTALL_DELAY_MS) {
-        timer = window.setTimeout(check, INSTALL_DELAY_MS - elapsed);
-        return;
-      }
-      if (!cookieClosed || readPreference(BLOCK_KEY)) return;
-      if (Date.now() < Number(readPreference(SNOOZE_KEY) || 0)) return;
-      // Chromium exposes the offer only when eligible; iOS Safari uses manual installation.
-      if (!deferredPrompt.current && !supportsManualInstall()) return;
-      setOpen(true);
-    };
     const onInstalled = () => {
-      completed = true;
+      completed.current = true;
       rememberInstalled();
       offerInstall(null);
       deferredPrompt.current = null;
-      window.clearTimeout(timer);
+      window.clearTimeout(exitTimer.current);
       setOpen(false);
+      onComplete();
     };
-    const onCookieClosed = () => { cookieClosed = true; check(); };
+    if (isInstalled()) { onInstalled(); return; }
+    if (readPreference(BLOCK_KEY) || Date.now() < Number(readPreference(SNOOZE_KEY) || 0) || !supportsManualInstall()) {
+      completed.current = true;
+      onComplete();
+      return;
+    }
+    setOpen(true);
     const onStorage = (event: StorageEvent) => { if (event.key === INSTALLED_KEY && event.newValue === '1') onInstalled(); };
     const displayMode = window.matchMedia('(display-mode: standalone)');
     const onDisplayMode = () => { if (isInstalled()) onInstalled(); };
 
     const onBeforeInstall = (event: Event) => {
       event.preventDefault();
+      if (completed.current) return;
       deferredPrompt.current = event as BeforeInstallPromptEvent;
       offerInstall(event as BeforeInstallPromptEvent);
-      check();
     };
     window.addEventListener("beforeinstallprompt", onBeforeInstall);
     window.addEventListener('appinstalled', onInstalled);
-    window.addEventListener(COOKIE_CLOSED_EVENT, onCookieClosed);
     window.addEventListener('storage', onStorage);
-    window.addEventListener('pagehide', saveTime);
-    document.addEventListener('visibilitychange', check);
     displayMode.addEventListener('change', onDisplayMode);
-    check();
 
     return () => {
-      saveTime();
       window.removeEventListener("beforeinstallprompt", onBeforeInstall);
       window.removeEventListener('appinstalled', onInstalled);
-      window.removeEventListener(COOKIE_CLOSED_EVENT, onCookieClosed);
       window.removeEventListener('storage', onStorage);
-      window.removeEventListener('pagehide', saveTime);
-      document.removeEventListener('visibilitychange', check);
       displayMode.removeEventListener('change', onDisplayMode);
-      window.clearTimeout(timer);
+      window.clearTimeout(exitTimer.current);
     };
-  }, []);
+  }, [onComplete]);
 
   useEffect(() => {
     if (!open) return;
@@ -104,10 +78,13 @@ export function InstallPrompt() {
   }, [open]);
 
   const close = () => {
+    if (completed.current) return;
+    completed.current = true;
     setLeaving(true);
-    window.setTimeout(() => {
+    exitTimer.current = window.setTimeout(() => {
       setOpen(false);
       setLeaving(false);
+      onComplete();
     }, EXIT_MS);
   };
 
@@ -168,7 +145,7 @@ export function InstallPrompt() {
         </p>
         {showManualHint && (
           <p className="ftp-hint">
-            On iPhone or iPad: tap the Share button, then &quot;Add to Home Screen&quot;. On Android:
+            On iPhone or iPad: tap the Share button, then &quot;Add to Home Screen&quot;. In Chrome or Edge:
             open the browser menu and choose &quot;Install app&quot; or &quot;Add to Home screen&quot;.
           </p>
         )}
