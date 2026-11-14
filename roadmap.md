@@ -1,3 +1,6 @@
+# Visitor notices
+- [ ] Show install immediately before cookies on all pages, bypass installed or unsupported devices, and verify dismissal and saved preferences.
+
 # Repository import
 - [x] Import library source and dependencies while preserving this project’s runtime.
 - [x] Rehome original media into this project.
