@@ -1,3 +1,6 @@
+# Visitor notices
+- [x] Show install immediately before cookies on all pages, bypass installed or unsupported devices, and verify dismissal and saved preferences; 28 tests pass, desktop/phone and real shared-document flows verified, preview build OK.
+
 # Repository import
 - [x] Import library source and dependencies while preserving this project’s runtime.
 - [x] Rehome original media into this project.

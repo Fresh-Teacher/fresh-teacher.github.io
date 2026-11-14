@@ -1,6 +1,4 @@
-export const INSTALL_DELAY_MS = 40 * 1000;
 export const INSTALLED_KEY = 'ft-app-installed';
-export const BROWSING_KEY = 'ft-install-browsing-ms';
 export const COOKIE_CLOSED_EVENT = 'ft-cookie-notice-closed';
 
 export function readPreference(key: string): string | null {
@@ -21,7 +19,9 @@ export function isInstalled() {
 export function supportsManualInstall() {
   const ios = /iPad|iPhone|iPod/.test(navigator.userAgent) ||
     (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
-  return ios && /Safari/.test(navigator.userAgent) && !/CriOS|FxiOS|EdgiOS|OPiOS/.test(navigator.userAgent);
+  if (ios) return /Safari/.test(navigator.userAgent) && !/CriOS|FxiOS|EdgiOS|OPiOS/.test(navigator.userAgent);
+  // Chromium can offer installation from its menu before the native event arrives.
+  return /Chrome|Chromium|Edg\//.test(navigator.userAgent) && !/; wv\)|FBAN|FBAV|Instagram/.test(navigator.userAgent);
 }
 
 export interface BeforeInstallPromptEvent extends Event {

@@ -49,3 +49,6 @@ use the editor.
 ## Manual advertisements
 - Keep manual unit IDs in `src/data/ad-units.json` (null until supplied); render fixed-size labeled bands after eight catalog items and after document information, never inside resource cards or readers, to separate ads from downloads.
 - Queue each ad DOM element once and only on the approved production host after consent; keep preview placeholders request-free and preserve the existing production bootstrap.
+
+## Visitor notices
+- Coordinate install and cookie notices in the shared root with an explicit completion callback; this prevents overlap and preserves the sequence on direct document visits without delaying consent-gated ads.
