@@ -43,6 +43,7 @@ use the editor.
 - Derive sitemap pages from explicit route decisions and registered legacy catalogs; prerender XML for Pages and verify each listed HTML file before deployment, excluding shell-only document/repository URLs and non-page-specific dates.
 - Keep GitHub Pages configuration separate from the Lovable runtime; prerender catalog URLs and convert directory output to literal legacy HTML files to preserve incoming links.
 - Deploy Pages only by manual workflow that materializes standalone source automatically; refuse unresolved media or missing page output so failed preparation cannot replace the live site.
+- Prefer dedicated TanStack shell files for Pages 404 output, falling back to the validated homepage when absent, so differing prerender layouts remain deployable.
 - Load AdSense only on the approved production hostname with the production flag and accepted cookie choice; previews must not generate ad traffic.
 
 ## Manual advertisements

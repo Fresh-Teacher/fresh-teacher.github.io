@@ -59,6 +59,30 @@ class PagesTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, 'Missing generated sitemap page'):
                 pages.verify_sitemap(output)
 
+    def test_homepage_is_fallback_when_no_separate_shell_is_generated(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            output = root / 'dist'
+            (output / 'local-media').mkdir(parents=True)
+            homepage = '<html><body>Library<script type="module" src="/assets/client.js"></script></body></html>'
+            (output / 'index.html').write_text(homepage)
+            (output / 'ads.txt').write_text('publisher')
+            (root / 'src/data/legacy').mkdir(parents=True)
+            (root / 'src/data/resource-manifest.json').write_text('{}')
+            (root / 'src/data/legacy/manifest.json').write_text('{}')
+            (output / 'sitemap.xml').write_text('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://fresh-teacher.github.io/</loc></url></urlset>')
+            (output / 'robots.txt').write_text('User-agent: *\nAllow: /\n')
+            pages.prepare(output, root)
+            self.assertEqual((output / '404.html').read_bytes(), (output / 'index.html').read_bytes())
+            self.assertTrue((output / '.nojekyll').is_file())
+
+    def test_missing_homepage_still_blocks_deployment(self):
+        with tempfile.TemporaryDirectory() as directory:
+            output = Path(directory)
+            (output / '_shell.html').write_text('app shell')
+            with self.assertRaisesRegex(ValueError, 'Missing prerendered homepage'):
+                pages.prepare(output)
+
     def test_sitemap_wrong_origin_blocks_deployment(self):
         with tempfile.TemporaryDirectory() as directory:
             output = Path(directory)
