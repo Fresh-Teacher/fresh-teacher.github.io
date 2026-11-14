@@ -80,9 +80,14 @@ def prepare(output: Path, source: Path = ROOT):
         elif not target.is_file():
             raise ValueError(f'Missing legacy page: {path}')
     # GitHub Pages serves this for unenumerated client routes (HTTP 404, not 200).
+    # TanStack writes the shell as _shell.html; older layouts used _shell/index.html.
     shell = output / '_shell' / 'index.html'
     if not shell.is_file():
-        raise ValueError('Missing TanStack SPA shell; deployment refused.')
+        flat = output / '_shell.html'
+        if flat.is_file():
+            shell = flat
+        else:
+            raise ValueError('Missing TanStack SPA shell; deployment refused.')
     shutil.copyfile(shell, output / '404.html')
     (output / '.nojekyll').touch()
     count = verify_sitemap(output)
