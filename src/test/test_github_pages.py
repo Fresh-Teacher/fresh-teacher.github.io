@@ -34,6 +34,24 @@ class PagesTests(unittest.TestCase):
             self.assertIn('Sitemap: https://fresh-teacher.github.io/sitemap.xml', (output / 'robots.txt').read_text())
             self.assertIn('User-agent: Googlebot\nAllow: /', (output / 'robots.txt').read_text())
 
+    def test_flat_shell_file_is_accepted(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            output = root / 'dist'
+            for path in ['p1.html', 'local-media']:
+                (output / path).mkdir(parents=True)
+            (output / 'index.html').write_text('homepage')
+            (output / 'ads.txt').write_text('google.com, pub-8782637659456848, DIRECT, f08c47fec0942fa0')
+            (output / 'p1.html/index.html').write_text('class resources')
+            (output / '_shell.html').write_text('app shell')
+            (root / 'src/data/legacy').mkdir(parents=True)
+            (root / 'src/data/resource-manifest.json').write_text(json.dumps({'p1.html': {}}))
+            (root / 'src/data/legacy/manifest.json').write_text('{}')
+            (output / 'sitemap.xml').write_text('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://fresh-teacher.github.io/</loc></url><url><loc>https://fresh-teacher.github.io/p1.html</loc></url></urlset>')
+            (output / 'robots.txt').write_text('User-agent: *\nAllow: /\n')
+            pages.prepare(output, root)
+            self.assertEqual((output / '404.html').read_text(), 'app shell')
+
     def test_sitemap_missing_output_blocks_deployment(self):
         with tempfile.TemporaryDirectory() as directory:
             output = Path(directory)
