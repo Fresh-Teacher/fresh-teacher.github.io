@@ -11,6 +11,6 @@ export default defineConfig({
     server: { entry: 'server' },
     pages: githubPagesPaths().map(path => ({ path })),
     prerender: { enabled: true, autoStaticPathsDiscovery: false, crawlLinks: false, failOnError: true, concurrency: 4 },
-    spa: { enabled: true },
+    spa: { enabled: true, maskPath: '/_shell' },
   },
 });
