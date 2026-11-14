@@ -32,7 +32,7 @@ describe('Install-first visitor notices', () => {
 
   it.each(['Remind me later', 'Not Interested', 'Close'])('waits for %s to finish closing before cookies appear', name => {
     render(<VisitorNotices />);
-    fireEvent.click(screen.getByRole('button', { name, exact: true }));
+    fireEvent.click(screen.getByRole('button', { name: new RegExp(`^${name}$`) }));
     act(() => vi.advanceTimersByTime(419));
     expect(cookieNotice()).not.toBeInTheDocument();
     act(() => vi.advanceTimersByTime(1));
