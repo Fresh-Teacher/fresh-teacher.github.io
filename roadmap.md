@@ -14,7 +14,7 @@
 - [x] Enable production-only AdSense using the existing publisher and cookie choice; browser check confirms acceptance loads once and essential-only blocks (ad network mocked).
 - [x] Add a separate static publishing configuration, legacy URL output, deployment workflow, and migration instructions.
 - [x] Test publishing safeguards and ad loading; prepare updated standalone source with all 189 validated media files. 17 focused JS tests and 6 Python checks pass; preview build is OK.
-- [ ] Run the external static build and review all generated pages — external CI has not run; normal preview checks do not validate this publishing target.
+- [x] Run the external static build and review all generated pages — fixed the SPA shell path (`/_shell`) and shell-file detection; full build with all 189 media files passes, sitemap verifies 654 generated pages, and all 15 deployment tests plus 6 Python checks pass.
 - [ ] Deploy and confirm live traffic and AdSense — requires the user's repository and Pages approval.
 
 # Clean manual advertisements
