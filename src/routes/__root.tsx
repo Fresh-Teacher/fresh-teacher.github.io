@@ -15,7 +15,8 @@ import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { LibraryShell } from '@/components/library-shell';
 import { Toaster } from '@/components/ui/sonner';
-import { VisitorNotices } from '@/components/visitor-notices';
+import { CookieNotice } from '@/components/cookie-notice';
+import { InstallPrompt } from '@/components/install-prompt';
 import { earlyTapQueueScript } from '@/lib/early-tap-queue';
 import appIcon from '@/assets/icon-192.png.asset.json';
 import appleIcon from '@/assets/apple-touch-icon.png.asset.json';
@@ -159,7 +160,8 @@ function RootComponent() {
     <QueryClientProvider client={queryClient}>
       {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
       <LibraryShell><Outlet /></LibraryShell>
-      <VisitorNotices />
+      <CookieNotice />
+      <InstallPrompt />
       <Toaster />
     </QueryClientProvider>
   );

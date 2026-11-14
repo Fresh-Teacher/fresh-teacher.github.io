@@ -2,23 +2,21 @@ import { useEffect, useState } from "react";
 import { Link } from "@tanstack/react-router";
 import cookieMascot from "@/assets/cookie-mascot.png.asset.json";
 import { COOKIE_CLOSED_EVENT } from '@/lib/app-installation';
-import { Button } from '@/components/ui/button';
 
 const CONSENT_KEY = "ft-cookie-consent";
 const EXIT_MS = 420;
 
-export function CookieNotice({ ready }: { ready: boolean }) {
+export function CookieNotice() {
   const [visible, setVisible] = useState(false);
   const [leaving, setLeaving] = useState(false);
 
   useEffect(() => {
-    if (!ready) return;
     try {
       if (!window.localStorage.getItem(CONSENT_KEY)) setVisible(true);
     } catch {
       setVisible(true);
     }
-  }, [ready]);
+  }, []);
 
   const close = (value: string) => {
     try {
@@ -48,12 +46,12 @@ export function CookieNotice({ ready }: { ready: boolean }) {
             By continuing to browse, you agree to our use of cookies.
           </p>
           <div className="ftp-actions">
-            <Button variant="source" size="source" type="button" onClick={() => close("accepted")} className="ftp-btn ftp-cookie-solid">
+            <button type="button" onClick={() => close("accepted")} className="ftp-btn ftp-cookie-solid">
               Accept all
-            </Button>
-            <Button variant="source" size="source" type="button" onClick={() => close("essential")} className="ftp-btn ftp-cookie-outline">
+            </button>
+            <button type="button" onClick={() => close("essential")} className="ftp-btn ftp-cookie-outline">
               Essential only
-            </Button>
+            </button>
           </div>
           <Link to="/cookies" className="ftp-link">
             Read full cookie policy
