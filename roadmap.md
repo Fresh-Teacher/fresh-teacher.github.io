@@ -10,7 +10,7 @@
 - [x] Download all 189 project media files (9.7 MB), validate every local reference, inspect the clean source archive, and deliver it; external deployment remains unverified.
 
 # GitHub Pages migration
-- [ ] Accept homepage-only TanStack output as the 404 fallback, test all shell layouts, and verify the standalone Pages artifact for the linked repository.
+- [x] Accept homepage-only TanStack output as the 404 fallback; 8 Python and 15 deployment tests pass, and the full standalone build validates 189 media files and 654 pages. Real homepage-only 404 serves populated mathematics search results after React's recoverable hydration warning; dedicated shells remain preferred.
 - [x] Create a public-page sitemap and robots.txt link; verify 654 live-preview XML entries and 21 focused tests. Pages preparation validates the production domain and every listed output file; full external artifact verification still requires the manual GitHub workflow below.
 - [x] Enable production-only AdSense using the existing publisher and cookie choice; browser check confirms acceptance loads once and essential-only blocks (ad network mocked).
 - [x] Add a separate static publishing configuration, legacy URL output, deployment workflow, and migration instructions.
