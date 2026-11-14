@@ -1,0 +1,92 @@
+/* Focused restoration of observed source states; original CSS remains authoritative. */
+.library-homepage .leftcurtain, .library-homepage .rightcurtain { transition: transform 2s ease; z-index: 2000; cursor: pointer; will-change: transform; padding: 0; border: 0; border-radius: 0; background: transparent; }
+.library-homepage .leftcurtain.door-open { transform: translateX(-100%); }
+.library-homepage .rightcurtain.door-open { transform: translateX(100%); }
+.rope { transition: transform 350ms ease, opacity 350ms ease; z-index: 2001; }
+.library-homepage .rope {
+  top: clamp(24px, 8svh, 96px); left: 50%; transform: translateX(-50%);
+  width: min(420px, calc(100% - 32px)); display: flex; flex-direction: column;
+  align-items: center; gap: 12px; margin: 0; padding: 0; border: 0; background: transparent; text-align: center; white-space: normal;
+}
+.library-homepage .door-instruction {
+  color: var(--destructive); text-shadow: 1px 1px 3px var(--updates-shadow), -1px -1px 3px var(--updates-shadow);
+  font-size: 25px; line-height: 1.2; font-weight: 700;
+}
+.library-homepage .door-arrow {
+  display: block; width: 70px; height: auto; flex: none;
+  animation: door-arrow-bob 1.2s ease-in-out infinite;
+}
+@keyframes door-arrow-bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(6px); }
+}
+.library-homepage .rope.door-open { transform: translate(-50%, -200%); opacity: 0; }
+.library-homepage .leftcurtain, .library-homepage .rightcurtain, .library-homepage .rope { pointer-events: auto; touch-action: none; }
+.library-homepage .door-open { pointer-events: none; }
+.library-homepage .door-settled { visibility: hidden; transition: none; will-change: auto; }
+.library-homepage .door-open .door-arrow { animation: none; }
+a.africaVotesChat { z-index: 2002; }
+#africavotes-chat { z-index: 2003; }
+.fresh-panel-open { display: block; visibility: visible; }
+.sidebar .collapse { visibility: visible; }
+.sidebar { top: 80px; padding-top: 0; height: calc(100vh - 80px); }
+.sidebar .user-profile { display: none; }
+.sidebar .slimScrollDiv { height: 100% !important; }
+.sidebar.fresh-sidebar-closed { width: 0; overflow: hidden; }
+.sidebar.fresh-sidebar-open { width: 240px; }
+.sidebar.fresh-sidebar-open .hide-menu { display: inline; }
+.sidebar .slimscrollsidebar { overflow-y: auto !important; }
+.sidebar .slimScrollBar { display: none !important; }
+.navbar-top-links > li > a { color: var(--site-import-primary-foreground); }
+.navbar .dropdown-menu { max-width: calc(100vw - 40px); }
+.dropdown-user { overflow-wrap: anywhere; }
+.container .covers { max-width: 750px; margin-inline: 0; }
+.container .bookshelf { text-align: left; }
+.container .shelf-img { width: 750px; }
+/* Curtains are 120% tall and absolutely positioned; clip them to the homepage so they cannot stretch the page past the footer. */
+.library-homepage { position: relative; overflow: hidden; overflow: clip; }
+.library-homepage .page-wrapper { min-height: 0; flex: 1; justify-content: space-evenly; gap: 4px; padding-bottom: 4px; }
+.library-homepage .page-wrapper > span > br { display: none; }
+/* Budget all four shelves against the visible screen, not just its width. */
+.library-homepage .container { padding-inline: 8px; min-height: calc(100svh - var(--library-appbar-height)); display: flex; flex-direction: column; }
+.library-homepage .homepage-instruction {
+  box-sizing: border-box; flex: none; max-width: 100%; margin: 6px auto 8px; padding: 0 12px;
+  color: var(--updates-ink); text-align: center; font-family: var(--font-handwriting);
+  font-size: 18px; line-height: 1.2; font-weight: 600; letter-spacing: 0;
+}
+@media (max-width: 540px) {
+  .library-homepage { --shelf-overhead: 16px; }
+  .library-homepage .homepage-instruction { margin-block: 3px 6px; font-size: 17px; }
+}
+/* Budget all four shelves against the visible screen, not just its width.
+   Artwork facts: books are 21% of shelf width, covers are 1.414x taller than wide,
+   the plank image is 0.0957x its width and overlaps the books by 8px, so one shelf
+   stands 0.393 * width - 8 tall. Four shelves + heading + gaps must fit 100svh, and
+   --shelf-overhead is what the heading, gaps and padding cost on top of that. */
+.library-homepage { --shelf-overhead: 22px; }
+.library-homepage .bookshelf { width: min(100%, 850px, calc((100svh - var(--library-appbar-height) - var(--shelf-overhead)) * .6366)); margin-inline: auto; flex: none; }
+.library-homepage .covers { max-width: none; display: flex; justify-content: center; align-items: flex-end; gap: 1%; }
+.library-homepage .bookshelf .thumb { width: 21% !important; max-width: 175px; margin: 0; }
+.library-homepage .shelf-row { display: contents; }
+.library-homepage { --book-lift-shadow: 0 6px 10px var(--updates-shadow); }
+.library-homepage .covers a { display: block; aspect-ratio: 1654 / 2339; transition: transform 180ms ease, box-shadow 180ms ease; }
+.library-homepage .covers img { width: 100%; height: 100%; object-fit: contain; }
+.library-homepage .covers a:focus-visible { outline: 3px solid var(--ring); outline-offset: 3px; }
+@media (hover: hover) {
+  .library-homepage .covers a:hover { transform: translateY(-4px) scale(1.02); box-shadow: var(--book-lift-shadow); }
+}
+.library-homepage .covers a:active { transform: scale(.98); filter: none; }
+.library-homepage .shelf-img { display: block; width: 100%; aspect-ratio: 1000 / 96; margin-top: -8px; }
+@media (max-width: 430px) {
+  /* Keep the last book clear of the floating WhatsApp icon on phones. */
+  .library-homepage .bookshelf { margin-left: 0; }
+}
+@media (min-width: 768px) {
+  .library-homepage .container { margin-left: 0; width: 100%; max-width: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .library-homepage .leftcurtain, .library-homepage .rightcurtain, .library-homepage .rope, .library-homepage .covers a { transition: none; }
+  .library-homepage .covers a:hover, .library-homepage .covers a:active { transform: none; }
+  .library-homepage .door-arrow { animation: none; }
+  .animated, .heartbit, .heartbeat { animation: none; }
+}

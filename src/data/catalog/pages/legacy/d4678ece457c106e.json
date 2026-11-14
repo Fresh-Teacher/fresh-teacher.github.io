@@ -1,0 +1,15 @@
+{
+  "title": "index2 | Fresh Teacher",
+  "description": "Browse index2 in Fresh Teacher’s e-Library.",
+  "template": "32fa4885cc3e57bd",
+  "styles": "2848cf07d5925baf",
+  "mode": "static",
+  "missingData": null,
+  "links": [
+    "/resource-source/css/flipbook.style.css",
+    "/resource-source/css/footer.css",
+    "/resource-source/css/font-awesome.css",
+    "/resource-source/css/bootstrap.min.css"
+  ],
+  "documentIds": []
+}

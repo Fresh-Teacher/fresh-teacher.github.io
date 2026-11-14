@@ -1,0 +1,14 @@
+:root { --reader-surface: oklch(0.97 0 0); --reader-paper: oklch(1 0 0); --reader-ink: oklch(0.3 0 0); --reader-active: oklch(0.93 0.025 245); }
+html,body,#reader { width:100%;height:100%;margin:0;overflow:hidden;background:var(--reader-surface); }
+.flipbook-menu-btn { min-width:36px;min-height:40px;box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center; }
+.flipbook-menu-btn:focus-visible { outline:2px solid var(--reader-ink);outline-offset:-2px; }
+.flipbook-menu-btn:hover { background:var(--reader-active); }
+.flipbook-currentPageHolder { font-family:Arial,sans-serif;font-size:16px; }
+@media(max-width:480px) { .flipbook-menu-btn { min-width:34px;margin:0!important; } }
+html.vertical-reader { height:100%; overflow:auto; }
+.vertical-reader body { height:auto; min-height:100%; overflow:visible; }
+.vertical-reader #reader { width:100%; height:auto; overflow:visible; box-sizing:border-box; padding:12px; display:flex; flex-direction:column; gap:12px; }
+.vertical-reader-page { width:100%; max-width:900px; margin:0 auto; flex:none; background:var(--reader-paper); color:var(--reader-ink); text-align:center; overflow:hidden; }
+.vertical-reader-page canvas { display:block; width:100%; height:auto; }
+#reader-status { padding:12px; font-family:Arial,sans-serif; color:var(--reader-ink); }
+.flipbook-preloader { background:var(--reader-surface); }

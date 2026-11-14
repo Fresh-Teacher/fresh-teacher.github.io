@@ -1,0 +1,48 @@
+name: Deploy standalone library to GitHub Pages
+
+# Manual approval only: importing code or merging a PR does not replace the live site.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: 1.3.13
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: bun install --frozen-lockfile
+      - run: bun run test -- src/test/adsense.test.ts src/test/github-pages.test.ts src/test/sitemap.test.ts src/test/standalone-build.test.ts
+      - run: python3 -m unittest discover -s src/test -p 'test_github_pages.py'
+      - name: Download validated local media and build static website
+        run: bun run build:pages
+        env:
+          VITE_ENABLE_ADSENSE: 'true'
+          VITE_PUBLIC_SITE_URL: 'https://fresh-teacher.github.io'
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist/client
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy approved artifact
+        id: deployment
+        uses: actions/deploy-pages@v4

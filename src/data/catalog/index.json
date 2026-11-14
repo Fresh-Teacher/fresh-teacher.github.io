@@ -1,0 +1,4321 @@
+{
+  "version": 1,
+  "levels": {
+    "nursery": {
+      "BabyClass": {
+        "LessonNotes": {
+          "all": {
+            "BabyClassLessonNotes.html": {
+              "kind": "resources",
+              "data": "BabyClassLessonNotes.json",
+              "count": 8,
+              "status": "available"
+            }
+          },
+          "All": {
+            "BabyAllLessonNotes.html": {
+              "kind": "legacy",
+              "data": "6e9dcb404f6af9d5.json",
+              "count": 125,
+              "status": "available"
+            }
+          }
+        },
+        "PastPapers": {
+          "all": {
+            "BabyClassPastPapers.html": {
+              "kind": "resources",
+              "data": "BabyClassPastPapers.json",
+              "count": 60,
+              "status": "available"
+            }
+          },
+          "English": {
+            "BabyClassEnglishPastPapers.html": {
+              "kind": "legacy",
+              "data": "52ae24334d91cbdc.json",
+              "count": 25,
+              "status": "available"
+            }
+          },
+          "GeneralKnowledge": {
+            "BabyClassGeneralKnowledgePastPapers.html": {
+              "kind": "legacy",
+              "data": "ece031f0676ca73c.json",
+              "count": 1,
+              "status": "available"
+            }
+          },
+          "HealthHabits": {
+            "BabyClassHealthHabitsPastPapers.html": {
+              "kind": "legacy",
+              "data": "18cf4a8ac0099270.json",
+              "count": 11,
+              "status": "available"
+            }
+          },
+          "LanguageDevelopment": {
+            "BabyClassLanguageDevelopmentPastPapers.html": {
+              "kind": "legacy",
+              "data": "b333f19e81fb63dd.json",
+              "count": 13,
+              "status": "available"
+            }
+          },
+          "Literacy": {
+            "BabyClassLiteracyPastPapers.html": {
+              "kind": "legacy",
+              "data": "9db360642a592fc0.json",
+              "count": 2,
+              "status": "available"
+            }
+          },
+          "MathemeticalConcepts": {
+            "BabyClassMathemeticalConceptsPastPapers.html": {
+              "kind": "legacy",
+              "data": "cce6abc7c0c185be.json",
+              "count": 30,
+              "status": "available"
+            }
+          },
+          "Reading": {
+            "BabyClassReadingPastPapers.html": {
+              "kind": "legacy",
+              "data": "f091baa74e81f8a2.json",
+              "count": 14,
+              "status": "available"
+            }
+          },
+          "SocialDevelopment": {
+            "BabyClassSocialDevelopmentPastPapers.html": {
+              "kind": "legacy",
+              "data": "5a632d2148b46192.json",
+              "count": 14,
+              "status": "available"
+            }
+          },
+          "WritingTheology": {
+            "BabyClassWritingTheologyPastPapers.html": {
+              "kind": "legacy",
+              "data": "c8201ce478970aed.json",
+              "count": 10,
+              "status": "available"
+            }
+          }
+        },
+        "SchemesOfWork": {
+          "all": {
+            "BabyClassSchemesOfWork.html": {
+              "kind": "resources",
+              "data": "BabyClassSchemesOfWork.json",
+              "count": 11,
+              "status": "available"
+            }
+          },
+          "All": {
+            "BabyClassAllSchemesofWork.html": {
+              "kind": "legacy",
+              "data": "b0f1e7a9e1fe4abf.json",
+              "count": 29,
+              "status": "available"
+            }
+          }
+        }
+      },
+      "MiddleClass": {
+        "PastPapers": {
+          "all": {
+            "MiddleClassPastPapers.html": {
+              "kind": "resources",
+              "data": "MiddleClassPastPapers.json",
+              "count": 43,
+              "status": "available"
+            }
+          },
+          "All": {
+            "MiddleClassAllPastPapers.html": {
+              "kind": "legacy",
+              "data": "be34f272bbce5fe7.json",
+              "count": 1,
+              "status": "available"
+            }
+          },
+          "English": {
+            "MiddleClassEnglishPastPapers.html": {
+              "kind": "legacy",
+              "data": "66647774c716c437.json",
+              "count": 16,
+              "status": "available"
+            }
+          },
+          "HealthHabits": {
+            "MiddleClassHealthHabitsPastPapers.html": {
+              "kind": "legacy",
+              "data": "a5ddbe36bce14c4c.json",
+              "count": 9,
+              "status": "available"
+            }
+          },
+          "LanguageDevelopment": {
+            "MiddleClassLanguageDevelopmentPastPapers.html": {
+              "kind": "legacy",
+              "data": "6eb1222d996614a2.json",
+              "count": 12,
+              "status": "available"
+            }
+          },
+          "MathemeticalConcepts": {
+            "MiddleClassMathemeticalConceptsPastPapers.html": {
+              "kind": "legacy",
+              "data": "9197432749875e49.json",
+              "count": 16,
+              "status": "available"
+            }
+          },
+          "Reading": {
+            "MiddleClassReadingPastPapers.html": {
+              "kind": "legacy",
+              "data": "2cc2cbf6708df825.json",
+              "count": 13,
+              "status": "available"
+            }
+          },
+          "SocialDevelopment": {
+            "MiddleClassSocialDevelopmentPastPapers.html": {
+              "kind": "legacy",
+              "data": "97a83ef0dc7ecec4.json",
+              "count": 8,
+              "status": "available"
+            }
+          },
+          "WritingTheology": {
+            "MiddleClassWritingTheologyPastPapers.html": {
+              "kind": "legacy",
+              "data": "ef9f254c9b298824.json",
+              "count": 6,
+              "status": "available"
+            }
+          }
+        },
+        "SchemesOfWork": {
+          "All": {
+            "MiddleClassAllSchemesofWork.html": {
+              "kind": "legacy",
+              "data": "0856f307728d9cdc.json",
+              "count": 33,
+              "status": "available"
+            }
+          },
+          "all": {
+            "MiddleClassSchemesOfWork.html": {
+              "kind": "legacy",
+              "data": "b8cf4ce6c3314af3.json",
+              "count": 27,
+              "status": "available"
+            }
+          }
+        },
+        "LessonNotes": {
+          "all": {
+            "MiddleClassLessonNotes.html": {
+              "kind": "legacy",
+              "data": "6cc58ee452d94679.json",
+              "count": 104,
+              "status": "available"
+            }
+          }
+        }
+      },
+      "TopClass": {
+        "LessonNotes": {
+          "all": {
+            "TopClassLessonNotes.html": {
+              "kind": "resources",
+              "data": "TopClassLessonNotes.json",
+              "count": 11,
+              "status": "available"
+            }
+          },
+          "All": {
+            "TopAllLessonNotes.html": {
+              "kind": "legacy",
+              "data": "a1564922c5d8de36.json",
+              "count": 155,
+              "status": "available"
+            }
+          }
+        },
+        "PastPapers": {
+          "all": {
+            "TopClassPastPapers.html": {
+              "kind": "resources",
+              "data": "TopClassPastPapers.json",
+              "count": 44,
+              "status": "available"
+            }
+          },
+          "English": {
+            "TopClassEnglishPastPapers.html": {
+              "kind": "legacy",
+              "data": "3e7c82872f33fdca.json",
+              "count": 13,
+              "status": "available"
+            }
+          },
+          "HealthHabits": {
+            "TopClassHealthHabitsPastPapers.html": {
+              "kind": "legacy",
+              "data": "a0437e4bfba3f4f4.json",
+              "count": 5,
+              "status": "available"
+            }
+          },
+          "LanguageDevelopment": {
+            "TopClassLanguageDevelopmentPastPapers.html": {
+              "kind": "legacy",
+              "data": "f680c43a3274c5b9.json",
+              "count": 2,
+              "status": "available"
+            }
+          },
+          "Literacy": {
+            "TopClassLiteracyPastPapers.html": {
+              "kind": "legacy",
+              "data": "351b34d0a849075d.json",
+              "count": 3,
+              "status": "available"
+            }
+          },
+          "MathemeticalConcepts": {
+            "TopClassMathemeticalConceptsPastPapers.html": {
+              "kind": "legacy",
+              "data": "c0e2c2188c6c8db1.json",
+              "count": 11,
+              "status": "available"
+            }
+          },
+          "Reading": {
+            "TopClassReadingPastPapers.html": {
+              "kind": "legacy",
+              "data": "e2c6472a9d2aebf5.json",
+              "count": 13,
+              "status": "available"
+            }
+          },
+          "SocialDevelopment": {
+            "TopClassSocialDevelopmentPastPapers.html": {
+              "kind": "legacy",
+              "data": "2ba5403bb8f715e0.json",
+              "count": 6,
+              "status": "available"
+            }
+          },
+          "WritingTheology": {
+            "TopClassWritingTheologyPastPapers.html": {
+              "kind": "legacy",
+              "data": "589eb19552511259.json",
+              "count": 3,
+              "status": "available"
+            }
+          }
+        },
+        "SchemesOfWork": {
+          "all": {
+            "TopClassSchemesOfWork.html": {
+              "kind": "resources",
+              "data": "TopClassSchemesOfWork.json",
+              "count": 26,
+              "status": "available"
+            }
+          },
+          "All": {
+            "TopClassAllSchemesofWork.html": {
+              "kind": "legacy",
+              "data": "742971d7d381a49a.json",
+              "count": 33,
+              "status": "available"
+            }
+          }
+        }
+      }
+    },
+    "unclassified": {
+      "other": {
+        "other": {
+          "all": {
+            "MixedPrimarySevenClassPastPapers.html": {
+              "kind": "resources",
+              "data": "MixedPrimarySevenClassPastPapers.json",
+              "count": 55,
+              "status": "available"
+            },
+            "REPrimarySevenClassPastPapers.html": {
+              "kind": "resources",
+              "data": "REPrimarySevenClassPastPapers.json",
+              "count": 5,
+              "status": "available"
+            },
+            "SSTPrimarySevenClassPastPapers.html": {
+              "kind": "resources",
+              "data": "SSTPrimarySevenClassPastPapers.json",
+              "count": 390,
+              "status": "available"
+            },
+            "SciencePrimarySevenClassPastPapers.html": {
+              "kind": "resources",
+              "data": "SciencePrimarySevenClassPastPapers.json",
+              "count": 417,
+              "status": "available"
+            },
+            "BabyClassHolidayPackages.html": {
+              "kind": "legacy",
+              "data": "fa0e054e8b939827.json",
+              "count": 65,
+              "status": "available"
+            },
+            "EnglishPrimarySevenClassPastPapers.html": {
+              "kind": "legacy",
+              "data": "f809b4734bf6e84d.json",
+              "count": 292,
+              "status": "available"
+            },
+            "MathsPrimarySevenClassPastPapers.html": {
+              "kind": "legacy",
+              "data": "a6e2accc5a78e082.json",
+              "count": 423,
+              "status": "available"
+            },
+            "MiddleClassHolidayPackages.html": {
+              "kind": "legacy",
+              "data": "88b32f52343eb9e9.json",
+              "count": 45,
+              "status": "available"
+            },
+            "PrimaryTwoHolidayPackages.html": {
+              "kind": "legacy",
+              "data": "12431c212406a46b.json",
+              "count": 23,
+              "status": "available"
+            },
+            "SeniorFourHolidayPackages.html": {
+              "kind": "legacy",
+              "data": "4d65fbbe744d592b.json",
+              "count": 1,
+              "status": "available"
+            },
+            "SeniorOneHolidayPackages.html": {
+              "kind": "legacy",
+              "data": "91d52ddff5dc5688.json",
+              "count": 2,
+              "status": "available"
+            },
+            "SeniorThreeHolidayPackages.html": {
+              "kind": "legacy",
+              "data": "b08337c36dda42f9.json",
+              "count": 3,
+              "status": "available"
+            },
+            "SeniorTwoHolidayPackages.html": {
+              "kind": "legacy",
+              "data": "9664630cb352a674.json",
+              "count": 2,
+              "status": "available"
+            },
+            "TopClassHolidayPackages.html": {
+              "kind": "legacy",
+              "data": "ea3be243c076c619.json",
+              "count": 27,
+              "status": "available"
+            }
+          }
+        }
+      }
+    },
+    "primary": {
+      "PrimaryFive": {
+        "PastPapers": {
+          "Class": {
+            "PrimaryFiveClassPastPapers.html": {
+              "kind": "resources",
+              "data": "PrimaryFiveClassPastPapers.json",
+              "count": 195,
+              "status": "available"
+            }
+          },
+          "English": {
+            "PrimaryFiveEnglishPastPapers.html": {
+              "kind": "legacy",
+              "data": "a7bd8c663e5d47e3.json",
+              "count": 97,
+              "status": "available"
+            }
+          },
+          "ICT": {
+            "PrimaryFiveICTPastPapers.html": {
+              "kind": "legacy",
+              "data": "eed5f5534b8d5302.json",
+              "count": 6,
+              "status": "available"
+            }
+          },
+          "MTC": {
+            "PrimaryFiveMTCPastPapers.html": {
+              "kind": "legacy",
+              "data": "0013c9cfd616cb4b.json",
+              "count": 105,
+              "status": "available"
+            }
+          },
+          "Packages": {
+            "PrimaryFivePackagesPastPapers.html": {
+              "kind": "legacy",
+              "data": "9b70d27eba2d5e1b.json",
+              "count": 47,
+              "status": "available"
+            }
+          },
+          "RE": {
+            "PrimaryFiveREPastPapers.html": {
+              "kind": "legacy",
+              "data": "972d054bbf4bc898.json",
+              "count": 16,
+              "status": "available"
+            }
+          },
+          "SST": {
+            "PrimaryFiveSSTPastPapers.html": {
+              "kind": "legacy",
+              "data": "1c34c4f801bf762f.json",
+              "count": 78,
+              "status": "available"
+            }
+          },
+          "Science": {
+            "PrimaryFiveSciencePastPapers.html": {
+              "kind": "legacy",
+              "data": "3cbc6a806511bdb9.json",
+              "count": 139,
+              "status": "available"
+            }
+          },
+          "Theology": {
+            "PrimaryFiveTheologyPastPapers.html": {
+              "kind": "legacy",
+              "data": "b17ecada5ed34384.json",
+              "count": 1,
+              "status": "available"
+            }
+          }
+        },
+        "LessonNotes": {
+          "all": {
+            "PrimaryFiveLessonNotes.html": {
+              "kind": "resources",
+              "data": "PrimaryFiveLessonNotes.json",
+              "count": 73,
+              "status": "available"
+            }
+          },
+          "English": {
+            "PrimaryFiveEnglishLessonNotes.html": {
+              "kind": "legacy",
+              "data": "ae0e56c446c6a60b.json",
+              "count": 43,
+              "status": "available"
+            }
+          },
+          "MTC": {
+            "PrimaryFiveMTCLessonNotes.html": {
+              "kind": "legacy",
+              "data": "bf69da02db254fd4.json",
+              "count": 30,
+              "status": "available"
+            }
+          },
+          "RE": {
+            "PrimaryFiveRELessonNotes.html": {
+              "kind": "legacy",
+              "data": "985eccbabf882e01.json",
+              "count": 22,
+              "status": "available"
+            }
+          },
+          "SST": {
+            "PrimaryFiveSSTLessonNotes.html": {
+              "kind": "legacy",
+              "data": "5179a27b09b3c9bc.json",
+              "count": 40,
+              "status": "available"
+            }
+          },
+          "Science": {
+            "PrimaryFiveScienceLessonNotes.html": {
+              "kind": "legacy",
+              "data": "f8d5d9b5364ad161.json",
+              "count": 47,
+              "status": "available"
+            }
+          }
+        },
+        "SchemesOfWork": {
+          "all": {
+            "PrimaryFiveSchemesOfWork.html": {
+              "kind": "resources",
+              "data": "PrimaryFiveSchemesOfWork.json",
+              "count": 71,
+              "status": "available"
+            }
+          },
+          "Art": {
+            "PrimaryFiveArtSchemesofWork.html": {
+              "kind": "legacy",
+              "data": "07e6d3bf585e509d.json",
+              "count": 2,
+              "status": "available"
+            }
+          },
+          "English": {
+            "PrimaryFiveEnglishSchemesofWork.html": {
+              "kind": "legacy",
+              "data": "77a78a98fe4ea794.json",
+              "count": 29,
+              "status": "available"
+            }
+          },
+          "MTC": {
+            "PrimaryFiveMTCSchemesofWork.html": {
+              "kind": "legacy",
+              "data": "3cc80e17283ae1ce.json",
+              "count": 13,
+              "status": "available"
+            }
+          },
+          "PE": {
+            "PrimaryFivePESchemesofWork.html": {
+              "kind": "legacy",
+              "data": "4e3f2a6e2e886d6c.json",
+              "count": 2,
+              "status": "available"
+            }
+          },
+          "RE": {
+            "PrimaryFiveRESchemesofWork.html": {
+              "kind": "legacy",
+              "data": "b70cfb23e46d0938.json",
+              "count": 6,
+              "status": "available"
+            }
+          },
+          "SST": {
+            "PrimaryFiveSSTSchemesofWork.html": {
+              "kind": "legacy",
+              "data": "120fce13714f17ef.json",
+              "count": 18,
+              "status": "available"
+            }
+          },
+          "Science": {
+            "PrimaryFiveScienceSchemesofWork.html": {
+              "kind": "legacy",
+              "data": "ce7ff4258add86aa.json",
+              "count": 16,
+              "status": "available"
+            }
+          }
+        }
+      },
+      "PrimaryFour": {
+        "PastPapers": {
+          "Class": {
+            "PrimaryFourClassPastPapers.html": {
+              "kind": "resources",
+              "data": "PrimaryFourClassPastPapers.json",
+              "count": 159,
+              "status": "available"
+            }
+          },
+          "English": {
+            "PrimaryFourEnglishPastPapers.html": {
+              "kind": "legacy",
+              "data": "a09b2b1c7dca350f.json",
+              "count": 80,
+              "status": "available"
+            }
+          },
+          "ICT": {
+            "PrimaryFourICTPastPapers.html": {
+              "kind": "legacy",
+              "data": "739b7f8327aaf218.json",
+              "count": 5,
+              "status": "available"
+            }
+          },
+          "IRE": {
+            "PrimaryFourIREPastPapers.html": {
+              "kind": "legacy",
+              "data": "28a46ac9ff7a86bf.json",
+              "count": 1,
+              "status": "available"
+            }
+          },
+          "Kiswahili": {
+            "PrimaryFourKiswahiliPastPapers.html": {
+              "kind": "legacy",
+              "data": "70304004674b8b26.json",
+              "count": 2,
+              "status": "available"
+            }
+          },
+          "MTC": {
+            "PrimaryFourMTCPastPapers.html": {
+              "kind": "legacy",
+              "data": "392a162f6247beb0.json",
+              "count": 112,
+              "status": "available"
+            }
+          },
+          "Packages": {
+            "PrimaryFourPackagesPastPapers.html": {
+              "kind": "legacy",
+              "data": "ba5ae44f38ff96c0.json",
+              "count": 46,
+              "status": "available"
+            }
+          },
+          "RE": {
+            "PrimaryFourREPastPapers.html": {
+              "kind": "legacy",
+              "data": "ceefc2d28702d160.json",
+              "count": 13,
+              "status": "available"
+            }
+          },
+          "SST": {
+            "PrimaryFourSSTPastPapers.html": {
+              "kind": "legacy",
+              "data": "6378e621bb92cb55.json",
+              "count": 66,
+              "status": "available"
+            }
+          },
+          "Science": {
+            "PrimaryFourSciencePastPapers.html": {
+              "kind": "legacy",
+              "data": "d7fb4eb87046737e.json",
+              "count": 94,
+              "status": "available"
+            }
+          },
+          "Theology": {
+            "PrimaryFourTheologyPastPapers.html": {
+              "kind": "legacy",
+              "data": "9564fee3e73dcd72.json",
+              "count": 1,
+              "status": "available"
+            }
+          }
+        },
+        "LessonNotes": {
+          "all": {
+            "PrimaryFourLessonNotes.html": {
+              "kind": "resources",
+              "data": "PrimaryFourLessonNotes.json",
+              "count": 62,
+              "status": "available"
+            }
+          },
+          "All": {
+            "PrimaryFourAllLessonNotes.html": {
+              "kind": "legacy",
+              "data": "7cfd316541ec2dda.json",
+              "count": 98,
+              "status": "available"
+            }
+          }
+        },
+        "SchemesOfWork": {
+          "all": {
+            "PrimaryFourSchemesOfWork.html": {
+              "kind": "resources",
+              "data": "PrimaryFourSchemesOfWork.json",
+              "count": 70,
+              "status": "available"
+            }
+          },
+          "All": {
+            "PrimaryFourAllSchemesofWork.html": {
+              "kind": "legacy",
+              "data": "31b102228750cea1.json",
+              "count": 27,
+              "status": "available"
+            }
+          }
+        }
+      },
+      "PrimaryOne": {
+        "PastPapers": {
+          "Class": {
+            "PrimaryOneClassPastPapers.html": {
+              "kind": "resources",
+              "data": "PrimaryOneClassPastPapers.json",
+              "count": 136,
+              "status": "available"
+            }
+          },
+          "English": {
+            "PrimaryOneEnglishPastPapers.html": {
+              "kind": "legacy",
+              "data": "063866d2acbe0ea7.json",
+              "count": 59,
+              "status": "available"
+            }
+          },
+          "ICT": {
+            "PrimaryOneICTPastPapers.html": {
+              "kind": "legacy",
+              "data": "59fd011734153f53.json",
+              "count": 3,
+              "status": "available"
+            }
+          },
+          "Lit1": {
+            "PrimaryOneLit1PastPapers.html": {
+              "kind": "legacy",
+              "data": "11ebfe2f8dd3174b.json",
+              "count": 54,
+              "status": "available"
+            }
+          },
+          "Lit2": {
+            "PrimaryOneLit2PastPapers.html": {
+              "kind": "legacy",
+              "data": "2676728db9e94553.json",
+              "count": 31,
+              "status": "available"
+            }
+          },
+          "Luganda": {
+            "PrimaryOneLugandaPastPapers.html": {
+              "kind": "legacy",
+              "data": "2301dddb426328a1.json",
+              "count": 6,
+              "status": "available"
+            }
+          },
+          "MTC": {
+            "PrimaryOneMTCPastPapers.html": {
+              "kind": "legacy",
+              "data": "53e51937602207fd.json",
+              "count": 47,
+              "status": "available"
+            }
+          },
+          "Packages": {
+            "PrimaryOnePackagesPastPapers.html": {
+              "kind": "legacy",
+              "data": "0e42e5458be6e5c1.json",
+              "count": 56,
+              "status": "available"
+            }
+          },
+          "RE": {
+            "PrimaryOneREPastPapers.html": {
+              "kind": "legacy",
+              "data": "78b42cf809d6931b.json",
+              "count": 20,
+              "status": "available"
+            }
+          },
+          "Reading": {
+            "PrimaryOneReadingPastPapers.html": {
+              "kind": "legacy",
+              "data": "5cc91fcb68cdd163.json",
+              "count": 24,
+              "status": "available"
+            }
+          },
+          "Theology": {
+            "PrimaryOneTheologyPastPapers.html": {
+              "kind": "legacy",
+              "data": "6e1b81d001e662e8.json",
+              "count": 2,
+              "status": "available"
+            }
+          }
+        },
+        "LessonNotes": {
+          "all": {
+            "PrimaryOneLessonNotes.html": {
+              "kind": "resources",
+              "data": "PrimaryOneLessonNotes.json",
+              "count": 54,
+              "status": "available"
+            }
+          },
+          "English": {
+            "PrimaryOneEnglishLessonNotes.html": {
+              "kind": "legacy",
+              "data": "eb6fa2b62799e3dd.json",
+              "count": 37,
+              "status": "available"
+            }
+          },
+          "ICT": {
+            "PrimaryOneICTLessonNotes.html": {
+              "kind": "legacy",
+              "data": "f5ec111eb53e084a.json",
+              "count": 1,
+              "status": "available"
+            }
+          },
+          "Lit1": {
+            "PrimaryOneLit1LessonNotes.html": {
+              "kind": "legacy",
+              "data": "5f57cde4dae56898.json",
+              "count": 10,
+              "status": "available"
+            }
+          },
+          "Lit2": {
+            "PrimaryOneLit2LessonNotes.html": {
+              "kind": "legacy",
+              "data": "3944e050780dd179.json",
+              "count": 26,
+              "status": "available"
+            }
+          },
+          "Luganda": {
+            "PrimaryOneLugandaLessonNotes.html": {
+              "kind": "legacy",
+              "data": "5ebcfe7de16e0d01.json",
+              "count": 6,
+              "status": "available"
+            }
+          },
+          "MTC": {
+            "PrimaryOneMTCLessonNotes.html": {
+              "kind": "legacy",
+              "data": "650d14324d2dcd8f.json",
+              "count": 23,
+              "status": "available"
+            }
+          },
+          "News": {
+            "PrimaryOneNewsLessonNotes.html": {
+              "kind": "legacy",
+              "data": "c93ec100e206265f.json",
+              "count": 5,
+              "status": "available"
+            }
+          },
+          "OralLiterature": {
+            "PrimaryOneOralLiteratureLessonNotes.html": {
+              "kind": "legacy",
+              "data": "25afac4b0e56006d.json",
+              "count": 1,
+              "status": "available"
+            }
+          },
+          "RE": {
+            "PrimaryOneRELessonNotes.html": {
+              "kind": "legacy",
+              "data": "2a11f0430064ec63.json",
+              "count": 16,
+              "status": "available"
+            }
+          },
+          "Reading": {
+            "PrimaryOneReadingLessonNotes.html": {
+              "kind": "legacy",
+              "data": "550385209290a24a.json",
+              "count": 21,
+              "status": "available"
+            }
+          },
+          "RunyankoreRukiga": {
+            "PrimaryOneRunyankoreRukigaLessonNotes.html": {
+              "kind": "legacy",
+              "data": "3293b506f182ea99.json",
+              "count": 2,
+              "status": "available"
+            }
+          },
+          "Thematic": {
+            "PrimaryOneThematicLessonNotes.html": {
+              "kind": "legacy",
+              "data": "3b4b12a19127d1a7.json",
+              "count": 2,
+              "status": "available"
+            }
+          }
+        },
+        "SchemesOfWork": {
+          "all": {
+            "PrimaryOneSchemesOfWork.html": {
+              "kind": "resources",
+              "data": "PrimaryOneSchemesOfWork.json",
+              "count": 44,
+              "status": "available"
+            }
+          },
+          "All": {
+            "PrimaryOneAllSchemesofWork.html": {
+              "kind": "legacy",
+              "data": "3ce9da5ba128d12c.json",
+              "count": 12,
+              "status": "available"
+            }
+          },
+          "English": {
+            "PrimaryOneEnglishSchemesofWork.html": {
+              "kind": "legacy",
+              "data": "fa4bb3deb9a6be55.json",
+              "count": 11,
+              "status": "available"
+            }
+          },
+          "Lit1": {
+            "PrimaryOneLit1SchemesofWork.html": {
+              "kind": "legacy",
+              "data": "da7c39d3613991b6.json",
+              "count": 7,
+              "status": "available"
+            }
+          },
+          "Lit2L": {
+            "PrimaryOneLit2LSchemesofWork.html": {
+              "kind": "legacy",
+              "data": "9757990dce7bbb53.json",
+              "count": 9,
+              "status": "available"
+            }
+          },
+          "Luganda": {
+            "PrimaryOneLugandaSchemesofWork.html": {
+              "kind": "legacy",
+              "data": "18f15c37253692b2.json",
+              "count": 3,
+              "status": "available"
+            }
+          },
+          "MTC": {
+            "PrimaryOneMTCSchemesofWork.html": {
+              "kind": "legacy",
+              "data": "e44ea049eb8ff072.json",
+              "count": 2,
+              "status": "available"
+            }
+          },
+          "Music": {
+            "PrimaryOneMusicSchemesofWork.html": {
+              "kind": "legacy",
+              "data": "fb0eb10d2eba25f9.json",
+              "count": 1,
+              "status": "available"
+            }
+          },
+          "PE": {
+            "PrimaryOnePESchemesofWork.html": {
+              "kind": "legacy",
+              "data": "20ee8d4e810a46cc.json",
+              "count": 3,
+              "status": "available"
+            }
+          },
+          "RE": {
+            "PrimaryOneRESchemesofWork.html": {
+              "kind": "legacy",
+              "data": "79b79ba2c3d0304e.json",
+              "count": 7,
+              "status": "available"
+            }
+          },
+          "Reading": {
+            "PrimaryOneReadingSchemesofWork.html": {
+              "kind": "legacy",
+              "data": "9c62341afc314d48.json",
+              "count": 6,
+              "status": "available"
+            }
+          },
+          "Thematic": {
+            "PrimaryOneThematicSchemesofWork.html": {
+              "kind": "legacy",
+              "data": "706c414c89e31de3.json",
+              "count": 1,
+              "status": "available"
+            }
+          }
+        }
+      },
+      "PrimarySeven": {
+        "LessonNotes": {
+          "all": {
+            "PrimarySevenLessonNotes.html": {
+              "kind": "resources",
+              "data": "PrimarySevenLessonNotes.json",
+              "count": 98,
+              "status": "available"
+            }
+          },
+          "Art": {
+            "PrimarySevenArtLessonNotes.html": {
+              "kind": "legacy",
+              "data": "a4e2e05f242bd3c2.json",
+              "count": 2,
+              "status": "available"
+            }
+          },
+          "English": {
+            "PrimarySevenEnglishLessonNotes.html": {
+              "kind": "legacy",
+              "data": "9a03f578c04a4f9e.json",
+              "count": 142,
+              "status": "available"
+            }
+          },
+          "ICT": {
+            "PrimarySevenICTLessonNotes.html": {
+              "kind": "legacy",
+              "data": "9b4bc7f60b74efc1.json",
+              "count": 5,
+              "status": "available"
+            }
+          },
+          "MTC": {
+            "PrimarySevenMTCLessonNotes.html": {
+              "kind": "legacy",
+              "data": "0831fc0b2c41deee.json",
+              "count": 69,
+              "status": "available"
+            }
+          },
+          "RE": {
+            "PrimarySevenRELessonNotes.html": {
+              "kind": "legacy",
+              "data": "02479a0440b873b4.json",
+              "count": 45,
+              "status": "available"
+            }
+          },
+          "SST": {
+            "PrimarySevenSSTLessonNotes.html": {
+              "kind": "legacy",
+              "data": "ffd448d230f1ace8.json",
+              "count": 82,
+              "status": "available"
+            }
+          },
+          "Science": {
+            "PrimarySevenScienceLessonNotes.html": {
+              "kind": "legacy",
+              "data": "d9b1d9164a5e9b63.json",
+              "count": 89,
+              "status": "available"
+            }
+          }
+        },
+        "SchemesOfWork": {
+          "all": {
+            "PrimarySevenSchemesOfWork.html": {
+              "kind": "resources",
+              "data": "PrimarySevenSchemesOfWork.json",
+              "count": 50,
+              "status": "available"
+            }
+          },
+          "Art": {
+            "PrimarySevenArtSchemesofWork.html": {
+              "kind": "legacy",
+              "data": "5eeaf197702336ae.json",
+              "count": 3,
+              "status": "available"
+            }
+          },
+          "English": {
+            "PrimarySevenEnglishSchemesofWork.html": {
+              "kind": "legacy",
+              "data": "f9ae73887f54ee12.json",
+              "count": 20,
+              "status": "available"
+            }
+          },
+          "MTC": {
+            "PrimarySevenMTCSchemesofWork.html": {
+              "kind": "legacy",
+              "data": "a65a287ac08959dc.json",
+              "count": 12,
+              "status": "available"
+            }
+          },
+          "RE": {
+            "PrimarySevenRESchemesofWork.html": {
+              "kind": "legacy",
+              "data": "8c337f2fcd545e03.json",
+              "count": 9,
+              "status": "available"
+            }
+          },
+          "SST": {
+            "PrimarySevenSSTSchemesofWork.html": {
+              "kind": "legacy",
+              "data": "7ce78a130c2f53df.json",
+              "count": 18,
+              "status": "available"
+            }
+          },
+          "Science": {
+            "PrimarySevenScienceSchemesofWork.html": {
+              "kind": "legacy",
+              "data": "4a8e11a185240071.json",
+              "count": 11,
+              "status": "available"
+            }
+          }
+        },
+        "PastPapers": {
+          "Class": {
+            "PrimarySevenClassPastPapers.html": {
+              "kind": "legacy",
+              "data": "b0571c7e160afe7d.json",
+              "count": 1537,
+              "status": "available"
+            }
+          },
+          "English": {
+            "PrimarySevenEnglishPastPapers.html": {
+              "kind": "legacy",
+              "data": "9b5c82382cd451a9.json",
+              "count": 1009,
+              "status": "available"
+            }
+          },
+          "MTC": {
+            "PrimarySevenMTCPastPapers.html": {
+              "kind": "legacy",
+              "data": "b22761dead6b7f5e.json",
+              "count": 1668,
+              "status": "available"
+            }
+          },
+          "SST": {
+            "PrimarySevenSSTPastPapers.html": {
+              "kind": "legacy",
+              "data": "96a5010d35dff9e6.json",
+              "count": 1339,
+              "status": "available"
+            }
+          },
+          "Science": {
+            "PrimarySevenSciencePastPapers.html": {
+              "kind": "legacy",
+              "data": "944371b4dc82de24.json",
+              "count": 1469,
+              "status": "available"
+            }
+          }
+        }
+      },
+      "PrimarySix": {
+        "PastPapers": {
+          "Class": {
+            "PrimarySixClassPastPapers.html": {
+              "kind": "resources",
+              "data": "PrimarySixClassPastPapers.json",
+              "count": 186,
+              "status": "available"
+            }
+          },
+          "Theology": {
+            "PrimarySixTheologyPastPapers.html": {
+              "kind": "resources",
+              "data": "PrimarySixTheologyPastPapers.json",
+              "count": 1,
+              "status": "available"
+            }
+          },
+          "English": {
+            "PrimarySixEnglishPastPapers.html": {
+              "kind": "legacy",
+              "data": "07ddd63884aef1d8.json",
+              "count": 94,
+              "status": "available"
+            }
+          },
+          "ICT": {
+            "PrimarySixICTPastPapers.html": {
+              "kind": "legacy",
+              "data": "baa1bb86110643a6.json",
+              "count": 3,
+              "status": "available"
+            }
+          },
+          "Kiswahili": {
+            "PrimarySixKiswahiliPastPapers.html": {
+              "kind": "legacy",
+              "data": "9eb5b019593abe08.json",
+              "count": 2,
+              "status": "available"
+            }
+          },
+          "MTC": {
+            "PrimarySixMTCPastPapers.html": {
+              "kind": "legacy",
+              "data": "de084b97aa54c98f.json",
+              "count": 148,
+              "status": "available"
+            }
+          },
+          "Packages": {
+            "PrimarySixPackagesPastPapers.html": {
+              "kind": "legacy",
+              "data": "c21a9d8069507b5f.json",
+              "count": 34,
+              "status": "available"
+            }
+          },
+          "RE": {
+            "PrimarySixREPastPapers.html": {
+              "kind": "legacy",
+              "data": "6fd4dbc95bee94f1.json",
+              "count": 10,
+              "status": "available"
+            }
+          },
+          "SST": {
+            "PrimarySixSSTPastPapers.html": {
+              "kind": "legacy",
+              "data": "fde3e1f62944bcce.json",
+              "count": 123,
+              "status": "available"
+            }
+          },
+          "Science": {
+            "PrimarySixSciencePastPapers.html": {
+              "kind": "legacy",
+              "data": "bcb768a01e4abcdc.json",
+              "count": 141,
+              "status": "available"
+            }
+          }
+        },
+        "LessonNotes": {
+          "all": {
+            "PrimarySixLessonNotes.html": {
+              "kind": "resources",
+              "data": "PrimarySixLessonNotes.json",
+              "count": 89,
+              "status": "available"
+            }
+          },
+          "English": {
+            "PrimarySixEnglishLessonNotes.html": {
+              "kind": "legacy",
+              "data": "d98bb9fe139ceb84.json",
+              "count": 32,
+              "status": "available"
+            }
+          },
+          "ICT": {
+            "PrimarySixICTLessonNotes.html": {
+              "kind": "legacy",
+              "data": "3692f7b3beae8074.json",
+              "count": 5,
+              "status": "available"
+            }
+          },
+          "MTC": {
+            "PrimarySixMTCLessonNotes.html": {
+              "kind": "legacy",
+              "data": "1bc6874baafe8d54.json",
+              "count": 32,
+              "status": "available"
+            }
+          },
+          "RE": {
+            "PrimarySixRELessonNotes.html": {
+              "kind": "legacy",
+              "data": "6002a5cdc64ed2f3.json",
+              "count": 24,
+              "status": "available"
+            }
+          },
+          "SST": {
+            "PrimarySixSSTLessonNotes.html": {
+              "kind": "legacy",
+              "data": "35cacf8e54add42c.json",
+              "count": 39,
+              "status": "available"
+            }
+          },
+          "Science": {
+            "PrimarySixScienceLessonNotes.html": {
+              "kind": "legacy",
+              "data": "b33b74bacd8d99ec.json",
+              "count": 48,
+              "status": "available"
+            }
+          }
+        },
+        "SchemesOfWork": {
+          "all": {
+            "PrimarySixSchemesOfWork.html": {
+              "kind": "resources",
+              "data": "PrimarySixSchemesOfWork.json",
+              "count": 69,
+              "status": "available"
+            }
+          },
+          "Art": {
+            "PrimarySixArtSchemesofWork.html": {
+              "kind": "legacy",
+              "data": "c1c3c39b49610de9.json",
+              "count": 2,
+              "status": "available"
+            }
+          },
+          "English": {
+            "PrimarySixEnglishSchemesofWork.html": {
+              "kind": "legacy",
+              "data": "9f5a92bc0228fe61.json",
+              "count": 13,
+              "status": "available"
+            }
+          },
+          "MTC": {
+            "PrimarySixMTCSchemesofWork.html": {
+              "kind": "legacy",
+              "data": "4901ed4580fcfa50.json",
+              "count": 6,
+              "status": "available"
+            }
+          },
+          "RE": {
+            "PrimarySixRESchemesofWork.html": {
+              "kind": "legacy",
+              "data": "fd39c040d80514d0.json",
+              "count": 5,
+              "status": "available"
+            }
+          },
+          "SST": {
+            "PrimarySixSSTSchemesofWork.html": {
+              "kind": "legacy",
+              "data": "d0c8ad96b606b802.json",
+              "count": 8,
+              "status": "available"
+            }
+          },
+          "Science": {
+            "PrimarySixScienceSchemesofWork.html": {
+              "kind": "legacy",
+              "data": "b4c5e9c730af380c.json",
+              "count": 5,
+              "status": "available"
+            }
+          }
+        }
+      },
+      "PrimaryThree": {
+        "PastPapers": {
+          "Class": {
+            "PrimaryThreeClassPastPapers.html": {
+              "kind": "resources",
+              "data": "PrimaryThreeClassPastPapers.json",
+              "count": 149,
+              "status": "available"
+            }
+          },
+          "English": {
+            "PrimaryThreeEnglishPastPapers.html": {
+              "kind": "legacy",
+              "data": "395659e36e01ba63.json",
+              "count": 58,
+              "status": "available"
+            }
+          },
+          "ICT": {
+            "PrimaryThreeICTPastPapers.html": {
+              "kind": "legacy",
+              "data": "c89ab9aeaa4098e8.json",
+              "count": 4,
+              "status": "available"
+            }
+          },
+          "Kiswahili": {
+            "PrimaryThreeKiswahiliPastPapers.html": {
+              "kind": "legacy",
+              "data": "ec0870279655b2e8.json",
+              "count": 1,
+              "status": "available"
+            }
+          },
+          "Lit1": {
+            "PrimaryThreeLit1PastPapers.html": {
+              "kind": "legacy",
+              "data": "64337ed5cbfdc3c3.json",
+              "count": 55,
+              "status": "available"
+            }
+          },
+          "Lit2": {
+            "PrimaryThreeLit2PastPapers.html": {
+              "kind": "legacy",
+              "data": "d61557fb0c136dad.json",
+              "count": 40,
+              "status": "available"
+            }
+          },
+          "Luganda": {
+            "PrimaryThreeLugandaPastPapers.html": {
+              "kind": "legacy",
+              "data": "add0be151d70ee54.json",
+              "count": 12,
+              "status": "available"
+            }
+          },
+          "MTC": {
+            "PrimaryThreeMTCPastPapers.html": {
+              "kind": "legacy",
+              "data": "091c3a5a7c1448c1.json",
+              "count": 71,
+              "status": "available"
+            }
+          },
+          "Packages": {
+            "PrimaryThreePackagesPastPapers.html": {
+              "kind": "legacy",
+              "data": "35880f3afcd55ab0.json",
+              "count": 39,
+              "status": "available"
+            }
+          },
+          "RE": {
+            "PrimaryThreeREPastPapers.html": {
+              "kind": "legacy",
+              "data": "8643d627472c19ad.json",
+              "count": 19,
+              "status": "available"
+            }
+          },
+          "Reading": {
+            "PrimaryThreeReadingPastPapers.html": {
+              "kind": "legacy",
+              "data": "2ac8c3851aca5f4f.json",
+              "count": 16,
+              "status": "available"
+            }
+          },
+          "Writing": {
+            "PrimaryThreeWritingPastPapers.html": {
+              "kind": "legacy",
+              "data": "1f0721a4ae6003f3.json",
+              "count": 1,
+              "status": "available"
+            }
+          }
+        },
+        "LessonNotes": {
+          "ICT": {
+            "PrimaryThreeICTLessonNotes.html": {
+              "kind": "resources",
+              "data": "PrimaryThreeICTLessonNotes.json",
+              "count": 5,
+              "status": "available"
+            }
+          },
+          "all": {
+            "PrimaryThreeLessonNotes.html": {
+              "kind": "resources",
+              "data": "PrimaryThreeLessonNotes.json",
+              "count": 101,
+              "status": "available"
+            }
+          },
+          "Art": {
+            "PrimaryThreeArtLessonNotes.html": {
+              "kind": "legacy",
+              "data": "d2612d0e7215e842.json",
+              "count": 1,
+              "status": "available"
+            }
+          },
+          "English": {
+            "PrimaryThreeEnglishLessonNotes.html": {
+              "kind": "legacy",
+              "data": "b83ad52b01e0febc.json",
+              "count": 57,
+              "status": "available"
+            }
+          },
+          "Lit1": {
+            "PrimaryThreeLit1LessonNotes.html": {
+              "kind": "legacy",
+              "data": "25a70ad1bdfed55b.json",
+              "count": 45,
+              "status": "available"
+            }
+          },
+          "Lit2": {
+            "PrimaryThreeLit2LessonNotes.html": {
+              "kind": "legacy",
+              "data": "5b07ef48a19bb2da.json",
+              "count": 41,
+              "status": "available"
+            }
+          },
+          "Luganda": {
+            "PrimaryThreeLugandaLessonNotes.html": {
+              "kind": "legacy",
+              "data": "5ef2b3b916531efd.json",
+              "count": 9,
+              "status": "available"
+            }
+          },
+          "MTC": {
+            "PrimaryThreeMTCLessonNotes.html": {
+              "kind": "legacy",
+              "data": "0fd6faa0016daa78.json",
+              "count": 26,
+              "status": "available"
+            }
+          },
+          "RE": {
+            "PrimaryThreeRELessonNotes.html": {
+              "kind": "legacy",
+              "data": "afc6130914b3a7f9.json",
+              "count": 34,
+              "status": "available"
+            }
+          },
+          "Reading": {
+            "PrimaryThreeReadingLessonNotes.html": {
+              "kind": "legacy",
+              "data": "8ea4117ee4152770.json",
+              "count": 15,
+              "status": "available"
+            }
+          },
+          "RunyankoreRukiga": {
+            "PrimaryThreeRunyankoreRukigaLessonNotes.html": {
+              "kind": "legacy",
+              "data": "171236ea3fabf6ff.json",
+              "count": 1,
+              "status": "available"
+            }
+          },
+          "Writing": {
+            "PrimaryThreeWritingLessonNotes.html": {
+              "kind": "legacy",
+              "data": "43e32c7b151516e2.json",
+              "count": 2,
+              "status": "available"
+            }
+          }
+        },
+        "SchemesOfWork": {
+          "all": {
+            "PrimaryThreeSchemesOfWork.html": {
+              "kind": "resources",
+              "data": "PrimaryThreeSchemesOfWork.json",
+              "count": 69,
+              "status": "available"
+            }
+          },
+          "Agric": {
+            "PrimaryThreeAgricSchemesofWork.html": {
+              "kind": "legacy",
+              "data": "26c3ffcb02c2192d.json",
+              "count": 1,
+              "status": "available"
+            }
+          },
+          "All": {
+            "PrimaryThreeAllSchemesofWork.html": {
+              "kind": "legacy",
+              "data": "9b4e1f36228b2113.json",
+              "count": 29,
+              "status": "available"
+            }
+          },
+          "Art": {
+            "PrimaryThreeArtSchemesofWork.html": {
+              "kind": "legacy",
+              "data": "d00022ac76a77a9f.json",
+              "count": 5,
+              "status": "available"
+            }
+          },
+          "English": {
+            "PrimaryThreeEnglishSchemesofWork.html": {
+              "kind": "legacy",
+              "data": "12e42e4774ee6100.json",
+              "count": 19,
+              "status": "available"
+            }
+          },
+          "ICT": {
+            "PrimaryThreeICTSchemesofWork.html": {
+              "kind": "legacy",
+              "data": "ca837aa8bd746172.json",
+              "count": 1,
+              "status": "available"
+            }
+          },
+          "Luganda": {
+            "PrimaryThreeLugandaSchemesofWork.html": {
+              "kind": "legacy",
+              "data": "a02f00c92f9240e0.json",
+              "count": 1,
+              "status": "available"
+            }
+          },
+          "MTC": {
+            "PrimaryThreeMTCSchemesofWork.html": {
+              "kind": "legacy",
+              "data": "f7d6a550b6ec7979.json",
+              "count": 15,
+              "status": "available"
+            }
+          },
+          "PE": {
+            "PrimaryThreePESchemesofWork.html": {
+              "kind": "legacy",
+              "data": "5ba7f7cdf18ca62b.json",
+              "count": 2,
+              "status": "available"
+            }
+          },
+          "RE": {
+            "PrimaryThreeRESchemesofWork.html": {
+              "kind": "legacy",
+              "data": "ff329b443a28bc71.json",
+              "count": 11,
+              "status": "available"
+            }
+          },
+          "Reading": {
+            "PrimaryThreeReadingSchemesofWork.html": {
+              "kind": "legacy",
+              "data": "4e8ae3d05cada15d.json",
+              "count": 3,
+              "status": "available"
+            }
+          },
+          "SST": {
+            "PrimaryThreeSSTSchemesofWork.html": {
+              "kind": "legacy",
+              "data": "6b21cc205f493536.json",
+              "count": 16,
+              "status": "available"
+            }
+          },
+          "Science": {
+            "PrimaryThreeScienceSchemesofWork.html": {
+              "kind": "legacy",
+              "data": "48bb363dea3b1a26.json",
+              "count": 15,
+              "status": "available"
+            }
+          },
+          "Thematic": {
+            "PrimaryThreeThematicSchemesofWork.html": {
+              "kind": "legacy",
+              "data": "6c82281484620d3d.json",
+              "count": 5,
+              "status": "available"
+            }
+          }
+        }
+      },
+      "PrimaryTwo": {
+        "PastPapers": {
+          "Class": {
+            "PrimaryTwoClassPastPapers.html": {
+              "kind": "resources",
+              "data": "PrimaryTwoClassPastPapers.json",
+              "count": 78,
+              "status": "available"
+            }
+          },
+          "English": {
+            "PrimaryTwoEnglishPastPapers.html": {
+              "kind": "legacy",
+              "data": "adb0bbf5befc35b4.json",
+              "count": 44,
+              "status": "available"
+            }
+          },
+          "ICT": {
+            "PrimaryTwoICTPastPapers.html": {
+              "kind": "legacy",
+              "data": "37d85a8b6970668c.json",
+              "count": 1,
+              "status": "available"
+            }
+          },
+          "Lit1": {
+            "PrimaryTwoLit1PastPapers.html": {
+              "kind": "legacy",
+              "data": "f92db2be6f9e433f.json",
+              "count": 39,
+              "status": "available"
+            }
+          },
+          "Lit2": {
+            "PrimaryTwoLit2PastPapers.html": {
+              "kind": "legacy",
+              "data": "60ad9752e52153de.json",
+              "count": 25,
+              "status": "available"
+            }
+          },
+          "Luganda": {
+            "PrimaryTwoLugandaPastPapers.html": {
+              "kind": "legacy",
+              "data": "72c1849d39f176c4.json",
+              "count": 6,
+              "status": "available"
+            }
+          },
+          "MTC": {
+            "PrimaryTwoMTCPastPapers.html": {
+              "kind": "legacy",
+              "data": "f0371e094999ef32.json",
+              "count": 35,
+              "status": "available"
+            }
+          },
+          "RE": {
+            "PrimaryTwoREPastPapers.html": {
+              "kind": "legacy",
+              "data": "c96b0ba9f57a08f4.json",
+              "count": 17,
+              "status": "available"
+            }
+          },
+          "Reading": {
+            "PrimaryTwoReadingPastPapers.html": {
+              "kind": "legacy",
+              "data": "f3b9bf194ae942ed.json",
+              "count": 12,
+              "status": "available"
+            }
+          },
+          "Theology": {
+            "PrimaryTwoTheologyPastPapers.html": {
+              "kind": "legacy",
+              "data": "265616d5892d5420.json",
+              "count": 1,
+              "status": "available"
+            }
+          },
+          "Writing": {
+            "PrimaryTwoWritingPastPapers.html": {
+              "kind": "legacy",
+              "data": "0115faa6e57afd08.json",
+              "count": 1,
+              "status": "available"
+            }
+          }
+        },
+        "LessonNotes": {
+          "all": {
+            "PrimaryTwoLessonNotes.html": {
+              "kind": "resources",
+              "data": "PrimaryTwoLessonNotes.json",
+              "count": 77,
+              "status": "available"
+            }
+          },
+          "All": {
+            "PrimaryTwoAllLessonNotes.html": {
+              "kind": "legacy",
+              "data": "f497fc62cf8228f9.json",
+              "count": 5,
+              "status": "available"
+            }
+          },
+          "English": {
+            "PrimaryTwoEnglishLessonNotes.html": {
+              "kind": "legacy",
+              "data": "a10177a304f609b4.json",
+              "count": 31,
+              "status": "available"
+            }
+          },
+          "ICT": {
+            "PrimaryTwoICTLessonNotes.html": {
+              "kind": "legacy",
+              "data": "5046ff8a343a23f6.json",
+              "count": 2,
+              "status": "available"
+            }
+          },
+          "Lit1": {
+            "PrimaryTwoLit1LessonNotes.html": {
+              "kind": "legacy",
+              "data": "b8fba3c3041c328e.json",
+              "count": 13,
+              "status": "available"
+            }
+          },
+          "Lit2": {
+            "PrimaryTwoLit2LessonNotes.html": {
+              "kind": "legacy",
+              "data": "8e478fbe741bd19f.json",
+              "count": 21,
+              "status": "available"
+            }
+          },
+          "Luganda": {
+            "PrimaryTwoLugandaLessonNotes.html": {
+              "kind": "legacy",
+              "data": "69df8fe57d4c97f8.json",
+              "count": 7,
+              "status": "available"
+            }
+          },
+          "MTC": {
+            "PrimaryTwoMTCLessonNotes.html": {
+              "kind": "legacy",
+              "data": "968e874c5899c069.json",
+              "count": 24,
+              "status": "available"
+            }
+          },
+          "News": {
+            "PrimaryTwoNewsLessonNotes.html": {
+              "kind": "legacy",
+              "data": "e33bde285eb5ba79.json",
+              "count": 4,
+              "status": "available"
+            }
+          },
+          "PE": {
+            "PrimaryTwoPELessonNotes.html": {
+              "kind": "legacy",
+              "data": "a86be17571706ca9.json",
+              "count": 7,
+              "status": "available"
+            }
+          },
+          "RE": {
+            "PrimaryTwoRELessonNotes.html": {
+              "kind": "legacy",
+              "data": "1d9086d64c967737.json",
+              "count": 18,
+              "status": "available"
+            }
+          },
+          "Reading": {
+            "PrimaryTwoReadingLessonNotes.html": {
+              "kind": "legacy",
+              "data": "bca378bc3e7aa67a.json",
+              "count": 15,
+              "status": "available"
+            }
+          },
+          "RunyankoreRukiga": {
+            "PrimaryTwoRunyankoreRukigaLessonNotes.html": {
+              "kind": "legacy",
+              "data": "ff7330e0e3560657.json",
+              "count": 1,
+              "status": "available"
+            }
+          },
+          "Thematic": {
+            "PrimaryTwoThematicLessonNotes.html": {
+              "kind": "legacy",
+              "data": "f551644575ae8cb1.json",
+              "count": 2,
+              "status": "available"
+            }
+          },
+          "Writing": {
+            "PrimaryTwoWritingLessonNotes.html": {
+              "kind": "legacy",
+              "data": "e07db4d963a96640.json",
+              "count": 2,
+              "status": "available"
+            }
+          }
+        },
+        "SchemesOfWork": {
+          "all": {
+            "PrimaryTwoSchemesOfWork.html": {
+              "kind": "resources",
+              "data": "PrimaryTwoSchemesOfWork.json",
+              "count": 37,
+              "status": "available"
+            }
+          },
+          "All": {
+            "PrimaryTwoAllSchemesofWork.html": {
+              "kind": "legacy",
+              "data": "6ac797ef8e8e6725.json",
+              "count": 8,
+              "status": "available"
+            }
+          },
+          "English": {
+            "PrimaryTwoEnglishSchemesofWork.html": {
+              "kind": "legacy",
+              "data": "d6c19cb9df3ca3d0.json",
+              "count": 8,
+              "status": "available"
+            }
+          },
+          "Lit1": {
+            "PrimaryTwoLit1SchemesofWork.html": {
+              "kind": "legacy",
+              "data": "18c1c0d592c7fe64.json",
+              "count": 4,
+              "status": "available"
+            }
+          },
+          "Lit2": {
+            "PrimaryTwoLit2SchemesofWork.html": {
+              "kind": "legacy",
+              "data": "b4d87159fce60a53.json",
+              "count": 3,
+              "status": "available"
+            }
+          },
+          "Luganda": {
+            "PrimaryTwoLugandaSchemesofWork.html": {
+              "kind": "legacy",
+              "data": "aa51dbd0a728349e.json",
+              "count": 4,
+              "status": "available"
+            }
+          },
+          "MTC": {
+            "PrimaryTwoMTCSchemesofWork.html": {
+              "kind": "legacy",
+              "data": "276f1dd93dd9d650.json",
+              "count": 4,
+              "status": "available"
+            }
+          },
+          "PE": {
+            "PrimaryTwoPESchemesofWork.html": {
+              "kind": "legacy",
+              "data": "f79d2a9f7b7e1e43.json",
+              "count": 1,
+              "status": "available"
+            }
+          },
+          "RE": {
+            "PrimaryTwoRESchemesofWork.html": {
+              "kind": "legacy",
+              "data": "f465da7b755e8b0a.json",
+              "count": 6,
+              "status": "available"
+            }
+          },
+          "Reading": {
+            "PrimaryTwoReadingSchemesofWork.html": {
+              "kind": "legacy",
+              "data": "2e26da5b601266ce.json",
+              "count": 5,
+              "status": "available"
+            }
+          },
+          "Thematic": {
+            "PrimaryTwoThematicSchemesofWork.html": {
+              "kind": "legacy",
+              "data": "90a19adeb975e9db.json",
+              "count": 7,
+              "status": "available"
+            }
+          }
+        }
+      }
+    },
+    "secondary": {
+      "SeniorFive": {
+        "LessonNotes": {
+          "all": {
+            "SeniorFiveLessonNotes.html": {
+              "kind": "resources",
+              "data": "SeniorFiveLessonNotes.json",
+              "count": 21,
+              "status": "available"
+            }
+          },
+          "Biology": {
+            "SeniorFiveBiologyLessonNotes.html": {
+              "kind": "legacy",
+              "data": "1ef49c5619f2b7a3.json",
+              "count": 118,
+              "status": "available"
+            }
+          },
+          "GP": {
+            "SeniorFiveGPLessonNotes.html": {
+              "kind": "legacy",
+              "data": "435018601792f11f.json",
+              "count": 22,
+              "status": "available"
+            }
+          },
+          "History": {
+            "SeniorFiveHistoryLessonNotes.html": {
+              "kind": "legacy",
+              "data": "e66d3c4057464e86.json",
+              "count": 43,
+              "status": "available"
+            }
+          },
+          "Literature": {
+            "SeniorFiveLiteratureLessonNotes.html": {
+              "kind": "legacy",
+              "data": "6e8a4359bd2fffff.json",
+              "count": 108,
+              "status": "available"
+            }
+          },
+          "Mathematics": {
+            "SeniorFiveMathematicsLessonNotes.html": {
+              "kind": "legacy",
+              "data": "74a002592fdf28a5.json",
+              "count": 93,
+              "status": "available"
+            }
+          },
+          "Physics": {
+            "SeniorFivePhysicsLessonNotes.html": {
+              "kind": "legacy",
+              "data": "a041d49d7d56932c.json",
+              "count": 52,
+              "status": "available"
+            }
+          }
+        },
+        "PastPapers": {
+          "all": {
+            "SeniorFivePastPapers.html": {
+              "kind": "resources",
+              "data": "SeniorFivePastPapers.json",
+              "count": 103,
+              "status": "available"
+            }
+          },
+          "Agriculture": {
+            "SeniorFiveAgriculturePastPapers.html": {
+              "kind": "legacy",
+              "data": "71aab8ea8d06cf82.json",
+              "count": 1,
+              "status": "available"
+            }
+          },
+          "All": {
+            "SeniorFiveAllPastPapers.html": {
+              "kind": "legacy",
+              "data": "23ac89a08efca4a1.json",
+              "count": 125,
+              "status": "available"
+            }
+          },
+          "Art": {
+            "SeniorFiveArtPastPapers.html": {
+              "kind": "legacy",
+              "data": "c00328015ba8dad5.json",
+              "count": 6,
+              "status": "available"
+            }
+          },
+          "Biology": {
+            "SeniorFiveBiologyPastPapers.html": {
+              "kind": "legacy",
+              "data": "4dc0574ebdae4f5d.json",
+              "count": 81,
+              "status": "available"
+            }
+          },
+          "Chemistry": {
+            "SeniorFiveChemistryPastPapers.html": {
+              "kind": "legacy",
+              "data": "801979ce7287e0a0.json",
+              "count": 46,
+              "status": "available"
+            }
+          },
+          "Divinity": {
+            "SeniorFiveDivinityPastPapers.html": {
+              "kind": "legacy",
+              "data": "7c2996c794a61c6d.json",
+              "count": 9,
+              "status": "available"
+            }
+          },
+          "Economics": {
+            "SeniorFiveEconomicsPastPapers.html": {
+              "kind": "legacy",
+              "data": "57a1cfe568a06688.json",
+              "count": 39,
+              "status": "available"
+            }
+          },
+          "Entrepreneurship": {
+            "SeniorFiveEntrepreneurshipPastPapers.html": {
+              "kind": "legacy",
+              "data": "cb3209e86c352ac0.json",
+              "count": 15,
+              "status": "available"
+            }
+          },
+          "GeneralPaper": {
+            "SeniorFiveGeneralPaperPastPapers.html": {
+              "kind": "legacy",
+              "data": "1c889667e192651b.json",
+              "count": 15,
+              "status": "available"
+            }
+          },
+          "Geography": {
+            "SeniorFiveGeographyPastPapers.html": {
+              "kind": "legacy",
+              "data": "8d7fe609e569c2a5.json",
+              "count": 23,
+              "status": "available"
+            }
+          },
+          "German": {
+            "SeniorFiveGermanPastPapers.html": {
+              "kind": "legacy",
+              "data": "447abfcb6ba0c7d9.json",
+              "count": 1,
+              "status": "available"
+            }
+          },
+          "History": {
+            "SeniorFiveHistoryPastPapers.html": {
+              "kind": "legacy",
+              "data": "331af3fab6f75b23.json",
+              "count": 5,
+              "status": "available"
+            }
+          },
+          "ICT": {
+            "SeniorFiveICTPastPapers.html": {
+              "kind": "legacy",
+              "data": "2d5ddadbc748a9c4.json",
+              "count": 27,
+              "status": "available"
+            }
+          },
+          "IRE": {
+            "SeniorFiveIREPastPapers.html": {
+              "kind": "legacy",
+              "data": "862b7966add26556.json",
+              "count": 6,
+              "status": "available"
+            }
+          },
+          "Kiswahili": {
+            "SeniorFiveKiswahiliPastPapers.html": {
+              "kind": "legacy",
+              "data": "1591df7a6b6fc95d.json",
+              "count": 3,
+              "status": "available"
+            }
+          },
+          "Literature": {
+            "SeniorFiveLiteraturePastPapers.html": {
+              "kind": "legacy",
+              "data": "111966ea860a8b4e.json",
+              "count": 22,
+              "status": "available"
+            }
+          },
+          "Luganda": {
+            "SeniorFiveLugandaPastPapers.html": {
+              "kind": "legacy",
+              "data": "5c86cfbb367c7ae5.json",
+              "count": 1,
+              "status": "available"
+            }
+          },
+          "Mathematics": {
+            "SeniorFiveMathematicsPastPapers.html": {
+              "kind": "legacy",
+              "data": "500fb730abb8264b.json",
+              "count": 81,
+              "status": "available"
+            }
+          },
+          "Physics": {
+            "SeniorFivePhysicsPastPapers.html": {
+              "kind": "legacy",
+              "data": "516cb73121a65ca0.json",
+              "count": 25,
+              "status": "available"
+            }
+          }
+        }
+      },
+      "SeniorFour": {
+        "PastPapers": {
+          "All": {
+            "SeniorFourAllPastPapers.html": {
+              "kind": "resources",
+              "data": "SeniorFourAllPastPapers.json",
+              "count": 29,
+              "status": "available"
+            }
+          },
+          "Entrepreneurship": {
+            "SeniorFourEntrepreneurshipPastPapers.html": {
+              "kind": "resources",
+              "data": "SeniorFourEntrepreneurshipPastPapers.json",
+              "count": 62,
+              "status": "available"
+            },
+            "SeniorFourEntreprenuershipPastPapers.html": {
+              "kind": "legacy",
+              "data": "dcb40bf634539997.json",
+              "count": 62,
+              "status": "available"
+            }
+          },
+          "Geography": {
+            "SeniorFourGeographyPastPapers.html": {
+              "kind": "resources",
+              "data": "SeniorFourGeographyPastPapers.json",
+              "count": 158,
+              "status": "available"
+            }
+          },
+          "German": {
+            "SeniorFourGermanPastPapers.html": {
+              "kind": "resources",
+              "data": "SeniorFourGermanPastPapers.json",
+              "count": 4,
+              "status": "available"
+            }
+          },
+          "Graphics": {
+            "SeniorFourGraphicsPastPapers.html": {
+              "kind": "resources",
+              "data": "SeniorFourGraphicsPastPapers.json",
+              "count": 4,
+              "status": "available"
+            }
+          },
+          "all": {
+            "SeniorFourPastPapers.html": {
+              "kind": "resources",
+              "data": "SeniorFourPastPapers.json",
+              "count": 971,
+              "status": "available"
+            }
+          },
+          "Accounts": {
+            "SeniorFourAccountsPastPapers.html": {
+              "kind": "legacy",
+              "data": "c0bd37d4cfb8ef58.json",
+              "count": 4,
+              "status": "available"
+            }
+          },
+          "Agriculture": {
+            "SeniorFourAgriculturePastPapers.html": {
+              "kind": "legacy",
+              "data": "9c6097c95c1f8976.json",
+              "count": 75,
+              "status": "available"
+            }
+          },
+          "Arabic": {
+            "SeniorFourArabicPastPapers.html": {
+              "kind": "legacy",
+              "data": "def08a93816fccd7.json",
+              "count": 7,
+              "status": "available"
+            }
+          },
+          "Art": {
+            "SeniorFourArtPastPapers.html": {
+              "kind": "legacy",
+              "data": "8a1a304687ff724b.json",
+              "count": 55,
+              "status": "available"
+            }
+          },
+          "Biology": {
+            "SeniorFourBiologyPastPapers.html": {
+              "kind": "legacy",
+              "data": "8ba37f3e659c545b.json",
+              "count": 280,
+              "status": "available"
+            }
+          },
+          "CRE": {
+            "SeniorFourCREPastPapers.html": {
+              "kind": "legacy",
+              "data": "97553c932ece9c7e.json",
+              "count": 56,
+              "status": "available"
+            }
+          },
+          "Chemistry": {
+            "SeniorFourChemistryPastPapers.html": {
+              "kind": "legacy",
+              "data": "3a346428b39fefd0.json",
+              "count": 337,
+              "status": "available"
+            }
+          },
+          "Commerce": {
+            "SeniorFourCommercePastPapers.html": {
+              "kind": "legacy",
+              "data": "4270ede7bb05163a.json",
+              "count": 53,
+              "status": "available"
+            }
+          },
+          "Economics": {
+            "SeniorFourEconomicsPastPapers.html": {
+              "kind": "legacy",
+              "data": "4061d342239da5b3.json",
+              "count": 0,
+              "status": "unavailable"
+            }
+          },
+          "English": {
+            "SeniorFourEnglishPastPapers.html": {
+              "kind": "legacy",
+              "data": "173742118dad78e5.json",
+              "count": 168,
+              "status": "available"
+            }
+          },
+          "FN": {
+            "SeniorFourFNPastPapers.html": {
+              "kind": "legacy",
+              "data": "b7c72f0fbb303e83.json",
+              "count": 4,
+              "status": "available"
+            }
+          },
+          "French": {
+            "SeniorFourFrenchPastPapers.html": {
+              "kind": "legacy",
+              "data": "e2c5d138cc3b6f46.json",
+              "count": 7,
+              "status": "available"
+            }
+          },
+          "History": {
+            "SeniorFourHistoryPastPapers.html": {
+              "kind": "legacy",
+              "data": "33f2c3b1a73913b6.json",
+              "count": 105,
+              "status": "available"
+            }
+          },
+          "ICT": {
+            "SeniorFourICTPastPapers.html": {
+              "kind": "legacy",
+              "data": "4097186dcf12a280.json",
+              "count": 85,
+              "status": "available"
+            }
+          },
+          "IPS": {
+            "SeniorFourIPSPastPapers.html": {
+              "kind": "legacy",
+              "data": "04d9d46327044703.json",
+              "count": 19,
+              "status": "available"
+            }
+          },
+          "IRE": {
+            "SeniorFourIREPastPapers.html": {
+              "kind": "legacy",
+              "data": "50c350b4f045b3e5.json",
+              "count": 44,
+              "status": "available"
+            }
+          },
+          "Kiswahili": {
+            "SeniorFourKiswahiliPastPapers.html": {
+              "kind": "legacy",
+              "data": "47a91a21ee3f1797.json",
+              "count": 18,
+              "status": "available"
+            }
+          },
+          "Literature": {
+            "SeniorFourLiteraturePastPapers.html": {
+              "kind": "legacy",
+              "data": "fa00a3a545e30204.json",
+              "count": 35,
+              "status": "available"
+            }
+          },
+          "Luganda": {
+            "SeniorFourLugandaPastPapers.html": {
+              "kind": "legacy",
+              "data": "f952e53a9ca29486.json",
+              "count": 32,
+              "status": "available"
+            }
+          },
+          "Lumasaba": {
+            "SeniorFourLumasabaPastPapers.html": {
+              "kind": "legacy",
+              "data": "b2f3939339851114.json",
+              "count": 1,
+              "status": "available"
+            }
+          },
+          "Lusoga": {
+            "SeniorFourLusogaPastPapers.html": {
+              "kind": "legacy",
+              "data": "fa9f160199e8fd9b.json",
+              "count": 2,
+              "status": "available"
+            }
+          },
+          "Mathematics": {
+            "SeniorFourMathematicsPastPapers.html": {
+              "kind": "legacy",
+              "data": "b8c72a2d33003672.json",
+              "count": 220,
+              "status": "available"
+            }
+          },
+          "Physics": {
+            "SeniorFourPhysicsPastPapers.html": {
+              "kind": "legacy",
+              "data": "218fdb78b18973cc.json",
+              "count": 253,
+              "status": "available"
+            }
+          },
+          "Runyoro": {
+            "SeniorFourRunyoroPastPapers.html": {
+              "kind": "legacy",
+              "data": "a9d16533df27d6b6.json",
+              "count": 1,
+              "status": "available"
+            }
+          },
+          "StudioTechnology": {
+            "SeniorFourStudioTechnologyPastPapers.html": {
+              "kind": "legacy",
+              "data": "8506ab1b61cc533b.json",
+              "count": 1,
+              "status": "available"
+            }
+          },
+          "TD": {
+            "SeniorFourTDPastPapers.html": {
+              "kind": "legacy",
+              "data": "a0f67da52776ccb3.json",
+              "count": 13,
+              "status": "available"
+            }
+          }
+        },
+        "LessonNotes": {
+          "all": {
+            "SeniorFourLessonNotes.html": {
+              "kind": "resources",
+              "data": "SeniorFourLessonNotes.json",
+              "count": 610,
+              "status": "available"
+            }
+          },
+          "SignLanguage": {
+            "SeniorFourSignLanguageLessonNotes.html": {
+              "kind": "resources",
+              "data": "SeniorFourSignLanguageLessonNotes.json",
+              "count": 2,
+              "status": "available"
+            }
+          },
+          "Agriculture": {
+            "SeniorFourAgricultureLessonNotes.html": {
+              "kind": "legacy",
+              "data": "2c492a93222ace67.json",
+              "count": 37,
+              "status": "available"
+            }
+          },
+          "Arabic": {
+            "SeniorFourArabicLessonNotes.html": {
+              "kind": "legacy",
+              "data": "2e1ec47ccbbf43fd.json",
+              "count": 2,
+              "status": "available"
+            }
+          },
+          "Art": {
+            "SeniorFourArtLessonNotes.html": {
+              "kind": "legacy",
+              "data": "481c1065047d8717.json",
+              "count": 11,
+              "status": "available"
+            }
+          },
+          "Biology": {
+            "SeniorFourBiologyLessonNotes.html": {
+              "kind": "legacy",
+              "data": "d4eeb6df8a5a0fa5.json",
+              "count": 99,
+              "status": "available"
+            }
+          },
+          "CRE": {
+            "SeniorFourCRELessonNotes.html": {
+              "kind": "legacy",
+              "data": "7f453424f4b2eef0.json",
+              "count": 28,
+              "status": "available"
+            }
+          },
+          "Chemistry": {
+            "SeniorFourChemistryLessonNotes.html": {
+              "kind": "legacy",
+              "data": "ddddfd73c02563a3.json",
+              "count": 62,
+              "status": "available"
+            }
+          },
+          "Chinese": {
+            "SeniorFourChineseLessonNotes.html": {
+              "kind": "legacy",
+              "data": "7761379207bf4111.json",
+              "count": 2,
+              "status": "available"
+            }
+          },
+          "Commerce": {
+            "SeniorFourCommerceLessonNotes.html": {
+              "kind": "legacy",
+              "data": "315b289ed12a79ae.json",
+              "count": 7,
+              "status": "available"
+            }
+          },
+          "Economics": {
+            "SeniorFourEconomicsLessonNotes.html": {
+              "kind": "legacy",
+              "data": "6660623e301b9b5f.json",
+              "count": 3,
+              "status": "available"
+            }
+          },
+          "English": {
+            "SeniorFourEnglishLessonNotes.html": {
+              "kind": "legacy",
+              "data": "719e1c326adeb7a5.json",
+              "count": 52,
+              "status": "available"
+            }
+          },
+          "Entrepreneurship": {
+            "SeniorFourEntrepreneurshipLessonNotes.html": {
+              "kind": "legacy",
+              "data": "d43ec57835488de0.json",
+              "count": 18,
+              "status": "available"
+            }
+          },
+          "FN": {
+            "SeniorFourFNLessonNotes.html": {
+              "kind": "legacy",
+              "data": "281e9c40c4b194c5.json",
+              "count": 5,
+              "status": "available"
+            }
+          },
+          "French": {
+            "SeniorFourFrenchLessonNotes.html": {
+              "kind": "legacy",
+              "data": "dd39068d2afb2937.json",
+              "count": 8,
+              "status": "available"
+            }
+          },
+          "Geography": {
+            "SeniorFourGeographyLessonNotes.html": {
+              "kind": "legacy",
+              "data": "751c296bfc6bf87c.json",
+              "count": 94,
+              "status": "available"
+            }
+          },
+          "German": {
+            "SeniorFourGermanLessonNotes.html": {
+              "kind": "legacy",
+              "data": "cb2f7a5160e917ba.json",
+              "count": 1,
+              "status": "available"
+            }
+          },
+          "History": {
+            "SeniorFourHistoryLessonNotes.html": {
+              "kind": "legacy",
+              "data": "efc734428f079edd.json",
+              "count": 77,
+              "status": "available"
+            }
+          },
+          "ICT": {
+            "SeniorFourICTLessonNotes.html": {
+              "kind": "legacy",
+              "data": "2b5a6e4a1d99e893.json",
+              "count": 52,
+              "status": "available"
+            }
+          },
+          "IRE": {
+            "SeniorFourIRELessonNotes.html": {
+              "kind": "legacy",
+              "data": "7cde91d5e9303ebb.json",
+              "count": 46,
+              "status": "available"
+            }
+          },
+          "Kiswahili": {
+            "SeniorFourKiswahiliLessonNotes.html": {
+              "kind": "legacy",
+              "data": "cc3d7b376f33c184.json",
+              "count": 7,
+              "status": "available"
+            }
+          },
+          "Latin": {
+            "SeniorFourLatinLessonNotes.html": {
+              "kind": "legacy",
+              "data": "30ef87aa7fa28a41.json",
+              "count": 1,
+              "status": "available"
+            }
+          },
+          "Literature": {
+            "SeniorFourLiteratureLessonNotes.html": {
+              "kind": "legacy",
+              "data": "246631ea9fbbde37.json",
+              "count": 67,
+              "status": "available"
+            }
+          },
+          "Luganda": {
+            "SeniorFourLugandaLessonNotes.html": {
+              "kind": "legacy",
+              "data": "4b28fe55de83fc6d.json",
+              "count": 16,
+              "status": "available"
+            }
+          },
+          "Mathematics": {
+            "SeniorFourMathematicsLessonNotes.html": {
+              "kind": "legacy",
+              "data": "b5a6e62c15f191b1.json",
+              "count": 610,
+              "status": "available"
+            }
+          },
+          "Physics": {
+            "SeniorFourPhysicsLessonNotes.html": {
+              "kind": "legacy",
+              "data": "64ec62db9b00d26e.json",
+              "count": 120,
+              "status": "available"
+            }
+          },
+          "TechnologyandDesign": {
+            "SeniorFourTechnologyandDesignLessonNotes.html": {
+              "kind": "legacy",
+              "data": "99c4f92ea6fa6276.json",
+              "count": 9,
+              "status": "available"
+            }
+          }
+        }
+      },
+      "SeniorOne": {
+        "LessonNotes": {
+          "all": {
+            "SeniorOneLessonNotes.html": {
+              "kind": "resources",
+              "data": "SeniorOneLessonNotes.json",
+              "count": 34,
+              "status": "available"
+            }
+          },
+          "Agriculture": {
+            "SeniorOneAgricultureLessonNotes.html": {
+              "kind": "legacy",
+              "data": "436321779ec7fc36.json",
+              "count": 18,
+              "status": "available"
+            }
+          },
+          "Arabic": {
+            "SeniorOneArabicLessonNotes.html": {
+              "kind": "legacy",
+              "data": "6372bfa74dd28be1.json",
+              "count": 1,
+              "status": "available"
+            }
+          },
+          "Art": {
+            "SeniorOneArtLessonNotes.html": {
+              "kind": "legacy",
+              "data": "a5c31fca530a8d8b.json",
+              "count": 10,
+              "status": "available"
+            }
+          },
+          "Biology": {
+            "SeniorOneBiologyLessonNotes.html": {
+              "kind": "legacy",
+              "data": "d38c1a5d757416e2.json",
+              "count": 46,
+              "status": "available"
+            }
+          },
+          "CRE": {
+            "SeniorOneCRELessonNotes.html": {
+              "kind": "legacy",
+              "data": "c26fa85bd5d1283a.json",
+              "count": 9,
+              "status": "available"
+            }
+          },
+          "Chemistry": {
+            "SeniorOneChemistryLessonNotes.html": {
+              "kind": "legacy",
+              "data": "1cf459fb3ed4e6a5.json",
+              "count": 38,
+              "status": "available"
+            }
+          },
+          "Commerce": {
+            "SeniorOneCommerceLessonNotes.html": {
+              "kind": "legacy",
+              "data": "63501cf1b34c2be1.json",
+              "count": 2,
+              "status": "available"
+            }
+          },
+          "English": {
+            "SeniorOneEnglishLessonNotes.html": {
+              "kind": "legacy",
+              "data": "0d48052387c699d5.json",
+              "count": 10,
+              "status": "available"
+            }
+          },
+          "Entrepreneurship": {
+            "SeniorOneEntrepreneurshipLessonNotes.html": {
+              "kind": "legacy",
+              "data": "1265e9a57f947290.json",
+              "count": 11,
+              "status": "available"
+            }
+          },
+          "FN": {
+            "SeniorOneFNLessonNotes.html": {
+              "kind": "legacy",
+              "data": "6a28b58940153889.json",
+              "count": 3,
+              "status": "available"
+            }
+          },
+          "French": {
+            "SeniorOneFrenchLessonNotes.html": {
+              "kind": "legacy",
+              "data": "87ef1f73f89f8406.json",
+              "count": 3,
+              "status": "available"
+            }
+          },
+          "Geography": {
+            "SeniorOneGeographyLessonNotes.html": {
+              "kind": "legacy",
+              "data": "ba3b92fae4f17b6a.json",
+              "count": 33,
+              "status": "available"
+            }
+          },
+          "German": {
+            "SeniorOneGermanLessonNotes.html": {
+              "kind": "legacy",
+              "data": "edfbe922d27c3271.json",
+              "count": 0,
+              "status": "available"
+            }
+          },
+          "History": {
+            "SeniorOneHistoryLessonNotes.html": {
+              "kind": "legacy",
+              "data": "79e9dd57875b9ed6.json",
+              "count": 31,
+              "status": "available"
+            }
+          },
+          "ICT": {
+            "SeniorOneICTLessonNotes.html": {
+              "kind": "legacy",
+              "data": "361d7a8efefd7999.json",
+              "count": 27,
+              "status": "available"
+            }
+          },
+          "IRE": {
+            "SeniorOneIRELessonNotes.html": {
+              "kind": "legacy",
+              "data": "1a04d31778fba3af.json",
+              "count": 12,
+              "status": "available"
+            }
+          },
+          "Kiswahili": {
+            "SeniorOneKiswahiliLessonNotes.html": {
+              "kind": "legacy",
+              "data": "6a3f708bb977f3ca.json",
+              "count": 8,
+              "status": "available"
+            }
+          },
+          "Latin": {
+            "SeniorOneLatinLessonNotes.html": {
+              "kind": "legacy",
+              "data": "1d52162d54ff8b43.json",
+              "count": 0,
+              "status": "available"
+            }
+          },
+          "Literature": {
+            "SeniorOneLiteratureLessonNotes.html": {
+              "kind": "legacy",
+              "data": "e16ccf509f1b09f6.json",
+              "count": 12,
+              "status": "available"
+            }
+          },
+          "Luganda": {
+            "SeniorOneLugandaLessonNotes.html": {
+              "kind": "legacy",
+              "data": "df77b1296877f475.json",
+              "count": 10,
+              "status": "available"
+            }
+          },
+          "Mathematics": {
+            "SeniorOneMathematicsLessonNotes.html": {
+              "kind": "legacy",
+              "data": "54513bec543810b7.json",
+              "count": 24,
+              "status": "available"
+            }
+          },
+          "Physics": {
+            "SeniorOnePhysicsLessonNotes.html": {
+              "kind": "legacy",
+              "data": "82928c6d86052ffe.json",
+              "count": 33,
+              "status": "available"
+            }
+          },
+          "SignLanguage": {
+            "SeniorOneSignLanguageLessonNotes.html": {
+              "kind": "legacy",
+              "data": "4d90a29a03215d33.json",
+              "count": 1,
+              "status": "available"
+            }
+          },
+          "TD": {
+            "SeniorOneTDLessonNotes.html": {
+              "kind": "legacy",
+              "data": "a0676a583b29fc15.json",
+              "count": 2,
+              "status": "available"
+            }
+          }
+        },
+        "PastPapers": {
+          "all": {
+            "SeniorOnePastPapers.html": {
+              "kind": "resources",
+              "data": "SeniorOnePastPapers.json",
+              "count": 86,
+              "status": "available"
+            }
+          },
+          "Agriculture": {
+            "SeniorOneAgriculturePastPapers.html": {
+              "kind": "legacy",
+              "data": "c2bfb594093111bc.json",
+              "count": 7,
+              "status": "available"
+            }
+          },
+          "All": {
+            "SeniorOneAllPastPapers.html": {
+              "kind": "legacy",
+              "data": "49c3df336b8f4c06.json",
+              "count": 4,
+              "status": "available"
+            }
+          },
+          "Art": {
+            "SeniorOneArtPastPapers.html": {
+              "kind": "legacy",
+              "data": "226495a7ee5244b4.json",
+              "count": 10,
+              "status": "available"
+            }
+          },
+          "Biology": {
+            "SeniorOneBiologyPastPapers.html": {
+              "kind": "legacy",
+              "data": "bccb926c1c54391d.json",
+              "count": 41,
+              "status": "available"
+            }
+          },
+          "CRE": {
+            "SeniorOneCREPastPapers.html": {
+              "kind": "legacy",
+              "data": "b3d92827a012bb70.json",
+              "count": 8,
+              "status": "available"
+            }
+          },
+          "Chemistry": {
+            "SeniorOneChemistryPastPapers.html": {
+              "kind": "legacy",
+              "data": "f7d1be5b04373a2d.json",
+              "count": 30,
+              "status": "available"
+            }
+          },
+          "Commerce": {
+            "SeniorOneCommercePastPapers.html": {
+              "kind": "legacy",
+              "data": "4d29461a4139e094.json",
+              "count": 1,
+              "status": "available"
+            }
+          },
+          "English": {
+            "SeniorOneEnglishPastPapers.html": {
+              "kind": "legacy",
+              "data": "082fd860eecc3396.json",
+              "count": 16,
+              "status": "available"
+            }
+          },
+          "Entrepreneurship": {
+            "SeniorOneEntrepreneurshipPastPapers.html": {
+              "kind": "legacy",
+              "data": "3bb200633aae787f.json",
+              "count": 7,
+              "status": "available"
+            }
+          },
+          "FN": {
+            "SeniorOneFNPastPapers.html": {
+              "kind": "legacy",
+              "data": "6ef04d1d0cdfd209.json",
+              "count": 1,
+              "status": "available"
+            }
+          },
+          "Geography": {
+            "SeniorOneGeographyPastPapers.html": {
+              "kind": "legacy",
+              "data": "3c445cbf3cdfc23b.json",
+              "count": 18,
+              "status": "available"
+            }
+          },
+          "History": {
+            "SeniorOneHistoryPastPapers.html": {
+              "kind": "legacy",
+              "data": "11607185c4f7faa8.json",
+              "count": 13,
+              "status": "available"
+            }
+          },
+          "ICT": {
+            "SeniorOneICTPastPapers.html": {
+              "kind": "legacy",
+              "data": "e9b2e37ec7eae54e.json",
+              "count": 15,
+              "status": "available"
+            }
+          },
+          "IRE": {
+            "SeniorOneIREPastPapers.html": {
+              "kind": "legacy",
+              "data": "f4f4a69265fa7f86.json",
+              "count": 4,
+              "status": "available"
+            }
+          },
+          "Kiswahili": {
+            "SeniorOneKiswahiliPastPapers.html": {
+              "kind": "legacy",
+              "data": "5af0ae2751e919fe.json",
+              "count": 7,
+              "status": "available"
+            }
+          },
+          "Literature": {
+            "SeniorOneLiteraturePastPapers.html": {
+              "kind": "legacy",
+              "data": "71d92d2564275c24.json",
+              "count": 4,
+              "status": "available"
+            }
+          },
+          "Mathematics": {
+            "SeniorOneMathematicsPastPapers.html": {
+              "kind": "legacy",
+              "data": "0385e31ec828aa63.json",
+              "count": 27,
+              "status": "available"
+            }
+          },
+          "Music": {
+            "SeniorOneMusicPastPapers.html": {
+              "kind": "legacy",
+              "data": "1e95be6cb116f82e.json",
+              "count": 1,
+              "status": "available"
+            }
+          },
+          "PhysicalEducation": {
+            "SeniorOnePhysicalEducationPastPapers.html": {
+              "kind": "legacy",
+              "data": "52816db9511c2dca.json",
+              "count": 2,
+              "status": "available"
+            }
+          },
+          "Physics": {
+            "SeniorOnePhysicsPastPapers.html": {
+              "kind": "legacy",
+              "data": "03508f37cf83af80.json",
+              "count": 40,
+              "status": "available"
+            }
+          },
+          "TD": {
+            "SeniorOneTDPastPapers.html": {
+              "kind": "legacy",
+              "data": "c6a5e8038d34beca.json",
+              "count": 2,
+              "status": "available"
+            }
+          }
+        }
+      },
+      "SeniorSix": {
+        "PastPapers": {
+          "IPS": {
+            "SeniorSixIPSPastPapers.html": {
+              "kind": "resources",
+              "data": "SeniorSixIPSPastPapers.json",
+              "count": 2,
+              "status": "available"
+            }
+          },
+          "all": {
+            "SeniorSixPastPapers.html": {
+              "kind": "resources",
+              "data": "SeniorSixPastPapers.json",
+              "count": 1653,
+              "status": "available"
+            }
+          },
+          "Runyankore": {
+            "SeniorSixRunyankorePastPapers.html": {
+              "kind": "resources",
+              "data": "SeniorSixRunyankorePastPapers.json",
+              "count": 2,
+              "status": "available"
+            }
+          },
+          "Agriculture": {
+            "SeniorSixAgriculturePastPapers.html": {
+              "kind": "legacy",
+              "data": "4bd3f5e28f8ae772.json",
+              "count": 74,
+              "status": "available"
+            }
+          },
+          "All": {
+            "SeniorSixAllPastPapers.html": {
+              "kind": "legacy",
+              "data": "64e73efb8575da3f.json",
+              "count": 26,
+              "status": "available"
+            }
+          },
+          "Arabic": {
+            "SeniorSixArabicPastPapers.html": {
+              "kind": "legacy",
+              "data": "c368dd06b198c47c.json",
+              "count": 1,
+              "status": "available"
+            }
+          },
+          "Art": {
+            "SeniorSixArtPastPapers.html": {
+              "kind": "legacy",
+              "data": "616bc4c400ff3db8.json",
+              "count": 4,
+              "status": "available"
+            }
+          },
+          "Biology": {
+            "SeniorSixBiologyPastPapers.html": {
+              "kind": "legacy",
+              "data": "19e84927c0be3ab2.json",
+              "count": 379,
+              "status": "available"
+            }
+          },
+          "Chemistry": {
+            "SeniorSixChemistryPastPapers.html": {
+              "kind": "legacy",
+              "data": "ab9d8b9095ed35ed.json",
+              "count": 382,
+              "status": "available"
+            }
+          },
+          "Commerce": {
+            "SeniorSixCommercePastPapers.html": {
+              "kind": "legacy",
+              "data": "c3496e3ea44e5486.json",
+              "count": 4,
+              "status": "available"
+            }
+          },
+          "Divity": {
+            "SeniorSixDivityPastPapers.html": {
+              "kind": "legacy",
+              "data": "47b69f75c0c1e654.json",
+              "count": 105,
+              "status": "available"
+            }
+          },
+          "English": {
+            "SeniorSixEnglishPastPapers.html": {
+              "kind": "legacy",
+              "data": "106a7c1008533f0e.json",
+              "count": 5,
+              "status": "available"
+            }
+          },
+          "Entrepreneurship": {
+            "SeniorSixEntrepreneurshipPastPapers.html": {
+              "kind": "legacy",
+              "data": "1cf0682ec596e5a4.json",
+              "count": 159,
+              "status": "available"
+            }
+          },
+          "FN": {
+            "SeniorSixFNPastPapers.html": {
+              "kind": "legacy",
+              "data": "6d4b961cbcbf13ca.json",
+              "count": 17,
+              "status": "available"
+            }
+          },
+          "French": {
+            "SeniorSixFrenchPastPapers.html": {
+              "kind": "legacy",
+              "data": "63711205c3d0a0a6.json",
+              "count": 10,
+              "status": "available"
+            }
+          },
+          "GP": {
+            "SeniorSixGPPastPapers.html": {
+              "kind": "legacy",
+              "data": "cd7631afb12e199c.json",
+              "count": 43,
+              "status": "available"
+            }
+          },
+          "Geography": {
+            "SeniorSixGeographyPastPapers.html": {
+              "kind": "legacy",
+              "data": "e59490b59373d2b3.json",
+              "count": 196,
+              "status": "available"
+            }
+          },
+          "German": {
+            "SeniorSixGermanPastPapers.html": {
+              "kind": "legacy",
+              "data": "f54a743ce560e7bb.json",
+              "count": 2,
+              "status": "available"
+            }
+          },
+          "History": {
+            "SeniorSixHistoryPastPapers.html": {
+              "kind": "legacy",
+              "data": "15f7fb28689ee7ea.json",
+              "count": 105,
+              "status": "available"
+            }
+          },
+          "ICT": {
+            "SeniorSixICTPastPapers.html": {
+              "kind": "legacy",
+              "data": "bcfa358ba54160cd.json",
+              "count": 158,
+              "status": "available"
+            }
+          },
+          "IRE": {
+            "SeniorSixIREPastPapers.html": {
+              "kind": "legacy",
+              "data": "5d8feb17453ba6fe.json",
+              "count": 63,
+              "status": "available"
+            }
+          },
+          "Kiswahili": {
+            "SeniorSixKiswahiliPastPapers.html": {
+              "kind": "legacy",
+              "data": "51e62be0ef609a95.json",
+              "count": 16,
+              "status": "available"
+            }
+          },
+          "Literature": {
+            "SeniorSixLiteraturePastPapers.html": {
+              "kind": "legacy",
+              "data": "7d4571a6648481d1.json",
+              "count": 91,
+              "status": "available"
+            }
+          },
+          "Luganda": {
+            "SeniorSixLugandaPastPapers.html": {
+              "kind": "legacy",
+              "data": "baed998ef982c21e.json",
+              "count": 2,
+              "status": "available"
+            }
+          },
+          "Lumasaba": {
+            "SeniorSixLumasabaPastPapers.html": {
+              "kind": "legacy",
+              "data": "dd172da7470fe6ef.json",
+              "count": 2,
+              "status": "available"
+            }
+          },
+          "Lusoga": {
+            "SeniorSixLusogaPastPapers.html": {
+              "kind": "legacy",
+              "data": "6d4246a8f65aa693.json",
+              "count": 2,
+              "status": "available"
+            }
+          },
+          "Mathematics": {
+            "SeniorSixMathematicsPastPapers.html": {
+              "kind": "legacy",
+              "data": "5a44fd80a08a9321.json",
+              "count": 313,
+              "status": "available"
+            }
+          },
+          "Music": {
+            "SeniorSixMusicPastPapers.html": {
+              "kind": "legacy",
+              "data": "a3653ed65b7e00db.json",
+              "count": 1,
+              "status": "available"
+            }
+          },
+          "Physics": {
+            "SeniorSixPhysicsPastPapers.html": {
+              "kind": "legacy",
+              "data": "97951d3b38f2f337.json",
+              "count": 333,
+              "status": "available"
+            }
+          },
+          "TD": {
+            "SeniorSixTDPastPapers.html": {
+              "kind": "legacy",
+              "data": "73a00594b526d1b0.json",
+              "count": 13,
+              "status": "available"
+            }
+          }
+        },
+        "LessonNotes": {
+          "all": {
+            "SeniorSixLessonNotes.html": {
+              "kind": "resources",
+              "data": "SeniorSixLessonNotes.json",
+              "count": 194,
+              "status": "available"
+            }
+          },
+          "Agriculture": {
+            "SeniorSixAgricultureLessonNotes.html": {
+              "kind": "legacy",
+              "data": "c438810a158a0352.json",
+              "count": 10,
+              "status": "available"
+            }
+          },
+          "Art": {
+            "SeniorSixArtLessonNotes.html": {
+              "kind": "legacy",
+              "data": "1a2467977b902a03.json",
+              "count": 3,
+              "status": "available"
+            }
+          },
+          "Biology": {
+            "SeniorSixBiologyLessonNotes.html": {
+              "kind": "legacy",
+              "data": "e9d5e1f6eae85719.json",
+              "count": 229,
+              "status": "available"
+            }
+          },
+          "Chemistry": {
+            "SeniorSixChemistryLessonNotes.html": {
+              "kind": "legacy",
+              "data": "d9de19507b2bea66.json",
+              "count": 133,
+              "status": "available"
+            }
+          },
+          "Divinity": {
+            "SeniorSixDivinityLessonNotes.html": {
+              "kind": "legacy",
+              "data": "7e06c164a3eccfe7.json",
+              "count": 37,
+              "status": "available"
+            }
+          },
+          "Economics": {
+            "SeniorSixEconomicsLessonNotes.html": {
+              "kind": "legacy",
+              "data": "59d4845b44b11dc5.json",
+              "count": 43,
+              "status": "available"
+            }
+          },
+          "English": {
+            "SeniorSixEnglishLessonNotes.html": {
+              "kind": "legacy",
+              "data": "59135e245a73c6aa.json",
+              "count": 11,
+              "status": "available"
+            }
+          },
+          "Entrepreneurship": {
+            "SeniorSixEntrepreneurshipLessonNotes.html": {
+              "kind": "legacy",
+              "data": "3c703db1fcd71a5d.json",
+              "count": 25,
+              "status": "available"
+            }
+          },
+          "GP": {
+            "SeniorSixGPLessonNotes.html": {
+              "kind": "legacy",
+              "data": "82237e4b73b843ce.json",
+              "count": 23,
+              "status": "available"
+            }
+          },
+          "Geography": {
+            "SeniorSixGeographyLessonNotes.html": {
+              "kind": "legacy",
+              "data": "3f3135df3c7411da.json",
+              "count": 55,
+              "status": "available"
+            }
+          },
+          "History": {
+            "SeniorSixHistoryLessonNotes.html": {
+              "kind": "legacy",
+              "data": "fd34416e2f9b3561.json",
+              "count": 51,
+              "status": "available"
+            }
+          },
+          "ICT": {
+            "SeniorSixICTLessonNotes.html": {
+              "kind": "legacy",
+              "data": "50d463cb55b331d4.json",
+              "count": 59,
+              "status": "available"
+            }
+          },
+          "IPS": {
+            "SeniorSixIPSLessonNotes.html": {
+              "kind": "legacy",
+              "data": "f251c1cb66f5bfd8.json",
+              "count": 1,
+              "status": "available"
+            }
+          },
+          "IRE": {
+            "SeniorSixIRELessonNotes.html": {
+              "kind": "legacy",
+              "data": "4fc3f5823dc4d2fa.json",
+              "count": 21,
+              "status": "available"
+            }
+          },
+          "Kiswahili": {
+            "SeniorSixKiswahiliLessonNotes.html": {
+              "kind": "legacy",
+              "data": "793a65f3f166500b.json",
+              "count": 3,
+              "status": "available"
+            }
+          },
+          "Literature": {
+            "SeniorSixLiteratureLessonNotes.html": {
+              "kind": "legacy",
+              "data": "17830af022364301.json",
+              "count": 123,
+              "status": "available"
+            }
+          },
+          "Luganda": {
+            "SeniorSixLugandaLessonNotes.html": {
+              "kind": "legacy",
+              "data": "751d842ac187d2e2.json",
+              "count": 14,
+              "status": "available"
+            }
+          },
+          "Mathematics": {
+            "SeniorSixMathematicsLessonNotes.html": {
+              "kind": "legacy",
+              "data": "0aa0fdc86180bb2c.json",
+              "count": 132,
+              "status": "available"
+            }
+          },
+          "Mixed": {
+            "SeniorSixMixedLessonNotes.html": {
+              "kind": "legacy",
+              "data": "9d7ebdbe04f034b7.json",
+              "count": 68,
+              "status": "available"
+            }
+          },
+          "Physics": {
+            "SeniorSixPhysicsLessonNotes.html": {
+              "kind": "legacy",
+              "data": "fb8709d06ee63ccd.json",
+              "count": 114,
+              "status": "available"
+            }
+          },
+          "TD": {
+            "SeniorSixTDLessonNotes.html": {
+              "kind": "legacy",
+              "data": "11cc9e54aba587d4.json",
+              "count": 2,
+              "status": "available"
+            }
+          },
+          "TechnicalDrawing": {
+            "SeniorSixTechnicalDrawingLessonNotes.html": {
+              "kind": "legacy",
+              "data": "abade9cd0a8f1c39.json",
+              "count": 2,
+              "status": "available"
+            }
+          }
+        }
+      },
+      "SeniorThree": {
+        "LessonNotes": {
+          "all": {
+            "SeniorThreeLessonNotes.html": {
+              "kind": "resources",
+              "data": "SeniorThreeLessonNotes.json",
+              "count": 21,
+              "status": "available"
+            }
+          },
+          "Agriculture": {
+            "SeniorThreeAgricultureLessonNotes.html": {
+              "kind": "legacy",
+              "data": "7b161c65642cc5b4.json",
+              "count": 17,
+              "status": "available"
+            }
+          },
+          "Art": {
+            "SeniorThreeArtLessonNotes.html": {
+              "kind": "legacy",
+              "data": "4caa9a659e74783f.json",
+              "count": 11,
+              "status": "available"
+            }
+          },
+          "Biology": {
+            "SeniorThreeBiologyLessonNotes.html": {
+              "kind": "legacy",
+              "data": "ed6b8e3e26add3c1.json",
+              "count": 46,
+              "status": "available"
+            }
+          },
+          "CRE": {
+            "SeniorThreeCRELessonNotes.html": {
+              "kind": "legacy",
+              "data": "117f9df7f4b8fd96.json",
+              "count": 12,
+              "status": "available"
+            }
+          },
+          "Chemistry": {
+            "SeniorThreeChemistryLessonNotes.html": {
+              "kind": "legacy",
+              "data": "1da7100a8d7f544b.json",
+              "count": 35,
+              "status": "available"
+            }
+          },
+          "Commerce": {
+            "SeniorThreeCommerceLessonNotes.html": {
+              "kind": "legacy",
+              "data": "3e427c62953231b7.json",
+              "count": 2,
+              "status": "available"
+            }
+          },
+          "English": {
+            "SeniorThreeEnglishLessonNotes.html": {
+              "kind": "legacy",
+              "data": "445965dccd53383e.json",
+              "count": 15,
+              "status": "available"
+            }
+          },
+          "Entrepreneurship": {
+            "SeniorThreeEntrepreneurshipLessonNotes.html": {
+              "kind": "legacy",
+              "data": "2dbc0d6b5b494b88.json",
+              "count": 5,
+              "status": "available"
+            }
+          },
+          "FN": {
+            "SeniorThreeFNLessonNotes.html": {
+              "kind": "legacy",
+              "data": "918ecd01ebec4ab0.json",
+              "count": 2,
+              "status": "available"
+            }
+          },
+          "Geography": {
+            "SeniorThreeGeographyLessonNotes.html": {
+              "kind": "legacy",
+              "data": "e632534e7e50a7b8.json",
+              "count": 40,
+              "status": "available"
+            }
+          },
+          "History": {
+            "SeniorThreeHistoryLessonNotes.html": {
+              "kind": "legacy",
+              "data": "7ee810fbfd0c79c3.json",
+              "count": 43,
+              "status": "available"
+            }
+          },
+          "ICT": {
+            "SeniorThreeICTLessonNotes.html": {
+              "kind": "legacy",
+              "data": "3f3c2f8e45e6859b.json",
+              "count": 26,
+              "status": "available"
+            }
+          },
+          "IRE": {
+            "SeniorThreeIRELessonNotes.html": {
+              "kind": "legacy",
+              "data": "0f13c7e40e5acb1e.json",
+              "count": 11,
+              "status": "available"
+            }
+          },
+          "Kiswahili": {
+            "SeniorThreeKiswahiliLessonNotes.html": {
+              "kind": "legacy",
+              "data": "6f4d5143d3ea0a8b.json",
+              "count": 3,
+              "status": "available"
+            }
+          },
+          "Latin": {
+            "SeniorThreeLatinLessonNotes.html": {
+              "kind": "legacy",
+              "data": "046d137ea47f1e7f.json",
+              "count": 2,
+              "status": "available"
+            }
+          },
+          "Literature": {
+            "SeniorThreeLiteratureLessonNotes.html": {
+              "kind": "legacy",
+              "data": "95af0301c06ec887.json",
+              "count": 14,
+              "status": "available"
+            }
+          },
+          "Luganda": {
+            "SeniorThreeLugandaLessonNotes.html": {
+              "kind": "legacy",
+              "data": "9e439d58b1fa1a49.json",
+              "count": 13,
+              "status": "available"
+            }
+          },
+          "Mathematics": {
+            "SeniorThreeMathematicsLessonNotes.html": {
+              "kind": "legacy",
+              "data": "191b417b45d6fb08.json",
+              "count": 18,
+              "status": "available"
+            }
+          },
+          "Physics": {
+            "SeniorThreePhysicsLessonNotes.html": {
+              "kind": "legacy",
+              "data": "5c312f1aa0b4a70a.json",
+              "count": 37,
+              "status": "available"
+            }
+          },
+          "TD": {
+            "SeniorThreeTDLessonNotes.html": {
+              "kind": "legacy",
+              "data": "98db99fb051f1c98.json",
+              "count": 2,
+              "status": "available"
+            }
+          }
+        },
+        "PastPapers": {
+          "all": {
+            "SeniorThreePastPapers.html": {
+              "kind": "resources",
+              "data": "SeniorThreePastPapers.json",
+              "count": 140,
+              "status": "available"
+            }
+          },
+          "Accounts": {
+            "SeniorThreeAccountsPastPapers.html": {
+              "kind": "legacy",
+              "data": "7e86a0f5ee96e4c6.json",
+              "count": 1,
+              "status": "available"
+            }
+          },
+          "Agriculture": {
+            "SeniorThreeAgriculturePastPapers.html": {
+              "kind": "legacy",
+              "data": "8898f69f48fc73f9.json",
+              "count": 8,
+              "status": "available"
+            }
+          },
+          "All": {
+            "SeniorThreeAllPastPapers.html": {
+              "kind": "legacy",
+              "data": "3dc384fefc2c013d.json",
+              "count": 2,
+              "status": "available"
+            }
+          },
+          "Art": {
+            "SeniorThreeArtPastPapers.html": {
+              "kind": "legacy",
+              "data": "7e8b19355700c7ba.json",
+              "count": 1,
+              "status": "available"
+            }
+          },
+          "Biology": {
+            "SeniorThreeBiologyPastPapers.html": {
+              "kind": "legacy",
+              "data": "81d99474b5552832.json",
+              "count": 52,
+              "status": "available"
+            }
+          },
+          "CRE": {
+            "SeniorThreeCREPastPapers.html": {
+              "kind": "legacy",
+              "data": "d617ab5e5325a4b5.json",
+              "count": 5,
+              "status": "available"
+            }
+          },
+          "Chemistry": {
+            "SeniorThreeChemistryPastPapers.html": {
+              "kind": "legacy",
+              "data": "493d15e8bc0af9ec.json",
+              "count": 49,
+              "status": "available"
+            }
+          },
+          "Commerce": {
+            "SeniorThreeCommercePastPapers.html": {
+              "kind": "legacy",
+              "data": "509157d644982543.json",
+              "count": 5,
+              "status": "available"
+            }
+          },
+          "English": {
+            "SeniorThreeEnglishPastPapers.html": {
+              "kind": "legacy",
+              "data": "105c2d498fcad621.json",
+              "count": 36,
+              "status": "available"
+            }
+          },
+          "Entrepreneurship": {
+            "SeniorThreeEntrepreneurshipPastPapers.html": {
+              "kind": "legacy",
+              "data": "80006e8dffdb8169.json",
+              "count": 9,
+              "status": "available"
+            }
+          },
+          "FN": {
+            "SeniorThreeFNPastPapers.html": {
+              "kind": "legacy",
+              "data": "e2b0656e02dc302c.json",
+              "count": 1,
+              "status": "available"
+            }
+          },
+          "Geography": {
+            "SeniorThreeGeographyPastPapers.html": {
+              "kind": "legacy",
+              "data": "91bfb058d2dc0942.json",
+              "count": 14,
+              "status": "available"
+            }
+          },
+          "History": {
+            "SeniorThreeHistoryPastPapers.html": {
+              "kind": "legacy",
+              "data": "25370e0d867c2757.json",
+              "count": 8,
+              "status": "available"
+            }
+          },
+          "ICT": {
+            "SeniorThreeICTPastPapers.html": {
+              "kind": "legacy",
+              "data": "215004f751a39efd.json",
+              "count": 18,
+              "status": "available"
+            }
+          },
+          "IRE": {
+            "SeniorThreeIREPastPapers.html": {
+              "kind": "legacy",
+              "data": "14c8932ed21cbfbb.json",
+              "count": 5,
+              "status": "available"
+            }
+          },
+          "Kiswahili": {
+            "SeniorThreeKiswahiliPastPapers.html": {
+              "kind": "legacy",
+              "data": "c75a9cbd391b63fc.json",
+              "count": 3,
+              "status": "available"
+            }
+          },
+          "Literature": {
+            "SeniorThreeLiteraturePastPapers.html": {
+              "kind": "legacy",
+              "data": "0088c169858dbedc.json",
+              "count": 9,
+              "status": "available"
+            }
+          },
+          "Luganda": {
+            "SeniorThreeLugandaPastPapers.html": {
+              "kind": "legacy",
+              "data": "33bb36cd712f2437.json",
+              "count": 3,
+              "status": "available"
+            }
+          },
+          "Mathematics": {
+            "SeniorThreeMathematicsPastPapers.html": {
+              "kind": "legacy",
+              "data": "28d0b8876efc8da9.json",
+              "count": 32,
+              "status": "available"
+            }
+          },
+          "Physics": {
+            "SeniorThreePhysicsPastPapers.html": {
+              "kind": "legacy",
+              "data": "3cdcad64a6ddbe10.json",
+              "count": 34,
+              "status": "available"
+            }
+          },
+          "TD": {
+            "SeniorThreeTDPastPapers.html": {
+              "kind": "legacy",
+              "data": "f2ac158a521b25bc.json",
+              "count": 4,
+              "status": "available"
+            }
+          }
+        }
+      },
+      "SeniorTwo": {
+        "LessonNotes": {
+          "all": {
+            "SeniorTwoLessonNotes.html": {
+              "kind": "resources",
+              "data": "SeniorTwoLessonNotes.json",
+              "count": 20,
+              "status": "available"
+            }
+          },
+          "Agriculture": {
+            "SeniorTwoAgricultureLessonNotes.html": {
+              "kind": "legacy",
+              "data": "fbe1e39d0989e1a5.json",
+              "count": 18,
+              "status": "available"
+            }
+          },
+          "Art": {
+            "SeniorTwoArtLessonNotes.html": {
+              "kind": "legacy",
+              "data": "6ae16fc25dc89abf.json",
+              "count": 10,
+              "status": "available"
+            }
+          },
+          "Biology": {
+            "SeniorTwoBiologyLessonNotes.html": {
+              "kind": "legacy",
+              "data": "ba30a4d24870c73f.json",
+              "count": 45,
+              "status": "available"
+            }
+          },
+          "CRE": {
+            "SeniorTwoCRELessonNotes.html": {
+              "kind": "legacy",
+              "data": "cfa4240a67d4ff66.json",
+              "count": 13,
+              "status": "available"
+            }
+          },
+          "Chemistry": {
+            "SeniorTwoChemistryLessonNotes.html": {
+              "kind": "legacy",
+              "data": "521954f2fbc9aab6.json",
+              "count": 34,
+              "status": "available"
+            }
+          },
+          "Chinese": {
+            "SeniorTwoChineseLessonNotes.html": {
+              "kind": "legacy",
+              "data": "c41abe0faca00daa.json",
+              "count": 1,
+              "status": "available"
+            }
+          },
+          "Commerce": {
+            "SeniorTwoCommerceLessonNotes.html": {
+              "kind": "legacy",
+              "data": "ca0d254ee307c755.json",
+              "count": 4,
+              "status": "available"
+            }
+          },
+          "English": {
+            "SeniorTwoEnglishLessonNotes.html": {
+              "kind": "legacy",
+              "data": "646d9de0653c225d.json",
+              "count": 9,
+              "status": "available"
+            }
+          },
+          "Entrepreneurship": {
+            "SeniorTwoEntrepreneurshipLessonNotes.html": {
+              "kind": "legacy",
+              "data": "5cf8148bbc1d6497.json",
+              "count": 7,
+              "status": "available"
+            }
+          },
+          "FN": {
+            "SeniorTwoFNLessonNotes.html": {
+              "kind": "legacy",
+              "data": "83a6be7d38eaea93.json",
+              "count": 7,
+              "status": "available"
+            }
+          },
+          "French": {
+            "SeniorTwoFrenchLessonNotes.html": {
+              "kind": "legacy",
+              "data": "f26f2f18230d898b.json",
+              "count": 1,
+              "status": "available"
+            }
+          },
+          "Geography": {
+            "SeniorTwoGeographyLessonNotes.html": {
+              "kind": "legacy",
+              "data": "ba46843196d87391.json",
+              "count": 37,
+              "status": "available"
+            }
+          },
+          "German": {
+            "SeniorTwoGermanLessonNotes.html": {
+              "kind": "legacy",
+              "data": "3cd9248710a79aa1.json",
+              "count": 2,
+              "status": "available"
+            }
+          },
+          "History": {
+            "SeniorTwoHistoryLessonNotes.html": {
+              "kind": "legacy",
+              "data": "6916f669aea90626.json",
+              "count": 44,
+              "status": "available"
+            }
+          },
+          "ICT": {
+            "SeniorTwoICTLessonNotes.html": {
+              "kind": "legacy",
+              "data": "a3812318aed116ef.json",
+              "count": 22,
+              "status": "available"
+            }
+          },
+          "IRE": {
+            "SeniorTwoIRELessonNotes.html": {
+              "kind": "legacy",
+              "data": "f69311af0574af52.json",
+              "count": 9,
+              "status": "available"
+            }
+          },
+          "Kiswahili": {
+            "SeniorTwoKiswahiliLessonNotes.html": {
+              "kind": "legacy",
+              "data": "fca9f508034dfdf7.json",
+              "count": 5,
+              "status": "available"
+            }
+          },
+          "Latin": {
+            "SeniorTwoLatinLessonNotes.html": {
+              "kind": "legacy",
+              "data": "97943471f0d13533.json",
+              "count": 2,
+              "status": "available"
+            }
+          },
+          "Literature": {
+            "SeniorTwoLiteratureLessonNotes.html": {
+              "kind": "legacy",
+              "data": "64bc8f3051b68895.json",
+              "count": 10,
+              "status": "available"
+            }
+          },
+          "Luganda": {
+            "SeniorTwoLugandaLessonNotes.html": {
+              "kind": "legacy",
+              "data": "05c1044b14c9b413.json",
+              "count": 10,
+              "status": "available"
+            }
+          },
+          "Mathematics": {
+            "SeniorTwoMathematicsLessonNotes.html": {
+              "kind": "legacy",
+              "data": "7e5972d1ebddf225.json",
+              "count": 27,
+              "status": "available"
+            }
+          },
+          "Physics": {
+            "SeniorTwoPhysicsLessonNotes.html": {
+              "kind": "legacy",
+              "data": "8b684860c668387a.json",
+              "count": 51,
+              "status": "available"
+            }
+          },
+          "SignLanguage": {
+            "SeniorTwoSignLanguageLessonNotes.html": {
+              "kind": "legacy",
+              "data": "c405b10c699d9418.json",
+              "count": 1,
+              "status": "available"
+            }
+          },
+          "TechnicalDrawing": {
+            "SeniorTwoTechnicalDrawingLessonNotes.html": {
+              "kind": "legacy",
+              "data": "de62cfa70fdaab23.json",
+              "count": 1,
+              "status": "available"
+            }
+          },
+          "TechnologyandDesign": {
+            "SeniorTwoTechnologyandDesignLessonNotes.html": {
+              "kind": "legacy",
+              "data": "794449ae931aa531.json",
+              "count": 2,
+              "status": "available"
+            }
+          }
+        },
+        "PastPapers": {
+          "Agriculture": {
+            "SeniorTwoAgriculturePastPapers.html": {
+              "kind": "legacy",
+              "data": "88797df3f184d80c.json",
+              "count": 11,
+              "status": "available"
+            }
+          },
+          "All": {
+            "SeniorTwoAllPastPapers.html": {
+              "kind": "legacy",
+              "data": "c08a4472b4ab7f6d.json",
+              "count": 3,
+              "status": "available"
+            }
+          },
+          "Art": {
+            "SeniorTwoArtPastPapers.html": {
+              "kind": "legacy",
+              "data": "b95fed0809be4486.json",
+              "count": 4,
+              "status": "available"
+            }
+          },
+          "Biology": {
+            "SeniorTwoBiologyPastPapers.html": {
+              "kind": "legacy",
+              "data": "7dd71a844e5e013a.json",
+              "count": 31,
+              "status": "available"
+            }
+          },
+          "CRE": {
+            "SeniorTwoCREPastPapers.html": {
+              "kind": "legacy",
+              "data": "8e2799da0944a245.json",
+              "count": 8,
+              "status": "available"
+            }
+          },
+          "Chemistry": {
+            "SeniorTwoChemistryPastPapers.html": {
+              "kind": "legacy",
+              "data": "ef387fd9b4ed4e5e.json",
+              "count": 35,
+              "status": "available"
+            }
+          },
+          "Chinese": {
+            "SeniorTwoChinesePastPapers.html": {
+              "kind": "legacy",
+              "data": "f611cbbaba3847d5.json",
+              "count": 0,
+              "status": "unavailable"
+            }
+          },
+          "Commerce": {
+            "SeniorTwoCommercePastPapers.html": {
+              "kind": "legacy",
+              "data": "99a1c590e5a957ad.json",
+              "count": 1,
+              "status": "available"
+            }
+          },
+          "English": {
+            "SeniorTwoEnglishPastPapers.html": {
+              "kind": "legacy",
+              "data": "cf4dc2b60cc9aeba.json",
+              "count": 24,
+              "status": "available"
+            }
+          },
+          "Entrepreneurship": {
+            "SeniorTwoEntrepreneurshipPastPapers.html": {
+              "kind": "legacy",
+              "data": "23039e6839901a54.json",
+              "count": 9,
+              "status": "available"
+            }
+          },
+          "FN": {
+            "SeniorTwoFNPastPapers.html": {
+              "kind": "legacy",
+              "data": "49c0208599f26c6d.json",
+              "count": 0,
+              "status": "unavailable"
+            }
+          },
+          "French": {
+            "SeniorTwoFrenchPastPapers.html": {
+              "kind": "legacy",
+              "data": "956922ef623638e9.json",
+              "count": 1,
+              "status": "available"
+            }
+          },
+          "Geography": {
+            "SeniorTwoGeographyPastPapers.html": {
+              "kind": "legacy",
+              "data": "81cb7e38346e50f6.json",
+              "count": 9,
+              "status": "available"
+            }
+          },
+          "History": {
+            "SeniorTwoHistoryPastPapers.html": {
+              "kind": "legacy",
+              "data": "c27887422e253291.json",
+              "count": 11,
+              "status": "available"
+            }
+          },
+          "ICT": {
+            "SeniorTwoICTPastPapers.html": {
+              "kind": "legacy",
+              "data": "00751c6b39481617.json",
+              "count": 15,
+              "status": "available"
+            }
+          },
+          "IRE": {
+            "SeniorTwoIREPastPapers.html": {
+              "kind": "legacy",
+              "data": "4432588622c7dc0a.json",
+              "count": 3,
+              "status": "available"
+            }
+          },
+          "Kiswahili": {
+            "SeniorTwoKiswahiliPastPapers.html": {
+              "kind": "legacy",
+              "data": "e1c429c649c6da7f.json",
+              "count": 3,
+              "status": "available"
+            }
+          },
+          "Literature": {
+            "SeniorTwoLiteraturePastPapers.html": {
+              "kind": "legacy",
+              "data": "dbe4b3a7b8684ccd.json",
+              "count": 3,
+              "status": "available"
+            }
+          },
+          "Luganda": {
+            "SeniorTwoLugandaPastPapers.html": {
+              "kind": "legacy",
+              "data": "f682788020f7c3f0.json",
+              "count": 4,
+              "status": "available"
+            }
+          },
+          "Mathematics": {
+            "SeniorTwoMathematicsPastPapers.html": {
+              "kind": "legacy",
+              "data": "efe97a2fdd0d4e36.json",
+              "count": 37,
+              "status": "available"
+            }
+          },
+          "Music": {
+            "SeniorTwoMusicPastPapers.html": {
+              "kind": "legacy",
+              "data": "1236a5723a34c6c4.json",
+              "count": 1,
+              "status": "available"
+            }
+          },
+          "all": {
+            "SeniorTwoPastPapers.html": {
+              "kind": "legacy",
+              "data": "184c6d546ef2bd66.json",
+              "count": 125,
+              "status": "available"
+            }
+          },
+          "PhysicalEducation": {
+            "SeniorTwoPhysicalEducationPastPapers.html": {
+              "kind": "legacy",
+              "data": "899fd5831b1f30d3.json",
+              "count": 3,
+              "status": "available"
+            }
+          },
+          "Physics": {
+            "SeniorTwoPhysicsPastPapers.html": {
+              "kind": "legacy",
+              "data": "29b1e363898f5f24.json",
+              "count": 45,
+              "status": "available"
+            }
+          },
+          "TD": {
+            "SeniorTwoTDPastPapers.html": {
+              "kind": "legacy",
+              "data": "888d6fbe075a317d.json",
+              "count": 6,
+              "status": "available"
+            }
+          }
+        }
+      }
+    }
+  }
+}

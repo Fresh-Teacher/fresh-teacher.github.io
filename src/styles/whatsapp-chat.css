@@ -1,0 +1,80 @@
+/* Shared WhatsApp chat widget — captured homepage styles, scoped to the shared component. */
+.whatsapp-chat .africavotes-name { font-size: 16px; font-weight: 600; padding-bottom: 0px; margin-bottom: 0px; line-height: 0.5; }
+.whatsapp-chat #africavotes-chat { position: fixed; width: 350px; border-radius: 10px; box-shadow: rgba(32, 33, 36, 0.28) 0px 1px 15px; bottom: 90px; right: 30px; overflow: hidden; z-index: 2003; animation-name: showchat; animation-duration: 1s; transform: scale(1); box-sizing: border-box !important; outline: none !important; }
+.whatsapp-chat a.africaVotesChat { background: rgb(255, 255, 255); color: rgb(64, 64, 64); position: fixed; display: flex; align-items: center; justify-content: center; z-index: 2002; bottom: 8px; right: 8px; width: 44px; height: 44px; padding: 0; border-radius: 50%; box-shadow: rgba(32, 33, 36, 0.28) 0px 1px 15px; text-decoration: none; }
+.whatsapp-chat a.africaVotesChat svg { width: 26px; height: 26px; margin: 0; }
+.whatsapp-chat .header-chat { background: rgb(9, 94, 84); color: rgb(255, 255, 255); padding: 20px; text-align: left; }
+.whatsapp-chat .header-chat p { font-size: 14px; line-height: 1.7; margin: 0px; }
+.whatsapp-chat .info-avatar { position: relative; }
+.whatsapp-chat .info-avatar img { border-radius: 100%; width: 50px; float: left; margin: 0px 10px 0px 0px; }
+.whatsapp-chat #get-label, .whatsapp-chat #get-nama { color: rgb(255, 255, 255); }
+.whatsapp-chat .blanter-msg { color: rgb(68, 68, 68); padding: 20px; font-size: 12.5px; text-align: center; background: rgb(238, 238, 238); border-top: 1px solid rgb(221, 221, 221); }
+.whatsapp-chat textarea#chat-input { border-width: medium; border-style: none; border-color: currentcolor; border-image: none; font-family: Arial, sans-serif; width: 100%; height: 42px; outline: none; resize: none; padding: 10px; font-size: 14px; }
+.whatsapp-chat a#send-it { width: 30px; font-weight: 700; padding: 7px 7px 0px; background: rgb(238, 238, 238); }
+.whatsapp-chat a#send-it svg { fill: rgb(166, 166, 166); height: 24px; width: 24px; }
+.whatsapp-chat .start-chat .blanter-msg { display: flex; }
+.whatsapp-chat #get-number { display: none; }
+.whatsapp-chat a.close-chat { position: absolute; top: 5px; right: 15px; color: rgb(255, 255, 255); font-size: 30px; text-decoration: none; cursor: pointer; }
+.whatsapp-chat .hide { display: none; opacity: 1; }
+.whatsapp-chat .africavotes-chat-body { padding: 20px 20px 20px 10px; background-color: rgb(230, 221, 212); position: relative; }
+.whatsapp-chat .africavotes-chat-body::before { display: block; position: absolute; content: ""; left: 0px; top: 0px; height: 100%; width: 100%; z-index: 0; opacity: 0.08; background-image: url("/__l5e/assets-v1/089e4c7c-2e24-40c1-a140-141bf3979d3b/3e52e2e60ddc6336.webp"); }
+.whatsapp-chat .dAbFpq { display: flex; z-index: 1; }
+.whatsapp-chat .eJJEeC { background-color: rgb(255, 255, 255); width: 52.5px; height: 32px; border-radius: 16px; display: flex; justify-content: center; align-items: center; margin-left: 10px; opacity: 0; transition: 0.1s; z-index: 1; box-shadow: rgba(0, 0, 0, 0.13) 0px 1px 0.5px; }
+.whatsapp-chat .hFENyl { position: relative; display: flex; }
+.whatsapp-chat .ixsrax, .whatsapp-chat .dRvxoz, .whatsapp-chat .kXBtNt { height: 5px; width: 5px; margin: 0px 2px; border-radius: 50%; display: inline-block; position: relative; top: 0px; background-color: rgb(182, 181, 186); animation: wa-typing-dot 1.2s ease-in-out infinite; }
+.whatsapp-chat .dRvxoz { animation-delay: 0.2s; }
+.whatsapp-chat .kXBtNt { animation-delay: 0.4s; }
+@keyframes wa-typing-dot {
+  0%, 60%, 100% { transform: translateY(0); opacity: 0.5; }
+  30% { transform: translateY(-3px); opacity: 1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .whatsapp-chat .ixsrax, .whatsapp-chat .dRvxoz, .whatsapp-chat .kXBtNt { animation: none; }
+}
+.whatsapp-chat .kAZgZq { padding: 7px 14px 6px; background-color: rgb(255, 255, 255); border-radius: 0px 8px 8px; position: relative; transition: 0.3s; opacity: 0; transform-origin: center top 0px; z-index: 2; box-shadow: rgba(0, 0, 0, 0.13) 0px 1px 0.5px; margin-top: 4px; margin-left: -54px; max-width: calc(100% - 66px); }
+.whatsapp-chat .kAZgZq::before { position: absolute; background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAmCAMAAADp2asXAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAACQUExURUxpccPDw9ra2m9vbwAAAAAAADExMf///wAAABoaGk9PT7q6uqurqwsLCycnJz4+PtDQ0JycnIyMjPf3915eXvz8/E9PT/39/RMTE4CAgAAAAJqamv////////r6+u/v7yUlJeXl5f///5ycnOXl5XNzc/Hx8f///xUVFf///+zs7P///+bm5gAAAM7Ozv///2fVensAAAAvdFJOUwCow1cBCCnqAhNAnY0WIDW2f2/hSeo99g1lBYT87vDXG8/6d8oL4sgM5szrkgl660OiZwAAAHRJREFUKM/ty7cSggAABNFVUQFzwizmjPz/39k4YuFWtm55bw7eHR6ny63+alnswT3/rIDzUSC7CrAziPYCJCsB+gbVkgDtVIDh+DsE9OTBpCtAbSBAZSEQNgWIygJ0RgJMDWYNAdYbAeKtAHODlkHIv997AkLqIVOXVU84AAAAAElFTkSuQmCC"); background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; content: ""; top: 0px; left: -12px; width: 12px; height: 19px; }
+.whatsapp-chat .iSpIQi { font-size: 14px; line-height: 19px; margin-top: 4px; color: rgb(17, 17, 17); text-align: left; }
+@media screen and (max-width: 480px) {
+  .whatsapp-chat #africavotes-chat { width: auto; left: 5%; right: 5%; font-size: 80%; }
+}
+@keyframes showchat {
+  0% { transform: scale(0); opacity: 0; }
+}
+
+/* Gentle attention ripple: two soft green rings, then a long rest; pauses when chat is open or reduced motion is preferred. */
+.whatsapp-chat a.africaVotesChat::before, .whatsapp-chat a.africaVotesChat::after { content: ""; position: absolute; inset: 0; border-radius: 50%; box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.55); animation: wa-ripple 6s ease-out infinite; pointer-events: none; z-index: -1; }
+.whatsapp-chat a.africaVotesChat::after { animation-delay: 0.6s; }
+.whatsapp-chat a.africaVotesChat[aria-expanded="true"]::before, .whatsapp-chat a.africaVotesChat[aria-expanded="true"]::after { animation: none; }
+@keyframes wa-ripple {
+  0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.55); }
+  30% { box-shadow: 0 0 0 14px rgba(37, 211, 102, 0); }
+  100% { box-shadow: 0 0 0 14px rgba(37, 211, 102, 0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .whatsapp-chat a.africaVotesChat::before, .whatsapp-chat a.africaVotesChat::after { animation: none; }
+}
+/* Stack the greeting and follow-up messages vertically like a real chat. */
+.whatsapp-chat .dAbFpq { flex-direction: column; align-items: flex-start; }
+.whatsapp-chat .dAbFpq .kAZgZq { margin-left: 10px; }
+/* End-to-end encryption notice bubble, styled like WhatsApp's. */
+.whatsapp-chat .encryption-notice { position: relative; z-index: 1; align-self: center; display: flex; gap: 6px; align-items: flex-start; background-color: #fdf3c6; color: #54656f; font-size: 12px; line-height: 16px; border-radius: 8px; padding: 6px 10px; margin: 6px 12px 8px; box-shadow: rgba(0, 0, 0, 0.13) 0px 1px 0.5px; text-align: center; }
+.whatsapp-chat .encryption-notice .fa-lock { margin-top: 1px; font-size: 11px; }
+.whatsapp-chat .encryption-learn-more { background: none; border: none; padding: 0; font: inherit; font-weight: 600; color: #54656f; cursor: pointer; }
+.whatsapp-chat .encryption-learn-more:hover { text-decoration: underline; }
+
+/* Encryption info modal, matching WhatsApp's "Your chats and calls are private" sheet. */
+.whatsapp-chat .encryption-modal { position: absolute; inset: 0; z-index: 30; background-color: #ffffff; border-radius: 12px; display: flex; flex-direction: column; animation: encryption-modal-in 0.25s ease-out; }
+@keyframes encryption-modal-in { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+.whatsapp-chat .encryption-modal-close { position: absolute; top: 12px; left: 14px; background: none; border: none; font-size: 22px; line-height: 1; color: #54656f; cursor: pointer; padding: 4px; }
+.whatsapp-chat .encryption-modal-scroll { overflow-y: auto; padding: 44px 22px 22px; text-align: center; color: #111111; }
+.whatsapp-chat .encryption-illustration { width: 150px; height: auto; margin: 0 auto 12px; display: block; }
+.whatsapp-chat .encryption-modal-scroll h3 { font-size: 19px; font-weight: 700; margin: 0 0 12px; color: #111111; }
+.whatsapp-chat .encryption-modal-scroll p { font-size: 13.5px; line-height: 20px; color: #3b4a54; margin: 0 0 16px; }
+.whatsapp-chat .encryption-modal-scroll ul { list-style: none; margin: 0 0 20px; padding: 0; text-align: left; }
+.whatsapp-chat .encryption-modal-scroll li { display: flex; align-items: center; gap: 14px; font-size: 14px; color: #3b4a54; padding: 7px 4px; }
+.whatsapp-chat .encryption-modal-scroll li .fa-solid { width: 20px; text-align: center; color: #54656f; font-size: 15px; }
+.whatsapp-chat .encryption-modal-link { display: block; background-color: #111111; color: #ffffff; border-radius: 24px; padding: 12px; font-size: 15px; font-weight: 600; text-decoration: none; }
+.whatsapp-chat .encryption-modal-link:hover { background-color: #2a2a2a; }
+@media (prefers-reduced-motion: reduce) {
+  .whatsapp-chat .encryption-modal { animation: none; }
+}

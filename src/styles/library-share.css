@@ -1,0 +1,11 @@
+/* Library share menu: same look as the document share menu, sliding down into view. */
+.library-share-popup.dg-share-popup { width:304px; max-width:calc(100vw - 24px); padding:10px; border-radius:8px; font-family:var(--font-sans); background:var(--card); color:var(--foreground); border-color:var(--catalog-border); letter-spacing:0; z-index:200; }
+.library-share-popup [role="menuitem"] { min-height:52px; padding:12px 14px; gap:14px; font-size:18px; line-height:1.4; cursor:pointer; }
+.library-share-popup [role="menuitem"] > svg { width:24px; height:24px; }
+.library-share-popup [role="menuitem"][data-highlighted] { background:var(--catalog-active); color:var(--catalog-link); }
+.library-share-popup .dg-share-head { display:flex; align-items:center; justify-content:space-between; padding:2px 4px 6px 14px; font-size:15px; font-weight:600; color:var(--muted-foreground); }
+.library-share-popup .dg-share-close { display:inline-flex; align-items:center; justify-content:center; width:36px; height:36px; border-radius:6px; color:var(--foreground); background:transparent; cursor:pointer; }
+.library-share-popup .dg-share-close:hover, .library-share-popup .dg-share-close:focus-visible { background:var(--catalog-active); color:var(--catalog-link); }
+.library-share-popup[data-state="open"] { animation:library-share-slideDown 450ms cubic-bezier(.22,1,.36,1) backwards; }
+@keyframes library-share-slideDown { from { opacity:0; transform:translate3d(0,-40px,0); } to { opacity:1; transform:none; } }
+@media(prefers-reduced-motion:reduce) { .library-share-popup[data-state] { animation:none !important; } }

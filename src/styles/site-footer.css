@@ -1,0 +1,32 @@
+.site-footer{background:var(--footer-surface);border-top:1px solid var(--footer-border);margin:0;font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:16px;line-height:1.5;color:var(--footer-foreground);text-align:left;position:relative;z-index:1;letter-spacing:0}
+.site-footer *{box-sizing:border-box}
+.site-footer__inner{max-width:1200px;margin:0 auto;padding:32px 24px 24px}
+.site-footer__grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 24px}
+.site-footer__grid>div{min-width:0}
+.site-footer__brand,.site-footer__contact{grid-column:1/-1}
+.site-footer h4{font-size:16px;line-height:1.5;font-weight:700;text-align:left;margin:0 0 8px;color:var(--footer-foreground)}
+.site-footer__social{display:flex;flex-wrap:wrap;gap:8px}
+.site-footer a{border:0!important;background:none;padding:0;box-shadow:none!important;outline-offset:4px;color:var(--footer-muted);text-decoration:none;transition:color .2s,background-color .2s;letter-spacing:0}
+.site-footer .site-footer__social a{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;flex:none;border-radius:50%;background:var(--footer-social-surface);color:var(--footer-foreground)}
+.site-footer__social svg{width:20px;height:20px}
+.site-footer__list{display:flex;flex-direction:column;gap:2px}
+.site-footer__list a{display:flex;align-items:center;gap:10px;min-height:36px;font-size:15px;line-height:1.5;overflow-wrap:anywhere}
+.site-footer__list a span{min-width:0}
+.site-footer__list svg{width:18px;height:18px;flex:none;color:var(--footer-accent)}
+.site-footer a:hover{color:var(--footer-accent)}
+.site-footer .site-footer__social a:hover{background:var(--footer-accent);color:var(--footer-surface)}
+.site-footer__bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px;border-top:1px solid var(--footer-border);margin-top:28px;padding-top:20px;font-size:13px;line-height:1.65;color:var(--footer-muted)}
+.site-footer__bottom p{margin:0}
+@media(max-width:699px){.site-footer__bottom{flex-direction:column;align-items:center;text-align:center}}
+.site-footer__heart{display:inline-block;animation:site-footer-heart 1.5s ease-in-out infinite}
+@keyframes site-footer-heart{0%,100%{transform:scale(1)}50%{transform:scale(1.2)}}
+@media(min-width:700px){.site-footer__brand,.site-footer__contact{grid-column:auto}.site-footer__inner{padding:36px 32px 24px}.site-footer__grid{gap:32px}}
+@media(min-width:1200px){.site-footer__grid{grid-template-columns:1.3fr 1.5fr .8fr .8fr;gap:24px}}
+@media(max-width:399px){.site-footer__inner{padding-inline:20px}.site-footer__contact .site-footer__list a{font-size:14px}}
+@media(prefers-reduced-motion:reduce){.site-footer__heart{animation:none}.site-footer a{transition:none}}
+.info-page{max-width:56rem;margin:0 auto;padding:2rem 1rem 3rem;font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;color:#0f172a;line-height:1.65}
+.info-page__back{display:inline-block;margin-bottom:1.5rem;color:#ea580c;font-weight:600;text-decoration:none}
+.info-page h1{font-size:2rem;font-weight:700;margin:0 0 1.5rem}
+.info-page h2{font-size:1.25rem;font-weight:600;margin:1.75rem 0 .5rem}
+.info-page p,.info-page li{color:#334155}
+.info-page ul{list-style:disc;padding-left:1.5rem;margin:.5rem 0}

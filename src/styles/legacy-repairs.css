@@ -1,0 +1,86 @@
+/* Original styles remain authoritative; these only repair controls and overflow. */
+.legacy-page { min-height: 100vh; max-width: 100%; overflow-x: clip; }
+/* Selection pages end at their content, not at a legacy viewport/footer spacer. */
+.legacy-page.legacy-selection { min-height: 0; }
+.legacy-selection #page-wrapper { min-height: 0 !important; padding-bottom: 16px; }
+.legacy-selection .page-wrapper { min-height: 0; }
+.legacy-selection #page-wrapper > .container-fluid > br { display: none; }
+.legacy-selection #page-wrapper [class*="col-"]:has(> .panel-default:not(:has(*))) { display: none; }
+.legacy-selection #page-wrapper .panel > .tab-content ~ br { display: none; }
+.legacy-selection #page-wrapper .panel { margin-bottom: 0; }
+.legacy-page .legacy-control { font: inherit; letter-spacing: normal; height: auto; }
+.legacy-page .africaVotesChat { height: auto; }
+.legacy-page #page-wrapper .col-lg-12 { max-width: 100%; }
+.legacy-page #page-wrapper .row > [class*="col-"] { min-width: 0; width: 100%; flex-shrink: 1; box-sizing: border-box; }
+.legacy-page #page-wrapper .footer { left: 0; position: relative; }
+.legacy-page .card h3 { overflow-wrap: anywhere; }
+.legacy-page .button { display: flex; flex-wrap: wrap; gap: 0; }
+.legacy-page .legacy-control.btn { border-radius: .25rem; }
+.legacy-page .legacy-panel-open { display: block !important; visibility: visible !important; }
+.legacy-page .legacy-dropdown-closed { display: none !important; }
+.legacy-selection .necta1 { display: flex; flex-direction: column; align-items: stretch; flex-wrap: nowrap; gap: 12px; padding: 12px 16px; box-sizing: border-box; }
+.legacy-selection .necta1 > .btn-group { display: flex; flex-direction: column; width: 100%; min-width: 0; margin: 0; vertical-align: top; }
+.legacy-selection .necta1 > .btn-group > .legacy-dropdown-trigger { display: flex; align-items: center; justify-content: flex-start; gap: 8px; width: 100%; min-height: 44px; padding-inline: 16px; white-space: normal; text-align: left; }
+.legacy-selection .necta1 > .btn-group > .legacy-dropdown-trigger > b { min-width: 0; overflow-wrap: anywhere; }
+/* Use the existing expanded state for both the arrow and active-menu treatment. */
+.legacy-selection .necta1 .legacy-dropdown-trigger::after { content: ''; display: block; flex: 0 0 10px; width: 10px; height: 6px; margin-left: auto; border: 0; background: currentColor; clip-path: polygon(0 0, 100% 0, 50% 100%); transform: rotate(0deg); transition: transform 180ms ease; }
+.legacy-selection .necta1 .legacy-dropdown-trigger .caret { display: none; }
+.legacy-selection .necta1 .legacy-dropdown-trigger[aria-expanded='true']::after { transform: rotate(180deg); }
+.legacy-selection .necta1 .legacy-dropdown-trigger[aria-expanded='true'] { background-color: var(--catalog-active) !important; color: var(--catalog-link) !important; border-color: var(--catalog-link) !important; box-shadow: 0 0 0 2px var(--catalog-active); }
+.legacy-page .class-resource-empty { display: block; padding: 8px 16px; white-space: normal; }
+.legacy-page .class-resource-featured { white-space: nowrap; max-width: 100%; }
+.legacy-page .class-resource-new { display: inline-grid; place-items: center; vertical-align: middle; flex: 0 0 36px; width: 36px; height: 24px; background: var(--resource-new-burst); color: var(--resource-new-text); clip-path: polygon(50% 0, 61% 20%, 82% 5%, 79% 30%, 100% 35%, 85% 50%, 100% 68%, 77% 72%, 82% 96%, 60% 81%, 50% 100%, 39% 80%, 17% 96%, 22% 72%, 0 65%, 15% 50%, 0 32%, 24% 29%, 19% 5%, 40% 20%); }
+.legacy-page .class-resource-featured > .legacy-dropdown-trigger { gap: 6px; }
+.legacy-page .class-resource-new > span { font-size: 9px; font-weight: 900; letter-spacing: 0; }
+/* Selection lists stay in normal flow; captured animation classes must not move tap targets. */
+.legacy-selection .necta1 .dropdown-menu { position: relative !important; float: none !important; clear: both; inset: auto !important; width: 100% !important; min-width: 0 !important; max-width: 100%; margin: 0; box-sizing: border-box; transform: none !important; animation: none !important; }
+.legacy-selection .necta1 .dropdown-menu > li > a { display: flex; align-items: center; min-height: 44px; padding: 10px 16px; box-sizing: border-box; white-space: normal; overflow-wrap: anywhere; }
+/* Reserve space for open lists in stacked menus so neither links nor triggers overlap. */
+@media (max-width: 767px) {
+  .legacy-page .necta1 .dropdown-menu.legacy-panel-open { position: relative !important; float: none !important; clear: both; inset: auto !important; width: 100% !important; min-width: 0 !important; max-width: 100%; box-sizing: border-box; transform: none !important; animation: none !important; }
+}
+.legacy-page .legacy-chat-open { display: block !important; transform: scale(1) !important; visibility: visible !important; }
+.legacy-page .legacy-chat-closed { display: none !important; }
+.legacy-page .spinner { display: none; }
+.legacy-page .preloader { display: none !important; }
+.legacy-page #wrapper { overflow: visible; }
+.legacy-page .nav-second-level,.legacy-page .nav-third-level { display: none; }
+.legacy-page .navbar { max-width: 100%; }
+.legacy-page .sidebar { top: 60px; max-height: calc(100vh - 60px); overflow-y: auto; }
+.legacy-page #page-wrapper { min-width: 0; margin-left: 0 !important; padding-top: 0; }
+.legacy-page #page-wrapper > .container-fluid { width: 100%; }
+.legacy-page #page-wrapper .row { max-width: 100%; margin-right: 0; margin-left: 0; }
+.legacy-page #page-wrapper .footer { right: 0; width: auto; }
+.legacy-page .legacy-door-open { width: 1px !important; pointer-events: none; }
+.legacy-page .legacy-rope-open { top: -171% !important; }
+.legacy-page .leftcurtain,.legacy-page .rightcurtain { transition: width 2s; z-index: 2000; cursor: pointer; }
+.legacy-page .rope { z-index: 2001; }
+.legacy-page #jumpToPage { width: 60px; }
+.legacy-page .legacy-sidebar-closed { display: none !important; }
+body:has(.legacy-page.legacy-sidebar-hidden) #page-wrapper { margin-left: 0 !important; }
+@media (max-width: 575px) {
+  .legacy-page .navbar-brand { white-space: normal; }
+  .legacy-page .navbar-brand-title { font-size: 16px; }
+  .legacy-page #africavotes-chat { max-width: calc(100vw - 24px); right: 12px; }
+  .legacy-page .pagination-container { flex-wrap: wrap; }
+  .legacy-page .footer { height: auto !important; min-height: 100px; }
+  .legacy-page #page-wrapper { margin-left: 0 !important; }
+  .legacy-page .sidebar { display: none; }
+  .legacy-page.legacy-sidebar-mobile-open .sidebar { display: block; z-index: 200; }
+  .legacy-page .navbar-top-links { display: flex; flex-wrap: wrap; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .legacy-page * { animation: none !important; transition: none !important; }
+}/* Compact selection menus: evenly spaced dropdowns that fit one phone screen. */
+.legacy-selection .necta1 { gap: 8px; padding: 10px 16px; }
+.legacy-selection .necta1 > .btn-group, .legacy-selection .necta1 > .btn-group > .legacy-dropdown-trigger { margin: 0 !important; }
+.legacy-selection .necta1 > .btn-group > .legacy-dropdown-trigger { min-height: 48px; padding-block: 10px; }
+.legacy-selection .necta1 > :not(.btn-group) { display: none; }
+.legacy-selection #page-wrapper .tab-content { margin-top: 8px; }
+.legacy-selection #page-wrapper .tab-pane h1, .legacy-selection #page-wrapper .tab-pane h2, .legacy-selection #page-wrapper .tab-pane h3, .legacy-selection #page-wrapper .tab-pane h4, .legacy-selection #page-wrapper .tab-pane h5 { margin-top: 6px; margin-bottom: 8px; }
+.legacy-selection #page-wrapper > .container-fluid { padding-bottom: 6px; }
+
+/* NEW! badge blink: opacity-only so it stays cheap. */
+.class-resource-new > span { animation: resource-new-blink 1.2s steps(2, jump-none) infinite; }
+@keyframes resource-new-blink { 0% { opacity: 1; } 100% { opacity: .15; } }
+@media (prefers-reduced-motion: reduce) { .class-resource-new > span { animation: none; } }

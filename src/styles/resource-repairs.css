@@ -1,0 +1,17 @@
+/* Preserve the source family; only repair overflow and accessible controls. */
+.resource-page .source-control { font: inherit; letter-spacing: normal; height: auto; border-radius: 0; }
+.resource-page .card h3 { overflow-wrap: anywhere; }
+.resource-page .button { display: flex; flex-wrap: wrap; }
+.resource-page .btn.source-control { border-radius: .25rem; }
+.resource-page .pagination-button.source-control { border-radius: 5px; }
+.resource-page .floating-whatsapp img { width: 50px; height: 50px; }
+.resource-page #jumpToPage { width: 60px; }
+@media (max-width: 575px) {
+  .resource-page .navbar-brand { white-space: normal; }
+  .resource-page .navbar-brand-title { font-size: 16px; }
+  .resource-page .pagination-container { flex-wrap: wrap; }
+  .resource-page .footer { height: auto !important; min-height: 100px; margin-top: 24px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .resource-page * { animation: none !important; }
+}

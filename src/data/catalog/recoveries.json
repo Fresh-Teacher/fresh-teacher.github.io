@@ -1,0 +1,10 @@
+{
+  "PrimaryOneOralLiteratureLessonNotes.html": {
+    "source": "https://raw.githubusercontent.com/Fresh-Teacher/fresh-teacher.github.io/aa3eb3ad66276b6ebe3283fba16a0ea50f755caf/PrimaryOneOralLiteratureLessonNotes.json",
+    "items": [{ "title": "", "description": "Primary One", "price": 5000, "pdfUrl": "https://fresh-teacher.github.io/p1/P.1 Oral Literature Term II.pdf" }]
+  },
+  "SeniorFourEntreprenuershipPastPapers.html": {
+    "source": "https://raw.githubusercontent.com/Fresh-Teacher/fresh-teacher.github.io/b8d0ff510e6f087613a152454cf2b2a871edf3cd/SeniorFourEntrepreneurshipPastPapers.json",
+    "catalogPath": "SeniorFourEntrepreneurshipPastPapers.html"
+  }
+}
