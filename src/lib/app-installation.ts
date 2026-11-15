@@ -16,13 +16,6 @@ export function isInstalled() {
     (navigator as Navigator & { standalone?: boolean }).standalone === true;
 }
 
-export function supportsManualInstall() {
-  const ios = /iPad|iPhone|iPod/.test(navigator.userAgent) ||
-    (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
-  if (ios) return /Safari/.test(navigator.userAgent) && !/CriOS|FxiOS|EdgiOS|OPiOS/.test(navigator.userAgent);
-  // Chromium can offer installation from its menu before the native event arrives.
-  return /Chrome|Chromium|Edg\//.test(navigator.userAgent) && !/; wv\)|FBAN|FBAV|Instagram/.test(navigator.userAgent);
-}
 
 export interface BeforeInstallPromptEvent extends Event {
   prompt: () => Promise<void>;
