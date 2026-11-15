@@ -1,5 +1,4 @@
 export const INSTALLED_KEY = 'ft-app-installed';
-export const COOKIE_CLOSED_EVENT = 'ft-cookie-notice-closed';
 
 export function readPreference(key: string): string | null {
   try { return localStorage.getItem(key); } catch { return null; }

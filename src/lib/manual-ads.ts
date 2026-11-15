@@ -1,7 +1,7 @@
 import { shouldLoadAdsense } from './adsense';
 
-export function shouldRequestManualAd(enabled: boolean, hostname: string, consent: string | null, slot: unknown) {
-  return shouldLoadAdsense(enabled, hostname, consent) && typeof slot === 'string' && /^\d+$/.test(slot);
+export function shouldRequestManualAd(enabled: boolean, hostname: string, slot: unknown) {
+  return shouldLoadAdsense(enabled, hostname) && typeof slot === 'string' && /^\d+$/.test(slot);
 }
 
 export function showCatalogAd(index: number, count: number) {

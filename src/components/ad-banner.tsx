@@ -12,9 +12,7 @@ export function AdBanner({ placement, identity }: { placement: keyof typeof unit
     const node = element.current;
     if (!node) return;
     const request = () => {
-      let consent: string | null;
-      try { consent = localStorage.getItem('ft-cookie-consent'); } catch { return; }
-      if (!shouldRequestManualAd(import.meta.env['VITE_ENABLE_ADSENSE'] === 'true', location.hostname, consent, slot)) return;
+      if (!shouldRequestManualAd(import.meta.env['VITE_ENABLE_ADSENSE'] === 'true', location.hostname, slot)) return;
       const script = document.getElementById('ft-adsense') as HTMLScriptElement | null;
       if (!script || !node.isConnected || node.getBoundingClientRect().width === 0) return;
       requestAdOnce(node, () => {
@@ -28,9 +26,7 @@ export function AdBanner({ placement, identity }: { placement: keyof typeof unit
       if (entries.some(entry => entry.isIntersecting)) request();
     }, { rootMargin: '200px' });
     observer.observe(node);
-    window.addEventListener('ft-cookie-consent-changed', request);
-    // The consent bootstrap inserts the script before this event listener runs.
-    return () => { observer.disconnect(); window.removeEventListener('ft-cookie-consent-changed', request); };
+    return () => { observer.disconnect(); };
   }, [slot, identity]);
 
   return <aside className="library-ad" aria-label="Advertisement">
