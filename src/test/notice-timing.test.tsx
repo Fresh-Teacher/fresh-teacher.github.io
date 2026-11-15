@@ -13,16 +13,6 @@ beforeEach(() => {
 afterEach(() => { cleanup(); vi.useRealTimers(); vi.restoreAllMocks(); localStorage.clear(); });
 const advance = (ms: number) => act(() => { vi.advanceTimersByTime(ms); });
 
-it.each(['Accept all', 'Essential only'])('remembers %s after leaving and returning', choice => {
-  localStorage.setItem('ft-app-installed', '1');
-  const first = render(<VisitorNotices />);
-  fireEvent.click(screen.getByRole('button', { name: choice }));
-  advance(420);
-  first.unmount();
-  render(<VisitorNotices />);
-  expect(screen.queryByRole('dialog', { name: 'Cookie notice' })).toBeNull();
-});
-
 it('remembers a completed installation on returning browser visits', () => {
   const first = render(<VisitorNotices />);
   act(() => { window.dispatchEvent(new Event('appinstalled')); });
@@ -41,6 +31,6 @@ it('offers installation again only after the seven-day snooze ends', () => {
   first.unmount();
   vi.setSystemTime(now + 7 * 24 * 60 * 60 * 1000);
   render(<VisitorNotices />);
+  act(() => { window.dispatchEvent(Object.assign(new Event('beforeinstallprompt'), { prompt: vi.fn(), userChoice: Promise.resolve({ outcome: 'dismissed' }) })); });
   expect(screen.getByRole('dialog', { name: 'Install the Fresh App' })).toBeInTheDocument();
-  expect(screen.queryByRole('dialog', { name: 'Cookie notice' })).toBeNull();
 });

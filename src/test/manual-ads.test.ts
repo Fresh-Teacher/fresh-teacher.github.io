@@ -20,17 +20,15 @@ describe('manual ad safeguards', () => {
     expect(showCatalogAd(0, 0)).toBe(false);
   });
   it('never requests manual ads on previews or disabled builds', () => {
-    expect(shouldRequestManualAd(true, 'localhost', 'accepted', '1234567890')).toBe(false);
-    expect(shouldRequestManualAd(false, 'fresh-teacher.github.io', 'accepted', '1234567890')).toBe(false);
+    expect(shouldRequestManualAd(true, 'localhost', '1234567890')).toBe(false);
+    expect(shouldRequestManualAd(false, 'fresh-teacher.github.io', '1234567890')).toBe(false);
   });
-  it('requires accepted consent on production', () => {
-    expect(shouldRequestManualAd(true, 'fresh-teacher.github.io', 'essential', '1234567890')).toBe(false);
-    expect(shouldRequestManualAd(true, 'fresh-teacher.github.io', null, '1234567890')).toBe(false);
-    expect(shouldRequestManualAd(true, 'fresh-teacher.github.io', 'accepted', '1234567890')).toBe(true);
+  it('requests manual ads on production without a cookie choice', () => {
+    expect(shouldRequestManualAd(true, 'fresh-teacher.github.io', '1234567890')).toBe(true);
   });
   it('does not send requests for missing or invalid unit IDs', () => {
     for (const slot of [null, '', 'placeholder', '123x']) {
-      expect(shouldRequestManualAd(true, 'fresh-teacher.github.io', 'accepted', slot)).toBe(false);
+      expect(shouldRequestManualAd(true, 'fresh-teacher.github.io', slot)).toBe(false);
     }
   });
   it('queues each physical element only once, including after failure', () => {

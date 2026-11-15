@@ -36,9 +36,4 @@ describe('Install notice', () => {
     fireReady();
     expect(installNotice()).not.toBeInTheDocument();
   });
-
-  it('does not show the cookie notice for now', () => {
-    render(<VisitorNotices />);
-    expect(screen.queryByRole('dialog', { name: 'Cookie notice' })).not.toBeInTheDocument();
-  });
 });
