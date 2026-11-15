@@ -23,9 +23,7 @@ describe('manual ad safeguards', () => {
     expect(shouldRequestManualAd(true, 'localhost', '1234567890')).toBe(false);
     expect(shouldRequestManualAd(false, 'fresh-teacher.github.io', '1234567890')).toBe(false);
   });
-  it('requires accepted consent on production', () => {
-    expect(shouldRequestManualAd(true, 'fresh-teacher.github.io', '1234567890')).toBe(false);
-    expect(shouldRequestManualAd(true, 'fresh-teacher.github.io', '1234567890')).toBe(false);
+  it('requests manual ads on production without a cookie choice', () => {
     expect(shouldRequestManualAd(true, 'fresh-teacher.github.io', '1234567890')).toBe(true);
   });
   it('does not send requests for missing or invalid unit IDs', () => {

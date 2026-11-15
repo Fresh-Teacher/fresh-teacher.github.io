@@ -44,11 +44,11 @@ use the editor.
 - Keep GitHub Pages configuration separate from the Lovable runtime; prerender catalog URLs and convert directory output to literal legacy HTML files to preserve incoming links.
 - Deploy Pages only by manual workflow that materializes standalone source automatically; refuse unresolved media or missing page output so failed preparation cannot replace the live site.
 - Prefer dedicated TanStack shell files for Pages 404 output, falling back to the validated homepage when absent, so differing prerender layouts remain deployable.
-- Load AdSense only on the approved production hostname with the production flag and accepted cookie choice; previews must not generate ad traffic.
+- Load AdSense only on the approved production hostname with the production flag; previews must not generate ad traffic.
 
 ## Manual advertisements
 - Keep manual unit IDs in `src/data/ad-units.json` (null until supplied); render fixed-size labeled bands after eight catalog items and after document information, never inside resource cards or readers, to separate ads from downloads.
-- Queue each ad DOM element once and only on the approved production host after consent; keep preview placeholders request-free and preserve the existing production bootstrap.
+- Queue each ad DOM element once and only on the approved production host; keep preview placeholders request-free and preserve the existing production bootstrap.
 
 ## Visitor notices
-- Coordinate install and cookie notices in the shared root with an explicit completion callback; this prevents overlap and preserves the sequence on direct document visits without delaying consent-gated ads.
+- The install prompt is the only visitor notice; it opens only when the browser reports the app is installable.
