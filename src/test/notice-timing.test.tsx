@@ -31,5 +31,6 @@ it('offers installation again only after the seven-day snooze ends', () => {
   first.unmount();
   vi.setSystemTime(now + 7 * 24 * 60 * 60 * 1000);
   render(<VisitorNotices />);
+  act(() => { window.dispatchEvent(Object.assign(new Event('beforeinstallprompt'), { prompt: vi.fn(), userChoice: Promise.resolve({ outcome: 'dismissed' }) })); });
   expect(screen.getByRole('dialog', { name: 'Install the Fresh App' })).toBeInTheDocument();
 });
