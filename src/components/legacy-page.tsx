@@ -90,6 +90,8 @@ export function LegacyPage({ data, fragments, moreDocuments }: { data: LegacyPag
     const props = attributesToProps(node.attribs);
     const id = node.attribs['id'];
     const classes = node.attribs['class'] ?? '';
+    // These exact attributes may be enhanced by the head script before hydration.
+    if (classes.split(' ').includes('btn-group') || classes.split(' ').includes('dropdown-menu') || node.attribs['data-toggle'] === 'dropdown') props['suppressHydrationWarning'] = true;
     // LibraryShell owns the only footer; keep audited fragments unchanged.
     if (node.name === 'footer' || classes.split(' ').includes('footer')) return <></>;
     if (node.name === 'div' && node.children.some(child => child instanceof Element && child.attribs['id'] === 'jumpToPage')) return <></>;
@@ -132,6 +134,7 @@ export function LegacyPage({ data, fragments, moreDocuments }: { data: LegacyPag
     }
     if ((classes.includes('dropdown-menu') || classes.includes('collapse') || classes.includes('nav-second-level') || classes.includes('nav-third-level')) && node.parent instanceof Element && expanded.has(groupKey(node.parent))) return <ul {...props} className={`${classes} legacy-panel-open`}>{children(node)}</ul>;
     if (node.name === 'button') return <Button {...props} variant="source" size="source" className={`${classes} legacy-control`}>{children(node)}</Button>;
+    if (node.name === 'div' && classes.split(' ').includes('btn-group')) return <div {...props}>{children(node)}</div>;
     if (node.name === 'form') return <form {...props} onSubmit={event => event.preventDefault()}>{children(node)}</form>;
     return undefined;
   } };

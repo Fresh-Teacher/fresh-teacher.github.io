@@ -52,3 +52,6 @@ use the editor.
 
 ## Visitor notices
 - The install prompt is the only visitor notice; it opens only when the browser reports the app is installable.
+
+## Early interactions
+- Mark class and legacy dropdown triggers with `data-toggle="dropdown"`; keep the inline early-tap script and its typed test implementation synchronized and support both direct menus and reveal wrappers so static first taps work before hydration.

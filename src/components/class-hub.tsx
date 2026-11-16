@@ -61,12 +61,12 @@ export function ClassHub({ data }: { data: ClassHubData }) {
     items[next]?.focus();
   };
   return <div ref={root}><ClassHubLayout heading={data.heading}>
-    {data.menus.map((menu, index) => <div id={`class-group-${index}`} className={`btn-group m-r-10 ${menu.featured ? 'class-resource-featured' : ''}`} key={menu.label}>
-      <Button ref={element => { triggers.current[index] = element; }} id={`class-trigger-${index}`} type="button" variant="source" size="source" className="btn btn-info dropdown-toggle waves-effect waves-light legacy-control legacy-dropdown-trigger" aria-haspopup="menu" aria-expanded={opened === index} aria-controls={`class-menu-${index}`} onClick={() => setOpened(current => current === index ? null : index)} onKeyDown={event => openFromKeyboard(event, index)}>
+    {data.menus.map((menu, index) => <div suppressHydrationWarning id={`class-group-${index}`} className={`btn-group m-r-10 ${menu.featured ? 'class-resource-featured' : ''}`} key={menu.label}>
+      <Button suppressHydrationWarning ref={element => { triggers.current[index] = element; }} id={`class-trigger-${index}`} type="button" data-toggle="dropdown" variant="source" size="source" className="btn btn-info dropdown-toggle waves-effect waves-light legacy-control legacy-dropdown-trigger" aria-haspopup="menu" aria-expanded={opened === index} aria-controls={`class-menu-${index}`} onClick={() => setOpened(current => current === index ? null : index)} onKeyDown={event => openFromKeyboard(event, index)}>
         <b>{menu.label}</b>{menu.featured && <span className="class-resource-new"><span>NEW!</span></span>}
       </Button>
-      <div className="class-resource-reveal" hidden={opened !== index}>
-      <ul id={`class-menu-${index}`} role="menu" aria-labelledby={`class-trigger-${index}`} hidden={opened !== index} className={`dropdown-menu class-menu-${classMenuAnimations[menu.label] ?? 'slideInUp'} ${opened === index ? 'legacy-panel-open' : 'legacy-dropdown-closed'}`} onKeyDown={event => navigateMenu(event, index)}>
+      <div suppressHydrationWarning className="class-resource-reveal" hidden={opened !== index}>
+      <ul suppressHydrationWarning id={`class-menu-${index}`} role="menu" aria-labelledby={`class-trigger-${index}`} hidden={opened !== index} className={`dropdown-menu class-menu-${classMenuAnimations[menu.label] ?? 'slideInUp'} ${opened === index ? 'legacy-panel-open' : 'legacy-dropdown-closed'}`} onKeyDown={event => navigateMenu(event, index)}>
         {menu.items.map((item, itemIndex) => 'href' in item ? <li role="none" key={itemIndex}><a role="menuitem" tabIndex={-1} href={item.href} onClick={() => setOpened(null)}>{item.label}</a></li> : 'divider' in item ? <li role="separator" className="divider" key={itemIndex} /> : <li role="none" key={itemIndex}><span className="class-resource-empty" role="status">{item.empty}</span></li>)}
       </ul>
       </div>
