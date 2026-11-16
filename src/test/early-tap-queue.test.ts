@@ -79,6 +79,58 @@ describe('early door sound', () => {
 });
 
 describe('early dropdown display', () => {
+  it('opens a class menu through its hidden reveal wrapper and replays once when ready', () => {
+    vi.useFakeTimers();
+    installEarlyTapQueue();
+    document.body.innerHTML = '<div class="btn-group"><button data-toggle="dropdown" aria-expanded="false">LESSON NOTES</button><div class="class-resource-reveal" hidden><ul class="dropdown-menu" hidden><li><a href="/notes.html">Notes</a></li></ul></div></div>';
+    const button = document.querySelector('button');
+    if (!button) throw new Error('Missing trigger');
+    button.click();
+    expect(button.getAttribute('aria-expanded')).toBe('true');
+    expect((document.querySelector('.dropdown-menu') as HTMLElement).style.display).toBe('block');
+    vi.advanceTimersByTime(21000);
+    expect(button.getAttribute('aria-expanded')).toBe('true');
+    const opened = vi.fn();
+    markReady(button, opened);
+    vi.advanceTimersByTime(200);
+    expect(opened).toHaveBeenCalledTimes(1);
+    expect(document.querySelector('[data-early-open]')).toBeNull();
+    vi.useRealTimers();
+  });
+
+  it('closes a waiting menu on Escape without replaying and restores focus', () => {
+    vi.useFakeTimers();
+    installEarlyTapQueue();
+    document.body.innerHTML = '<div class="btn-group"><button data-toggle="dropdown" aria-expanded="false">X</button><ul class="dropdown-menu" hidden></ul></div>';
+    const button = document.querySelector('button');
+    if (!button) throw new Error('Missing trigger');
+    button.click();
+    document.dispatchEvent(new KeyboardEvent('keydown', { key: 'Escape', bubbles: true }));
+    expect(button.getAttribute('aria-expanded')).toBe('false');
+    expect(document.activeElement).toBe(button);
+    const opened = vi.fn();
+    markReady(button, opened);
+    vi.advanceTimersByTime(200);
+    expect(opened).not.toHaveBeenCalled();
+    vi.useRealTimers();
+  });
+
+  it('dismisses a waiting menu on an outside tap and cancels its replay', () => {
+    vi.useFakeTimers();
+    installEarlyTapQueue();
+    document.body.innerHTML = '<div class="btn-group"><button data-toggle="dropdown">X</button><ul class="dropdown-menu" hidden></ul></div>';
+    const button = document.querySelector('button');
+    if (!button) throw new Error('Missing trigger');
+    button.click();
+    document.body.click();
+    expect(button.getAttribute('aria-expanded')).toBe('false');
+    const opened = vi.fn();
+    markReady(button, opened);
+    vi.advanceTimersByTime(200);
+    expect(opened).not.toHaveBeenCalled();
+    vi.useRealTimers();
+  });
+
   it('shows the tapped dropdown list immediately before the page is ready', () => {
     installEarlyTapQueue();
     document.body.innerHTML = '<div class="btn-group"><button data-toggle="dropdown">PAST PAPERS</button><ul class="dropdown-menu" hidden></ul></div>';
