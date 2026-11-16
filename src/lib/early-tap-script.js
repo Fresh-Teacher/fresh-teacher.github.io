@@ -26,7 +26,8 @@ function installEarlyTapQueue() {
       if (!group)
         continue;
       group.removeAttribute("data-early-open");
-      var list = group.querySelector(":scope>.dropdown-menu");
+      group.querySelector('[data-toggle="dropdown"]')?.setAttribute('aria-expanded', 'false');
+      var list = group.querySelector(":scope>.dropdown-menu,:scope>.class-resource-reveal>.dropdown-menu");
       if (list) {
         list.style.removeProperty("display");
         list.style.removeProperty("visibility");
@@ -44,7 +45,8 @@ function installEarlyTapQueue() {
       return false;
     earlyControl = control;
     group.setAttribute("data-early-open", "");
-    var list = group.querySelector(":scope>.dropdown-menu");
+    control.setAttribute('aria-expanded', 'true');
+    var list = group.querySelector(":scope>.dropdown-menu,:scope>.class-resource-reveal>.dropdown-menu");
     if (list) {
       list.style.setProperty("display", "block", "important");
       list.style.setProperty("visibility", "visible", "important");
@@ -86,7 +88,7 @@ function installEarlyTapQueue() {
   if (!document.getElementById("ft-early-open-style")) {
     var style = document.createElement("style");
     style.id = "ft-early-open-style";
-    style.textContent = "html body [data-early-open]>.dropdown-menu,html body [data-early-open]>.dropdown-menu[hidden]{display:block!important;visibility:visible!important;opacity:1!important}" + "html[data-early-door] .leftcurtain{transform:translateX(-100%);visibility:hidden;pointer-events:none;transition:none;will-change:auto}" + "html[data-early-door] .rightcurtain{transform:translateX(100%);visibility:hidden;pointer-events:none;transition:none;will-change:auto}" + "html[data-early-door] .rope{visibility:hidden;pointer-events:none;transition:none}";
+    style.textContent = "html body [data-early-open]>.class-resource-reveal{display:flow-root!important;overflow:clip}html body [data-early-open]>.dropdown-menu,html body [data-early-open]>.class-resource-reveal>.dropdown-menu{display:block!important;visibility:visible!important;opacity:1!important}" + "html[data-early-door] .leftcurtain{transform:translateX(-100%);visibility:hidden;pointer-events:none;transition:none;will-change:auto}" + "html[data-early-door] .rightcurtain{transform:translateX(100%);visibility:hidden;pointer-events:none;transition:none;will-change:auto}" + "html[data-early-door] .rope{visibility:hidden;pointer-events:none;transition:none}";
     (document.head || document.documentElement).appendChild(style);
   }
   var replay = function() {
@@ -101,7 +103,7 @@ function installEarlyTapQueue() {
       }, 0);
       return;
     }
-    if (Date.now() - pending.started > 20000) {
+    if (Date.now() - pending.started > 20000 && !earlyControl) {
       pending = null;
       clearEarly();
       return;
@@ -112,6 +114,10 @@ function installEarlyTapQueue() {
     var origin = event.target;
     if (!origin || !origin.closest)
       return;
+    if (earlyControl && !earlyControl.parentElement?.contains(origin)) {
+      pending = null;
+      clearEarly();
+    }
     var control = origin.closest(SELECTOR);
     if (!control || ready(control))
       return;
@@ -128,6 +134,13 @@ function installEarlyTapQueue() {
     if (!waiting)
       replay();
   }, true);
+  document.addEventListener('keydown', function(event) {
+    if (event.key !== 'Escape' || !earlyControl) return;
+    var trigger = earlyControl;
+    pending = null;
+    clearEarly();
+    trigger.focus();
+  });
 }
 
 installEarlyTapQueue();

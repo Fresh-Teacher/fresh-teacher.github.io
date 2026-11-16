@@ -30,7 +30,8 @@ export function installEarlyTapQueue() {
       var group = open[i];
       if (!group) continue;
       group.removeAttribute('data-early-open');
-      var list = group.querySelector(':scope>.dropdown-menu') as HTMLElement | null;
+      group.querySelector('[data-toggle="dropdown"]')?.setAttribute('aria-expanded', 'false');
+      var list = group.querySelector(':scope>.dropdown-menu,:scope>.class-resource-reveal>.dropdown-menu') as HTMLElement | null;
       if (list) { list.style.removeProperty('display'); list.style.removeProperty('visibility'); list.style.removeProperty('opacity'); }
     }
   };
@@ -42,8 +43,9 @@ export function installEarlyTapQueue() {
     if (wasOpen) return false;
     earlyControl = control;
     group.setAttribute('data-early-open', '');
+    control.setAttribute('aria-expanded', 'true');
     // Inline !important styles beat every stylesheet rule, so the list shows instantly.
-    var list = group.querySelector(':scope>.dropdown-menu') as HTMLElement | null;
+    var list = group.querySelector(':scope>.dropdown-menu,:scope>.class-resource-reveal>.dropdown-menu') as HTMLElement | null;
     if (list) {
       list.style.setProperty('display', 'block', 'important');
       list.style.setProperty('visibility', 'visible', 'important');
@@ -82,7 +84,7 @@ export function installEarlyTapQueue() {
   if (!document.getElementById('ft-early-open-style')) {
     var style = document.createElement('style');
     style.id = 'ft-early-open-style';
-    style.textContent = 'html body [data-early-open]>.dropdown-menu,html body [data-early-open]>.dropdown-menu[hidden]{display:block!important;visibility:visible!important;opacity:1!important}'
+    style.textContent = 'html body [data-early-open]>.class-resource-reveal{display:flow-root!important;overflow:clip}html body [data-early-open]>.dropdown-menu,html body [data-early-open]>.class-resource-reveal>.dropdown-menu{display:block!important;visibility:visible!important;opacity:1!important}'
       + 'html[data-early-door] .leftcurtain{transform:translateX(-100%);visibility:hidden;pointer-events:none;transition:none;will-change:auto}'
       + 'html[data-early-door] .rightcurtain{transform:translateX(100%);visibility:hidden;pointer-events:none;transition:none;will-change:auto}'
       + 'html[data-early-door] .rope{visibility:hidden;pointer-events:none;transition:none}';
@@ -97,12 +99,13 @@ export function installEarlyTapQueue() {
       setTimeout(function () { clearEarly(); (target as HTMLElement).click(); }, 0);
       return;
     }
-    if (Date.now() - pending.started > 20000) { pending = null; clearEarly(); return; }
+    if (Date.now() - pending.started > 20000 && !earlyControl) { pending = null; clearEarly(); return; }
     setTimeout(replay, 50);
   };
   document.addEventListener('click', function (event) {
     var origin = event.target as Element | null;
     if (!origin || !origin.closest) return;
+    if (earlyControl && !earlyControl.parentElement?.contains(origin)) { pending = null; clearEarly(); }
     var control = origin.closest(SELECTOR);
     if (!control || ready(control)) return;
     event.preventDefault();
@@ -115,6 +118,13 @@ export function installEarlyTapQueue() {
     pending = { el: control, index: Array.prototype.indexOf.call(document.querySelectorAll(SELECTOR), control), text: control.textContent || '', started: Date.now() };
     if (!waiting) replay();
   }, true);
+  document.addEventListener('keydown', function (event) {
+    if (event.key !== 'Escape' || !earlyControl) return;
+    var trigger = earlyControl as HTMLElement;
+    pending = null;
+    clearEarly();
+    trigger.focus();
+  });
 }
 
 // A raw source string is stable across server/client transforms; Function.toString() is not.
