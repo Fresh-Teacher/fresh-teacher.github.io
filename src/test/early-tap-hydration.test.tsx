@@ -13,7 +13,7 @@ describe('Inline dropdown handoff', () => {
     vi.useFakeTimers();
     // Exercise the exact raw script shipped in the HTML, not only its typed counterpart.
     new Function('window', 'document', earlyTapQueueScript)(window, document);
-    const hub: ClassHubData = { title: 'Test class', description: 'Test resources', heading: 'Test class', menus: [{ label: 'NOTES', items: [{ label: 'Notes', href: '/notes.html' }] }] };
+    const hub: ClassHubData = { title: 'Test class', description: 'Test resources', heading: 'Test class', menus: [{ label: 'NOTES', featured: false, items: [{ label: 'Notes', href: '/notes.html' }] }] };
     const legacy: LegacyPageData = { title: 'Test class', description: '', template: 'menu', styles: 'css', items: [], mode: 'static', missingData: null, links: [] };
     const fragments = { css: '', menu: '<div class="btn-group"><button data-toggle="dropdown">NOTES</button><ul class="dropdown-menu"><li><a href="/notes.html">Notes</a></li></ul></div>' };
     for (const page of [<ClassHub data={hub} />, <LegacyPage data={legacy} fragments={fragments} />]) {
@@ -25,14 +25,15 @@ describe('Inline dropdown handoff', () => {
       button.click();
       expect(button.getAttribute('aria-expanded')).toBe('true');
       expect(container.querySelector('[data-early-open]')).not.toBeNull();
-      const root = hydrateRoot(container, page);
+      let root: ReturnType<typeof hydrateRoot> | undefined;
+      await act(async () => { root = hydrateRoot(container, page); });
       await act(async () => { vi.advanceTimersByTime(200); });
       expect(button.getAttribute('aria-expanded')).toBe('true');
       expect(container.querySelector('[data-early-open]')).toBeNull();
       expect(container.querySelector('ul.dropdown-menu')?.hasAttribute('hidden')).toBe(false);
       await act(async () => { button.click(); });
       expect(button.getAttribute('aria-expanded')).toBe('false');
-      await act(async () => { root.unmount(); });
+      await act(async () => { root?.unmount(); });
       container.remove();
     }
     vi.useRealTimers();
