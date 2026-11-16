@@ -91,7 +91,7 @@ export function LegacyPage({ data, fragments, moreDocuments }: { data: LegacyPag
     const id = node.attribs['id'];
     const classes = node.attribs['class'] ?? '';
     // These exact attributes may be enhanced by the head script before hydration.
-    if (classes.split(' ').includes('btn-group') || classes.split(' ').includes('dropdown-menu') || node.attribs['data-toggle'] === 'dropdown') props.suppressHydrationWarning = true;
+    if (classes.split(' ').includes('btn-group') || classes.split(' ').includes('dropdown-menu') || node.attribs['data-toggle'] === 'dropdown') props['suppressHydrationWarning'] = true;
     // LibraryShell owns the only footer; keep audited fragments unchanged.
     if (node.name === 'footer' || classes.split(' ').includes('footer')) return <></>;
     if (node.name === 'div' && node.children.some(child => child instanceof Element && child.attribs['id'] === 'jumpToPage')) return <></>;

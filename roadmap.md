@@ -1,5 +1,5 @@
 # Instant dropdowns
-- [ ] Make class and legacy dropdowns open before hydration, preserve menu switching and dismissal, and verify delayed-loading desktop/phone taps.
+- [x] Make class and legacy dropdowns open before hydration; 27 checks pass, including hydration handoff, and delayed-loading desktop/phone browser tests verify opening, switching and dismissal.
 
 # Visitor notices
 - [x] Show install immediately before cookies on all pages, bypass installed or unsupported devices, and verify dismissal and saved preferences; 28 tests pass, desktop/phone and real shared-document flows verified, preview build OK.
