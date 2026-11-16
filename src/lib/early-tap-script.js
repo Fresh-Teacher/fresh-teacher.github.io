@@ -27,6 +27,8 @@ function installEarlyTapQueue() {
         continue;
       group.removeAttribute("data-early-open");
       group.querySelector('[data-toggle="dropdown"]')?.setAttribute('aria-expanded', 'false');
+      var reveal = group.querySelector(':scope>.class-resource-reveal');
+      reveal?.style.removeProperty('display');
       var list = group.querySelector(":scope>.dropdown-menu,:scope>.class-resource-reveal>.dropdown-menu");
       if (list) {
         list.style.removeProperty("display");
@@ -46,6 +48,8 @@ function installEarlyTapQueue() {
     earlyControl = control;
     group.setAttribute("data-early-open", "");
     control.setAttribute('aria-expanded', 'true');
+    var reveal = group.querySelector(':scope>.class-resource-reveal');
+    reveal?.style.setProperty('display', 'flow-root', 'important');
     var list = group.querySelector(":scope>.dropdown-menu,:scope>.class-resource-reveal>.dropdown-menu");
     if (list) {
       list.style.setProperty("display", "block", "important");

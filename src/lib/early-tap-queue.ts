@@ -31,6 +31,8 @@ export function installEarlyTapQueue() {
       if (!group) continue;
       group.removeAttribute('data-early-open');
       group.querySelector('[data-toggle="dropdown"]')?.setAttribute('aria-expanded', 'false');
+      var reveal = group.querySelector(':scope>.class-resource-reveal') as HTMLElement | null;
+      reveal?.style.removeProperty('display');
       var list = group.querySelector(':scope>.dropdown-menu,:scope>.class-resource-reveal>.dropdown-menu') as HTMLElement | null;
       if (list) { list.style.removeProperty('display'); list.style.removeProperty('visibility'); list.style.removeProperty('opacity'); }
     }
@@ -44,6 +46,8 @@ export function installEarlyTapQueue() {
     earlyControl = control;
     group.setAttribute('data-early-open', '');
     control.setAttribute('aria-expanded', 'true');
+    var reveal = group.querySelector(':scope>.class-resource-reveal') as HTMLElement | null;
+    reveal?.style.setProperty('display', 'flow-root', 'important');
     // Inline !important styles beat every stylesheet rule, so the list shows instantly.
     var list = group.querySelector(':scope>.dropdown-menu,:scope>.class-resource-reveal>.dropdown-menu') as HTMLElement | null;
     if (list) {
