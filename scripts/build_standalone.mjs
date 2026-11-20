@@ -80,7 +80,7 @@ async function main() {
       const name = path.split('/').pop() || '';
       return !excluded.has(name) && !name.startsWith('.env') && name !== '.dev.vars' && !/\.(tsbuildinfo|log|pem|key|local)$/.test(name);
     } });
-    const count = await materialize(staging, process.env.STANDALONE_ASSET_ORIGIN || 'https://fresh-roots-library.lovable.app');
+    const count = await materialize(staging, process.env.STANDALONE_ASSET_ORIGIN || 'https://id-preview--d63a5677-756e-4c0d-abeb-a4c140e10fec.lovable.app');
     console.log(`Validated ${count} local media files; deployment will not use the Lovable media proxy.`);
     // Install into staging; never copy dependencies or generated output into source deliveries.
     for (const args of [['install', '--frozen-lockfile'], ['run', pages ? 'build:pages:runtime' : 'build']]) {
