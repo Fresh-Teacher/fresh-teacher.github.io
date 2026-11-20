@@ -1,0 +1,61 @@
+name: Sync Latest Code from Lovable
+
+# Only prepares a review branch. Publishing remains a separate manual action.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: sync-from-lovable
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout target repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          path: target
+      - name: Checkout latest Lovable app
+        uses: actions/checkout@v4
+        with:
+          repository: cornerstone666000333-hub/remix-of-garden-paths-atlas-10
+          path: source
+          persist-credentials: false
+      - name: Copy app and preserve target workflows
+        run: |
+          rsync -a --delete \
+            --exclude='.git' \
+            --exclude='.github/workflows/' \
+            --exclude='node_modules/' \
+            --exclude='dist/' \
+            --exclude='.env' \
+            --exclude='.env.local' \
+            source/ target/
+      - name: Push review branch and open pull request
+        working-directory: target
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TARGET_REPO: ${{ github.repository }}
+          BASE_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          if [ -z "$(git status --porcelain)" ]; then
+            echo 'App is already up to date.'
+            exit 0
+          fi
+          BRANCH="update/lovable-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
+          git switch -c "$BRANCH"
+          git add -A
+          git commit -m 'Update library from Lovable remix'
+          git push origin "$BRANCH"
+          gh pr create --repo "$TARGET_REPO" --base "$BASE_BRANCH" --head "$BRANCH" \
+            --title 'Update library from Lovable' \
+            --body 'Imports the current Lovable app and preserves the target repository workflows. This does not publish the website. Publishing compatibility must be reviewed before using the manual Pages deployment: the source app currently does not define build:pages.'
