@@ -16,21 +16,23 @@ const advance = (ms: number) => act(() => { vi.advanceTimersByTime(ms); });
 it('remembers a completed installation on returning browser visits', () => {
   const first = render(<VisitorNotices />);
   act(() => { window.dispatchEvent(new Event('appinstalled')); });
-  expect(screen.queryByRole('dialog', { name: 'Install the Fresh App' })).toBeNull();
+  expect(screen.queryByRole('complementary', { name: 'Install the Fresh App' })).toBeNull();
   expect(localStorage.getItem('ft-app-installed')).toBe('1');
   first.unmount();
   render(<VisitorNotices />);
-  expect(screen.queryByRole('dialog', { name: 'Install the Fresh App' })).toBeNull();
+  expect(screen.queryByRole('complementary', { name: 'Install the Fresh App' })).toBeNull();
 });
 
 it('offers installation again only after the seven-day snooze ends', () => {
   const now = Date.now();
   localStorage.setItem('ft-install-snooze-until', String(now + 7 * 24 * 60 * 60 * 1000));
   const first = render(<VisitorNotices />);
-  expect(screen.queryByRole('dialog', { name: 'Install the Fresh App' })).toBeNull();
+  expect(screen.queryByRole('complementary', { name: 'Install the Fresh App' })).toBeNull();
   first.unmount();
   vi.setSystemTime(now + 7 * 24 * 60 * 60 * 1000);
   render(<VisitorNotices />);
   act(() => { window.dispatchEvent(Object.assign(new Event('beforeinstallprompt'), { prompt: vi.fn(), userChoice: Promise.resolve({ outcome: 'dismissed' }) })); });
-  expect(screen.getByRole('dialog', { name: 'Install the Fresh App' })).toBeInTheDocument();
+  fireEvent.pointerDown(window);
+  advance(30000);
+  expect(screen.getByRole('complementary', { name: 'Install the Fresh App' })).toBeInTheDocument();
 });

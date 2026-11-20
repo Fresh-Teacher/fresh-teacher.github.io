@@ -1,6 +1,6 @@
 import { convertedPdfUrl } from '@/lib/converted-documents';
 import { downloadFile } from '@/lib/file-download';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { Download, LoaderCircle, Check, Link2, Share2, X } from 'lucide-react';
 import { toast } from 'sonner';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
@@ -45,14 +45,13 @@ export function ShareMenuItems({ copied, copy, subject, introduction, message, l
 }
 
 export function DocumentShare({ item }: { item: ResourceRecord }) {
+  const triggerRef = useRef<HTMLButtonElement>(null);
   const [copied, setCopied] = useState(false);
   const [shareOpen, setShareOpen] = useState(false);
   const [animation, setAnimation] = useState('flipInY');
-  // Radix owns the open/close toggle: its trigger opens the menu on press and its
-  // dismiss layer closes it on an outside press, so pressing the same button again
-  // only ever closes. modal={false} keeps the trigger reachable while the menu is
-  // open — with the modal overlay up the press never reaches the button, and the
-  // click that follows reopens the menu.
+  // Open on a completed click, never pointerdown: a touch may become a scroll.
+  // Keep Radix keyboard activation and outside dismissal; nonmodal leaves the
+  // trigger reachable so another click closes the menu.
   const chooseEntrance = (opened: boolean) => {
     setShareOpen(opened);
     if (!opened) return;
@@ -77,10 +76,14 @@ export function DocumentShare({ item }: { item: ResourceRecord }) {
     catch { toast.error('Could not copy message and link'); }
   };
   return <DropdownMenu open={shareOpen} onOpenChange={chooseEntrance} modal={false}>
-    <DropdownMenuTrigger asChild>
-      <Button variant="source" size="source" className="dg-action dg-share" aria-label={`Share ${title}`}><Share2 size={16} /> Share</Button>
+    <DropdownMenuTrigger asChild onPointerDown={event => event.preventDefault()} onClick={() => chooseEntrance(!shareOpen)}>
+      <Button ref={triggerRef} variant="source" size="source" className="dg-action dg-share" aria-label={`Share ${title}`}><Share2 size={16} /> Share</Button>
     </DropdownMenuTrigger>
-    <DropdownMenuContent align="end" collisionPadding={12} sideOffset={8} aria-label={`Share ${title}`} className={`dg-share-popup dg-share-${animation}`}>
+    <DropdownMenuContent align="end" collisionPadding={12} sideOffset={8} aria-label={`Share ${title}`} className={`dg-share-popup dg-share-${animation}`} onInteractOutside={event => {
+      // Let the trigger's click close it, rather than dismissing before that
+      // click and immediately reopening on touch devices.
+      if (event.target instanceof Node && triggerRef.current?.contains(event.target)) event.preventDefault();
+    }}>
       <div className="dg-share-head"><span>Share</span><button type="button" className="dg-share-close" aria-label="Close share menu" onClick={() => setShareOpen(false)}><X size={20} /></button></div>
       <ShareMenuItems copied={copied} copy={copy} subject={title} introduction={introduction} message={message} link={link} />
     </DropdownMenuContent>

@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://fresh-roots-reading-garden.lovable.app/sitemap.xml
+Sitemap: https://fresh-teacher.github.io/sitemap.xml

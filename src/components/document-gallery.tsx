@@ -3,8 +3,7 @@ import { Fragment, useEffect, useMemo, useRef, useState } from 'react';
 import { BookOpen, FileText, LayoutGrid, List, RotateCcw, ChevronLeft, ChevronRight, ChevronDown, ArrowRight, ArrowUp } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuSub, DropdownMenuSubTrigger, DropdownMenuSubContent, DropdownMenuPortal, DropdownMenuRadioGroup, DropdownMenuRadioItem, DropdownMenuItem, DropdownMenuSeparator } from '@/components/ui/dropdown-menu';
-import { resourceTitle, type ResourceRecord } from '@/lib/resources';
-import { pdfThumbnail, pdfPageCount } from '@/lib/pdf-thumbs';
+import { resourceTitle, thumbSrc, type ResourceRecord } from '@/lib/resources';
 import { fileSize, formatSize } from '@/lib/file-sizes';
 import { Link, useLocation } from '@tanstack/react-router';
 import { catalogWindow, type BrowsingContext } from '@/lib/document-browsing';
@@ -12,11 +11,13 @@ import { documentMetadata, documentSlug } from '@/lib/document-metadata';
 import { searchTokens, suggestedSearch } from '@/lib/document-search';
 import { DocumentDownload, DocumentShare } from '@/components/document-actions';
 import { documentViewer } from '@/lib/document-viewer';
-import { LogoLoader } from '@/components/logo-loader';
+import { LogoLoader, useLoadingIndicator } from '@/components/logo-loader';
 import { documentPlaceholder } from '@/lib/document-placeholder';
 import styles from '@/styles/document-gallery.css?raw';
 import { AdBanner } from './ad-banner';
 import { showCatalogAd } from '@/lib/manual-ads';
+import { isVisibleDocument } from '@/lib/document-formats';
+import emptyFolder from '@/assets/empty-folder.webp.asset.json';
 
 type Layout = 'grid' | 'list';
 type SizeBand = 'all' | 'small' | 'medium' | 'large';
@@ -35,63 +36,19 @@ function sizeBand(bytes: number | null | undefined): SizeBand | null {
   return 'large';
 }
 
-const thumbListeners = new WeakMap<Element, (visible: boolean) => void>();
-let thumbObserver: IntersectionObserver | undefined;
-let thumbObserverType: typeof IntersectionObserver | undefined;
-function observeThumb(node: Element, listener: (visible: boolean) => void) {
-  if (thumbObserverType !== IntersectionObserver) { thumbObserver = undefined; thumbObserverType = IntersectionObserver; }
-  thumbObserver ??= new IntersectionObserver(entries => {
-    for (const entry of entries) thumbListeners.get(entry.target)?.(entry.isIntersecting);
-  }, { rootMargin: '100px' });
-  thumbListeners.set(node, listener);
-  thumbObserver.observe(node);
-  return () => { thumbListeners.delete(node); thumbObserver?.unobserve(node); };
-}
-
-function Thumb({ url, initialFeedback }: { url: string; initialFeedback: boolean }) {
-  const ref = useRef<HTMLDivElement>(null);
-  const [src, setSrc] = useState<string | null>(null);
+// Covers are pre-baked offline (scripts/generate_thumbnails.py); unbaked files
+// show only their file-type icon, so browsing never runs pdf.js.
+function Thumb({ item }: { item: ResourceRecord }) {
   const [failed, setFailed] = useState(false);
   const [loaded, setLoaded] = useState(false);
-  const [nearby, setNearby] = useState<boolean | null>(null);
-  const viewer = documentViewer(url);
-  const isPdf = viewer.kind === 'pdf';
-  const pdfSrc = viewer.kind === 'pdf' ? viewer.src : url;
-  const [pages, setPages] = useState<number>();
-  // The first row has feedback in static HTML, before observers or React run.
-  // Actual PDF work is still exclusively started by viewport proximity.
-  const showLoading = (nearby ?? initialFeedback) && !loaded && !failed && isPdf;
-  const placeholder = documentPlaceholder(url);
-  useEffect(() => {
-    setSrc(null); setFailed(false); setLoaded(false); setNearby(null); setPages(undefined);
-    if (!isPdf) return;
-    const node = ref.current;
-    if (!node) return;
-    let cancelled = false;
-    const start = () => {
-      setNearby(true);
-      void pdfThumbnail(pdfSrc).then(result => {
-        if (cancelled) return;
-        setPages(pdfPageCount(pdfSrc));
-        if (result) setSrc(result); else setFailed(true);
-      }).catch(() => { if (!cancelled) setFailed(true); });
-    };
-    if (typeof IntersectionObserver === 'undefined') {
-      start();
-      return () => { cancelled = true; };
-    }
-    let stop = () => {};
-    stop = observeThumb(node, visible => {
-      if (visible) { stop(); start(); } else setNearby(false);
-    });
-    return () => { cancelled = true; stop(); };
-  }, [pdfSrc, isPdf]);
-  return <div ref={ref} className="dg-thumb">
-    {(!loaded || failed || !isPdf) && <div className="dg-thumb-placeholder">{placeholder ? <img className="dg-file-logo" src={placeholder.url} alt="" /> : <FileText aria-hidden="true" size={40} strokeWidth={1.2} />}</div>}
-    {src && !failed && <img className={`dg-thumb-cover${loaded ? ' dg-thumb-cover-ready' : ''}`} src={src} alt="" onLoad={() => setLoaded(true)} onError={() => setFailed(true)} />}
-    {showLoading && <div className="dg-thumb-loading"><LogoLoader label="Loading document thumbnail…" /></div>}
-    <span className="dg-badge">{extension(url)}</span>
-    {pages && <span className="dg-page-count">{pages} pages</span>}
+  const placeholder = documentPlaceholder(item.pdfUrl);
+  const cover = Boolean(item.thumbUrl) && !failed;
+  const spinner = useLoadingIndicator(cover && !loaded);
+  return <div className="dg-thumb">
+    <div className="dg-thumb-placeholder">{placeholder ? <img className="dg-file-logo" src={placeholder.url} alt="" /> : <FileText aria-hidden="true" size={40} strokeWidth={1.2} />}</div>
+    {cover ? <img className={`dg-thumb-cover${loaded ? ' dg-thumb-cover-ready' : ''}`} src={thumbSrc(item.thumbUrl ?? '')} alt={`${resourceTitle(item)} cover`} loading="lazy" decoding="async" onLoad={() => setLoaded(true)} onError={() => setFailed(true)} ref={node => { if (node?.complete && node.naturalWidth > 0) setLoaded(true); }} /> : null}
+    {spinner ? <span className="dg-thumb-loading"><LogoLoader label="Loading document cover…" /></span> : null}
+    {loaded && item.pages ? <span className="dg-page-count">{item.pages} {item.pages === 1 ? 'page' : 'pages'}</span> : null}
   </div>;
 }
 
@@ -118,7 +75,14 @@ export function DocumentGallery({ items, sourceItems = items, onView, query = ''
   const [jump, setJump] = useState(String(initialPage));
   const [continueAfter, setContinueAfter] = useState(afterUrl);
   const previousFilters = useRef({ items, type, subject, year, term, kind, size, sort });
-  const [sizes, setSizes] = useState<Record<string, number | null>>({});
+  const [resolvedSizes, setSizes] = useState<Record<string, number | null>>({});
+  const sizes = useMemo(() => {
+    const values = { ...resolvedSizes };
+    for (const item of items) {
+      if (item.sizeBytes != null) values[item.pdfUrl] = item.sizeBytes;
+    }
+    return values;
+  }, [items, resolvedSizes]);
   const [backToTop, setBackToTop] = useState(false);
   const top = useRef<HTMLDivElement>(null);
   const metadata = useMemo(() => new Map(items.map(item => [item, documentMetadata(item)])), [items]);
@@ -127,8 +91,9 @@ export function DocumentGallery({ items, sourceItems = items, onView, query = ''
   const sizeFilterData = needsSizes ? sizes : undefined;
   const filtered = useMemo(() => {
     const sizes = sizeFilterData ?? {};
-    if (searchResults) return items;
-    let list = items.filter(item => {
+    const visibleItems = items.filter(isVisibleDocument);
+    if (searchResults) return visibleItems;
+    let list = visibleItems.filter(item => {
       const meta = metadata.get(item);
       return (type === 'all' || extension(item.pdfUrl) === type) && (subject === 'all' || meta?.subject === subject) &&
         (year === 'all' || meta?.year === year) && (term === 'all' || meta?.term === term) &&
@@ -144,7 +109,7 @@ export function DocumentGallery({ items, sourceItems = items, onView, query = ''
     });
     return list;
   }, [items, metadata, type, subject, year, term, kind, size, sizeFilterData, sort, searchResults]);
-  const { totalPages, currentPage, items: pageItems } = searchResults ? { totalPages: Math.max(1, Math.ceil(searchResults.total / 12)), currentPage: searchResults.page, items } : catalogWindow(filtered, page, continueAfter);
+  const { totalPages, currentPage, items: pageItems } = searchResults ? { totalPages: Math.max(1, Math.ceil(searchResults.total / 12)), currentPage: searchResults.page, items: filtered } : catalogWindow(filtered, page, continueAfter);
   const search: BrowsingContext = { source, query, page: currentPage, type: searchResults?.type ?? type, subject, year, term, kind, size, sort: searchResults?.sort ?? sort, layout };
   useEffect(() => {
     const previous = previousFilters.current;
@@ -158,8 +123,11 @@ export function DocumentGallery({ items, sourceItems = items, onView, query = ''
     return () => window.removeEventListener('scroll', scroll);
   }, []);
   useEffect(() => {
+    // Browsing never probes remote files. Keep size controls functional for
+    // older catalogs by resolving only missing values on explicit demand.
+    if (!needsSizes) return;
     let cancelled = false;
-    const targets = size !== 'all' || sort.startsWith('size') ? items : pageItems;
+    const targets = items.filter(item => item.sizeBytes == null);
     void (async () => {
       for (let i = 0; i < targets.length; i += 4) {
         if (cancelled) return;
@@ -169,7 +137,7 @@ export function DocumentGallery({ items, sourceItems = items, onView, query = ''
       }
     })();
     return () => { cancelled = true; };
-  }, [items, currentPage, size, sort, subject, year, term, kind, type]);
+  }, [items, needsSizes]);
   const reset = () => { setType('all'); setSubject('all'); setYear('all'); setTerm('all'); setKind('all'); setSize('all'); setSort('source'); onClear?.(); };
   const go = (value: number) => { const next = Math.max(1, Math.min(totalPages, value || 1)); setContinueAfter(undefined); setPage(next); setJump(String(next)); top.current?.scrollIntoView({ block: 'start' }); };
   const suggestions = filtered.length === 0 && query ? suggestedSearch(sourceItems, query) : [];
@@ -221,13 +189,13 @@ export function DocumentGallery({ items, sourceItems = items, onView, query = ''
         </DropdownMenu>
       </div>
     </div>
-    {pageItems.length === 0 ? <div className="dg-empty" role="status">{filtered.length > 0 ? <p>{currentPage < totalPages ? 'Continue to the next page for more documents.' : 'You have reached the end of this catalog.'}</p> : <><p>No matching documents.</p>{suggestions.length > 0 && <div>Did you mean? {suggestions.map(value => <Button key={value} variant="source" size="source" className="dg-chip" onClick={() => onQueryChange?.(value)}>{value}</Button>)}</div>}<Button variant="source" size="source" className="dg-chip" onClick={reset}>Clear filters</Button></>}</div> :
+    {pageItems.length === 0 ? <div className="dg-empty" role="status">{items.length === 0 ? <><img className="dg-empty__image" src={emptyFolder.url} alt="Empty folder" width={240} height={240} /><p>Nothing here yet. Check back soon.</p></> : filtered.length > 0 ? <p>{currentPage < totalPages ? 'Continue to the next page for more documents.' : 'You have reached the end of this catalog.'}</p> : <><p>No matching documents.</p>{suggestions.length > 0 && <div>Did you mean? {suggestions.map(value => <Button key={value} variant="source" size="source" className="dg-chip" onClick={() => onQueryChange?.(value)}>{value}</Button>)}</div>}<Button variant="source" size="source" className="dg-chip" onClick={reset}>Clear filters</Button></>}</div> :
       <div className={`dg-cards dg-${layout}`}>{pageItems.map((item, index) => {
-        return <Fragment key={`${item.pdfUrl}-${index}`}><article className="dg-card"><Link to="/doc/$slug" params={{ slug: documentSlug(item) }} search={search} className="dg-thumb-link" aria-label={`Open ${resourceTitle(item)}`}><Thumb url={item.pdfUrl} initialFeedback={index < 4} /></Link><div className="dg-card-body">
+        return <Fragment key={`${item.pdfUrl}-${index}`}><article className="dg-card"><Link to="/doc/$slug" params={{ slug: documentSlug(item) }} search={search} className="dg-thumb-link" aria-label={`Open ${resourceTitle(item)}`}><Thumb item={item} /></Link><div className="dg-card-body">
           <h3 className="dg-card-title"><Link to="/doc/$slug" params={{ slug: documentSlug(item) }} search={search}><HighlightedTitle item={item} query={query} /></Link></h3>
           <p className="dg-card-meta"><span className="dg-card-size">{sizes[item.pdfUrl] != null ? formatSize(sizes[item.pdfUrl] ?? 0) : '\u00a0'}</span></p>
           <div className="dg-card-actions">{onView && documentViewer(item.pdfUrl).kind === 'pdf' ? <Button variant="source" size="source" className="dg-action dg-view" style={{ touchAction: 'manipulation' }} onPointerDown={() => { void import('@/lib/resource-viewer').then(m => m.preloadResourceViewer()).catch(() => undefined); }} onClick={event => { if (event.currentTarget.dataset['viewerReady']) return; if (isViewerLoading()) return; showViewerLoading(); onView(event.currentTarget, item); }}><BookOpen size={16} /> View</Button> : <Button asChild variant="source" size="source" className="dg-action dg-view"><Link to="/doc/$slug" params={{ slug: documentSlug(item) }} search={search}><BookOpen size={16} /> View</Link></Button>}<DocumentDownload item={item} /><DocumentShare item={item} /></div>
-        </div></article>{ads && showCatalogAd(index, pageItems.length) && <AdBanner key={`${source}-${currentPage}-${query}`} placement="catalog" identity={`${source}-${currentPage}-${query}-${sort}-${type}`} />}</Fragment>;
+        </div></article>{ads && showCatalogAd(index, pageItems.length) && <AdBanner key={`${source}-${currentPage}-${index}-${query}-${sort}-${type}-${subject}-${year}-${term}-${kind}-${size}`} placement="catalog" identity={`${source}-${currentPage}-${index}-${query}-${sort}-${type}-${subject}-${year}-${term}-${kind}-${size}`} />}</Fragment>;
       })}</div>}
     {!searchResults && filtered.length > 0 && <nav className="dg-pagination" aria-label="Document pages"><Button variant="source" size="source" className="dg-icon" title="Previous page" aria-label="Previous page" disabled={currentPage === 1} onClick={() => go(currentPage - 1)}><ChevronLeft /></Button>
       {Array.from(new Set([1, currentPage - 1, currentPage, currentPage + 1, totalPages])).filter(value => value > 0 && value <= totalPages).sort((a, b) => a - b).map((value, index, pages) => <Fragment key={value}>{index > 0 && value - (pages[index - 1] ?? 0) > 1 && <span>…</span>}<Button variant="source" size="source" className={`dg-icon ${value === currentPage ? 'dg-selected' : ''}`} aria-label={`Page ${value}`} aria-current={value === currentPage ? 'page' : undefined} onClick={() => go(value)}>{value}</Button></Fragment>)}

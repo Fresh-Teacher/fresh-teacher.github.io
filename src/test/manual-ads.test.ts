@@ -14,10 +14,14 @@ describe('manual ad safeguards', () => {
     expect(tracking.adsensePublisher).toBe('ca-pub-8782637659456848');
     expect(new URL(tracking.adsenseScript).searchParams.get('client')).toBe('ca-pub-8782637659456848');
   });
-  it('places a single catalog ad after eight documents, only when more follow', () => {
+  it('repeats catalog ads every eight documents, only when more follow', () => {
     expect(Array.from({ length: 12 }, (_, i) => i).filter(i => showCatalogAd(i, 12))).toEqual([7]);
+    expect(Array.from({ length: 50 }, (_, i) => i).filter(i => showCatalogAd(i, 50))).toEqual([7, 15, 23, 31, 39, 47]);
     expect(showCatalogAd(7, 8)).toBe(false);
+    expect(showCatalogAd(15, 16)).toBe(false);
     expect(showCatalogAd(0, 0)).toBe(false);
+    expect(showCatalogAd(-1, 12)).toBe(false);
+    expect(showCatalogAd(7.5, 12)).toBe(false);
   });
   it('never requests manual ads on previews or disabled builds', () => {
     expect(shouldRequestManualAd(true, 'localhost', '1234567890')).toBe(false);

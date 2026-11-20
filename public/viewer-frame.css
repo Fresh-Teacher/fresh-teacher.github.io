@@ -1,4 +1,4 @@
-:root { --reader-surface: oklch(0.97 0 0); --reader-paper: oklch(1 0 0); --reader-ink: oklch(0.3 0 0); --reader-active: oklch(0.93 0.025 245); }
+:root { --reader-surface: oklch(0.97 0 0); --reader-paper: oklch(1 0 0); --reader-ink: oklch(0.3 0 0); --reader-active: oklch(0.93 0.025 245); --loader-brand-dark: #111; --loader-brand-yellow: #f5c400; --loader-brand-red: #e3170a; --loader-ring-width: 1.5px; --loader-image-size: 76%; --loader-brand-ring: conic-gradient(var(--loader-brand-dark) 0 25%, var(--loader-brand-yellow) 25% 50%, var(--loader-brand-red) 50% 100%); }
 html,body,#reader { width:100%;height:100%;margin:0;overflow:hidden;background:var(--reader-surface); }
 .flipbook-menu-btn { min-width:36px;min-height:40px;box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center; }
 .flipbook-menu-btn:focus-visible { outline:2px solid var(--reader-ink);outline-offset:-2px; }
@@ -12,3 +12,7 @@ html.vertical-reader { height:100%; overflow:auto; }
 .vertical-reader-page canvas { display:block; width:100%; height:auto; }
 #reader-status { padding:12px; font-family:Arial,sans-serif; color:var(--reader-ink); }
 .flipbook-preloader { background:var(--reader-surface); }
+/* Flipbook preloader uses the same brand loader as the app. */
+.flipbook-preloader .cssload-speeding-wheel { position:absolute; inset:0; margin:auto; width:72px !important; height:72px !important; border:0 !important; border-radius:50%; background:var(--reader-paper) url("/__l5e/assets-v1/97b6ba34-dcbc-407a-9c66-5e27f0e07d69/app-logo-loader.webp") center/var(--loader-image-size) no-repeat !important; animation:none !important; }
+.flipbook-preloader .cssload-speeding-wheel::after { content:""; position:absolute; inset:0; border-radius:50%; background:var(--loader-brand-ring); -webkit-mask:radial-gradient(farthest-side, transparent calc(100% - var(--loader-ring-width)), #000 calc(100% - var(--loader-ring-width))); mask:radial-gradient(farthest-side, transparent calc(100% - var(--loader-ring-width)), #000 calc(100% - var(--loader-ring-width))); animation:ft-ring 1.1s linear infinite; }
+@keyframes ft-ring { to { transform:rotate(360deg); } }

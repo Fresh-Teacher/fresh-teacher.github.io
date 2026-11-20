@@ -9,10 +9,7 @@ export const getRouter = () => {
   const router = createRouter({
     routeTree,
     context: { queryClient },
-    trailingSlash: 'preserve',
     scrollRestoration: true,
-    defaultPendingMs: 100,
-    defaultPendingMinMs: 200,
     // Lets Query own freshness; set caching defaults on the QueryClient, not the router.
     defaultPreloadStaleTime: 0,
   });

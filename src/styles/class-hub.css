@@ -32,11 +32,11 @@
   --hub-item-text: rgb(38, 38, 38);
   --hub-item-focus: rgb(245, 245, 245);
 }
-@font-face { font-family: Rubik; font-weight: 300; src: url("/__l5e/assets-v1/eff919b7-0421-45f3-8cf3-40f834774531/bafd4efc-ijwhbxyifdniv7fqj2md8wu.ttf") format("truetype"); font-display: swap; }
-@font-face { font-family: Rubik; font-weight: 400; src: url("/__l5e/assets-v1/5f24eefb-a75c-4d3b-8760-aa5e72c544b8/63571405-ijwkbxyifdniv7nbrxk.ttf") format("truetype"); font-display: swap; }
-@font-face { font-family: Rubik; font-weight: 500; src: url("/__l5e/assets-v1/9fe73825-3a39-478c-855c-7ceea701960e/94558f07-ijwhbxyifdniv7eyjmmd8wu.ttf") format("truetype"); font-display: swap; }
-@font-face { font-family: Rubik; font-weight: 700; src: url("/__l5e/assets-v1/4bf2a237-6934-4dc2-9472-8d46662e6768/6981bb38-ijwhbxyifdniv7f6igmd8wu.ttf") format("truetype"); font-display: swap; }
-@font-face { font-family: Rubik; font-weight: 900; src: url("/__l5e/assets-v1/c1ae9e99-e535-4e76-bcf6-5a0056dd3203/09e89ed8-ijwhbxyifdniv7fcimmd8wu.ttf") format("truetype"); font-display: swap; }
+@font-face { font-family: Rubik; font-weight: 300; src: url("/__l5e/assets-v1/c2ff7fd5-8c04-45f8-9ae7-807a129b4809/bafd4efc-ijwhbxyifdniv7fqj2md8wu.ttf") format("truetype"); font-display: swap; }
+@font-face { font-family: Rubik; font-weight: 400; src: url("/__l5e/assets-v1/1aef30cb-c2b5-49b5-b1ca-30ead586913c/63571405-ijwkbxyifdniv7nbrxk.ttf") format("truetype"); font-display: swap; }
+@font-face { font-family: Rubik; font-weight: 500; src: url("/__l5e/assets-v1/241d1423-936e-4e92-a36a-0deea6fca58c/94558f07-ijwhbxyifdniv7eyjmmd8wu.ttf") format("truetype"); font-display: swap; }
+@font-face { font-family: Rubik; font-weight: 700; src: url("/__l5e/assets-v1/08e4af81-309e-4c67-b6fc-9efb4163ffe7/6981bb38-ijwhbxyifdniv7f6igmd8wu.ttf") format("truetype"); font-display: swap; }
+@font-face { font-family: Rubik; font-weight: 900; src: url("/__l5e/assets-v1/f27787c3-f0f1-4ecb-b506-1060e877f9dc/09e89ed8-ijwhbxyifdniv7fcimmd8wu.ttf") format("truetype"); font-display: swap; }
 /* Appearance-matched subset of the imported class hub styles. No sidebar, carousel, admin or animation library. */
 html:has(.class-hub) { font-size: 10px; }
 body:has(.class-hub) { font: 300 14px/20px Rubik, sans-serif; text-align: center; background: var(--hub-shell-background); color: var(--hub-shell-text); }
@@ -150,8 +150,8 @@ body:has(.class-hub) b { font-weight: 500; }
 .class-hub .necta1 > .btn-group > .legacy-dropdown-trigger { display: flex; align-items: center; justify-content: flex-start; gap: 8px; width: 100%; min-height: 44px; padding-inline: 16px; white-space: normal; text-align: left; }
 .class-hub .necta1 > .btn-group > .legacy-dropdown-trigger > b { min-width: 0px; overflow-wrap: anywhere; }
 .class-hub .necta1 .legacy-dropdown-trigger::after { content: ""; display: block; flex: 0 0 10px; width: 10px; height: 6px; margin-left: auto; border: 0px; background: currentcolor; clip-path: polygon(0px 0px, 100% 0px, 50% 100%); transform: rotate(0deg); transition: transform 180ms; }
-.class-hub .necta1 .legacy-dropdown-trigger[aria-expanded="true"]::after { transform: rotate(180deg); }
-.class-hub .necta1 .legacy-dropdown-trigger[aria-expanded="true"] { box-shadow: 0 0 0 2px var(--catalog-active); background-color: var(--catalog-active) !important; color: var(--catalog-link) !important; border-color: var(--catalog-link) !important; }
+.class-hub .necta1 details[open] > .legacy-dropdown-trigger::after { transform: rotate(180deg); }
+.class-hub .necta1 details[open] > .legacy-dropdown-trigger { box-shadow: 0 0 0 2px var(--catalog-active); background-color: var(--catalog-active) !important; color: var(--catalog-link) !important; border-color: var(--catalog-link) !important; }
 .class-hub .class-resource-empty { display: block; padding: 8px 16px; white-space: normal; }
 .class-hub .class-resource-featured { white-space: nowrap; max-width: 100%; }
 .class-hub .class-resource-new { display: inline-grid; place-items: center; vertical-align: middle; flex: 0 0 36px; width: 36px; height: 24px; background: var(--resource-new-burst); color: var(--resource-new-text); clip-path: polygon(50% 0px, 61% 20%, 82% 5%, 79% 30%, 100% 35%, 85% 50%, 100% 68%, 77% 72%, 82% 96%, 60% 81%, 50% 100%, 39% 80%, 17% 96%, 22% 72%, 0px 65%, 15% 50%, 0px 32%, 24% 29%, 19% 5%, 40% 20%); }
@@ -160,13 +160,13 @@ body:has(.class-hub) b { font-weight: 500; }
 .class-hub .necta1 .dropdown-menu { clear: both; max-width: 100%; margin: 0px; box-sizing: border-box; position: relative !important; float: none !important; inset: auto !important; width: 100% !important; min-width: 0px !important; }
 .class-hub .necta1 .dropdown-menu > li > a { display: flex; align-items: center; min-height: 44px; padding: 10px 16px; box-sizing: border-box; white-space: normal; overflow-wrap: anywhere; }
 /* Clip moving artwork to its reserved space; neighbouring controls never move during the entrance. */
-.class-hub .class-resource-reveal:not([hidden]) { overflow: clip; display: flow-root; }
-.class-hub .necta1 .dropdown-menu.legacy-panel-open { animation-duration: 450ms; animation-fill-mode: backwards; animation-timing-function: ease; backface-visibility: hidden; }
-.class-hub .necta1 .class-menu-bounceInDown.legacy-panel-open { animation-name: hub-bounceInDown; animation-duration: 600ms; }
-.class-hub .necta1 .class-menu-slideInUp.legacy-panel-open { animation-name: hub-slideInUp; }
-.class-hub .necta1 .class-menu-flipInY.legacy-panel-open { animation-name: hub-flipInY; }
-.class-hub .necta1 .class-menu-flipInX.legacy-panel-open { animation-name: hub-flipInX; }
-.class-hub .necta1 .class-menu-lightSpeedIn.legacy-panel-open { animation-name: hub-lightSpeedIn; animation-timing-function: ease-out; }
+.class-hub details[open] > .class-resource-reveal { overflow: clip; display: flow-root; }
+.class-hub .necta1 details[open] .dropdown-menu { animation-duration: 450ms; animation-fill-mode: backwards; animation-timing-function: ease; backface-visibility: hidden; }
+.class-hub .necta1 details[open] .class-menu-bounceInDown { animation-name: hub-bounceInDown; animation-duration: 600ms; }
+.class-hub .necta1 details[open] .class-menu-slideInUp { animation-name: hub-slideInUp; }
+.class-hub .necta1 details[open] .class-menu-flipInY { animation-name: hub-flipInY; }
+.class-hub .necta1 details[open] .class-menu-flipInX { animation-name: hub-flipInX; }
+.class-hub .necta1 details[open] .class-menu-lightSpeedIn { animation-name: hub-lightSpeedIn; animation-timing-function: ease-out; }
 /* Only the five original keyframes: no legacy stylesheet or animation library download. */
 @keyframes hub-bounceInDown {
   0%, 60%, 75%, 90%, 100% { animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
@@ -221,3 +221,9 @@ body:has(.class-hub) b { font-weight: 500; }
 .class-resource-new > span { animation: resource-new-blink 1.2s steps(2, jump-none) infinite; }
 @keyframes resource-new-blink { 0% { opacity: 1; } 100% { opacity: .15; } }
 @media (prefers-reduced-motion: reduce) { .class-resource-new > span { animation: none; } }
+
+/* Native disclosures retain their state while React hydrates. */
+.class-hub summary.legacy-dropdown-trigger { list-style: none; cursor: pointer; }
+.class-hub summary.legacy-dropdown-trigger::-webkit-details-marker { display: none; }
+.class-hub details:not([open]) > .class-resource-reveal { display: none; }
+.class-hub details[open] .dropdown-menu { display: block; visibility: visible; }

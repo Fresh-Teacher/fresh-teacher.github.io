@@ -2,7 +2,15 @@ import { resourceTitle, type ResourceRecord } from './resources';
 import { searchTokens } from './document-search';
 
 const subjects: Record<string, string> = { mathematics: 'Mathematics', science: 'Science', socialstudies: 'Social Studies', english: 'English', literacy: 'Literacy', agriculture: 'Agriculture', entrepreneurship: 'Entrepreneurship', physics: 'Physics', chemistry: 'Chemistry', biology: 'Biology', geography: 'Geography', history: 'History', religiouseducation: 'Religious Education', christianreligiouseducation: 'Christian Religious Education', islamicreligiouseducation: 'Islamic Religious Education' };
+// Catalog records are static, so each one's facts are worked out once per session.
+const metadataCache = new WeakMap<ResourceRecord, ReturnType<typeof readMetadata>>();
 export function documentMetadata(item: ResourceRecord) {
+  let meta = metadataCache.get(item);
+  if (!meta) { meta = readMetadata(item); metadataCache.set(item, meta); }
+  return meta;
+}
+
+function readMetadata(item: ResourceRecord) {
   const text = `${resourceTitle(item)} ${item.description}`;
   const tokens = searchTokens(text);
   const subject = Object.entries(subjects).find(([token]) => tokens.includes(token))?.[1];

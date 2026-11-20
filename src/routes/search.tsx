@@ -14,7 +14,7 @@ export const Route = createFileRoute('/search')({
   validateSearch: (search: Record<string, unknown>) => ({ query: typeof search['query'] === 'string' ? search['query'] : '', page: Number.isFinite(Number(search['page'])) ? Math.max(1, Math.floor(Number(search['page'])) || 1) : 1, sort: librarySort(search['sort']), type: typeof search['type'] === 'string' ? search['type'] : 'all', layout: search['layout'] === 'list' ? 'list' : 'grid' }),
   loaderDeps: ({ search }) => search,
   loader: ({ deps }) => searchLibrary(deps.query, deps.page, 12, deps.sort, deps.type),
-  head: () => infoHead('Search the Library', 'Search Fresh Teacher’s complete library of nursery, primary and secondary notes, past papers and teaching documents.'),
+  head: () => infoHead('/search', 'Search the Library', 'Search Fresh Teacher’s complete library of nursery, primary and secondary notes, past papers and teaching documents.'),
   pendingComponent: DocumentsSkeleton,
   pendingMs: 400,
   errorComponent: () => <p role="alert" className="p-6">Library search is unavailable. Please try again.</p>,

@@ -1,24 +1,12 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { pageMeta } from "@/lib/site";
 
 export const Route = createFileRoute("/cookies")({
   staticData: { sitemap: true },
-  head: () => ({
-    meta: [
-      { title: "Cookie Policy — Fresh Teacher's Platform" },
-      {
-        name: "description",
-        content:
-          "How Fresh Teacher's Platform uses cookies to keep the resource library working and remember your preferences.",
-      },
-      { property: "og:title", content: "Cookie Policy — Fresh Teacher's Platform" },
-      {
-        property: "og:description",
-        content:
-          "How Fresh Teacher's Platform uses cookies to keep the resource library working and remember your preferences.",
-      },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-    ],
+  head: () => pageMeta({
+    path: "/cookies",
+    title: "Cookie Policy — Fresh Teacher's Platform",
+    description: "How Fresh Teacher's Platform uses cookies to keep the resource library working and remember your preferences.",
   }),
   component: CookiePolicyPage,
 });

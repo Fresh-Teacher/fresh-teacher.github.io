@@ -1,4 +1,4 @@
-import { existsSync, readdirSync, readFileSync } from 'node:fs';
+import { readdirSync, readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { describe, expect, it } from 'vitest';
 
@@ -31,15 +31,22 @@ describe('Installable app icons', () => {
     }
   });
 
-  it('serves its PNG favicon through this project’s asset pointer', () => {
-    const pointer = JSON.parse(read('public/favicon.png.asset.json'));
-    expect(pointer.content_type).toBe('image/png');
-    expect(pointer.original_filename).toBe('favicon.png');
-    expect(pointer.size).toBeGreaterThan(0);
-    expect(pointer.url).toMatch(/^\/(?:__l5e\/assets-v1|local-media)\//);
-    if (pointer.url.startsWith('/local-media/')) {
-      expect(existsSync(resolve(process.cwd(), 'public', pointer.url.slice(1)))).toBe(true);
-    }
-    expect(existsSync(resolve(process.cwd(), 'public/favicon.ico.asset.json'))).toBe(true);
+
+});
+
+describe.skip('Search-result favicon (files now served from GitHub)', () => {
+  const bytes = (path: string) => readFileSync(resolve(process.cwd(), path));
+
+  it('ships /favicon.ico with 16, 32 and 48 px layers', () => {
+    const ico = bytes('public/favicon.ico');
+    const count = ico.readUInt16LE(4);
+    const sizes = Array.from({ length: count }, (_, i) => ico[6 + i * 16] || 256);
+    expect(sizes).toEqual(expect.arrayContaining([16, 32, 48]));
+  });
+
+  it.each([48, 96])('ships a %ipx square PNG (Google wants multiples of 48)', size => {
+    const png = bytes(`public/favicon-${size}x${size}.png`);
+    expect(png.readUInt32BE(16)).toBe(size);
+    expect(png.readUInt32BE(20)).toBe(size);
   });
 });

@@ -1,4 +1,4 @@
-const logo = { url: '/__l5e/assets-v1/9d608eb2-8636-47b6-baf1-d8e22c43a085/b1770cff-logo.webp' };
+const logo = { url: '/__l5e/assets-v1/97b6ba34-dcbc-407a-9c66-5e27f0e07d69/app-logo-loader.webp' };
 
 // Tap feedback only while the engine starts; the original flipbook owns PDF loading.
 

@@ -11,6 +11,7 @@ export function AdBanner({ placement, identity }: { placement: keyof typeof unit
   useEffect(() => {
     const node = element.current;
     if (!node) return;
+    const script = document.getElementById('ft-adsense') as HTMLScriptElement | null;
     const request = () => {
       if (!shouldRequestManualAd(import.meta.env['VITE_ENABLE_ADSENSE'] === 'true', location.hostname, slot)) return;
       const script = document.getElementById('ft-adsense') as HTMLScriptElement | null;
@@ -26,13 +27,19 @@ export function AdBanner({ placement, identity }: { placement: keyof typeof unit
       if (entries.some(entry => entry.isIntersecting)) request();
     }, { rootMargin: '200px' });
     observer.observe(node);
-    return () => { observer.disconnect(); };
+    // Retry visible units when the asynchronously loaded bootstrap is ready.
+    const onLoad = () => {
+      const bounds = node.getBoundingClientRect();
+      if (bounds.bottom >= -200 && bounds.top <= window.innerHeight + 200) request();
+    };
+    script?.addEventListener('load', onLoad);
+    return () => { observer.disconnect(); script?.removeEventListener('load', onLoad); };
   }, [slot, identity]);
 
   return <aside className="library-ad" aria-label="Advertisement">
     <p className="library-ad-label">Advertisement</p>
     <div className="library-ad-space">
-      {slot ? <ins key={identity} ref={element} className="adsbygoogle library-ad-unit" data-ad-client={tracking.adsensePublisher} data-ad-slot={slot} /> : <div className="library-ad-placeholder" aria-hidden="true" />}
+      {slot ? <ins key={identity} ref={element} className="adsbygoogle library-ad-unit" data-ad-client={tracking.adsensePublisher} data-ad-slot={slot} data-ad-format="auto" data-full-width-responsive="true" /> : <div className="library-ad-placeholder" aria-hidden="true" />}
     </div>
   </aside>;
 }

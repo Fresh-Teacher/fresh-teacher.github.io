@@ -1,52 +1,51 @@
 import { act, cleanup, fireEvent, render, screen } from '@testing-library/react';
 import { afterEach, expect, it, vi } from 'vitest';
 import { DocumentGallery } from '@/components/document-gallery';
+import { BROKEN_THUMB_URL } from '@/lib/document-formats';
 
 vi.mock('@tanstack/react-router', () => ({
   useLocation: () => ({ pathname: '/PrimaryFiveClassPastPapers.html' }),
   Link: ({ children, params }: { children: React.ReactNode; params: { slug: string } }) => <a href={`/doc/${params.slug}`}>{children}</a>,
 }));
-const thumbnails = vi.hoisted(() => ({ load: vi.fn(async (): Promise<string | null> => null) }));
-vi.mock('@/lib/pdf-thumbs', () => ({ pdfThumbnail: thumbnails.load, pdfPageCount: () => undefined, preloadPdfJs: () => undefined }));
 vi.mock('@/lib/file-sizes', () => ({ fileSize: async () => null, formatSize: () => '' }));
-afterEach(() => { cleanup(); vi.unstubAllGlobals(); vi.useRealTimers(); thumbnails.load.mockReset(); });
 
-it('shows the thumbnail spinner from the first paint and removes it once the image loads', async () => {
+afterEach(() => { cleanup(); vi.unstubAllGlobals(); vi.useRealTimers(); });
+
+const BAKED = { pdfUrl: 'https://fresh-teacher.github.io/P7_SST_Full_Year_2024.pdf', description: '', price: 5000, thumbUrl: '/thumbs/p7-sst.jpg' };
+
+it('spins over the file-type card until the real cover arrives', async () => {
   vi.useFakeTimers();
-  thumbnails.load.mockResolvedValue('data:image/png;base64,ready');
-  vi.stubGlobal('IntersectionObserver', class {
-    constructor(private callback: (entries: { isIntersecting: boolean; target?: Element | undefined }[]) => void) {}
-    observe(target: Element) { this.callback([{ isIntersecting: true, target }]); } unobserve() {}
-    disconnect() {}
-  });
-  const view = render(<DocumentGallery items={[{ pdfUrl: 'https://fresh-teacher.github.io/instant.pdf', description: '', price: 5000 }]} />);
-  await act(async () => {});
-  const image = view.container.querySelector<HTMLImageElement>('.dg-thumb-cover');
-  expect(image?.getAttribute('src')).toBe('data:image/png;base64,ready');
-  expect(screen.getByRole('status', { name: 'Loading document thumbnail…' })).toBeTruthy();
-  if (!image) throw new Error('Ready thumbnail missing');
+  render(<DocumentGallery items={[BAKED]} />);
+  act(() => { vi.advanceTimersByTime(200); });
+  expect(screen.getByRole('status', { name: 'Loading document cover…' })).toBeTruthy();
+  expect(document.querySelector('img.dg-thumb-cover-ready')).toBeNull();
+  const image = document.querySelector('img.dg-thumb-cover');
+  if (!image) throw new Error('Cover missing');
   fireEvent.load(image);
-  act(() => { vi.advanceTimersByTime(1000); });
-  expect(screen.queryByRole('status', { name: 'Loading document thumbnail…' })).toBeNull();
+  act(() => {});
+  expect(screen.queryByRole('status', { name: 'Loading document cover…' })).toBeNull();
+  expect(document.querySelector('img.dg-thumb-cover-ready')).toBeTruthy();
 });
 
-it('clears an unfinished thumbnail spinner immediately when the image loads', async () => {
-  vi.useFakeTimers();
-  let finish: ((result: string) => void) | undefined;
-  thumbnails.load.mockImplementation(() => new Promise(resolve => { finish = resolve; }));
-  vi.stubGlobal('IntersectionObserver', class {
-    constructor(private callback: (entries: { isIntersecting: boolean; target?: Element | undefined }[]) => void) {}
-    observe(target: Element) { this.callback([{ isIntersecting: true, target }]); } unobserve() {}
-    disconnect() {}
-  });
-  const view = render(<DocumentGallery items={[{ pdfUrl: 'https://fresh-teacher.github.io/pending.pdf', description: '', price: 5000 }]} />);
-  act(() => { vi.advanceTimersByTime(150); });
-  expect(screen.queryByRole('status', { name: 'Loading document thumbnail…' })).not.toBeNull();
-  await act(async () => { finish?.('data:image/png;base64,ready'); });
-  const image = view.container.querySelector<HTMLImageElement>('.dg-thumb-cover');
-  if (!image) throw new Error('Ready thumbnail missing');
-  fireEvent.load(image);
-  expect(screen.queryByRole('status', { name: 'Loading document thumbnail…' })).toBeNull();
+it('names every cover image after its document so search engines can read it', async () => {
+  await act(async () => { render(<DocumentGallery items={[BAKED]} />); });
+  const image = screen.getByRole('img', { name: 'P.7 SST Full Year 2024 cover' });
+  expect(image.getAttribute('src')).toBe('https://cdn.jsdelivr.net/gh/Springing-Starz/garden-paths-atlas@main/public/thumbs/p7-sst.jpg');
+});
+
+it('shows the file-type card instead of a cover when a document has no baked thumbnail', async () => {
+  await act(async () => { render(<DocumentGallery items={[{ pdfUrl: 'https://fresh-teacher.github.io/lesson.docx', description: '', price: 5000 }]} />); });
+  expect(document.querySelector('img.dg-file-logo')).toBeTruthy();
+  expect(document.querySelector('img.dg-thumb-cover')).toBeNull();
+});
+
+it('falls back to the file-type card when a cover fails to load', async () => {
+  await act(async () => { render(<DocumentGallery items={[BAKED]} />); });
+  const image = document.querySelector('img.dg-thumb-cover');
+  if (!image) throw new Error('Cover missing');
+  fireEvent.error(image);
+  expect(document.querySelector('img.dg-thumb-cover')).toBeNull();
+  expect(document.querySelector('img.dg-file-logo')).toBeTruthy();
 });
 
 it('opens catalog PDFs through the original overlay callback but keeps Word viewing on its dedicated page', async () => {
@@ -62,64 +61,13 @@ it('opens catalog PDFs through the original overlay callback but keeps Word view
   expect(onView).toHaveBeenCalledTimes(1);
 });
 
-it('does not request off-screen thumbnails until they approach the viewport', async () => {
-  let observed: Element | undefined;
-  let intersect: ((entries: { isIntersecting: boolean; target?: Element | undefined }[]) => void) | undefined;
-  vi.stubGlobal('IntersectionObserver', class {
-    constructor(callback: (entries: { isIntersecting: boolean; target?: Element | undefined }[]) => void) { intersect = callback; }
-    observe(target: Element) { observed = target; } unobserve() {}
-    disconnect() {}
-  });
-  thumbnails.load.mockResolvedValue('data:image/jpeg;base64,ready');
-  render(<DocumentGallery items={[{ pdfUrl: 'https://fresh-teacher.github.io/offscreen.pdf', description: '', price: 5000 }]} />);
-  await act(async () => {});
-  expect(thumbnails.load).not.toHaveBeenCalled();
-  await act(async () => { intersect?.([{ isIntersecting: false, target: observed }]); });
-  expect(thumbnails.load).not.toHaveBeenCalled();
-  await act(async () => { intersect?.([{ isIntersecting: true, target: observed }]); });
-  expect(thumbnails.load).toHaveBeenCalledExactlyOnceWith('https://fresh-teacher.github.io/offscreen.pdf');
-});
-
-it('shows initial PDF feedback before observer delivery without starting downloads', async () => {
-  vi.stubGlobal('IntersectionObserver', class { observe() {} unobserve() {} disconnect() {} });
-  render(<DocumentGallery items={Array.from({ length: 12 }, (_, index) => ({ pdfUrl: `https://fresh-teacher.github.io/first-${index}.pdf`, description: '', price: 5000 }))} />);
-  expect(screen.getAllByRole('status', { name: 'Loading document thumbnail…' })).toHaveLength(4);
-  await act(async () => {});
-  expect(thumbnails.load).not.toHaveBeenCalled();
-});
-
-it('switches initial feedback to viewport visibility while keeping offscreen PDF work stopped', async () => {
-  let observed: Element | undefined;
-  let intersect: ((entries: { isIntersecting: boolean; target?: Element | undefined }[]) => void) | undefined;
-  vi.stubGlobal('IntersectionObserver', class {
-    constructor(callback: (entries: { isIntersecting: boolean; target?: Element | undefined }[]) => void) { intersect = callback; }
-    observe(target: Element) { observed = target; } unobserve() {} disconnect() {}
-  });
-  thumbnails.load.mockImplementation(() => new Promise(() => {}));
-  render(<DocumentGallery items={[{ pdfUrl: 'https://fresh-teacher.github.io/visibility.pdf', description: '', price: 5000 }]} />);
-  expect(screen.getByRole('status', { name: 'Loading document thumbnail…' })).toBeTruthy();
-  await act(async () => { intersect?.([{ isIntersecting: false, target: observed }]); });
-  expect(screen.queryByRole('status', { name: 'Loading document thumbnail…' })).toBeNull();
-  expect(thumbnails.load).not.toHaveBeenCalled();
-  await act(async () => { intersect?.([{ isIntersecting: true, target: observed }]); });
-  expect(screen.getByRole('status', { name: 'Loading document thumbnail…' })).toBeTruthy();
-  expect(thumbnails.load).toHaveBeenCalledExactlyOnceWith('https://fresh-teacher.github.io/visibility.pdf');
-});
-
-it('never starts PDF thumbnail work or its spinner for Office files', async () => {
-  await act(async () => { render(<DocumentGallery items={['doc', 'docx', 'xls', 'xlsx', 'ppt', 'pptx'].map(extension => ({ pdfUrl: `https://fresh-teacher.github.io/lesson.${extension}`, description: '', price: 5000 }))} />); });
-  expect(thumbnails.load).not.toHaveBeenCalled();
-  expect(screen.queryByRole('status', { name: 'Loading document thumbnail…' })).toBeNull();
-});
-
-it('ends PDF loading when thumbnail generation fails', async () => {
-  thumbnails.load.mockResolvedValue(null);
-  vi.stubGlobal('IntersectionObserver', class {
-    constructor(private callback: (entries: { isIntersecting: boolean; target?: Element | undefined }[]) => void) {}
-    observe(target: Element) { this.callback([{ isIntersecting: true, target }]); } unobserve() {}
-    disconnect() {}
-  });
-  await act(async () => { render(<DocumentGallery items={[{ pdfUrl: 'https://fresh-teacher.github.io/missing.pdf', description: '', price: 5000 }]} />); });
-  expect(thumbnails.load).toHaveBeenCalledExactlyOnceWith('https://fresh-teacher.github.io/missing.pdf');
-  expect(screen.queryByRole('status', { name: 'Loading document thumbnail…' })).toBeNull();
+it('shows broken-link records with the broken cover, including directly supplied search pages', async () => {
+  const broken = { ...BAKED, pdfUrl: 'https://fresh-teacher.github.io/P7_Missing_Maths.pdf', thumbUrl: BROKEN_THUMB_URL };
+  const searchResults = { total: 2, page: 1, sort: 'source', type: 'all', onChange: vi.fn() };
+  let view: ReturnType<typeof render>;
+  await act(async () => { view = render(<DocumentGallery items={[BAKED, broken]} ads={false} />); });
+  expect(screen.getByRole('heading', { name: 'P.7 SST Full Year 2024' })).toBeTruthy();
+  expect(screen.getByRole('heading', { name: 'P.7 Missing Maths' })).toBeTruthy();
+  await act(async () => { view!.rerender(<DocumentGallery items={[BAKED, broken]} ads={false} searchResults={searchResults} />); });
+  expect(screen.getByRole('heading', { name: 'P.7 Missing Maths' })).toBeTruthy();
 });

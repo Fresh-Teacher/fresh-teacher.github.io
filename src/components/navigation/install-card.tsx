@@ -1,33 +1,32 @@
 import { memo, useEffect, useRef, useState } from 'react';
-import { Check, LoaderCircle, Share2, X } from 'lucide-react';
+import { Download, Share2, X } from 'lucide-react';
 import { toast } from 'sonner';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
 import { ShareMenuItems } from '@/components/document-actions';
 import '@/styles/library-share.css';
 import { Button } from '@/components/ui/button';
 import installCardMascot from '@/assets/install-card-mascot.webp.asset.json';
-import googlePlayBadge from '@/assets/google-play-badge.webp.asset.json';
-import appStoreBadge from '@/assets/app-store-badge.svg.asset.json';
-
-export const APP_APK_URL = 'https://fresh-teacher.github.io/Fresh%20App.apk';
-export const PLAY_STORE_URL = 'https://play.google.com/store/search?q=Fresh%20App&c=apps';
-export const APP_STORE_URL = 'https://apps.apple.com/us/search?term=Fresh%20App';
-
-// Official Android robot glyph in its brand green.
-function AndroidIcon() {
-  return <svg width={16} height={16} viewBox="0 0 24 24" aria-hidden="true" fill="#3DDC84"><path d="M17.523 15.3414c-.5511 0-.9993-.4486-.9993-.9997s.4483-.9993.9993-.9993c.5511 0 .9993.4483.9993.9993.0001.5511-.4482.9997-.9993.9997m-11.046 0c-.5511 0-.9993-.4486-.9993-.9997s.4482-.9993.9993-.9993c.5511 0 .9993.4483.9993.9993 0 .5511-.4483.9997-.9993.9997m11.4045-6.02 1.9973-3.4592a.416.416 0 0 0-.1521-.5676.416.416 0 0 0-.5676.1521l-2.0223 3.503C15.5902 8.2439 13.8533 7.8508 12 7.8508s-3.5902.3931-5.1367 1.0989L4.841 5.4467a.4161.4161 0 0 0-.5677-.1521.4157.4157 0 0 0-.1521.5676l1.9973 3.4592C2.61 11.9105.3432 14.9946 0 18.53h24c-.3432-3.5354-2.61-6.6195-6.1185-9.2086"/></svg>;
-}
+import { isAppleMobile, requestInstall } from '@/lib/app-installation';
+import { useAppInstallation } from '@/hooks/use-app-installation';
 
 export const InstallCard = memo(function InstallCard({ open, onClose }: { open: boolean; onClose: () => void }) {
   const dialogRef = useRef<HTMLDivElement>(null);
-  const [apkState, setApkState] = useState<'idle' | 'loading' | 'done' | 'error'>('idle');
+  const { available } = useAppInstallation();
+  const [apple, setApple] = useState(false);
+  const [preview, setPreview] = useState(false);
+  const [busy, setBusy] = useState(false);
+  const [unavailable, setUnavailable] = useState(false);
+  useEffect(() => {
+    setApple(isAppleMobile());
+    setPreview(import.meta.env.DEV || window.self !== window.top);
+  }, []);
 
   useEffect(() => {
     if (!open) return;
     const previous = document.activeElement;
     dialogRef.current?.querySelector<HTMLButtonElement>('button')?.focus();
     const close = (event: MouseEvent) => {
-      if (event.target instanceof Element && !event.target.closest('.library-appbar-actions, .library-share-popup')) onClose();
+      if (event.target instanceof Element && !dialogRef.current?.contains(event.target) && !event.target.closest('.library-appbar-actions, .library-share-popup')) onClose();
     };
     const onKey = (event: KeyboardEvent) => {
       if (event.key === 'Escape') { event.preventDefault(); onClose(); }
@@ -43,27 +42,18 @@ export const InstallCard = memo(function InstallCard({ open, onClose }: { open: 
 
   if (!open) return null;
 
-  const downloadApk = async () => {
-    setApkState('loading');
-    try {
-      const response = await fetch(APP_APK_URL);
-      if (!response.ok) throw new Error('File unavailable');
-      const blob = await response.blob();
-      const url = URL.createObjectURL(blob);
-      const anchor = document.createElement('a');
-      anchor.href = url; anchor.download = 'Fresh App.apk';
-      // Keep the synthetic click from reaching the card's outside-tap close handler.
-      anchor.addEventListener('click', (event) => event.stopPropagation());
-      document.body.appendChild(anchor); anchor.click(); anchor.remove();
-      window.setTimeout(() => URL.revokeObjectURL(url), 60000);
-      setApkState('done');
-    } catch { setApkState('error'); }
+  const install = async () => {
+    setBusy(true);
+    const outcome = await requestInstall();
+    setBusy(false);
+    if (outcome === 'accepted') onClose();
+    setUnavailable(outcome === 'unavailable');
   };
 
   return <div className="library-profile library-install-card" role="dialog" aria-label="Install the app" aria-describedby="library-install-description" ref={dialogRef}>
     <Button variant="source" size="source" className="library-profile-close" aria-label="Close install card" onClick={onClose}><X /></Button>
     <div className="library-install-head">
-      <span className="library-install-badge" aria-hidden><AndroidIcon /></span>
+      <span className="library-install-badge" aria-hidden><Download /></span>
       <h2>Get the Fresh App</h2>
     </div>
     <div className="library-install-overview">
@@ -72,20 +62,18 @@ export const InstallCard = memo(function InstallCard({ open, onClose }: { open: 
         Take Fresh Teacher’s Library with you — install the Fresh App on your phone or tablet for one-tap access to notes, schemes of work and past papers.
       </p>
     </div>
-    <Button variant="source" size="source" className="library-install-btn" disabled={apkState === 'loading'} onClick={() => void downloadApk()}>
-      {apkState === 'loading' ? <LoaderCircle className="library-install-spin" aria-hidden /> : apkState === 'done' ? <Check aria-hidden /> : <AndroidIcon />}
-      {apkState === 'loading' ? 'Downloading…' : apkState === 'done' ? 'Downloaded' : 'Download the Fresh App apk'}
-    </Button>
-    {apkState === 'error' && <p role="alert" className="library-install-error">Download unavailable. <a href={APP_APK_URL} target="_blank" rel="noreferrer">Open the app file directly</a></p>}
-    <div className="library-install-divider" aria-hidden><span>or get it from</span></div>
-    <div className="library-install-stores">
-      <a href={PLAY_STORE_URL} target="_blank" rel="noreferrer" aria-label="Get the Fresh App on Google Play">
-        <img src={googlePlayBadge.url} alt="Get it on Google Play" width={646} height={250} />
-      </a>
-      <a href={APP_STORE_URL} target="_blank" rel="noreferrer" aria-label="Get the Fresh App on the Apple App Store">
-        <img src={appStoreBadge.url} alt="Download on the App Store" />
-      </a>
-    </div>
+    {available && <Button variant="source" size="source" className="library-install-btn" disabled={busy} onClick={() => void install()}>
+      <Download aria-hidden />{busy ? 'Opening…' : 'Install Fresh App'}
+    </Button>}
+    {unavailable && <p role="status" className="library-install-text">The install offer has expired. Use your browser’s menu instead.</p>}
+    {!available && <div className="library-install-help">
+      {preview && <p>Open the published site directly in your browser to install the app. Installation isn’t available inside this preview.</p>}
+      {apple ? <ol>
+        <li>Open this page in Safari.</li>
+        <li>Tap <Share2 size={18} aria-hidden /> <strong>Share</strong>, then <strong>Add to Home Screen</strong>.</li>
+        <li>Keep <strong>Open as Web App</strong> enabled if shown, then tap <strong>Add</strong>.</li>
+      </ol> : <p>Open your browser’s menu and select <strong>Install app</strong> or <strong>Add to Home Screen</strong>. On a computer, look for the install icon in the address bar. If neither is available, try Chrome, Edge, or Safari.</p>}
+    </div>}
     <LibraryShare />
   </div>;
 });

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-const logo = { url: '/__l5e/assets-v1/9d608eb2-8636-47b6-baf1-d8e22c43a085/b1770cff-logo.webp' };
+const logo = { url: '/__l5e/assets-v1/97b6ba34-dcbc-407a-9c66-5e27f0e07d69/app-logo-loader.webp' };
 
 // Delay feedback only, never the operation or its completed content.
 export function useLoadingIndicator(loading: boolean) {

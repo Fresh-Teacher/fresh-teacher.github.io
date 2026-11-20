@@ -3,7 +3,8 @@ export interface ClassHubData {
   title: string;
   description: string;
   heading: string;
-  menus: { label: string; featured: boolean; items: ClassHubItem[] }[];
+  /** A menu with `href` renders as a plain button link instead of a dropdown. */
+  menus: { label: string; featured: boolean; href?: string; items: ClassHubItem[] }[];
 }
 
 /** The original resource-specific Animate.css entrances, independent of menu order. */

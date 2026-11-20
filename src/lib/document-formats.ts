@@ -16,3 +16,16 @@ export function documentExtension(url: string) {
 export function isDocumentFile(url: string) {
   return documentExtensions.has(documentExtension(url));
 }
+
+/** Marker the thumbnail pipeline stamps on records whose source file returned 404. */
+export const BROKEN_THUMB_URL = '/thumbs/broken-link.webp';
+/** Marker for live PDFs the pipeline could not render because they are password-protected. */
+export const LOCKED_THUMB_URL = '/thumbs/locked-pdf.webp';
+
+/**
+ * Every real document file is listed, including missing and locked ones, so problems
+ * stay visible in the library (missing files show the broken cover, locked ones the lock cover).
+ */
+export function isVisibleDocument(item: { pdfUrl: string; thumbUrl?: string }) {
+  return isDocumentFile(item.pdfUrl);
+}

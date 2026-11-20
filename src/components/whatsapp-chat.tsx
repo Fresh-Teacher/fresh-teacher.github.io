@@ -1,10 +1,19 @@
 import { useEffect, useRef, useState } from 'react';
-const adminPhoto = { url: '/__l5e/assets-v1/18d77338-1444-46bb-b8ec-5e0f26aa9e7f/51de6e3f-admin-photo.webp' };
+const adminPhoto = { url: '/__l5e/assets-v1/a3952ef0-23af-4c71-a257-f6740d412b45/51de6e3f-admin-photo.webp' };
 import { legacyGreeting } from '@/lib/legacy-pages';
 import styles from '@/styles/whatsapp-chat.css?raw';
 
 // One shared WhatsApp chat for the whole app: the captured homepage widget,
 // mounted by LibraryShell so every page shows the same button and dialog.
+const WHATSAPP_NUMBER = '+256786812837';
+// Like the original HTML widget: phones/tablets open the WhatsApp app
+// straight into the chat; desktop falls back to WhatsApp Web.
+function whatsappUrl(text: string) {
+  const base = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+    ? 'whatsapp://send'
+    : 'https://web.whatsapp.com/send';
+  return `${base}?phone=${WHATSAPP_NUMBER}&text=${encodeURIComponent(text)}`;
+}
 export function WhatsAppChat() {
   const [open, setOpen] = useState(false);
   const [message, setMessage] = useState('');
@@ -92,7 +101,7 @@ export function WhatsAppChat() {
         </div>
         <div className="blanter-msg">
           <textarea id="chat-input" maxLength={120} placeholder="Message" aria-label="Message" value={message} onChange={event => setMessage(event.target.value)} />
-          <a id="send-it" href={message.trim() ? `https://web.whatsapp.com/send?phone=+256750687790&text=${encodeURIComponent(message)}` : '#'} target="_blank" rel="noopener noreferrer" role="button" aria-label="Send message on WhatsApp" onClick={event => { if (!message.trim()) event.preventDefault(); }}>
+          <a id="send-it" href={message.trim() ? whatsappUrl(message) : '#'} target="_blank" rel="noopener noreferrer" role="button" aria-label="Send message on WhatsApp" onClick={event => { if (!message.trim()) event.preventDefault(); }}>
             <svg viewBox="0 0 448 448"><path d="M.213 32L0 181.333 320 224 0 266.667.213 416 448 224z" /></svg>
           </a>
         </div>

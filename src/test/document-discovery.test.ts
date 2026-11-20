@@ -6,7 +6,9 @@ import { documentMetadata, documentSlug } from '@/lib/document-metadata';
 import { loadDocument } from '@/lib/document-catalog';
 import { catalogWindow } from '@/lib/document-browsing';
 import { documentViewer } from '@/lib/document-viewer';
-import { isDocumentFile } from '@/lib/document-formats';
+import { isDocumentFile, isVisibleDocument, BROKEN_THUMB_URL, LOCKED_THUMB_URL } from '@/lib/document-formats';
+import { thumbSrc } from '@/lib/resources';
+import lockedCover from '@/assets/locked-pdf.jpeg.asset.json';
 import { flipbookOptions, readingModes } from '@/lib/flipbook-options';
 
 const record = (name: string): ResourceRecord => ({ pdfUrl: `https://fresh-teacher.github.io/${name}.pdf`, description: 'Primary Seven', price: 5000 });
@@ -62,6 +64,16 @@ describe('Document discovery rules', () => {
     expect(filterResources([maths, nonDocument], '')).toEqual([maths]);
   });
   it.each(['pdf', 'doc', 'docx', 'ppt', 'pptx', 'xls', 'xlsx', 'odt', 'ods', 'odp', 'rtf', 'txt'])('keeps %s documents', extension => { expect(isDocumentFile(`https://fresh-teacher.github.io/lesson.${extension}`)).toBe(true); });
+  it('lists missing and locked documents with their own covers', () => {
+    const broken = { ...maths, thumbUrl: BROKEN_THUMB_URL };
+    expect(isVisibleDocument(broken)).toBe(true);
+    expect(isVisibleDocument({ ...maths, thumbUrl: LOCKED_THUMB_URL })).toBe(true);
+    expect(thumbSrc(LOCKED_THUMB_URL)).toBe(lockedCover.url);
+    expect(thumbSrc(BROKEN_THUMB_URL)).toContain('/thumbs/broken-link.webp');
+    expect(isVisibleDocument(maths)).toBe(true);
+    expect(isVisibleDocument({ ...maths, thumbUrl: '/thumbs/real-cover.webp' })).toBe(true);
+    expect(filterResources([maths, broken], '')).toEqual([maths, broken]);
+  });
   it('preserves captured PDF filenames containing a literal hash', () => { expect(documentViewer('https://fresh-teacher.github.io/p6/P.6#CREATIVE PRINTERS SCIENCE.pdf').kind).toBe('pdf'); });
   it('does not expose system-file detail pages', async () => { expect(await loadDocument(documentSlug({ ...maths, pdfUrl: 'https://fresh-teacher.github.io/baby/desktop.ini' }))).toBeNull(); });
   it('matches the catalog flip style', () => { expect(flipbookOptions(maths.pdfUrl)).toMatchObject({ pdfUrl: maths.pdfUrl, viewMode: 'webgl', singlePageMode: false, btnPrev: { enabled: true }, btnNext: { enabled: true } }); });

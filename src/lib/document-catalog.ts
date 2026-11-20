@@ -1,16 +1,17 @@
+import { remoteGlob } from '@/lib/remote-catalog';
 import { documentSlug } from './document-metadata';
 import resourceManifest from '@/data/resource-manifest.json';
 import legacyManifest from '@/data/legacy/manifest.json';
 import type { ResourcePageData } from './resources';
 import type { DocumentShard, StaticPage } from './static-catalog';
 import { resolveDocuments } from './static-catalog';
-import { isDocumentFile } from './document-formats';
+import { isDocumentFile, isVisibleDocument } from './document-formats';
 import repositoryManifest from '@/data/catalog/repositories.json';
 
 type Entry = { id: string; path: string; kind: string; data: string };
-const indices = import.meta.glob<{ default: Record<string, Entry> }>('../data/catalog/document-index/*.json');
-const documents = import.meta.glob<{ default: DocumentShard }>('../data/catalog/documents/*.json');
-const pages = import.meta.glob<{ default: StaticPage<ResourcePageData> }>('../data/catalog/pages/*/*.json');
+const indices = remoteGlob<Record<string, Entry>>('../data/catalog/document-index/');
+const documents = remoteGlob<DocumentShard>('../data/catalog/documents/');
+const pages = remoteGlob<StaticPage<ResourcePageData>>('../data/catalog/pages/');
 async function shard(key: string) {
   const load = documents[`../data/catalog/documents/${key}.json`];
   if (!load) throw new Error('Missing document shard');
@@ -20,7 +21,7 @@ export async function loadDocument(slug: string, source?: string) {
   const key = slug.split('-')[0] ?? '';
   if (!/^[a-f0-9]{16}$/.test(key)) return null;
   const get = indices[`../data/catalog/document-index/${key.slice(0, 2)}.json`];
-  const entry = get ? (await get()).default[key] : undefined;
+  const entry = get ? (await get().catch(() => null))?.default[key] : undefined;
   if (!entry) return null;
   const item = (await shard(entry.id.slice(0, 2)))[entry.id];
   if (!item) throw new Error('Missing document');
@@ -36,7 +37,7 @@ export async function loadDocument(slug: string, source?: string) {
   const read = pages[`../data/catalog/pages/${origin.kind}/${origin.data}`];
   if (!read) throw new Error('Missing document category');
   const page = (await read()).default;
-  const siblings = await resolveDocuments(page.documentIds, shard);
+  const siblings = (await resolveDocuments(page.documentIds, shard)).filter(isVisibleDocument);
   return { item, path: origin.path ?? entry.path, category: page.title, related: siblings, slug: documentSlug(item) };
 }
 export type DocumentData = NonNullable<Awaited<ReturnType<typeof loadDocument>>>;

@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, type ReactNode, type KeyboardEvent } from 'react';
+import { useEffect, useRef, type ReactNode, type KeyboardEvent } from 'react';
 import { Button } from '@/components/ui/button';
 import { classMenuAnimations, type ClassHubData } from '@/lib/class-hubs';
 
@@ -13,44 +13,42 @@ export function ClassHubLayout({ heading, children, loading = false }: { heading
 }
 
 export function ClassHub({ data }: { data: ClassHubData }) {
-  const [opened, setOpened] = useState<number | null>(null);
   const root = useRef<HTMLDivElement>(null);
-  const triggers = useRef<(HTMLButtonElement | null)[]>([]);
-  const pendingFocus = useRef<'first' | 'last' | null>(null);
-  const focusItems = (index: number) => Array.from(root.current?.querySelectorAll<HTMLAnchorElement>(`#class-menu-${index} [role="menuitem"]`) ?? []);
+  const groupFor = (index: number) => root.current?.querySelector<HTMLDetailsElement>(`#class-group-${index}`);
+  const focusItems = (index: number) => Array.from(groupFor(index)?.querySelectorAll<HTMLAnchorElement>('[role="menuitem"]') ?? []);
+  const close = (group: HTMLDetailsElement, restoreFocus = false) => {
+    group.open = false;
+    if (restoreFocus) group.querySelector<HTMLElement>('summary')?.focus();
+  };
   useEffect(() => {
-    if (opened !== null && pendingFocus.current) {
-      const items = focusItems(opened);
-      (pendingFocus.current === 'last' ? items.at(-1) : items[0])?.focus();
-      pendingFocus.current = null;
-    }
-  }, [opened]);
-  useEffect(() => {
-    if (opened === null) return;
     const dismiss = (event: MouseEvent) => {
-      if (!(event.target instanceof Element)) return;
-      if (event.target.closest('.legacy-dropdown-trigger')) return;
-      if (!root.current?.querySelector(`#class-group-${opened}`)?.contains(event.target)) setOpened(null);
+      if (!(event.target instanceof Node)) return;
+      for (const group of root.current?.querySelectorAll<HTMLDetailsElement>('details[open]') ?? []) {
+        if (!group.contains(event.target)) close(group);
+      }
     };
     const escape = (event: globalThis.KeyboardEvent) => {
-      if (event.key === 'Escape') { event.preventDefault(); setOpened(null); triggers.current[opened]?.focus(); }
+      if (event.key !== 'Escape') return;
+      const group = root.current?.querySelector<HTMLDetailsElement>('details[open]');
+      if (!group) return;
+      event.preventDefault();
+      close(group, true);
     };
     document.addEventListener('click', dismiss, true);
     document.addEventListener('keydown', escape);
     return () => { document.removeEventListener('click', dismiss, true); document.removeEventListener('keydown', escape); };
-  }, [opened]);
-  const openFromKeyboard = (event: KeyboardEvent<HTMLButtonElement>, index: number) => {
-    if (!['ArrowDown', 'ArrowUp', 'Enter', ' '].includes(event.key)) return;
+  }, []);
+  const openFromKeyboard = (event: KeyboardEvent<HTMLElement>, index: number) => {
+    // Enter/Space toggle natively, including before hydration. Arrow keys are an enhancement.
+    if (!['ArrowDown', 'ArrowUp'].includes(event.key)) return;
     event.preventDefault();
-    pendingFocus.current = event.key === 'ArrowUp' ? 'last' : 'first';
-    if (opened === index) {
-      const items = focusItems(index);
-      (pendingFocus.current === 'last' ? items.at(-1) : items[0])?.focus();
-      pendingFocus.current = null;
-    } else setOpened(index);
+    const group = groupFor(index);
+    if (!group) return;
+    group.open = true;
+    const items = focusItems(index);
+    (event.key === 'ArrowUp' ? items.at(-1) : items[0])?.focus();
   };
   const navigateMenu = (event: KeyboardEvent<HTMLUListElement>, index: number) => {
-    if (event.key === 'Tab') { setOpened(null); return; }
     if (event.key === ' ') { event.preventDefault(); (event.target as HTMLElement).click(); return; }
     if (!['ArrowDown', 'ArrowUp', 'Home', 'End'].includes(event.key)) return;
     event.preventDefault();
@@ -61,15 +59,19 @@ export function ClassHub({ data }: { data: ClassHubData }) {
     items[next]?.focus();
   };
   return <div ref={root}><ClassHubLayout heading={data.heading}>
-    {data.menus.map((menu, index) => <div suppressHydrationWarning id={`class-group-${index}`} className={`btn-group m-r-10 ${menu.featured ? 'class-resource-featured' : ''}`} key={menu.label}>
-      <Button suppressHydrationWarning ref={element => { triggers.current[index] = element; }} id={`class-trigger-${index}`} type="button" data-toggle="dropdown" variant="source" size="source" className="btn btn-info dropdown-toggle waves-effect waves-light legacy-control legacy-dropdown-trigger" aria-haspopup="menu" aria-expanded={opened === index} aria-controls={`class-menu-${index}`} onClick={() => setOpened(current => current === index ? null : index)} onKeyDown={event => openFromKeyboard(event, index)}>
-        <b>{menu.label}</b>{menu.featured && <span className="class-resource-new"><span>NEW!</span></span>}
+    {data.menus.map((menu, index) => menu.href ? <div id={`class-group-${index}`} className={`btn-group m-r-10 ${menu.featured ? 'class-resource-featured' : ''}`} key={menu.label}>
+      <Button asChild variant="source" size="source" className="btn btn-info waves-effect waves-light legacy-control"><a href={menu.href}><b>{menu.label}</b>{menu.featured && <span className="class-resource-new"><span>NEW!</span></span>}</a></Button>
+    </div> : <details suppressHydrationWarning id={`class-group-${index}`} name="class-resources" data-native-dropdown className={`btn-group m-r-10 ${menu.featured ? 'class-resource-featured' : ''}`} key={menu.label}>
+      <Button asChild variant="source" size="source" className="btn btn-info dropdown-toggle waves-effect waves-light legacy-control legacy-dropdown-trigger">
+        <summary id={`class-trigger-${index}`} data-toggle="dropdown" aria-controls={`class-menu-${index}`} onKeyDown={event => openFromKeyboard(event, index)}>
+          <b>{menu.label}</b>{menu.featured && <span className="class-resource-new"><span>NEW!</span></span>}
+        </summary>
       </Button>
-      <div suppressHydrationWarning className="class-resource-reveal" hidden={opened !== index}>
-      <ul suppressHydrationWarning id={`class-menu-${index}`} role="menu" aria-labelledby={`class-trigger-${index}`} hidden={opened !== index} className={`dropdown-menu class-menu-${classMenuAnimations[menu.label] ?? 'slideInUp'} ${opened === index ? 'legacy-panel-open' : 'legacy-dropdown-closed'}`} onKeyDown={event => navigateMenu(event, index)}>
-        {menu.items.map((item, itemIndex) => 'href' in item ? <li role="none" key={itemIndex}><a role="menuitem" tabIndex={-1} href={item.href} onClick={() => setOpened(null)}>{item.label}</a></li> : 'divider' in item ? <li role="separator" className="divider" key={itemIndex} /> : <li role="none" key={itemIndex}><span className="class-resource-empty" role="status">{item.empty}</span></li>)}
-      </ul>
+      <div className="class-resource-reveal">
+        <ul id={`class-menu-${index}`} role="menu" aria-labelledby={`class-trigger-${index}`} className={`dropdown-menu class-menu-${classMenuAnimations[menu.label] ?? 'slideInUp'}`} onKeyDown={event => navigateMenu(event, index)}>
+          {menu.items.map((item, itemIndex) => 'href' in item ? <li role="none" key={itemIndex}><a role="menuitem" href={item.href}>{item.label}</a></li> : 'divider' in item ? <li role="separator" className="divider" key={itemIndex} /> : <li role="none" key={itemIndex}><span className="class-resource-empty" role="status">{item.empty}</span></li>)}
+        </ul>
       </div>
-    </div>)}
+    </details>)}
   </ClassHubLayout></div>;
 }

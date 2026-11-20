@@ -21,10 +21,12 @@ export function repoFileUrl(repo: string, path: string) {
   return `${base}/${encoded}`;
 }
 
-export function treeToDocuments(repo: string, tree: { path: string; type: string }[]): ResourceRecord[] {
+export function treeToDocuments(repo: string, tree: { path: string; type: string; size?: number }[]): ResourceRecord[] {
   return tree
     .filter(entry => entry.type === 'blob')
-    .map(entry => ({ title: '', description: '', price: '', pdfUrl: repoFileUrl(repo, entry.path) }))
+    .map(entry => ({ title: '', description: '', price: '', pdfUrl: repoFileUrl(repo, entry.path),
+      ...(entry.size != null && Number.isSafeInteger(entry.size) && entry.size >= 0 ? { sizeBytes: entry.size } : {}),
+    }))
     .filter(item => isDocumentFile(item.pdfUrl));
 }
 

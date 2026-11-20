@@ -6,9 +6,6 @@
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
-    "build:standalone": "node scripts/build_standalone.mjs",
-    "build:pages": "node scripts/build_standalone.mjs --pages",
-    "build:pages:runtime": "vite build --config vite.github-pages.config.ts && python3 scripts/prepare_github_pages.py",
     "build:dev": "vite build --mode development",
     "preview": "vite preview",
     "lint": "eslint .",
@@ -17,7 +14,8 @@
     "test:watch": "vitest"
   },
   "overrides": {
-    "rolldown": "1.2.1"
+    "rolldown": "1.2.1",
+    "shell-quote": ">=1.11.0"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
