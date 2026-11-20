@@ -81,7 +81,7 @@ def export_project(source: Path, destination: Path, origin: str) -> dict:
         updated = rewrite_media(text, mapping)
         if text != updated:
             path.write_text(updated)
-            rewritten += 1
+            rewritten_files += 1
     # Pointer imports retain their existing shape; exported pointers become local descriptors.
     for pointer in pointers:
         target = destination / pointer.relative_to(source)
@@ -97,7 +97,7 @@ def export_project(source: Path, destination: Path, origin: str) -> dict:
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', type=Path, required=True)
-    parser.add_argument('--origin', default='https://id-preview--a2ec37fb-cb14-465c-8d0e-f4289476ddc6.lovable.app')
+    parser.add_argument('--origin', default='https://id-preview--d63a5677-756e-4c0d-abeb-a4c140e10fec.lovable.app')
     args = parser.parse_args()
     report = export_project(ROOT, args.output, args.origin)
     print(f"Exported {report['media_files']} local media files ({report['total_bytes']} bytes).")
