@@ -4,7 +4,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background: url('/__l5e/assets-v1/6c1c1870-8505-442a-aa86-28a4dc8f6d6b/8ee52a89-overlay_lightbox.webp') repeat;
+    background: url('/__l5e/assets-v1/5e73b751-4340-466d-957b-87f360539d84/8ee52a89-overlay_lightbox.webp') repeat;
     z-index: 2147483646 !important;
 }
 
@@ -20,7 +20,7 @@
     -moz-border-radius: 4px;
     border-radius: 4px;
     background: #ffffff;
-    /*background: url('/__l5e/assets-v1/6c1c1870-8505-442a-aa86-28a4dc8f6d6b/8ee52a89-overlay_lightbox.webp') repeat;*/
+    /*background: url('/__l5e/assets-v1/5e73b751-4340-466d-957b-87f360539d84/8ee52a89-overlay_lightbox.webp') repeat;*/
 }
 
 .flipbook-lightbox-thumb-overlay {

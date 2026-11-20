@@ -29,29 +29,7 @@ use the editor.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
 
-## Repository import
-- Preserve imported TanStack routes, shared library shell, and static catalogs to retain navigation and search behavior.
-- Rehome imported binary media with project-owned asset pointers so another project’s storage is not required.
-- Keep the current project runtime and generated route tree; repository imports must not replace deployment configuration or repository metadata.
-
-## Standalone exports
-- Keep Lovable media pointers in the working project; materialize and rewrite them only in an external source export so self-hosted media needs no Lovable proxy.
-- External hosting builds use the staged standalone builder to download validated media and rewrite references before compiling; this keeps deployed assets local without changing Lovable's working media pointers.
-- Use the export script to validate every downloaded media file and reject unmapped media references so exports cannot silently contain broken media.
-
-## External static deployment
-- Derive sitemap pages from explicit route decisions and registered legacy catalogs; prerender XML for Pages and verify each listed HTML file before deployment, excluding shell-only document/repository URLs and non-page-specific dates.
-- Keep GitHub Pages configuration separate from the Lovable runtime; prerender catalog URLs and convert directory output to literal legacy HTML files to preserve incoming links.
-- Deploy Pages only by manual workflow that materializes standalone source automatically; refuse unresolved media or missing page output so failed preparation cannot replace the live site.
-- Prefer dedicated TanStack shell files for Pages 404 output, falling back to the validated homepage when absent, so differing prerender layouts remain deployable.
-- Load AdSense only on the approved production hostname with the production flag; previews must not generate ad traffic.
-
-## Manual advertisements
-- Keep manual unit IDs in `src/data/ad-units.json` (null until supplied); render fixed-size labeled bands after eight catalog items and after document information, never inside resource cards or readers, to separate ads from downloads.
-- Queue each ad DOM element once and only on the approved production host; keep preview placeholders request-free and preserve the existing production bootstrap.
-
-## Visitor notices
-- The install prompt is the only visitor notice; it opens only when the browser reports the app is installable.
-
-## Early interactions
-- Mark class and legacy dropdown triggers with `data-toggle="dropdown"`; keep the inline early-tap script and its typed test implementation synchronized and support both direct menus and reveal wrappers so static first taps work before hydration.
+## Imported application architecture
+- Keep the target TanStack bootstrap and pinned framework versions while importing compatible application modules, so hosting stays supported.
+- Resolve the public resource library from the bundled catalog and legacy manifests; retain existing CDN media and document providers because the source has no account database.
+- Render fixed document-page shells directly in JSX rather than parsing captured HTML at runtime, preserving existing wrapper classes so styling stays unchanged.

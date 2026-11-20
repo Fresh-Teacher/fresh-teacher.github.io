@@ -20,19 +20,20 @@ describe('Inline dropdown handoff', () => {
       const container = document.createElement('div');
       document.body.appendChild(container);
       container.innerHTML = renderToString(page);
-      const button = container.querySelector<HTMLButtonElement>('[data-toggle="dropdown"]');
+      const button = container.querySelector<HTMLElement>('[data-toggle="dropdown"]');
       if (!button) throw new Error('Missing trigger');
       button.click();
-      expect(button.getAttribute('aria-expanded')).toBe('true');
-      expect(container.querySelector('[data-early-open]')).not.toBeNull();
+      const native = button.closest('details');
+      expect(native ? native.open : button.getAttribute('aria-expanded') === 'true').toBe(true);
+      if (!native) expect(container.querySelector('[data-early-open]')).not.toBeNull();
       let root: ReturnType<typeof hydrateRoot> | undefined;
       await act(async () => { root = hydrateRoot(container, page); });
       await act(async () => { vi.advanceTimersByTime(200); });
-      expect(button.getAttribute('aria-expanded')).toBe('true');
+      expect(native ? native.open : button.getAttribute('aria-expanded') === 'true').toBe(true);
       expect(container.querySelector('[data-early-open]')).toBeNull();
       expect(container.querySelector('ul.dropdown-menu')?.hasAttribute('hidden')).toBe(false);
       await act(async () => { button.click(); });
-      expect(button.getAttribute('aria-expanded')).toBe('false');
+      expect(native ? native.open : button.getAttribute('aria-expanded') === 'true').toBe(false);
       await act(async () => { root?.unmount(); });
       container.remove();
     }

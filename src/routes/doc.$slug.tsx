@@ -5,6 +5,7 @@ import { DocumentDetail } from '@/components/document-detail';
 import { browsingContext } from '@/lib/document-browsing';
 import { useRouteStylesheets } from '@/lib/route-stylesheets';
 import { documentContent } from '@/lib/document-content';
+import { absoluteUrl, breadcrumbJsonLd, jsonLd, pageMeta } from '@/lib/site';
 
 const docStylesheets = ['bootstrap.min.css', 'font-awesome.css', 'flipbook.style.css'].map(file => `/resource-source/css/${file}`);
 
@@ -22,17 +23,20 @@ export const Route = createFileRoute('/doc/$slug')({
     const title = loaderData ? `${resourceTitle(loaderData.item)} | Fresh Teacher` : 'Document unavailable | Fresh Teacher';
     const content = loaderData ? documentContent(loaderData.item) : undefined;
     const description = content?.description ?? 'This document is unavailable.';
-    const url = loaderData ? `/doc/${loaderData.slug}` : undefined;
+    const path = loaderData ? `/doc/${loaderData.slug}` : undefined;
+    const url = path ? absoluteUrl(path) : undefined;
+    const page = pageMeta({ path: path ?? '/doc', title, description, type: 'article', canonical: path ? undefined : false });
     return {
-      meta: [{ title }, { name: 'description', content: description }, { property: 'og:title', content: title }, { property: 'og:description', content: description }, { property: 'og:type', content: 'article' }, { name: 'twitter:card', content: 'summary_large_image' }, ...(url ? [{ property: 'og:url', content: url }] : []), ...(!loaderData ? [{ name: 'robots', content: 'noindex' }] : [])],
-      links: [...docStylesheets.map(href => ({ rel: 'stylesheet', href })), ...(url ? [{ rel: 'canonical', href: url }] : [])],
-      scripts: loaderData && content ? [{ type: 'application/ld+json', children: JSON.stringify({
+      meta: [...page.meta, ...(!loaderData ? [{ name: 'robots', content: 'noindex' }] : [])],
+      links: [...docStylesheets.map(href => ({ rel: 'stylesheet', href })), ...page.links],
+      scripts: loaderData && content && path ? [breadcrumbJsonLd([{ name: content.title, path }]), jsonLd({
         '@context': 'https://schema.org', '@type': 'LearningResource', name: content.title, description, url,
         learningResourceType: content.metadata.kind ?? 'Educational document',
         ...(content.metadata.subject ? { about: { '@type': 'Thing', name: content.metadata.subject } } : {}),
         ...(content.metadata.level ? { educationalLevel: content.metadata.level } : {}),
+        isAccessibleForFree: true, inLanguage: 'en',
         associatedMedia: { '@type': 'MediaObject', contentUrl: loaderData.item.pdfUrl, ...(content.format ? { encodingFormat: content.format } : {}) },
-      }) }] : [],
+      })] : [],
     };
   },
   component: DocumentRoute,

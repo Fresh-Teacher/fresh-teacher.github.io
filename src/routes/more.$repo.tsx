@@ -1,17 +1,22 @@
+import { remoteGlob } from '@/lib/remote-catalog';
 import { DocumentsSkeleton } from '@/components/documents-skeleton';
 import { createFileRoute, notFound } from '@tanstack/react-router';
-import { LegacyPage } from '@/components/legacy-page';
+import { LegacyDocumentPage, hasDirectDocumentLayout } from '@/components/legacy-document-page';
+import { lazy, Suspense } from 'react';
 import legacyManifest from '@/data/legacy/manifest.json';
 import type { LegacyPageData } from '@/lib/legacy-pages';
 import type { StaticPage } from '@/lib/static-catalog';
 import { useRouteStylesheets, warmRouteStylesheets } from '@/lib/route-stylesheets';
 import { findMoreDocumentsRepo } from '@/data/more-documents';
 import { loadRepositoryDocuments } from '@/lib/repository-catalog';
+import { pageSeo } from '@/lib/page-seo';
+import { pageMeta } from '@/lib/site';
 
 // Reuse the shared document-listing layout so repository pages look like every other document page.
 const TEMPLATE_PAGE = 'PrimaryFiveMTCPastPapers.html';
-const legacyPages = import.meta.glob<{ default: StaticPage<LegacyPageData> }>('../data/catalog/pages/legacy/*.json');
+const legacyPages = remoteGlob<StaticPage<LegacyPageData>>('../data/catalog/pages/legacy/');
 const fragmentFiles = import.meta.glob<{ default: string }>('../data/legacy/fragments/*.json');
+const LegacyPage = lazy(() => import('@/components/legacy-page').then(module => ({ default: module.LegacyPage })));
 
 export const Route = createFileRoute('/more/$repo')({
   staticData: { sitemap: false },
@@ -32,26 +37,24 @@ export const Route = createFileRoute('/more/$repo')({
       fragments[key] = text;
       await Promise.all(Array.from(text.matchAll(/data-key="([^"]+)"/g), match => read(match[1] ?? '')));
     };
+    void warmRouteStylesheets(base.links);
     const [items] = await Promise.all([
       loadRepositoryDocuments(entry.repo),
       read(base.template),
       read(base.styles),
-      warmRouteStylesheets(base.links),
     ]);
     const title = `${entry.label} | Fresh Teacher`;
     const data: LegacyPageData = { ...base, title, description: `${entry.label} from Fresh Teacher's Library.`, items, missingData: null };
     return { repo: entry.repo, data, fragments };
   },
   head: ({ loaderData }) => {
-    const title = loaderData?.data.title ?? 'More Documents | Fresh Teacher';
-    const description = loaderData?.data.description ?? "More documents from Fresh Teacher's Library.";
+    const { title, description } = loaderData
+      ? pageSeo({ path: `more/${loaderData.repo}`, title: loaderData.data.title, description: loaderData.data.description, count: loaderData.data.items.length })
+      : { title: 'More Documents | Fresh Teacher', description: "More documents from Fresh Teacher's Library." };
+    const page = pageMeta({ path: loaderData ? `/more/${loaderData.repo}` : '/more', title, description, canonical: loaderData ? undefined : false });
     return {
-      meta: [
-        { title }, { name: 'description', content: description },
-        { property: 'og:title', content: title }, { property: 'og:description', content: description },
-        { property: 'og:type', content: 'website' }, { name: 'twitter:card', content: 'summary_large_image' },
-      ],
-      links: (loaderData?.data.links ?? []).map(href => ({ rel: 'stylesheet', href })),
+      meta: page.meta,
+      links: [...page.links, ...(loaderData?.data.links ?? []).map(href => ({ rel: 'stylesheet', href }))],
     };
   },
   staleTime: Infinity,
@@ -62,12 +65,15 @@ export const Route = createFileRoute('/more/$repo')({
 
 function MoreDocumentsPage() {
   const result = Route.useLoaderData();
-  const ready = useRouteStylesheets(result.data.links);
+  useRouteStylesheets(result.data.links);
   return (
     <>
-      {!ready && <div className="documents-skeleton-overlay"><DocumentsSkeleton /></div>}
-      <div className={ready ? 'route-fade route-fade--in' : 'route-fade'}>
-        <LegacyPage key={result.repo} data={result.data} fragments={result.fragments} />
+      <div className="route-fade route-fade--in">
+        <Suspense fallback={<DocumentsSkeleton />}>
+          {hasDirectDocumentLayout(result.data)
+            ? <LegacyDocumentPage key={result.repo} data={result.data} fragments={result.fragments} />
+            : <LegacyPage key={result.repo} data={result.data} fragments={result.fragments} />}
+        </Suspense>
       </div>
     </>
   );

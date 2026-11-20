@@ -1,8 +1,8 @@
+import { CATALOG_REPO_RAW } from '@/lib/remote-catalog';
 import { useMatches as useImportedMatches } from "@tanstack/react-router";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import {
   Outlet,
-  Link,
   createRootRouteWithContext,
   useRouter,
   HeadContent,
@@ -13,35 +13,17 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
+import { NotFoundPage } from '@/components/not-found-page';
 import { LibraryShell } from '@/components/library-shell';
 import { Toaster } from '@/components/ui/sonner';
 import { VisitorNotices } from '@/components/visitor-notices';
 import { earlyTapQueueScript } from '@/lib/early-tap-queue';
 import appIcon from '@/assets/icon-192.png.asset.json';
 import appleIcon from '@/assets/apple-touch-icon.png.asset.json';
-import favicon from '@/assets/favicon.png.asset.json';
 import { adsenseBootstrap } from '@/lib/adsense';
 
 function NotFoundComponent() {
-  return (
-    <div className="flex min-h-screen items-center justify-center bg-background px-4">
-      <div className="max-w-md text-center">
-        <h1 className="text-7xl font-bold text-foreground">404</h1>
-        <h2 className="mt-4 text-xl font-semibold text-foreground">Page not found</h2>
-        <p className="mt-2 text-sm text-muted-foreground">
-          The page you're looking for doesn't exist or has been moved.
-        </p>
-        <div className="mt-6">
-          <Link
-            to="/"
-            className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
-          >
-            Go home
-          </Link>
-        </div>
-      </div>
-    </div>
-  );
+  return <NotFoundPage />;
 }
 
 function ErrorComponent({ error, reset }: ErrorComponentProps) {
@@ -107,7 +89,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: appCss,
       },
-      { rel: "icon", href: favicon.url, type: "image/png", sizes: "64x64" },
+      { rel: "icon", href: `${CATALOG_REPO_RAW}/public/favicon.ico`, sizes: "16x16 32x32 48x48" },
+      { rel: "icon", href: `${CATALOG_REPO_RAW}/public/favicon-48x48.png`, type: "image/png", sizes: "48x48" },
+      { rel: "icon", href: `${CATALOG_REPO_RAW}/public/favicon-96x96.png`, type: "image/png", sizes: "96x96" },
       { rel: "icon", href: appIcon.url, type: "image/png", sizes: "192x192" },
       { rel: "manifest", href: "/manifest.webmanifest" },
       { rel: "apple-touch-icon", href: appleIcon.url, sizes: "180x180" },

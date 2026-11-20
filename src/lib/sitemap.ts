@@ -1,6 +1,7 @@
 import type { AnyRoute, AnyRouter, ParsedLocation } from '@tanstack/react-router';
 import resources from '@/data/resource-manifest.json';
 import legacy from '@/data/legacy/manifest.json';
+import { SITE_URL } from '@/lib/site';
 
 declare module '@tanstack/react-router' {
   interface StaticDataRouteOption {
@@ -9,7 +10,7 @@ declare module '@tanstack/react-router' {
 }
 
 export const sitemapRouteInventoryVersion = 1;
-export const SITEMAP_BASE_URL = import.meta.env['VITE_PUBLIC_SITE_URL'] || 'https://fresh-roots-reading-garden.lovable.app';
+export const SITEMAP_BASE_URL = SITE_URL;
 type RouteMatch =
   | { routeParams: Record<string, unknown>; foundRoute?: AnyRoute; parseError?: unknown }
   | [AnyRoute[], Record<string, unknown>, AnyRoute | undefined];
@@ -47,9 +48,14 @@ export function sitemapPathForLocation(router: AnyRouter, location: Pick<ParsedL
     ? location.publicHref : undefined;
 }
 
+/** Site-ownership check files and duplicate copies of other pages stay out of search. */
+export function hiddenFromSearch(path: string): boolean {
+  return /^google[0-9a-f]+\.html$/.test(path) || path === 'p.6.html';
+}
+
 export function publicCatalogPaths(): string[] {
   return [...new Set([...Object.keys(resources), ...Object.keys(legacy)])]
-    .filter(path => path !== 'index.html').map(path => `/${path}`).sort();
+    .filter(path => path !== 'index.html' && !hiddenFromSearch(path)).map(path => `/${path}`).sort();
 }
 
 export interface SitemapEntry { path: string; lastmod?: string }

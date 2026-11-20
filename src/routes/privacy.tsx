@@ -3,7 +3,7 @@ import { InfoPage, infoHead } from '@/components/info-page';
 
 export const Route = createFileRoute('/privacy')({
   staticData: { sitemap: true },
-  head: () => infoHead('Privacy Policy', "What information Fresh Teacher's Library collects, how it is used and protected, and your rights."),
+  head: () => infoHead('/privacy', 'Privacy Policy', "What information Fresh Teacher's Library collects, how it is used and protected, and your rights."),
   component: () => <InfoPage title="Privacy Policy" sections={[
     { heading: 'Information We Collect', body: ['We may collect the following types of information:'], list: ['Personal information you provide when creating an account', 'Usage data about how you interact with our platform', 'Technical information such as your IP address and browser type', 'Educational preferences and resource access patterns'] },
     { heading: 'How We Use Your Information', body: ['We use your information to:'], list: ['Provide and maintain our educational services', 'Improve and personalise your experience', 'Communicate with you about updates and new resources', 'Analyse usage patterns to enhance our platform', 'Ensure the security and integrity of our services'] },

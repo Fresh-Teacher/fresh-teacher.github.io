@@ -7,7 +7,7 @@ import { documentViewer } from '@/lib/document-viewer';
 import { downloadFile } from '@/lib/file-download';
 import { flipbookOptions, type ReadingMode } from '@/lib/flipbook-options';
 import { resourceTitle, type ResourceRecord } from '@/lib/resources';
-import { LogoLoader } from './logo-loader';
+import { LogoLoader, useLoadingIndicator } from './logo-loader';
 import media from '@/data/resource-media.json';
 
 export function DocumentViewer({ item }: { item: ResourceRecord }) {
@@ -17,27 +17,42 @@ export function DocumentViewer({ item }: { item: ResourceRecord }) {
   const [mode, setMode] = useState<ReadingMode>('book');
   const [revision, setRevision] = useState(0);
   const [expanded, setExpanded] = useState(false);
-  const [frameLoading, setFrameLoading] = useState(true);
+  // Lazy dual caching: a mode's viewer mounts on first use, then stays alive (hidden) so switching is instant.
+  const [mounted, setMounted] = useState<ReadingMode[]>(['book']);
+  const [ready, setReady] = useState<Partial<Record<ReadingMode, boolean>>>({});
   const reader = useRef<HTMLDivElement>(null);
-  const frame = useRef<HTMLIFrameElement>(null);
+  const frames = useRef<Partial<Record<ReadingMode, HTMLIFrameElement | null>>>({});
+  const ownsSource = (source: MessageEventSource | null) => Object.values(frames.current).some(f => f && f.contentWindow === source);
+  const selectMode = (next: ReadingMode) => { setMode(next); setMounted(list => list.includes(next) ? list : [...list, next]); };
+  useEffect(() => { setMounted([mode]); setReady({}); }, [revision, item.pdfUrl]); // eslint-disable-line react-hooks/exhaustive-deps
+  const frameLoading = useLoadingIndicator(!ready[mode]);
+  // Safety net: never leave the spinner up forever if a reader hangs.
   useEffect(() => {
-    setFrameLoading(true);
+    if (ready[mode]) return;
+    const current = mode;
+    const timer = window.setTimeout(() => setReady(value => ({ ...value, [current]: true })), 15000);
+    return () => window.clearTimeout(timer);
+  }, [mode, ready, revision]);
+  useEffect(() => {
+    if (ready[mode]) return;
+    const current = mode;
     let interval = 0;
-    const done = () => { setFrameLoading(false); window.clearInterval(interval); };
+    const done = () => { setReady(value => ({ ...value, [current]: true })); window.clearInterval(interval); };
     const check = () => {
       try {
-        const doc = frame.current?.contentDocument;
-        const win = frame.current?.contentWindow as (Window & { __readerReady?: boolean }) | null;
+        const f = frames.current[current];
+        const doc = f?.contentDocument;
+        const win = f?.contentWindow as (Window & { __readerReady?: boolean }) | null;
         if (win?.__readerReady || (doc && readerIsReady(doc))) done();
       } catch { /* Third-party Office previews are signalled by iframe onLoad. */ }
     };
-    const ready = (event: MessageEvent) => { if (event.source === frame.current?.contentWindow && (event.data as { type?: unknown })?.type === 'sharebility:ready') done(); };
-    window.addEventListener('message', ready);
+    const onReady = (event: MessageEvent) => { if (event.source === frames.current[current]?.contentWindow && (event.data as { type?: unknown })?.type === 'sharebility:ready') done(); };
+    window.addEventListener('message', onReady);
     check();
     // Ready message is the primary signal; a slow, self-cancelling poll is only a fallback.
     interval = window.setInterval(check, 250);
-    return () => { window.removeEventListener('message', ready); window.clearInterval(interval); };
-  }, [mode, revision, item.pdfUrl]);
+    return () => { window.removeEventListener('message', onReady); window.clearInterval(interval); };
+  }, [mode, revision, item.pdfUrl, ready]);
   const downloadSource = viewer.kind === 'pdf' ? viewer.src : '';
   useEffect(() => {
     const change = () => setExpanded(document.fullscreenElement === reader.current);
@@ -53,7 +68,7 @@ export function DocumentViewer({ item }: { item: ResourceRecord }) {
   useEffect(() => {
     if (!downloadSource) return;
     const receive = (event: MessageEvent) => {
-      if (event.source !== frame.current?.contentWindow) return;
+      if (!ownsSource(event.source)) return;
       const data = event.data as { type?: unknown; url?: unknown };
       if (data?.type !== 'sharebility:download' || data.url !== downloadSource) return;
       void downloadFile(downloadSource).then(saved => {
@@ -84,8 +99,8 @@ export function DocumentViewer({ item }: { item: ResourceRecord }) {
     return <div ref={reader} className={`document-reader${expanded ? ' document-reader-expanded' : ''}`}>
       <div className="document-reader-toolbar" role="toolbar" aria-label="Document viewer controls">
         {viewer.kind === 'pdf' && <div className="document-reader-modes" role="group" aria-label="Reading mode">
-          <Button variant="source" size="source" className="document-reader-control" title="Flipbook mode" aria-label="Flipbook mode" aria-pressed={mode === 'book'} onClick={() => setMode('book')}><BookOpen size={18} /><span>Flipbook</span></Button>
-          <Button variant="source" size="source" className="document-reader-control" title="Vertical scroll mode" aria-label="Vertical scroll mode" aria-pressed={mode === 'vertical'} onClick={() => setMode('vertical')}><Rows3 size={18} /><span>Vertical</span></Button>
+          <Button variant="source" size="source" className="document-reader-control" title="Flipbook mode" aria-label="Flipbook mode" aria-pressed={mode === 'book'} onClick={() => selectMode('book')}><BookOpen size={18} /><span>Flipbook</span></Button>
+          <Button variant="source" size="source" className="document-reader-control" title="Vertical scroll mode" aria-label="Vertical scroll mode" aria-pressed={mode === 'vertical'} onClick={() => selectMode('vertical')}><Rows3 size={18} /><span>Vertical</span></Button>
         </div>}
         <div className="document-reader-tools">
           <Button variant="source" size="source" className="document-reader-control" title="Reload preview" aria-label="Reload preview" onClick={() => setRevision(value => value + 1)}><RotateCcw size={18} /></Button>
@@ -94,7 +109,9 @@ export function DocumentViewer({ item }: { item: ResourceRecord }) {
         </div>
       </div>
       <div className="document-reader-frame">
-        <iframe ref={frame} key={`${mode}-${revision}`} className="document-viewer" title={title} srcDoc={viewer.kind === 'pdf' ? (mode === 'vertical' ? verticalHtml : html) : undefined} src={viewer.kind === 'office' ? viewer.src : undefined} allow="fullscreen" onLoad={viewer.kind === 'office' ? () => setFrameLoading(false) : undefined} />
+        {viewer.kind === 'office'
+          ? <iframe ref={el => { frames.current.book = el; }} key={`office-${revision}`} className="document-viewer" title={title} src={viewer.src} allow="fullscreen" onLoad={() => setReady(value => ({ ...value, book: true }))} />
+          : mounted.map(m => <iframe key={`${m}-${revision}`} ref={el => { frames.current[m] = el; }} className="document-viewer" title={title} hidden={m !== mode} aria-hidden={m !== mode} style={m !== mode ? { display: 'none' } : undefined} srcDoc={m === 'vertical' ? verticalHtml : html} allow="fullscreen" />)}
         {frameLoading && <div className="document-reader-loading"><LogoLoader label="Loading document…" /></div>}
       </div>
       {viewer.kind === 'office' && <p className="document-viewer-note">Preview unavailable? <a href={viewer.src} target="_blank" rel="noopener noreferrer">Open the viewer in a new tab</a> or <a href={item.pdfUrl} target="_blank" rel="noopener noreferrer">open the original file</a>.</p>}

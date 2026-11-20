@@ -34,12 +34,58 @@ export function moreDocumentsClass(path: string): string | null {
   return key in MORE_DOCUMENTS ? key : null;
 }
 
+/** Class exam collections in the Fresh-Teacher/exams repository, one documents page per class. */
+export const EXAMS_REPOS: Record<string, MoreDocumentsRepo> = {
+  baby: { repo: 'exams-baby', label: 'Baby Class Examinations' },
+  middle: { repo: 'exams-middle', label: 'Middle Class Examinations' },
+  top: { repo: 'exams-top', label: 'Top Class Examinations' },
+  p1: { repo: 'exams-p1', label: 'Primary One Examinations' },
+  p2: { repo: 'exams-p2', label: 'Primary Two Examinations' },
+  p3: { repo: 'exams-p3', label: 'Primary Three Examinations' },
+  p4: { repo: 'exams-p4', label: 'Primary Four Examinations' },
+  p5: { repo: 'exams-p5', label: 'Primary Five Examinations' },
+  p6: { repo: 'exams-p6', label: 'Primary Six Examinations' },
+  p7: { repo: 'exams-p7', label: 'Primary Seven Examinations' },
+  s1: { repo: 'exams-s1', label: 'Senior One Examinations' },
+  s2: { repo: 'exams-s2', label: 'Senior Two Examinations' },
+  s3: { repo: 'exams-s3', label: 'Senior Three Examinations' },
+  s4: { repo: 'exams-s4', label: 'Senior Four Examinations' },
+  s5: { repo: 'exams-s5', label: 'Senior Five Examinations' },
+  s6: { repo: 'exams-s6', label: 'Senior Six Examinations' },
+};
+
+/** Documents page for a class's exam collection, including empty collections. */
+export function examsHrefForClass(key: string): string | null {
+  const entry = EXAMS_REPOS[key.toLowerCase()];
+  return entry ? moreDocumentsHref(entry.repo) : null;
+}
+
+/** Holiday Packages per class (Fresh-Teacher/exams root PDFs), one documents page per class. */
+export const PACKAGES_REPOS: Record<string, MoreDocumentsRepo> = Object.fromEntries(
+  Object.entries(EXAMS_REPOS).map(([key, entry]) => [
+    key,
+    { repo: `packages-${key}`, label: entry.label.replace(/Examinations$/, 'Holiday Packages') },
+  ]),
+);
+
+export function packagesHrefForClass(key: string): string | null {
+  const entry = PACKAGES_REPOS[key.toLowerCase()];
+  return entry ? moreDocumentsHref(entry.repo) : null;
+}
+
+/** Holiday Packages documents (Fresh-Teacher/packages), shared by every class page. */
+export const PACKAGES_REPO: MoreDocumentsRepo = { repo: 'packages', label: 'Holiday Packages' };
+export const packagesHref = () => moreDocumentsHref(PACKAGES_REPO.repo);
+
 export function findMoreDocumentsRepo(repo: string): MoreDocumentsRepo | null {
   for (const list of Object.values(MORE_DOCUMENTS)) {
     const hit = list.find(item => item.repo === repo);
     if (hit) return hit;
   }
-  return null;
+  if (repo === PACKAGES_REPO.repo) return PACKAGES_REPO;
+  return Object.values(EXAMS_REPOS).find(item => item.repo === repo)
+    ?? Object.values(PACKAGES_REPOS).find(item => item.repo === repo)
+    ?? null;
 }
 
 export const moreDocumentsHref = (repo: string) => `/more/${encodeURIComponent(repo)}`;

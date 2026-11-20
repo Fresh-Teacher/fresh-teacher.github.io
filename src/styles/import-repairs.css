@@ -50,7 +50,7 @@ a.africaVotesChat { z-index: 2002; }
 /* Budget all four shelves against the visible screen, not just its width. */
 .library-homepage .container { padding-inline: 8px; min-height: calc(100svh - var(--library-appbar-height)); display: flex; flex-direction: column; }
 .library-homepage .homepage-instruction {
-  box-sizing: border-box; flex: none; max-width: 100%; margin: 6px auto 8px; padding: 0 12px;
+  box-sizing: border-box; flex: none; align-self: center; width: 100%; max-width: 100%; margin: 6px auto 8px; padding: 0 12px;
   color: var(--updates-ink); text-align: center; font-family: var(--font-handwriting);
   font-size: 18px; line-height: 1.2; font-weight: 600; letter-spacing: 0;
 }

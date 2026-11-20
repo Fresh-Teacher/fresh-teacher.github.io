@@ -4,17 +4,34 @@ import { Button } from '@/components/ui/button';
 import { homepageShelves, homepageClassNames } from '@/data/homepage-shelves';
 import repairCSS from '../styles/import-repairs.css?raw';
 import capturedCssUrl from '../styles/captured.css?url';
+import { jsonLd, LOGO_URL, pageMeta, SITE_NAME, SITE_URL } from '@/lib/site';
+
+// Read by search engines and screen readers; the door animation stays the visible first screen.
+const visuallyHidden = { position: 'absolute', width: 1, height: 1, padding: 0, margin: -1, overflow: 'hidden', clip: 'rect(0, 0, 0, 0)', whiteSpace: 'nowrap', border: 0 } as const;
 
 export const Route = createFileRoute("/")({
   staticData: { sitemap: true },
-  head: () => ({ meta: [
-    { title: "Fresh Teacher's Library" },
-    { name: "description", content: "Fresh Teacher's e-library of lesson notes, past papers and schemes of work for Ugandan schools." },
-    { property: "og:title", content: "Fresh Teacher's Library" },
-    { property: "og:description", content: "Explore nursery, primary and secondary school learning resources from Fresh Teacher." },
-    { property: "og:type", content: "website" },
-    { name: "twitter:card", content: "summary_large_image" },
-  ], links: [{ rel: "stylesheet", href: capturedCssUrl }] }),
+  head: () => {
+    const page = pageMeta({
+      path: '/',
+      title: "Fresh Teacher's Library – Lesson Notes, Past Papers & Schemes of Work",
+      description: "Free lesson notes, past papers and schemes of work for Ugandan nursery, primary and secondary schools, from Baby Class to Senior Six.",
+    });
+    return {
+      meta: page.meta,
+      links: [...page.links, { rel: "stylesheet", href: capturedCssUrl }],
+      scripts: [jsonLd({
+        '@context': 'https://schema.org',
+        '@graph': [
+          { '@type': 'WebSite', '@id': `${SITE_URL}/#website`, url: `${SITE_URL}/`, name: SITE_NAME, inLanguage: 'en',
+            publisher: { '@id': `${SITE_URL}/#organization` },
+            potentialAction: { '@type': 'SearchAction', target: { '@type': 'EntryPoint', urlTemplate: `${SITE_URL}/search?query={search_term_string}` }, 'query-input': 'required name=search_term_string' } },
+          { '@type': 'EducationalOrganization', '@id': `${SITE_URL}/#organization`, name: SITE_NAME, alternateName: 'Fresh Teacher', url: `${SITE_URL}/`,
+            logo: { '@type': 'ImageObject', url: LOGO_URL, width: 512, height: 512 }, areaServed: { '@type': 'Country', name: 'Uganda' } },
+        ],
+      })],
+    };
+  },
   component: Index,
 });
 
@@ -60,15 +77,16 @@ export function Index() {
   };
   return <div className="library-homepage">
     <style>{repairCSS}</style>
+    <h1 style={visuallyHidden}>Fresh Teacher's Library – Uganda Lesson Notes, Past Papers &amp; Schemes of Work</h1>
     <Button {...doorProps} className={`leftcurtain${doorState}`}>
-      <img src="/__l5e/assets-v1/618e0f50-ed39-40b6-9e58-b57397e4766a/7c2eea45ca9862de.webp" alt="" fetchPriority="high" decoding="async" />
+      <img src="/__l5e/assets-v1/4373bdc3-b065-4dee-ab19-0780eab6434e/7c2eea45ca9862de.webp" alt="" fetchPriority="high" decoding="async" />
     </Button>
     <Button {...doorProps} className={`rightcurtain${doorState}`}>
-      <img src="/__l5e/assets-v1/9ce1fe22-f870-4adc-82fe-d4207cb478e6/d52f1d3e4b7ea8ab.webp" alt="" fetchPriority="high" decoding="async" />
+      <img src="/__l5e/assets-v1/15ff8b2e-9ded-417f-bd6f-9b1bda768c46/d52f1d3e4b7ea8ab.webp" alt="" fetchPriority="high" decoding="async" />
     </Button>
     <Button {...doorProps} className={`rope${doorState}`}>
       <b className="door-instruction">Tap on the door to enter</b>
-      <img className="door-arrow" src="/__l5e/assets-v1/6b1fb88b-103a-4413-be33-5c85dbd12cf6/243d7d09dd033233.webp" alt="" width="70" fetchPriority="high" decoding="async" />
+      <img className="door-arrow" src="/__l5e/assets-v1/797833db-47fc-42ae-9e47-48a95c206600/243d7d09dd033233.webp" alt="" width="70" fetchPriority="high" decoding="async" />
     </Button>
     <div className="container">
       <p className="homepage-instruction">Choose one class from the shelf to continue.</p>
@@ -82,11 +100,11 @@ export function Index() {
                 </a>
               </div>)}
             </div>
-            <img className="shelf-img" src="/__l5e/assets-v1/c816e1fc-e568-49f2-b609-4bd688adabd0/36bc42cbc31e7907.webp" alt="" width="1000" height="96" decoding="async" />
+            <img className="shelf-img" src="/__l5e/assets-v1/399d77fe-8a95-4c7e-add0-baf5990d224a/36bc42cbc31e7907.webp" alt="" width="1000" height="96" decoding="async" />
           </div>
         </span>)}
       </div>
-      <audio ref={audio} id="audiocracker" src="/__l5e/assets-v1/e816e869-ceb0-4582-8f4a-a9954f87275b/door.mp3" preload="auto" suppressHydrationWarning />
+      <audio ref={audio} id="audiocracker" src="/__l5e/assets-v1/cf501954-f080-4191-86cf-fa10dc89d210/door.mp3" preload="auto" suppressHydrationWarning />
     </div>
   </div>;
 }

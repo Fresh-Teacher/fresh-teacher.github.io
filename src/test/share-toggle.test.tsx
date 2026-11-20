@@ -19,7 +19,7 @@ const item: ResourceRecord = {
   pdfUrl: 'https://fresh-teacher.github.io/primary/p7 mathematics notes.pdf',
 };
 
-// A real press is a pointerdown followed by a click; Radix dismisses on the click.
+// A completed press includes a click; a scrolling gesture does not.
 const press = (element: Element) => {
   fireEvent.pointerDown(element, { button: 0, ctrlKey: false, bubbles: true, cancelable: true });
   fireEvent.click(element, { button: 0, ctrlKey: false, bubbles: true, cancelable: true });
@@ -32,6 +32,28 @@ const menu = () => screen.queryByRole('menu');
 afterEach(() => { cleanup(); vi.restoreAllMocks(); vi.unstubAllGlobals(); window.history.replaceState({}, '', '/'); });
 
 describe('Share menu opening and closing', () => {
+  it('does not open when a touch becomes a scrolling gesture', () => {
+    render(<DocumentShare item={item} />);
+    const button = trigger();
+    fireEvent.pointerDown(button, { button: 0, pointerType: 'touch', clientY: 200 });
+    expect(menu()).not.toBeInTheDocument();
+    fireEvent.pointerMove(button, { pointerType: 'touch', clientY: 100 });
+    fireEvent.pointerCancel(button, { pointerType: 'touch' });
+    expect(menu()).not.toBeInTheDocument();
+  });
+
+  it('opens on a completed click without requiring pointerdown', () => {
+    render(<DocumentShare item={item} />);
+    fireEvent.click(trigger());
+    expect(menu()).toBeInTheDocument();
+  });
+
+  it.each(['Enter', ' '])('still opens with the keyboard key %s', key => {
+    render(<DocumentShare item={item} />);
+    fireEvent.keyDown(trigger(), { key });
+    expect(menu()).toBeInTheDocument();
+  });
+
   it('opens when the Share button is pressed', () => {
     render(<DocumentShare item={item} />);
     press(trigger());

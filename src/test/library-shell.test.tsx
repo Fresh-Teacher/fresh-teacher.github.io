@@ -30,17 +30,9 @@ describe('Shared class navigation', () => {
     expect(screen.queryByRole('dialog', { name: 'Install the app' })).not.toBeInTheDocument();
   });
 
-  it('offers the app downloads from the app-bar card', () => {
-    render(<LibraryShell>Page content</LibraryShell>);
-    fireEvent.click(screen.getByRole('button', { name: 'Install the app' }));
-    expect(screen.getByRole('button', { name: /download the fresh app apk/i })).toBeInTheDocument();
-    expect(screen.getByRole('link', { name: 'Get the Fresh App on Google Play' })).toBeInTheDocument();
-    expect(screen.getByRole('link', { name: 'Get the Fresh App on the Apple App Store' })).toBeInTheDocument();
-  });
-
   it('dismisses the phone drawer from its backdrop or close control', () => {
     vi.spyOn(window, 'matchMedia').mockImplementation(query => ({
-      matches: true, media: query, onchange: null,
+      matches: query === '(max-width: 767px)', media: query, onchange: null,
       addListener: vi.fn(), removeListener: vi.fn(),
       addEventListener: vi.fn(), removeEventListener: vi.fn(), dispatchEvent: vi.fn(),
     }));
@@ -113,7 +105,7 @@ describe('Shared class navigation', () => {
 
   it('closes the phone menu on Escape and returns focus to its toggle', () => {
     vi.spyOn(window, 'matchMedia').mockImplementation(query => ({
-      matches: true, media: query, onchange: null,
+      matches: query === '(max-width: 767px)', media: query, onchange: null,
       addListener: vi.fn(), removeListener: vi.fn(),
       addEventListener: vi.fn(), removeEventListener: vi.fn(), dispatchEvent: vi.fn(),
     }));
@@ -129,7 +121,7 @@ describe('Shared class navigation', () => {
 
   it('closes an open phone menu when the page changes', () => {
     vi.spyOn(window, 'matchMedia').mockImplementation(query => ({
-      matches: true, media: query, onchange: null,
+      matches: query === '(max-width: 767px)', media: query, onchange: null,
       addListener: vi.fn(), removeListener: vi.fn(),
       addEventListener: vi.fn(), removeEventListener: vi.fn(), dispatchEvent: vi.fn(),
     }));

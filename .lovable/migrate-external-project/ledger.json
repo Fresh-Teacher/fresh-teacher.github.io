@@ -1,0 +1,100 @@
+[
+  {
+    "capability": "code",
+    "source": "TanStack Start React 19",
+    "outcome": "migrate",
+    "status": "pending",
+    "next_action": "Import compatible source and retain target package pins"
+  },
+  {
+    "capability": "schema",
+    "source": "No application database in source call sites",
+    "outcome": "not_applicable",
+    "status": "not_applicable",
+    "next_action": ""
+  },
+  {
+    "capability": "records",
+    "source": "Bundled static document catalog",
+    "outcome": "migrate",
+    "status": "pending",
+    "next_action": "Import catalog JSON"
+  },
+  {
+    "capability": "auth identities",
+    "source": "No sign-in or user accounts in application",
+    "outcome": "not_applicable",
+    "status": "not_applicable",
+    "next_action": ""
+  },
+  {
+    "capability": "authorization",
+    "source": "Public educational library",
+    "outcome": "not_applicable",
+    "status": "not_applicable",
+    "next_action": ""
+  },
+  {
+    "capability": "uploaded file bytes",
+    "source": "CDN pointers and public media",
+    "outcome": "preserve",
+    "status": "pending",
+    "next_action": "Verify image and media loading"
+  },
+  {
+    "capability": "external providers",
+    "source": "GitHub document hosting, jsDelivr thumbnails, Google/Office viewers, AdSense",
+    "outcome": "preserve",
+    "status": "pending",
+    "next_action": "Verify representative read paths; advertising requires published-domain verification"
+  },
+  {
+    "capability": "public endpoints",
+    "source": "Sitemap XML",
+    "outcome": "preserve",
+    "status": "pending",
+    "next_action": "Verify sitemap response"
+  },
+  {
+    "capability": "callbacks",
+    "source": "No OAuth callbacks detected",
+    "outcome": "not_applicable",
+    "status": "not_applicable",
+    "next_action": ""
+  },
+  {
+    "capability": "webhooks",
+    "source": "No webhooks detected",
+    "outcome": "not_applicable",
+    "status": "not_applicable",
+    "next_action": ""
+  },
+  {
+    "capability": "schedules",
+    "source": "No schedules detected",
+    "outcome": "not_applicable",
+    "status": "not_applicable",
+    "next_action": ""
+  },
+  {
+    "capability": "secrets",
+    "source": "No user-owned credentials required in application",
+    "outcome": "not_applicable",
+    "status": "not_applicable",
+    "next_action": ""
+  },
+  {
+    "capability": "cutover",
+    "source": "Source canonical domain and advertising configuration",
+    "outcome": "pending",
+    "status": "pending",
+    "next_action": "Confirm published address and advertising-domain approval after publishing"
+  },
+  {
+    "capability": "verification",
+    "source": "Source test suite and live preview",
+    "outcome": "pending",
+    "status": "pending",
+    "next_action": "Run tests and check desktop/mobile class-search-reader flow"
+  }
+]

@@ -9,35 +9,35 @@
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 300;
-    src: local('Rubik Light'), local('Rubik-Light'), url("/__l5e/assets-v1/eff919b7-0421-45f3-8cf3-40f834774531/bafd4efc-ijwhbxyifdniv7fqj2md8wu.ttf") format('truetype')
+    src: local('Rubik Light'), local('Rubik-Light'), url("/__l5e/assets-v1/c2ff7fd5-8c04-45f8-9ae7-807a129b4809/bafd4efc-ijwhbxyifdniv7fqj2md8wu.ttf") format('truetype')
 }
 
 @font-face {
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 400;
-    src: local('Rubik'), local('Rubik-Regular'), url("/__l5e/assets-v1/5f24eefb-a75c-4d3b-8760-aa5e72c544b8/63571405-ijwkbxyifdniv7nbrxk.ttf") format('truetype')
+    src: local('Rubik'), local('Rubik-Regular'), url("/__l5e/assets-v1/1aef30cb-c2b5-49b5-b1ca-30ead586913c/63571405-ijwkbxyifdniv7nbrxk.ttf") format('truetype')
 }
 
 @font-face {
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 500;
-    src: local('Rubik Medium'), local('Rubik-Medium'), url("/__l5e/assets-v1/9fe73825-3a39-478c-855c-7ceea701960e/94558f07-ijwhbxyifdniv7eyjmmd8wu.ttf") format('truetype')
+    src: local('Rubik Medium'), local('Rubik-Medium'), url("/__l5e/assets-v1/241d1423-936e-4e92-a36a-0deea6fca58c/94558f07-ijwhbxyifdniv7eyjmmd8wu.ttf") format('truetype')
 }
 
 @font-face {
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 700;
-    src: local('Rubik Bold'), local('Rubik-Bold'), url("/__l5e/assets-v1/4bf2a237-6934-4dc2-9472-8d46662e6768/6981bb38-ijwhbxyifdniv7f6igmd8wu.ttf") format('truetype')
+    src: local('Rubik Bold'), local('Rubik-Bold'), url("/__l5e/assets-v1/08e4af81-309e-4c67-b6fc-9efb4163ffe7/6981bb38-ijwhbxyifdniv7f6igmd8wu.ttf") format('truetype')
 }
 
 @font-face {
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 900;
-    src: local('Rubik Black'), local('Rubik-Black'), url("/__l5e/assets-v1/c1ae9e99-e535-4e76-bcf6-5a0056dd3203/09e89ed8-ijwhbxyifdniv7fcimmd8wu.ttf") format('truetype')
+    src: local('Rubik Black'), local('Rubik-Black'), url("/__l5e/assets-v1/f27787c3-f0f1-4ecb-b506-1060e877f9dc/09e89ed8-ijwhbxyifdniv7fcimmd8wu.ttf") format('truetype')
 }
 
 .preloader {
@@ -10744,7 +10744,7 @@ a.close-chat {
     width: 100%;
     z-index: 0;
     opacity: .08;
-    background-image: url("/__l5e/assets-v1/7874b6e2-bdc3-4e51-8b25-9519f873f2f5/c0b00c80-whatsapp.webp")
+    background-image: url("/__l5e/assets-v1/979b9fc9-987d-40a1-8e37-35300ee9f2ab/c0b00c80-whatsapp.webp")
 }
 
 .dAbFpq {

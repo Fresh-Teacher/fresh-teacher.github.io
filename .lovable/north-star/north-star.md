@@ -2,8 +2,8 @@
 
 # North star
 
-Teachers get the teaching resources they need for their lessons
+Teachers get the lesson notes and documents they need for their classes.
 
 ## Metric
 
-Resources opened or downloaded each week
+Documents opened in the reader each week

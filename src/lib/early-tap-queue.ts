@@ -109,6 +109,7 @@ export function installEarlyTapQueue() {
   document.addEventListener('click', function (event) {
     var origin = event.target as Element | null;
     if (!origin || !origin.closest) return;
+    if (origin.closest('[data-native-dropdown]')) return;
     if (earlyControl && !earlyControl.parentElement?.contains(origin)) { pending = null; clearEarly(); }
     var control = origin.closest(SELECTOR);
     if (!control || ready(control)) return;

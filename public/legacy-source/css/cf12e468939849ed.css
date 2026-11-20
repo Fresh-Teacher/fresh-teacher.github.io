@@ -23,7 +23,7 @@
 @font-face {
     font-family: 'weathericons';
     src: url("https://fresh-teacher.github.io/css/icons/weather-icons/fonts/weathericons-regular-webfont.eot");
-    src: url("https://fresh-teacher.github.io/css/icons/weather-icons/fonts/weathericons-regular-webfont.eot#iefix") format('embedded-opentype'), url("/__l5e/assets-v1/9d3e2b0c-624e-470e-baee-25df55341ff8/fa3e9aee-weathericons-regular-webfont.woff2") format('woff2'), url("https://fresh-teacher.github.io/css/icons/weather-icons/fonts/weathericons-regular-webfont.woff") format('woff'), url("https://fresh-teacher.github.io/css/icons/weather-icons/fonts/weathericons-regular-webfont.ttf") format('truetype'), url("https://fresh-teacher.github.io/css/icons/weather-icons/fonts/weathericons-regular-webfont.svg#weather_iconsregular") format('svg');
+    src: url("https://fresh-teacher.github.io/css/icons/weather-icons/fonts/weathericons-regular-webfont.eot#iefix") format('embedded-opentype'), url("/__l5e/assets-v1/d06c5f81-350e-4d1c-9dbe-fc237cfd2c9c/fa3e9aee-weathericons-regular-webfont.woff2") format('woff2'), url("https://fresh-teacher.github.io/css/icons/weather-icons/fonts/weathericons-regular-webfont.woff") format('woff'), url("https://fresh-teacher.github.io/css/icons/weather-icons/fonts/weathericons-regular-webfont.ttf") format('truetype'), url("https://fresh-teacher.github.io/css/icons/weather-icons/fonts/weathericons-regular-webfont.svg#weather_iconsregular") format('svg');
     font-weight: normal;
     font-style: normal;
 }

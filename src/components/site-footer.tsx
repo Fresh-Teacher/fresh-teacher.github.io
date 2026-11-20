@@ -24,8 +24,8 @@ export const SiteFooter = memo(function SiteFooter() {
           {social.map(s => <a key={s.href} href={s.href} target="_blank" rel="noopener noreferrer" className={s.cls} aria-label={s.label} title={s.label}>{s.svg}</a>)}
         </div></div>
         <div className="site-footer__contact"><h4>Contact Us</h4><div className="site-footer__list">
-          <a href="tel:+256750687790" className="hw">{whatsapp}+256750687790</a>
-          <a href="tel:+256786812837" className="hw">{phone}+256786812837</a>
+          <a href="tel:+256786812837" className="hw">{whatsapp}+256786812837</a>
+          <a href="tel:+256750687790" className="hw">{phone}+256750687790</a>
           <a href="mailto:freshteacheruganda256@gmail.com" className="hb">{mail}<span>freshteacheruganda256@gmail.com</span></a>
         </div></div>
         <div><h4>Quick Links</h4><div className="site-footer__list">

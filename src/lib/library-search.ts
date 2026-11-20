@@ -1,10 +1,12 @@
+import { fetchCatalogFile } from './remote-catalog';
 import MiniSearch from 'minisearch';
 import { searchTokens, libraryQueryTokens } from './document-search';
 import { resourceTitle, type ResourceRecord } from './resources';
 import { resolveDocuments } from './static-catalog';
 import { loadCatalogShard } from './repository-catalog';
+import { isVisibleDocument } from './document-formats';
 
-const files = import.meta.glob<string>('../data/catalog/search-index-*.json', { query: '?raw', import: 'default' });
+const files = [0, 1, 2, 3].map(n => () => fetchCatalogFile<string>(`src/data/catalog/search-index-${n}.json`, true));
 let index: Promise<MiniSearch[]> | undefined;
 export type LibrarySort = 'source' | 'title-asc' | 'title-desc';
 export function librarySort(value: unknown): LibrarySort {
@@ -34,13 +36,13 @@ export async function searchLibrary(query: string, page = 1, pageSize = 12, sort
   }
   const ids = await ranked;
   const size = Math.max(1, Math.floor(pageSize) || 12);
-  if (sort !== 'source' || type !== 'all') {
-    let resolved = documents.get(normalized);
-    if (!resolved) { resolved = resolveDocuments(ids, loadCatalogShard); documents.set(normalized, resolved); void resolved.catch(() => documents.delete(normalized)); }
-    const ordered = orderLibraryDocuments(await resolved, sort, type);
-    const currentPage = Math.max(1, Math.min(Math.ceil(ordered.length / size) || 1, Math.floor(page) || 1));
-    return { items: ordered.slice((currentPage - 1) * size, currentPage * size), total: ordered.length, page: currentPage };
+  let resolved = documents.get(normalized);
+  if (!resolved) {
+    resolved = resolveDocuments(ids, loadCatalogShard).then(items => items.filter(isVisibleDocument));
+    documents.set(normalized, resolved);
+    void resolved.catch(() => documents.delete(normalized));
   }
-  const currentPage = Math.max(1, Math.min(Math.ceil(ids.length / size) || 1, Math.floor(page) || 1));
-  return { items: await resolveDocuments(ids.slice((currentPage - 1) * size, currentPage * size), loadCatalogShard), total: ids.length, page: currentPage };
+  const ordered = orderLibraryDocuments(await resolved, sort, type);
+  const currentPage = Math.max(1, Math.min(Math.ceil(ordered.length / size) || 1, Math.floor(page) || 1));
+  return { items: ordered.slice((currentPage - 1) * size, currentPage * size), total: ordered.length, page: currentPage };
 }

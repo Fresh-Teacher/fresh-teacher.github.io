@@ -17,7 +17,7 @@
 .whatsapp-chat a.close-chat { position: absolute; top: 5px; right: 15px; color: rgb(255, 255, 255); font-size: 30px; text-decoration: none; cursor: pointer; }
 .whatsapp-chat .hide { display: none; opacity: 1; }
 .whatsapp-chat .africavotes-chat-body { padding: 20px 20px 20px 10px; background-color: rgb(230, 221, 212); position: relative; }
-.whatsapp-chat .africavotes-chat-body::before { display: block; position: absolute; content: ""; left: 0px; top: 0px; height: 100%; width: 100%; z-index: 0; opacity: 0.08; background-image: url("/__l5e/assets-v1/089e4c7c-2e24-40c1-a140-141bf3979d3b/3e52e2e60ddc6336.webp"); }
+.whatsapp-chat .africavotes-chat-body::before { display: block; position: absolute; content: ""; left: 0px; top: 0px; height: 100%; width: 100%; z-index: 0; opacity: 0.08; background-image: url("/__l5e/assets-v1/f51d12df-5fad-488b-af06-743d485b7ca1/3e52e2e60ddc6336.webp"); }
 .whatsapp-chat .dAbFpq { display: flex; z-index: 1; }
 .whatsapp-chat .eJJEeC { background-color: rgb(255, 255, 255); width: 52.5px; height: 32px; border-radius: 16px; display: flex; justify-content: center; align-items: center; margin-left: 10px; opacity: 0; transition: 0.1s; z-index: 1; box-shadow: rgba(0, 0, 0, 0.13) 0px 1px 0.5px; }
 .whatsapp-chat .hFENyl { position: relative; display: flex; }
