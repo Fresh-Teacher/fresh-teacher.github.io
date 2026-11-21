@@ -1,8 +1,13 @@
 name: Sync Latest Code from Lovable
 
-# Only prepares a review branch. Publishing remains a separate manual action.
+# Prepares a review branch only. Publishing remains a separate manual action.
 on:
   workflow_dispatch:
+    inputs:
+      dry_run:
+        description: Validate sync without pushing a branch or opening a pull request
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -15,6 +20,8 @@ concurrency:
 jobs:
   sync:
     runs-on: ubuntu-latest
+    env:
+      PYTHONDONTWRITEBYTECODE: '1'
     steps:
       - name: Checkout target repository
         uses: actions/checkout@v4
@@ -27,17 +34,27 @@ jobs:
           repository: cornerstone666000333-hub/remix-of-garden-paths-atlas-10
           path: source
           persist-credentials: false
-      - name: Copy app and preserve target workflows
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test publishing-file preservation
+        working-directory: target
+        run: python3 -m unittest discover -s src/test -p 'test_lovable_sync.py'
+      - name: Copy app and verify protected publishing files
+        run: python3 target/scripts/sync_from_lovable.py source target
+      - name: Verify publishing tests after sync
+        working-directory: target
         run: |
-          rsync -a --delete \
-            --exclude='.git' \
-            --exclude='.github/workflows/' \
-            --exclude='node_modules/' \
-            --exclude='dist/' \
-            --exclude='.env' \
-            --exclude='.env.local' \
-            source/ target/
+          python3 -m unittest discover -s src/test -p 'test_lovable_sync.py'
+          python3 -m unittest discover -s src/test -p 'test_github_pages.py'
+      - name: Summarize validation without changing the repository
+        if: ${{ inputs.dry_run }}
+        working-directory: target
+        run: |
+          echo 'Publishing files and commands were preserved. No branch, pull request, or deployment was created.' >> "$GITHUB_STEP_SUMMARY"
+          git diff --stat >> "$GITHUB_STEP_SUMMARY"
       - name: Push review branch and open pull request
+        if: ${{ !inputs.dry_run }}
         working-directory: target
         env:
           GH_TOKEN: ${{ github.token }}
@@ -58,4 +75,4 @@ jobs:
           git push origin "$BRANCH"
           gh pr create --repo "$TARGET_REPO" --base "$BASE_BRANCH" --head "$BRANCH" \
             --title 'Update library from Lovable' \
-            --body 'Imports the current Lovable app and preserves the target repository workflows. This does not publish the website. Publishing compatibility must be reviewed before using the manual Pages deployment: the source app currently does not define build:pages.'
+            --body 'Imports the current Lovable app while preserving and verifying production publishing files, workflows, asset-origin settings, Google verification, and build:pages/build:pages:runtime/build:standalone commands. Review the app changes before merging. Publishing remains a separate manual Pages deployment; this sync does not change the live website.'
