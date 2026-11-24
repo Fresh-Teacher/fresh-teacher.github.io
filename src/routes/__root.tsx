@@ -21,6 +21,7 @@ import { earlyTapQueueScript } from '@/lib/early-tap-queue';
 import appIcon from '@/assets/icon-192.png.asset.json';
 import appleIcon from '@/assets/apple-touch-icon.png.asset.json';
 import { adsenseBootstrap } from '@/lib/adsense';
+import { themeBootstrap } from '@/lib/theme';
 
 function NotFoundComponent() {
   return <NotFoundPage />;
@@ -123,6 +124,7 @@ function RootShell({ children }: { children: ReactNode }) {
     <html lang="en" suppressHydrationWarning {...importedDocument?.html}>
       <head>
         <style href="site-import-inline" precedence="imported-inline">{"@layer imported-inline;"}</style>
+        <script dangerouslySetInnerHTML={{ __html: themeBootstrap }} />
         <script dangerouslySetInnerHTML={{ __html: earlyTapQueueScript }} />
         <script dangerouslySetInnerHTML={{ __html: staleChunkReloadScript }} />
         <script dangerouslySetInnerHTML={{ __html: adsenseBootstrap }} />

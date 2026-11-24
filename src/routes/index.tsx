@@ -14,7 +14,7 @@ export const Route = createFileRoute("/")({
   head: () => {
     const page = pageMeta({
       path: '/',
-      title: "Fresh Teacher's Library – Lesson Notes, Past Papers & Schemes of Work",
+      title: "Fresh Teacher's Platform – Lesson Notes, Past Papers & Schemes of Work",
       description: "Free lesson notes, past papers and schemes of work for Ugandan nursery, primary and secondary schools, from Baby Class to Senior Six.",
     });
     return {
@@ -77,7 +77,7 @@ export function Index() {
   };
   return <div className="library-homepage">
     <style>{repairCSS}</style>
-    <h1 style={visuallyHidden}>Fresh Teacher's Library – Uganda Lesson Notes, Past Papers &amp; Schemes of Work</h1>
+    <h1 style={visuallyHidden}>Fresh Teacher's Platform – Uganda Lesson Notes, Past Papers &amp; Schemes of Work</h1>
     <Button {...doorProps} className={`leftcurtain${doorState}`}>
       <img src="/__l5e/assets-v1/4373bdc3-b065-4dee-ab19-0780eab6434e/7c2eea45ca9862de.webp" alt="" fetchPriority="high" decoding="async" />
     </Button>

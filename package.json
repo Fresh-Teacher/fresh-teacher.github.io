@@ -12,9 +12,9 @@
     "format": "prettier --write .",
     "test": "vitest run",
     "test:watch": "vitest",
-    "build:standalone": "node scripts/build_standalone.mjs",
     "build:pages": "node scripts/build_standalone.mjs --pages",
-    "build:pages:runtime": "vite build --config vite.github-pages.config.ts && python3 scripts/prepare_github_pages.py"
+    "build:pages:runtime": "vite build --config vite.github-pages.config.ts && python3 scripts/prepare_github_pages.py",
+    "build:standalone": "node scripts/build_standalone.mjs"
   },
   "overrides": {
     "rolldown": "1.2.1",

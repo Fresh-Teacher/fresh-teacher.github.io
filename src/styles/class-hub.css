@@ -227,3 +227,17 @@ body:has(.class-hub) b { font-weight: 500; }
 .class-hub summary.legacy-dropdown-trigger::-webkit-details-marker { display: none; }
 .class-hub details:not([open]) > .class-resource-reveal { display: none; }
 .class-hub details[open] .dropdown-menu { display: block; visibility: visible; }
+
+/* Dark theme: replace pastel greens and bright buttons with dark surfaces. */
+html.dark .class-hub #page-wrapper { background: var(--background); }
+html.dark .class-hub .necta11 { color: var(--foreground); background: var(--card); border: 1px solid var(--border); }
+html.dark .class-hub .necta1 { color: var(--foreground); background: var(--card); border: 1px solid var(--border); box-shadow: 0 6px 20px rgb(0 0 0 / 0.45); }
+html.dark .class-hub .necta11 *, html.dark .class-hub .necta1 > p, html.dark .class-hub .necta1 > h3 { color: var(--foreground); }
+html.dark .class-hub .btn-info { background: oklch(0.42 0.1 240); border-color: oklch(0.55 0.12 240); color: #fff; }
+html.dark .class-hub .btn-info * { color: #fff; }
+html.dark .class-hub .btn-primary { background: oklch(0.45 0.15 285); border-color: oklch(0.58 0.15 285); color: #fff; }
+html.dark .class-hub .btn-primary * { color: #fff; }
+html.dark .class-hub hr.style1 { border-top-color: var(--border); }
+
+/* NEW! sticker text: red so it reads on the yellow star in both themes. */
+.class-hub .class-resource-new, .class-hub .class-resource-new span, html.dark .class-hub .btn-info .class-resource-new span { color: #d00000 !important; }

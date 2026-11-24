@@ -293,6 +293,19 @@
 }
 .library-brand svg { width: 1.5em; height: 1.5em; }
 .library-brand-caption { display: block; font-size: var(--sign-caption-size); letter-spacing: var(--sign-caption-spacing); line-height: 1.1; font-weight: 700; opacity: 1; -webkit-text-stroke: .35px currentColor; }
+/* Virus glyph standing in for the O in "COVID-19": sized to the caption's cap height and given a caterpillar-style squirm that inches forward and returns. */
+.library-brand-virus { display: inline-block; font-family: system-ui, sans-serif; font-size: .92em; line-height: 1; vertical-align: -0.04em; -webkit-text-stroke: 0; transform-origin: center bottom; animation: covid-wiggle 3s ease-in-out infinite; }
+@keyframes covid-wiggle {
+  0%, 100% { transform: translate(0, 0) scale(1, 1) skewX(0deg); }
+  8% { transform: translate(0, 0) scale(.85, 1.15) skewX(-6deg); }
+  16% { transform: translate(1.5px, -1px) scale(1.18, .85) skewX(8deg); }
+  24% { transform: translate(2px, -1.5px) scale(.88, 1.12) skewX(-8deg); }
+  32% { transform: translate(2px, 0) scale(1.15, .88) skewX(6deg); }
+  40% { transform: translate(1px, 0) scale(1, 1) skewX(0deg); }
+  48% { transform: translate(0, 0) scale(.92, 1.08) skewX(-4deg); }
+  56% { transform: translate(0, 0) scale(1, 1) skewX(0deg); }
+}
+@media (prefers-reduced-motion: reduce) { .library-brand-virus { animation: none; transform: none; } }
 .library-appbar-actions { display: flex; align-items: center; gap: 12px; margin-left: 0; justify-self: end; }
 /* Search control engraved into the wooden plank — same box as the install badge */
 .library-search-control {
@@ -828,3 +841,64 @@ a, button, [role="button"], summary, label { touch-action: manipulation; -webkit
   .viewer-loading-overlay .logo-loader-ring,
   .document-reader-loading .logo-loader-ring { animation: none !important; }
 }
+
+/* Dark theme: declared last so it wins over the light defaults above and imported page styles. */
+.library-theme-control span { font-size: 1.5em; line-height: 1; }
+html.dark {
+  color-scheme: dark;
+  --background: oklch(0.18 0.02 265);
+  --foreground: oklch(0.94 0.005 265);
+  --card: oklch(0.23 0.022 265);
+  --card-foreground: oklch(0.94 0.005 265);
+  --popover: oklch(0.23 0.022 265);
+  --popover-foreground: oklch(0.94 0.005 265);
+  --primary: oklch(0.74 0.12 248);
+  --primary-foreground: oklch(0.16 0.02 265);
+  --secondary: oklch(0.28 0.02 265);
+  --secondary-foreground: oklch(0.94 0.005 265);
+  --muted: oklch(0.28 0.02 265);
+  --muted-foreground: oklch(0.76 0.02 260);
+  --accent: oklch(0.3 0.03 250);
+  --accent-foreground: oklch(0.94 0.005 265);
+  --border: oklch(0.36 0.015 265);
+  --input: oklch(0.38 0.015 265);
+  --site-import-background: oklch(0.18 0.02 265);
+  --site-import-foreground: oklch(0.94 0.005 265);
+  --site-import-muted-foreground: oklch(0.76 0.02 260);
+  --sidenav: oklch(0.21 0.02 265);
+  --sidenav-foreground: oklch(0.93 0.005 265);
+  --sidenav-active: oklch(0.3 0.05 25);
+  --appbar-dot: oklch(0.75 0.17 25);
+  --hub-shell-background: oklch(0.18 0.02 265);
+  --hub-shell-text: oklch(0.92 0.005 265);
+  --hub-link: oklch(0.78 0.1 245);
+  --hub-title: oklch(0.92 0.005 265);
+  --hub-surface: oklch(0.23 0.022 265);
+  --hub-title-border: oklch(0.36 0.015 265);
+  --hub-item-text: oklch(0.94 0.005 265);
+  --hub-item-focus: oklch(0.3 0.025 245);
+  --hub-original-2: oklch(0.36 0.015 265);
+  --hub-original-3: oklch(0.23 0.022 265);
+  --hub-original-9: oklch(0.36 0.015 265);
+  --hub-original-10: oklch(0.92 0.005 265);
+  --hub-original-11: oklch(0.36 0.015 265);
+  --hub-original-12: oklch(0.85 0.01 265);
+  --hub-original-14: oklch(0.92 0.005 265);
+  --hub-original-16: oklch(0.92 0.005 265);
+  --hub-original-17: oklch(0.23 0.022 265);
+}
+html.dark body { background-color: var(--background) !important; color: var(--foreground) !important; }
+html.dark .library-sidenav { background: var(--sidenav); color: var(--sidenav-foreground); }
+html.dark .library-menu-control { color: var(--sidenav-foreground); }
+html.dark .legacy-page .panel, html.dark .legacy-page .card, html.dark .legacy-page .white-box,
+html.dark .legacy-page .dropdown-menu, html.dark .class-hub .panel, html.dark .class-hub .dropdown-menu { background-color: var(--card) !important; color: var(--foreground) !important; border-color: var(--border) !important; }
+html.dark .legacy-page .dropdown-menu a, html.dark .class-hub .dropdown-menu a { color: var(--foreground) !important; }
+html.dark .legacy-page h1, html.dark .legacy-page h2, html.dark .legacy-page h3, html.dark .legacy-page h4, html.dark .legacy-page p, html.dark .legacy-page li { color: inherit; }
+html.dark .legacy-page input, html.dark .legacy-page select, html.dark .legacy-page textarea { background-color: var(--background) !important; color: var(--foreground) !important; border-color: var(--input) !important; }
+
+/* Dark theme legibility fixes from the audit. */
+html.dark .homepage-instruction { color: #fff; }
+html.dark .homepage-brand, html.dark .homepage-brand * { color: var(--foreground); }
+html.dark a.africaVotesChat { background: var(--card) !important; border: 1px solid var(--border); }
+
+html.dark .library-search-shortcut { color: var(--foreground); }
