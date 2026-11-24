@@ -13,3 +13,14 @@ describe('production ads', () => {
     expect(shouldLoadAdsense(false, 'fresh-teacher.github.io')).toBe(false);
   });
 });
+
+describe('ad pages', () => {
+  it('allows ads only on document pages', async () => {
+    const { isAdPage } = await import('../lib/adsense');
+    expect(isAdPage('/doc/p7-maths-2024')).toBe(true);
+    expect(isAdPage('/')).toBe(false);
+    expect(isAdPage('/p7.html')).toBe(false);
+    expect(isAdPage('/primary/p7')).toBe(false);
+    expect(isAdPage('/search')).toBe(false);
+  });
+});

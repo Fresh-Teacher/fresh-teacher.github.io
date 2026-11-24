@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import units from '@/data/ad-units.json';
 import tracking from '@/data/site-tracking.json';
+import { ensureAdsenseScript, isAdPage } from '@/lib/adsense';
 import { requestAdOnce, shouldRequestManualAd } from '@/lib/manual-ads';
 
 type AdWindow = Window & { adsbygoogle?: { push: (value: Record<string, never>) => unknown } };
@@ -11,9 +12,11 @@ export function AdBanner({ placement, identity }: { placement: keyof typeof unit
   useEffect(() => {
     const node = element.current;
     if (!node) return;
-    const script = document.getElementById('ft-adsense') as HTMLScriptElement | null;
+    const enabled = import.meta.env['VITE_ENABLE_ADSENSE'] === 'true';
+    if (!shouldRequestManualAd(enabled, location.hostname, slot, location.pathname)) return;
+    const script = ensureAdsenseScript();
     const request = () => {
-      if (!shouldRequestManualAd(import.meta.env['VITE_ENABLE_ADSENSE'] === 'true', location.hostname, slot)) return;
+      if (!isAdPage(location.pathname)) return;
       const script = document.getElementById('ft-adsense') as HTMLScriptElement | null;
       if (!script || !node.isConnected || node.getBoundingClientRect().width === 0) return;
       requestAdOnce(node, () => {
@@ -32,8 +35,8 @@ export function AdBanner({ placement, identity }: { placement: keyof typeof unit
       const bounds = node.getBoundingClientRect();
       if (bounds.bottom >= -200 && bounds.top <= window.innerHeight + 200) request();
     };
-    script?.addEventListener('load', onLoad);
-    return () => { observer.disconnect(); script?.removeEventListener('load', onLoad); };
+    script.addEventListener('load', onLoad);
+    return () => { observer.disconnect(); script.removeEventListener('load', onLoad); };
   }, [slot, identity]);
 
   return <aside className="library-ad" aria-label="Advertisement">

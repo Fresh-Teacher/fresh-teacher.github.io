@@ -33,3 +33,7 @@ use the editor.
 - Keep the target TanStack bootstrap and pinned framework versions while importing compatible application modules, so hosting stays supported.
 - Resolve the public resource library from the bundled catalog and legacy manifests; retain existing CDN media and document providers because the source has no account database.
 - Render fixed document-page shells directly in JSX rather than parsing captured HTML at runtime, preserving existing wrapper classes so styling stays unchanged.
+
+## External GitHub Pages sync
+- Keep production-owned publishing tooling and workflows byte-for-byte during app sync, merging only the publishing commands into the incoming package manifest; this prevents source imports from breaking static deployment.
+- Validate sync preservation with `scripts/sync_from_lovable.py` and its Python regression tests before pushing a review branch; deployment stays a separate manual action so importing code cannot replace the live website.

@@ -1,7 +1,7 @@
-import { shouldLoadAdsense } from './adsense';
+import { isAdPage, shouldLoadAdsense } from './adsense';
 
-export function shouldRequestManualAd(enabled: boolean, hostname: string, slot: unknown) {
-  return shouldLoadAdsense(enabled, hostname) && typeof slot === 'string' && /^\d+$/.test(slot);
+export function shouldRequestManualAd(enabled: boolean, hostname: string, slot: unknown, pathname = '/doc/x') {
+  return shouldLoadAdsense(enabled, hostname) && isAdPage(pathname) && typeof slot === 'string' && /^\d+$/.test(slot);
 }
 
 export function showCatalogAd(index: number, count: number) {
